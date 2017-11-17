@@ -1,0 +1,49 @@
+// Image uploader
+
+.tpl-uploader {
+
+	.tpl-image-container {
+		height: 150px;
+		width: 150px;
+		position: relative;
+		float: left;
+		margin-right: 16px;
+		margin-bottom: 8px;
+
+		.tpl-closer {
+			position: absolute;
+			top: -5px;
+			right: -5px;
+			width: 32px;
+			height: 32px;
+			border-radius: 100%;
+			background-color: #222;
+			opacity: 0.75;
+			padding: 0;
+
+			&::before {
+				content: "\00d7";
+				font-weight: bold;
+				line-height: 32px;
+				font-size: 32px;
+			}
+		}
+	}
+
+	.tpl-uploaded-image {
+		cursor: pointer;
+	}
+
+}
+
+.tpl-image-preview {
+	height: 30px;
+	width: auto;
+	vertical-align: middle;
+	margin-bottom: 4px;
+	margin-right: 6px;
+}
+
+.tpl-img-placeholder {
+	cursor: pointer;
+}

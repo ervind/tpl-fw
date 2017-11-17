@@ -1,0 +1,739 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Themple Framework\n"
+"POT-Creation-Date: 2016-10-19 11:00+0200\n"
+"PO-Revision-Date: 2016-10-19 11:02+0200\n"
+"Last-Translator: Ervin Domonkos <ervin.domonkos@gmail.com>\n"
+"Language-Team: a-idea studio <info@a-idea.studio>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-SearchPath-0: languages\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: data-types/class-data_type.php:32
+msgid "Add row"
+msgstr "Új sor"
+
+#: data-types/class-data_type.php:42
+msgid "The \"name\" attribute is required during registering options"
+msgstr "A \"name\" attribútum megadása kötelező az opciók regisztrálása során"
+
+#: data-types/class-data_type.php:50
+#, php-format
+msgid "It's recommended to set a title for \"%s\" option"
+msgstr "Ajánlott címet rendelni a \"%s\" opcióhoz"
+
+#: data-types/class-data_type.php:60
+#, php-format
+msgid ""
+"It's recommended to assign %s to a section. Using a dummy section to avoid "
+"errors..."
+msgstr ""
+"Ajánlott, hogy a %s opciót rendeld hozzá egy szekcióhoz. Generáltunk egy "
+"dummy szekciót, hogy elkerüljük a hibákat..."
+
+#: data-types/class-data_type.php:217
+msgid "Drag & Drop to reorder"
+msgstr "Fogd és vidd az átrendezéshez"
+
+#: data-types/class-data_type.php:248 data-types/type-select.php:106
+#: data-types/type-textarea.php:46
+msgid "prefix:"
+msgstr "előtag:"
+
+#: data-types/class-data_type.php:252 data-types/type-select.php:110
+#: data-types/type-textarea.php:50
+msgid "suffix:"
+msgstr "utótag:"
+
+#: data-types/class-data_type.php:256 data-types/type-select.php:114
+#: data-types/type-textarea.php:54
+msgid "default:"
+msgstr "alapeset:"
+
+#: data-types/class-data_type.php:269 data-types/type-combined.php:158
+#: data-types/type-select.php:127 data-types/type-textarea.php:67
+msgid "Remove row"
+msgstr "Sor törlése"
+
+#: data-types/class-data_type.php:642
+msgid "Do you really want to remove this instance?"
+msgstr "Valóban el akarod távolítani ezt a példányt?"
+
+#: data-types/type-icon.php:18
+msgid "Icon"
+msgstr "Ikon"
+
+#: data-types/type-icon.php:19
+msgid "The Font Awesome code of the icon (uses the fa-xxx name structure)"
+msgstr "Az ikon Font Awesome kódja (fa-xxx formátumban)"
+
+#: data-types/type-icon.php:24
+msgid "Icon Color"
+msgstr "Ikon színe"
+
+#: data-types/type-icon.php:25
+msgid "What should be the color of this icon?"
+msgstr "Milyen színű legyen ez az ikon?"
+
+#: data-types/type-icon.php:31
+msgid "Icon size"
+msgstr "Ikon mérete"
+
+#: data-types/type-icon.php:32
+msgid "Size of the icon in Font Awesome sizes"
+msgstr "Ikonméret a Font Awesome méretek alapján"
+
+#: data-types/type-icon.php:36
+msgid "Normal"
+msgstr "Normál"
+
+#: data-types/type-icon.php:37
+msgid "Larger"
+msgstr "Nagyobb"
+
+#: data-types/type-icon.php:38
+msgid "Double"
+msgstr "Dupla"
+
+#: data-types/type-icon.php:39
+msgid "Triple"
+msgstr "Tripla"
+
+#: data-types/type-icon.php:40
+msgid "4x"
+msgstr "4x"
+
+#: data-types/type-icon.php:41
+msgid "5x"
+msgstr "5x"
+
+#: data-types/type-icon.php:47
+msgid "Icon URL"
+msgstr "Ikon URL-je"
+
+#: data-types/type-icon.php:48
+msgid "Where should the icon be linked to?"
+msgstr "Hová linkeljük az ikont?"
+
+#: data-types/type-icon.php:53
+msgid "Link Title"
+msgstr "Link címe"
+
+#: data-types/type-icon.php:54
+msgid ""
+"This is displayed when hovering the mouse over the icon when it is a link"
+msgstr "Ez lesz megjelenítve, amikor az egérmutatót az ikon fölé mozgatják"
+
+#: data-types/type-icon.php:67
+msgid "Open in new tab?"
+msgstr "Új lapon nyíljon?"
+
+#: data-types/type-icon.php:68
+msgid "If yes, the link will open in a new browser tab"
+msgstr "Ha igen, a link egy új böngészőablakban fog nyílni"
+
+#: data-types/type-icon.php:72
+msgid "No"
+msgstr "Nem"
+
+#: data-types/type-icon.php:73
+msgid "Yes"
+msgstr "Igen"
+
+#: data-types/type-image.php:61
+#, php-format
+msgid "%s image tag"
+msgstr "%s kép címke"
+
+#: data-types/type-image.php:68
+msgid "Placeholder image"
+msgstr "Helyfogó kép"
+
+#: data-types/type-image.php:82
+msgid "Click here to remove image."
+msgstr "Kattints ide a kép eltávolításához."
+
+#: data-types/type-image.php:86
+msgid "Upload"
+msgstr "Feltöltés"
+
+#: data-types/type-image.php:212 data-types/type-image.php:213
+msgid "Choose Image"
+msgstr "Válassz képet"
+
+#: data-types/type-image.php:308
+msgid "Please register a logo first before calling the tpl_logo() function."
+msgstr "Kérlek regisztrálj egy logót mielőtt meghívnád a tpl_logo() függvényt."
+
+#: tpl-inc/themple-core.php:112
+msgid "Themple error"
+msgstr "Themple hibaüzenet"
+
+#: tpl-inc/themple-core.php:115
+msgid "Themple warning"
+msgstr "Themple figyelmeztetés"
+
+#: tpl-inc/themple-core.php:138
+msgid "File not exists"
+msgstr "A fájl nem létezik"
+
+#: tpl-inc/themple-core.php:264
+msgid "You forgot to set name for an option. Please check your options files."
+msgstr ""
+"Elfelejtettél nevet adni az egyik opciónak. Kérlek ellenőrizd az options "
+"fájljaidat."
+
+#: tpl-inc/themple-core.php:283
+#, php-format
+msgid "You forgot to set the type of %s. Using static to avoid errors..."
+msgstr ""
+"Elfelejtetted beállítani a %s opció típusát. Static-ra állítottuk, hogy "
+"elkerüljük a hibákat..."
+
+#: tpl-inc/themple-core.php:298
+#, php-format
+msgid "Data type %s doesn't exists"
+msgstr "A %s adattípus nem létezik"
+
+#: tpl-inc/themple-core.php:307
+#, php-format
+msgid ""
+"Option with name %1$s was defined more than once in your options files. "
+"Using the first instance (%2$s)"
+msgstr ""
+"Az %1$s azonosítójú beállítás egynél többször került definiálásra az options "
+"fájlokban. Az először definiált verzió az aktív (%2$s)"
+
+#: tpl-inc/themple-core.php:490
+#, php-format
+msgid ""
+"Section \"%s\" hasn't been registered properly. Please register it in "
+"options/sections.php."
+msgstr ""
+"A \"%s\" szekció nem lett rendesen regisztrálva. Kérlek regisztráld az "
+"options/sections.php fájlban."
+
+#: tpl-inc/themple-core.php:653 tpl-inc/themple-core.php:979
+#, php-format
+msgid "No data type was set up for option: %s"
+msgstr "Hiányzik az adattípus ehhez a beállításhoz: %s"
+
+#: tpl-inc/themple-core.php:660 tpl-inc/themple-core.php:986
+#, php-format
+msgid "Invalid data type (%1$s) was set for option: %2$s"
+msgstr ""
+"Nem megfelelő adattípus (%1$s) van hozzárendelve ehhez a beállításhoz: %2$s"
+
+#~ msgid "Empty space"
+#~ msgstr "Üres hely"
+
+#~ msgid "Free text"
+#~ msgstr "Tetszőleges szöveg"
+
+#~ msgid "Free text input"
+#~ msgstr "Tetszőleges szöveg bevitele"
+
+#~ msgid "You can enter any kind of text and HTML into this box."
+#~ msgstr "Ide írhatsz bármilyen szöveges vagy HTML tartalmat."
+
+#~ msgid "Image"
+#~ msgstr "Kép"
+
+#~ msgid "Select image"
+#~ msgstr "Válassz képet"
+
+#~ msgid "Upload or select previously uploaded image here"
+#~ msgstr "Tölts fel egy új képet vagy válassz ki egy korábban feltöltöttet"
+
+#~ msgid "Custom shortcode"
+#~ msgstr "Tetszőleges shortcode"
+
+#~ msgid "Shortcode name"
+#~ msgstr "Shortcode neve"
+
+#~ msgid "The shortcode name / identifier"
+#~ msgstr "A shortcode neve / azonosítója"
+
+#~ msgid "Shortcode type"
+#~ msgstr "Shortcode típusa"
+
+#~ msgid "Self-closing or Enclosing?"
+#~ msgstr "Önzáró vagy körülölelő?"
+
+#~ msgid "Self-closing"
+#~ msgstr "Önzáró"
+
+#~ msgid "Enclosing"
+#~ msgstr "Körülölelő"
+
+#~ msgid "Shortcode content"
+#~ msgstr "Shortcode tartalma"
+
+#~ msgid ""
+#~ "Content between the starting and the ending tag of the enclosing shortcode"
+#~ msgstr "A körülölelő shortcode nyitó- és záróeleme közötti tartalom"
+
+#~ msgid "Shortcode parameters"
+#~ msgstr "A shortcode paraméterei"
+
+#~ msgid "You can add here as many shortcode parameters as you'd like to"
+#~ msgstr "Tetszőleges számú shortcode paramétert hozzáadhatsz itt"
+
+#~ msgid "Add parameter"
+#~ msgstr "Paraméter hozzáadása"
+
+#~ msgid "Name"
+#~ msgstr "Név"
+
+#~ msgid "The shortcode parameter's name"
+#~ msgstr "A shortcode paraméter neve"
+
+#~ msgid "Value"
+#~ msgstr "Érték"
+
+#~ msgid "The shortcode parameter's value"
+#~ msgstr "A shortcode paraméter értéke"
+
+#~ msgid "The content"
+#~ msgstr "Tartalom"
+
+#~ msgid "Widget area"
+#~ msgstr "Widget gyűjtemény"
+
+#~ msgid "Select a widget area"
+#~ msgstr "Válassz egy widget gyűjteményt"
+
+#~ msgid ""
+#~ "You can use here a widget area already set up in Appearance > Widgets"
+#~ msgstr ""
+#~ "A widget gyűjtemények beállíthatók a Megjelenés > Widgetek menüpont alatt"
+
+#~ msgid "You can find demos for the Google fonts here: %s"
+#~ msgstr "Itt tudod megtekinteni a Google betűkészleteket: %s"
+
+#~ msgid "Select app for this box"
+#~ msgstr "Válaszd ki az alkalmazást ehhez a dobozhoz"
+
+#~ msgid "Select an app type from the dropdown. It will be used in this box."
+#~ msgstr ""
+#~ "Válassz alkalmazástípust a legördülő menüből. Ez kerül használatra ebben "
+#~ "a dobozban."
+
+#~ msgid "Columnset"
+#~ msgstr "Oszlop-elrendezés"
+
+#~ msgid "The columns layout of the row"
+#~ msgstr "Az oszlopok megjelenése ebben a sorban"
+
+#~ msgid "1/1 - Full width"
+#~ msgstr "1/1 - Teljes szélesség"
+
+#~ msgid "Contents of the columns"
+#~ msgstr "Az oszlopok tartalma"
+
+#~ msgid "Set up your apps"
+#~ msgstr "Állítsd be az alkalmazásaidat"
+
+#~ msgid "Add section"
+#~ msgstr "Szekció hozzáadása"
+
+#~ msgid ""
+#~ "The columnset you have just selected contains fewer columns than the "
+#~ "previous setting. It means that the last ##N## column(s) will be removed "
+#~ "with all their contents. Do you want to proceed?"
+#~ msgstr ""
+#~ "Az oszlop-elrendezés amit épp kiválasztottál kevesebb oszlopot tartalmaz, "
+#~ "mint az előző beállítás. Ez azt jelenti, hogy az utolsó ##N## oszlop el "
+#~ "lesz távolítva annak minden tartalmával. Folytassuk?"
+
+#~ msgid "General"
+#~ msgstr "Általános"
+
+#~ msgid "General information about the Framework and the Theme"
+#~ msgstr "Általános információ a keretrendszerről és a sablonról"
+
+#~ msgid "Libraries"
+#~ msgstr "Könyvtárak"
+
+#~ msgid "3rd party libraries bundled with the Themple Framework"
+#~ msgstr "Külső könyvtárak, amelyek a Themple Framework csomag részei"
+
+#~ msgid "Backend settings"
+#~ msgstr "Rendszer beállítások"
+
+#~ msgid "Settings for the Themple admin panels"
+#~ msgstr "Beállítások a Themple adminisztrációs felületéhez"
+
+#~ msgid "Backend"
+#~ msgstr "Rendszer"
+
+#~ msgid "Theme version"
+#~ msgstr "Sablon verzió"
+
+#~ msgid "Framework version"
+#~ msgstr "Keretrendszer verzió"
+
+#~ msgid "WordPress version"
+#~ msgstr "WordPress verzió"
+
+#~ msgid "Less Compiler"
+#~ msgstr "LESS fordító"
+
+#~ msgid ""
+#~ "<b>ON:</b> Less files are compiled upon each page reload, even if there "
+#~ "was no change (slowest, suitable for development environments)<br>\n"
+#~ "\t\t<b>OFF:</b> Less files are NOT compiled in any circumstances "
+#~ "(fastest, use it if you're not going to change styles or Theme Options "
+#~ "for a long time, suitable for live sites with cached assets)<br>\n"
+#~ "\t\t<b>Dynamic:</b> Less files are updated when there is a change in the "
+#~ "Theme Options or inside the Less files (middle speed, use it in test "
+#~ "environments or when you're changing options frequently on live sites.)"
+#~ msgstr ""
+#~ "<b>BE:</b> A LESS fájlok minden egyes oldalbetöltésnél újrafordítódnak, "
+#~ "még akkor is ha nem történt semmi változás (ez a leglassabb, ideális a "
+#~ "fejlesztői környezetekhez)<br>\n"
+#~ "\t\t<b>KI:</b> A LESS fájlok semmilyen körülmények között nem kerülnek "
+#~ "újrafordításra (ez a leggyorsabb, akkor használd ha sokáig nem akarsz "
+#~ "hozzányúlni a stílusokhoz Sablonbeállításokhoz, ideális az élő "
+#~ "oldalakhoz)<br>\n"
+#~ "\t\t<b>Dinamikus:</b> A LESS fájlok akkor fordítódnak újra, ha van "
+#~ "változás a Sablonbeállításokban, vagy magukban a LESS fájlokban (közepes "
+#~ "sebesség, általában teszt környezetben ideális, illetve olyan oldalakon, "
+#~ "ahol gyakran változnak a beállítások)"
+
+#~ msgid "ON"
+#~ msgstr "BE"
+
+#~ msgid "OFF"
+#~ msgstr "KI"
+
+#~ msgid "Dynamic"
+#~ msgstr "Dinamikus"
+
+#~ msgid "CSS Minification"
+#~ msgstr "CSS minifikálás"
+
+#~ msgid ""
+#~ "<b>ON:</b> Output CSS files are minified during the compilation process."
+#~ "<br>\n"
+#~ "\t\t<b>OFF:</b> Output CSS files are not minified, only compiled."
+#~ msgstr ""
+#~ "<b>BE:</b> A kimeneti CSS fájlok minifikálva lesznek a fordítási folyamat "
+#~ "közben.<br>\n"
+#~ "\t\t<b>KI:</b> A kimeneti CSS fájlok nem lesznek minifikálva, csupán "
+#~ "lefordítva."
+
+#~ msgid "Font Awesome support"
+#~ msgstr "Font Awesome támogatás"
+
+#~ msgid ""
+#~ "<b>Yes:</b> The Font Awesome library will be compiled into your front end "
+#~ "CSS.<br>\n"
+#~ "\t\t<b>No:</b> The Font Awesome library won't be compiled into your front "
+#~ "end CSS. Recommended if you're not using these font icons (in this case "
+#~ "the site will load faster)."
+#~ msgstr ""
+#~ "<b>Igen:</b> A Font Awesome könyvtár bele lesz fordítva a front end CSS-"
+#~ "be.<br>\n"
+#~ "\t\t<b>Nem:</b> A Font Awesome library könyvtár nem lesz belefordítva a "
+#~ "front end CSS-be. Ajánlott, ha nem használod ezeket a font ikonokat (ez "
+#~ "esetben gyorsíthat az oldal betöltődésén)."
+
+#~ msgid "TGM Plugin Activation"
+#~ msgstr "TGM Bővítmény Aktiváló"
+
+#~ msgid ""
+#~ "<b>Yes:</b> The TGM Plugin Activation library is enabled.<br>\n"
+#~ "\t\t<b>No:</b> The TGM Plugin Activation library is disabled."
+#~ msgstr ""
+#~ "<b>Igen:</b> A TGM bővítmény-telepítő könyvtár engedélyezve van.<br>\n"
+#~ "\t\t<b>Nem:</b> A TGM bővítmény-telepítő könyvtár nincs engedélyezve."
+
+#~ msgid "Remove confirmation for repeater fields"
+#~ msgstr "Rákérdezés ismétlődő mező eltávolításakor"
+
+#~ msgid ""
+#~ "If yes, you'll be prompted every time you want to remove a row from a "
+#~ "repeater field in Theme Options"
+#~ msgstr ""
+#~ "Ha igen, meg leszel kérdezve minden egyes alkalommal, ha törölni akarsz "
+#~ "egy sort egy ismétlődő mezőből."
+
+#~ msgid "Remove confirmation for Page Builder columnsets"
+#~ msgstr "Rákérdezés Page Builder oszlop-elrendezések esetén"
+
+#~ msgid ""
+#~ "If yes, you'll be prompted every time you want to switch to a columnset "
+#~ "with fewer columns in Page Builder"
+#~ msgstr ""
+#~ "Ha igen, meg leszel kérdezve minden alkalommal, ha kevesebb oszlopos "
+#~ "elrendezésre szeretnél váltani a Page Builderben"
+
+#~ msgid "Install Required Plugins"
+#~ msgstr "Szükséges bővítmények telepítése"
+
+#~ msgid "Install Plugins"
+#~ msgstr "bővítmények telepítése"
+
+#~ msgid "Installing Plugin: %s"
+#~ msgstr "Bővítmény telepítése: %s"
+
+#~ msgid "Something went wrong with the plugin API."
+#~ msgstr "Valami nem volt rendben a bővítmény API-val."
+
+#~ msgid "Return to Required Plugins Installer"
+#~ msgstr "Vissza a bővítmény-telepítőhöz"
+
+#~ msgid "Return to the dashboard"
+#~ msgstr "Vissza a kezelőpulthoz"
+
+#~ msgid "Plugin activated successfully."
+#~ msgstr "A bővítmény sikeresen aktiválva lett."
+
+#~ msgid "The following plugin was activated successfully:"
+#~ msgid_plural "The following plugins were activated successfully:"
+#~ msgstr[0] "A következő bővítmény sikeresen aktiválva lett:"
+#~ msgstr[1] "A következő bővítmények sikeresen aktiválva lettek:"
+
+#~ msgid "No action taken. Plugin %1$s was already active."
+#~ msgstr "Nem történt semmi, a %1$s bővítmény már eleve aktív volt."
+
+#~ msgid ""
+#~ "Plugin not activated. A higher version of %s is needed for this theme. "
+#~ "Please update the plugin."
+#~ msgstr ""
+#~ "A bővítmény nincs aktiválva. Egy magasabb verzióra van szükség a %s-ből a "
+#~ "sablonhoz. Kérlek frissítsd a bővítményt."
+
+#~ msgid "All plugins installed and activated successfully. %1$s"
+#~ msgstr "Minden bővítmény sikeresen telepítve és aktiválva. %1$s"
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "Figyelmeztetés eltűntetése"
+
+#~ msgid "Please contact the administrator of this site for help."
+#~ msgstr "Kérlek lépj kapcsolatba az oldal adminisztrátorával segítségért."
+
+#~ msgctxt "%s = version number"
+#~ msgid "TGMPA v%s"
+#~ msgstr "TGMPA v%s"
+
+#~ msgid "Required"
+#~ msgstr "Szükséges"
+
+#~ msgid "Recommended"
+#~ msgstr "Ajánlott"
+
+#~ msgid "WordPress Repository"
+#~ msgstr "WordPress gyűjtemény"
+
+#~ msgid "External Source"
+#~ msgstr "Külső forrás"
+
+#~ msgid "Pre-Packaged"
+#~ msgstr "Előre csomagolt"
+
+#~ msgid "Not Installed"
+#~ msgstr "Nincs telepítve"
+
+#~ msgid "Installed But Not Activated"
+#~ msgstr "Telepítve, de nincs aktiválva"
+
+#~ msgid "Active"
+#~ msgstr "Aktív"
+
+#~ msgid "Required Update not Available"
+#~ msgstr "A szükséges frissítés nem elérhető"
+
+#~ msgid "Requires Update"
+#~ msgstr "Szükséges frissíteni"
+
+#~ msgid "Update recommended"
+#~ msgstr "Ajánlott frissíteni"
+
+#~ msgctxt "%1$s = install status, %2$s = update status"
+#~ msgid "%1$s, %2$s"
+#~ msgstr "%1$s, %2$s"
+
+#~ msgid "To Install <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Install <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Telepítendő: <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Telepítendő: <span class=\"count\">(%s)</span>"
+
+#~ msgid "Update Available <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Frissíthető: <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Frissíthető: <span class=\"count\">(%s)</span>"
+
+#~ msgid "To Activate <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Aktiválható: <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Aktiválható: <span class=\"count\">(%s)</span>"
+
+#~ msgctxt "as in: \"version nr unknown\""
+#~ msgid "unknown"
+#~ msgstr "ismeretlen"
+
+#~ msgid "Installed version:"
+#~ msgstr "Telepített verzió:"
+
+#~ msgid "Minimum required version:"
+#~ msgstr "Minimálisan szükséges verzió:"
+
+#~ msgid "Available version:"
+#~ msgstr "Elérhető verzió:"
+
+#~ msgid ""
+#~ "No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+#~ "Dashboard</a>"
+#~ msgstr ""
+#~ "Nincs telepíteni-, frissíteni- vagy aktiválni való bővítmény. <a href="
+#~ "\"%1$s\">Vissza a kezelőpulthoz</a>"
+
+#~ msgid "Plugin"
+#~ msgstr "Bővítmény"
+
+#~ msgid "Source"
+#~ msgstr "Forrás"
+
+#~ msgid "Type"
+#~ msgstr "Típus"
+
+#~ msgid "Version"
+#~ msgstr "Verzió"
+
+#~ msgid "Status"
+#~ msgstr "Állapot"
+
+#~ msgctxt "%2$s = plugin name in screen reader markup"
+#~ msgid "Install %2$s"
+#~ msgstr "%2$s telepítése"
+
+#~ msgctxt "%2$s = plugin name in screen reader markup"
+#~ msgid "Update %2$s"
+#~ msgstr "%2$s frissítése"
+
+#~ msgctxt "%2$s = plugin name in screen reader markup"
+#~ msgid "Activate %2$s"
+#~ msgstr "%2$s aktiválása"
+
+#~ msgid "Install"
+#~ msgstr "Telepít"
+
+#~ msgid "Update"
+#~ msgstr "Frissít"
+
+#~ msgid "Activate"
+#~ msgstr "Aktivál"
+
+#~ msgid "No plugins were selected to be installed. No action taken."
+#~ msgstr ""
+#~ "Nem volt kijelölve egy bővítmény sem telepítésre, így nem történt semmi."
+
+#~ msgid "No plugins were selected to be updated. No action taken."
+#~ msgstr ""
+#~ "Nem volt kijelölve egy bővítmény sem frissítésre, így nem történt semmi."
+
+#~ msgid "No plugins are available to be installed at this time."
+#~ msgstr "Jelenleg nem található telepíthető bővítmény."
+
+#~ msgid "No plugins are available to be updated at this time."
+#~ msgstr "Jelenleg nem található frissíthető bővítmény."
+
+#~ msgid "Plugin activation failed."
+#~ msgstr "A bővítmény aktiválása nem sikerült."
+
+#~ msgid "Updating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "A %1$s (%2$d/%3$d) bővítmény frissítése"
+
+#~ msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+#~ msgstr ""
+#~ "A következő hiba történt a %1$s telepítése közben: <strong>%2$s</strong>."
+
+#~ msgid "The installation of %1$s failed."
+#~ msgstr "A %1$s telepítése nem sikerült."
+
+#~ msgid ""
+#~ "The installation and activation process is starting. This process may "
+#~ "take a while on some hosts, so please be patient."
+#~ msgstr ""
+#~ "A telepítés és aktiválás kezdődik. Bizonyos szervereken ez eltarthat egy "
+#~ "darabig."
+
+#~ msgid "%1$s installed and activated successfully."
+#~ msgstr "%1$s sikeresen telepítve és aktiválva."
+
+#~ msgid "All installations and activations have been completed."
+#~ msgstr "Minden telepítés és aktiválás befejeződött."
+
+#~ msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Telepítem és aktiválom a %1$s (%2$d/%3$d) bővítményt."
+
+#~ msgid ""
+#~ "The installation process is starting. This process may take a while on "
+#~ "some hosts, so please be patient."
+#~ msgstr ""
+#~ "A telepítés kezdődik. Bizonyos szervereken ez eltarthat egy darabig."
+
+#~ msgid "All installations have been completed."
+#~ msgstr "Minden telepítés befejeződött."
+
+#~ msgid "Installing Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Bővítmény telepítése: %1$s (%2$d/%3$d)"
+
+#~ msgid "Theme Options"
+#~ msgstr "Sablon beállítások"
+
+#~ msgid "Framework Options"
+#~ msgstr "Keretrendszer beállítások"
+
+#~ msgid "Could not write front end CSS file - check your file permissions!"
+#~ msgstr ""
+#~ "Nem tudtam írni a front CSS fájlt - ellenőrizd a fájl hozzáféréseket!"
+
+#~ msgid "Could not write admin CSS file - check your file permissions!"
+#~ msgstr ""
+#~ "Nem tudtam írni az admin CSS fájlt - ellenőrizd a fájl hozzáféréseket!"
+
+#~ msgid "Could not write editor CSS file - check your file permissions!"
+#~ msgstr ""
+#~ "Nem tudtam írni a szerkesztő CSS fájlját - ellenőrizd a fájl "
+#~ "hozzáféréseket!"
+
+#~ msgid ""
+#~ "You forgot to set name for an option. Please check your options files. "
+#~ "LESS compiler is turned OFF until you resolve this issue."
+#~ msgstr ""
+#~ "Elfelejtettél nevet adni az egyik opciónak. Kérlek ellenőrizd az options "
+#~ "fájljaidat. Addig is kikapcsolva tartjuk a LESS fordítót a biztonság "
+#~ "kedvéért."
+
+#~ msgid "Settings saved."
+#~ msgstr "Beállítások mentve."
+
+#~ msgid ""
+#~ "<b>ON:</b> Output CSS files are minified during the compilation process."
+#~ "<br>\n"
+#~ "\t\t<b>OFF:</b> Output CSS files are not minified, only copiled."
+#~ msgstr ""
+#~ "<b>BE:</b> A kimeneti CSS fájlok minifikálva lesznek a fordítási folyamat "
+#~ "közben.<br>\n"
+#~ "\t\t<b>KI:</b> A kimeneti CSS fájlok nem lesznek minifikálva, csupán "
+#~ "lefordítva."
+
+#~ msgid "Invalid parameter: %s"
+#~ msgstr "Nem megfelelő paraméter: %s"
+
+#~ msgid "General Framework Options"
+#~ msgstr "Általános keretrendszer beállítások"
+
+#~ msgid "Themple Framework Options"
+#~ msgstr "A Themple Keretrendszer beállításai"

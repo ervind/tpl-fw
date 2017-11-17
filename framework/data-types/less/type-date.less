@@ -1,0 +1,78 @@
+// Date picker formatting
+
+.ui-datepicker {
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 10px 5px;
+	position: relative;
+
+	.ui-datepicker-header {
+		position: relative;
+	}
+
+	.ui-datepicker-prev, .ui-datepicker-next {
+		font-family: FontAwesome;
+		display: inline-block;
+		font-size: (4em / 3);
+	    line-height: (3em / 4);
+	    vertical-align: -15%;
+		width: (18em / 14);
+	    text-align: center;
+		cursor: pointer;
+		color: transparent;
+
+		&::after {
+			display: block;
+			color: #444;
+			position: absolute;
+			top: 2px;
+		}
+	}
+
+	.ui-datepicker-prev {
+		float: left;
+
+		&::after {
+			left: 5px;
+			content: "\f137";
+		}
+	}
+	.ui-datepicker-next {
+		float: right;
+
+		&::after {
+			right: 5px;
+			content: "\f138";
+		}
+	}
+
+	.ui-datepicker-title {
+		text-align: center;
+	}
+
+	.ui-datepicker-calendar {
+		margin-top: 12px;
+		border-top: 1px solid #ddd;
+		padding-top: 8px;
+
+		td {
+			text-align: center;
+			width: 2.2em;
+
+			a {
+				text-decoration: none;
+			}
+
+			&.ui-datepicker-current-day {
+				a::before {
+					content: '[';
+					margin-right: 2px;
+				}
+				a::after {
+					content: ']';
+					margin-left: 2px;
+				}
+			}
+		}
+	}
+}

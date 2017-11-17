@@ -1,0 +1,3016 @@
+{
+  "icons":[
+    {
+      "id":"500px",
+      "name":"500px"
+    },
+    {
+      "id":"address-book",
+      "name":"Address Book"
+    },
+    {
+      "id":"address-book-o",
+      "name":"Address Book Outlined"
+    },
+    {
+      "id":"address-card",
+      "name":"Address Card"
+    },
+    {
+      "id":"address-card-o",
+      "name":"Address Card Outlined"
+    },
+    {
+      "id":"adjust",
+      "name":"Adjust"
+    },
+    {
+      "id":"adn",
+      "name":"App.net"
+    },
+    {
+      "id":"align-center",
+      "name":"Align Center"
+    },
+    {
+      "id":"align-justify",
+      "name":"Align Justify"
+    },
+    {
+      "id":"align-left",
+      "name":"Align Left"
+    },
+    {
+      "id":"align-right",
+      "name":"Align Right"
+    },
+    {
+      "id":"amazon",
+      "name":"Amazon"
+    },
+    {
+      "id":"ambulance",
+      "name":"Ambulance"
+    },
+    {
+      "id":"american-sign-language-interpreting",
+      "name":"American Sign Language Interpreting"
+    },
+    {
+      "id":"anchor",
+      "name":"Anchor"
+    },
+    {
+      "id":"android",
+      "name":"Android"
+    },
+    {
+      "id":"angellist",
+      "name":"AngelList"
+    },
+    {
+      "id":"angle-double-down",
+      "name":"Angle Double Down"
+    },
+    {
+      "id":"angle-double-left",
+      "name":"Angle Double Left"
+    },
+    {
+      "id":"angle-double-right",
+      "name":"Angle Double Right"
+    },
+    {
+      "id":"angle-double-up",
+      "name":"Angle Double Up"
+    },
+    {
+      "id":"angle-down",
+      "name":"Angle Down"
+    },
+    {
+      "id":"angle-left",
+      "name":"Angle Left"
+    },
+    {
+      "id":"angle-right",
+      "name":"Angle Right"
+    },
+    {
+      "id":"angle-up",
+      "name":"Angle Up"
+    },
+    {
+      "id":"apple",
+      "name":"Apple"
+    },
+    {
+      "id":"archive",
+      "name":"Archive"
+    },
+    {
+      "id":"area-chart",
+      "name":"Area Chart"
+    },
+    {
+      "id":"arrow-circle-down",
+      "name":"Arrow Circle Down"
+    },
+    {
+      "id":"arrow-circle-left",
+      "name":"Arrow Circle Left"
+    },
+    {
+      "id":"arrow-circle-o-down",
+      "name":"Arrow Circle Outlined Down"
+    },
+    {
+      "id":"arrow-circle-o-left",
+      "name":"Arrow Circle Outlined Left"
+    },
+    {
+      "id":"arrow-circle-o-right",
+      "name":"Arrow Circle Outlined Right"
+    },
+    {
+      "id":"arrow-circle-o-up",
+      "name":"Arrow Circle Outlined Up"
+    },
+    {
+      "id":"arrow-circle-right",
+      "name":"Arrow Circle Right"
+    },
+    {
+      "id":"arrow-circle-up",
+      "name":"Arrow Circle Up"
+    },
+    {
+      "id":"arrow-down",
+      "name":"Arrow Down"
+    },
+    {
+      "id":"arrow-left",
+      "name":"Arrow Left"
+    },
+    {
+      "id":"arrow-right",
+      "name":"Arrow Right"
+    },
+    {
+      "id":"arrow-up",
+      "name":"Arrow Up"
+    },
+    {
+      "id":"arrows",
+      "name":"Arrows"
+    },
+    {
+      "id":"arrows-alt",
+      "name":"Arrows Alt"
+    },
+    {
+      "id":"arrows-h",
+      "name":"Arrows Horizontal"
+    },
+    {
+      "id":"arrows-v",
+      "name":"Arrows Vertical"
+    },
+    {
+      "id":"asl-interpreting",
+      "name":"ASL Interpreting"
+    },
+    {
+      "id":"assistive-listening-systems",
+      "name":"Assistive Listening Systems"
+    },
+    {
+      "id":"asterisk",
+      "name":"Asterisk"
+    },
+    {
+      "id":"at",
+      "name":"At"
+    },
+    {
+      "id":"audio-description",
+      "name":"Audio Description"
+    },
+    {
+      "id":"automobile",
+      "name":"Automobile"
+    },
+    {
+      "id":"backward",
+      "name":"Backward"
+    },
+    {
+      "id":"balance-scale",
+      "name":"Balance Scale"
+    },
+    {
+      "id":"ban",
+      "name":"Ban"
+    },
+    {
+      "id":"bandcamp",
+      "name":"Bandcamp"
+    },
+    {
+      "id":"bank",
+      "name":"Bank"
+    },
+    {
+      "id":"bar-chart",
+      "name":"Bar Chart"
+    },
+    {
+      "id":"barcode",
+      "name":"Barcode"
+    },
+    {
+      "id":"bars",
+      "name":"Bars"
+    },
+    {
+      "id":"bath",
+      "name":"Bathtub"
+    },
+    {
+      "id":"battery-0",
+      "name":"Battery Empty"
+    },
+    {
+      "id":"battery-1",
+      "name":"Battery Quarter"
+    },
+    {
+      "id":"battery-2",
+      "name":"Battery Half"
+    },
+    {
+      "id":"battery-3",
+      "name":"Battery Three Quarters"
+    },
+    {
+      "id":"battery-4",
+      "name":"Battery Full"
+    },
+    {
+      "id":"bed",
+      "name":"Bed"
+    },
+    {
+      "id":"beer",
+      "name":"Beer"
+    },
+    {
+      "id":"behance",
+      "name":"Behance"
+    },
+    {
+      "id":"behance-square",
+      "name":"Behance Square"
+    },
+    {
+      "id":"bell",
+      "name":"Bell"
+    },
+    {
+      "id":"bell-o",
+      "name":"Bell Outlined"
+    },
+    {
+      "id":"bell-slash",
+      "name":"Bell Slash"
+    },
+    {
+      "id":"bell-slash-o",
+      "name":"Bell Slash Outlined"
+    },
+    {
+      "id":"bicycle",
+      "name":"Bicycle"
+    },
+    {
+      "id":"binoculars",
+      "name":"Binoculars"
+    },
+    {
+      "id":"birthday-cake",
+      "name":"Birthday Cake"
+    },
+    {
+      "id":"bitbucket",
+      "name":"Bitbucket"
+    },
+    {
+      "id":"bitbucket-square",
+      "name":"Bitbucket Square"
+    },
+    {
+      "id":"bitcoin",
+      "name":"Bitcoin"
+    },
+    {
+      "id":"black-tie",
+      "name":"Font Awesome Black Tie"
+    },
+    {
+      "id":"blind",
+      "name":"Blind"
+    },
+    {
+      "id":"bluetooth",
+      "name":"Bluetooth"
+    },
+    {
+      "id":"bluetooth-b",
+      "name":"Bluetooth"
+    },
+    {
+      "id":"bold",
+      "name":"Bold"
+    },
+    {
+      "id":"bolt",
+      "name":"Lightning Bolt"
+    },
+    {
+      "id":"bomb",
+      "name":"Bomb"
+    },
+    {
+      "id":"book",
+      "name":"Book"
+    },
+    {
+      "id":"bookmark",
+      "name":"Bookmark"
+    },
+    {
+      "id":"bookmark-o",
+      "name":"Bookmark Outlined"
+    },
+    {
+      "id":"braille",
+      "name":"Braille"
+    },
+    {
+      "id":"briefcase",
+      "name":"Briefcase"
+    },
+    {
+      "id":"btc",
+      "name":"Bitcoin (BTC)"
+    },
+    {
+      "id":"bug",
+      "name":"Bug"
+    },
+    {
+      "id":"building",
+      "name":"Building"
+    },
+    {
+      "id":"building-o",
+      "name":"Building Outlined"
+    },
+    {
+      "id":"bullhorn",
+      "name":"Bullhorn"
+    },
+    {
+      "id":"bullseye",
+      "name":"Bullseye"
+    },
+    {
+      "id":"bus",
+      "name":"Bus"
+    },
+    {
+      "id":"buysellads",
+      "name":"BuySellAds"
+    },
+    {
+      "id":"cab",
+      "name":"Cab"
+    },
+    {
+      "id":"calculator",
+      "name":"Calculator"
+    },
+    {
+      "id":"calendar",
+      "name":"Calendar"
+    },
+    {
+      "id":"calendar-check-o",
+      "name":"Calendar Check Outlined"
+    },
+    {
+      "id":"calendar-minus-o",
+      "name":"Calendar Minus Outlined"
+    },
+    {
+      "id":"calendar-o",
+      "name":"Calendar Outlined"
+    },
+    {
+      "id":"calendar-plus-o",
+      "name":"Calendar Plus Outlined"
+    },
+    {
+      "id":"calendar-times-o",
+      "name":"Calendar Times Outlined"
+    },
+    {
+      "id":"camera",
+      "name":"Camera"
+    },
+    {
+      "id":"camera-retro",
+      "name":"Camera Retro"
+    },
+    {
+      "id":"car",
+      "name":"Car"
+    },
+    {
+      "id":"caret-down",
+      "name":"Caret Down"
+    },
+    {
+      "id":"caret-left",
+      "name":"Caret Left"
+    },
+    {
+      "id":"caret-right",
+      "name":"Caret Right"
+    },
+	{
+      "id":"caret-up",
+      "name":"Caret Up"
+    },
+    {
+      "id":"caret-square-o-down",
+      "name":"Caret Square Outlined Down"
+    },
+    {
+      "id":"caret-square-o-left",
+      "name":"Caret Square Outlined Left"
+    },
+    {
+      "id":"caret-square-o-right",
+      "name":"Caret Square Outlined Right"
+    },
+    {
+      "id":"caret-square-o-up",
+      "name":"Caret Square Outlined Up"
+    },
+    {
+      "id":"cart-arrow-down",
+      "name":"Shopping Cart Arrow Down"
+    },
+    {
+      "id":"cart-plus",
+      "name":"Add to Shopping Cart"
+    },
+    {
+      "id":"cc",
+      "name":"Closed Captions"
+    },
+    {
+      "id":"cc-amex",
+      "name":"American Express Credit Card"
+    },
+    {
+      "id":"cc-diners-club",
+      "name":"Diner's Club Credit Card"
+    },
+    {
+      "id":"cc-discover",
+      "name":"Discover Credit Card"
+    },
+    {
+      "id":"cc-jcb",
+      "name":"JCB Credit Card"
+    },
+    {
+      "id":"cc-mastercard",
+      "name":"MasterCard Credit Card"
+    },
+    {
+      "id":"cc-paypal",
+      "name":"Paypal Credit Card"
+    },
+    {
+      "id":"cc-stripe",
+      "name":"Stripe Credit Card"
+    },
+    {
+      "id":"cc-visa",
+      "name":"Visa Credit Card"
+    },
+    {
+      "id":"certificate",
+      "name":"Certificate"
+    },
+    {
+      "id":"chain",
+      "name":"Chain"
+    },
+    {
+      "id":"chain-broken",
+      "name":"Chain Broken"
+    },
+    {
+      "id":"check",
+      "name":"Check"
+    },
+    {
+      "id":"check-circle",
+      "name":"Check Circle"
+    },
+    {
+      "id":"check-circle-o",
+      "name":"Check Circle Outlined"
+    },
+    {
+      "id":"check-square",
+      "name":"Check Square"
+    },
+    {
+      "id":"check-square-o",
+      "name":"Check Square Outlined"
+    },
+    {
+      "id":"chevron-circle-down",
+      "name":"Chevron Circle Down"
+    },
+    {
+      "id":"chevron-circle-left",
+      "name":"Chevron Circle Left"
+    },
+    {
+      "id":"chevron-circle-right",
+      "name":"Chevron Circle Right"
+    },
+    {
+      "id":"chevron-circle-up",
+      "name":"Chevron Circle Up"
+    },
+    {
+      "id":"chevron-down",
+      "name":"Chevron Down"
+    },
+    {
+      "id":"chevron-left",
+      "name":"Chevron Left"
+    },
+    {
+      "id":"chevron-right",
+      "name":"Chevron Right"
+    },
+    {
+      "id":"chevron-up",
+      "name":"Chevron Up"
+    },
+    {
+      "id":"child",
+      "name":"Child"
+    },
+    {
+      "id":"chrome",
+      "name":"Chrome"
+    },
+    {
+      "id":"circle",
+      "name":"Circle"
+    },
+    {
+      "id":"circle-o",
+      "name":"Circle Outlined"
+    },
+    {
+      "id":"circle-o-notch",
+      "name":"Circle Outlined Notched"
+    },
+    {
+      "id":"circle-thin",
+      "name":"Circle Outlined Thin"
+    },
+    {
+      "id":"clipboard",
+      "name":"Clipboard"
+    },
+    {
+      "id":"clock-o",
+      "name":"Clock Outlined"
+    },
+    {
+      "id":"clone",
+      "name":"Clone"
+    },
+    {
+      "id":"close",
+      "name":"Close"
+    },
+    {
+      "id":"cloud",
+      "name":"Cloud"
+    },
+    {
+      "id":"cloud-download",
+      "name":"Cloud Download"
+    },
+    {
+      "id":"cloud-upload",
+      "name":"Cloud Upload"
+    },
+    {
+      "id":"cny",
+      "name":"Chinese Yuan"
+    },
+    {
+      "id":"code",
+      "name":"Code"
+    },
+    {
+      "id":"code-fork",
+      "name":"Code Fork"
+    },
+    {
+      "id":"codepen",
+      "name":"Codepen"
+    },
+    {
+      "id":"codiepie",
+      "name":"Codie Pie"
+    },
+    {
+      "id":"coffee",
+      "name":"Coffee"
+    },
+    {
+      "id":"cog",
+      "name":"Cog"
+    },
+    {
+      "id":"cogs",
+      "name":"Cogs"
+    },
+    {
+      "id":"columns",
+      "name":"Columns"
+    },
+    {
+      "id":"comment",
+      "name":"Comment"
+    },
+    {
+      "id":"comment-o",
+      "name":"Comment Outlined"
+    },
+    {
+      "id":"commenting",
+      "name":"Commenting"
+    },
+    {
+      "id":"commenting-o",
+      "name":"Commenting Outlined"
+    },
+    {
+      "id":"comments",
+      "name":"Comments"
+    },
+    {
+      "id":"comments-o",
+      "name":"Comments Outlined"
+    },
+    {
+      "id":"compass",
+      "name":"Compass"
+    },
+    {
+      "id":"compress",
+      "name":"Compress"
+    },
+    {
+      "id":"connectdevelop",
+      "name":"Connect Develop"
+    },
+    {
+      "id":"contao",
+      "name":"Contao"
+    },
+    {
+      "id":"copy",
+      "name":"Copy"
+    },
+    {
+      "id":"copyright",
+      "name":"Copyright"
+    },
+    {
+      "id":"creative-commons",
+      "name":"Creative Commons"
+    },
+    {
+      "id":"credit-card",
+      "name":"Credit Card"
+    },
+    {
+      "id":"credit-card-alt",
+      "name":"Credit Card alt"
+    },
+    {
+      "id":"crop",
+      "name":"Crop"
+    },
+    {
+      "id":"crosshairs",
+      "name":"Crosshairs"
+    },
+    {
+      "id":"css3",
+      "name":"CSS 3 Logo"
+    },
+    {
+      "id":"cube",
+      "name":"Cube"
+    },
+    {
+      "id":"cubes",
+      "name":"Cubes"
+    },
+    {
+      "id":"cut",
+      "name":"Cut"
+    },
+    {
+      "id":"cutlery",
+      "name":"Cutlery"
+    },
+    {
+      "id":"dashboard",
+      "name":"Dashboard"
+    },
+    {
+      "id":"dashcube",
+      "name":"DashCube"
+    },
+    {
+      "id":"database",
+      "name":"Database"
+    },
+    {
+      "id":"deaf",
+      "name":"Deaf"
+    },
+    {
+      "id":"deafness",
+      "name":"Deafness"
+    },
+    {
+      "id":"dedent",
+      "name":"Dedent"
+    },
+    {
+      "id":"delicious",
+      "name":"Delicious Logo"
+    },
+    {
+      "id":"desktop",
+      "name":"Desktop"
+    },
+    {
+      "id":"deviantart",
+      "name":"DeviantArt"
+    },
+    {
+      "id":"diamond",
+      "name":"Diamond"
+    },
+    {
+      "id":"digg",
+      "name":"Digg Logo"
+    },
+    {
+      "id":"dollar",
+      "name":"Dollar"
+    },
+    {
+      "id":"dot-circle-o",
+      "name":"Dot Circle Outlined"
+    },
+    {
+      "id":"download",
+      "name":"Download"
+    },
+    {
+      "id":"dribbble",
+      "name":"Dribbble"
+    },
+    {
+      "id":"drivers-license",
+      "name":"Drivers License"
+    },
+    {
+      "id":"drivers-license-o",
+      "name":"Drivers License Outlined"
+    },
+    {
+      "id":"dropbox",
+      "name":"Dropbox"
+    },
+    {
+      "id":"drupal",
+      "name":"Drupal Logo"
+    },
+    {
+      "id":"edge",
+      "name":"Edge Browser"
+    },
+    {
+      "id":"edit",
+      "name":"Edit"
+    },
+    {
+      "id":"eercast",
+      "name":"Eercast"
+    },
+    {
+      "id":"eject",
+      "name":"Eject"
+    },
+    {
+      "id":"ellipsis-h",
+      "name":"Ellipsis Horizontal"
+    },
+    {
+      "id":"ellipsis-v",
+      "name":"Ellipsis Vertical"
+    },
+    {
+      "id":"empire",
+      "name":"Galactic Empire"
+    },
+    {
+      "id":"envelope",
+      "name":"Envelope"
+    },
+    {
+      "id":"envelope-o",
+      "name":"Envelope Outlined"
+    },
+    {
+      "id":"envelope-open",
+      "name":"Envelope Open"
+    },
+    {
+      "id":"envelope-open-o",
+      "name":"Envelope Open Outlined"
+    },
+    {
+      "id":"envelope-square",
+      "name":"Envelope Square"
+    },
+    {
+      "id":"envira",
+      "name":"Envira Gallery"
+    },
+    {
+      "id":"eraser",
+      "name":"Eraser"
+    },
+    {
+      "id":"etsy",
+      "name":"Etsy"
+    },
+    {
+      "id":"eur",
+      "name":"Euro (EUR)"
+    },
+    {
+      "id":"euro",
+      "name":"Euro"
+    },
+    {
+      "id":"exchange",
+      "name":"Exchange"
+    },
+    {
+      "id":"exclamation",
+      "name":"Exclamation"
+    },
+    {
+      "id":"exclamation-circle",
+      "name":"Exclamation Circle"
+    },
+    {
+      "id":"exclamation-triangle",
+      "name":"Exclamation Triangle"
+    },
+    {
+      "id":"expand",
+      "name":"Expand"
+    },
+    {
+      "id":"expeditedssl",
+      "name":"ExpeditedSSL"
+    },
+    {
+      "id":"external-link",
+      "name":"External Link"
+    },
+    {
+      "id":"external-link-square",
+      "name":"External Link Square"
+    },
+    {
+      "id":"eye",
+      "name":"Eye"
+    },
+    {
+      "id":"eye-slash",
+      "name":"Eye Slash"
+    },
+    {
+      "id":"eyedropper",
+      "name":"Eyedropper"
+    },
+    {
+      "id":"fa",
+      "name":"Font Awesome"
+    },
+    {
+      "id":"facebook",
+      "name":"Facebook"
+    },
+    {
+      "id":"facebook-official",
+      "name":"Facebook Official"
+    },
+    {
+      "id":"facebook-square",
+      "name":"Facebook Square"
+    },
+    {
+      "id":"fast-backward",
+      "name":"Fast Backward"
+    },
+    {
+      "id":"fast-forward",
+      "name":"Fast Forward"
+    },
+    {
+      "id":"fax",
+      "name":"Fax"
+    },
+    {
+      "id":"female",
+      "name":"Female"
+    },
+    {
+      "id":"fighter-jet",
+      "name":"Fighter Jet"
+    },
+    {
+      "id":"file",
+      "name":"File"
+    },
+    {
+      "id":"file-archive-o",
+      "name":"Archive File Outlined"
+    },
+    {
+      "id":"file-audio-o",
+      "name":"Audio File Outlined"
+    },
+    {
+      "id":"file-code-o",
+      "name":"Code File Outlined"
+    },
+    {
+      "id":"file-excel-o",
+      "name":"Excel File Outlined"
+    },
+    {
+      "id":"file-image-o",
+      "name":"Image File Outlined"
+    },
+    {
+      "id":"file-movie-o",
+      "name":"Movie File Outlined"
+    },
+    {
+      "id":"file-o",
+      "name":"File Outlined"
+    },
+    {
+      "id":"file-pdf-o",
+      "name":"PDF File Outlined"
+    },
+    {
+      "id":"file-photo-o",
+      "name":"Photo File Outlined"
+    },
+    {
+      "id":"file-picture-o",
+      "name":"Picture File Outlined"
+    },
+    {
+      "id":"file-powerpoint-o",
+      "name":"Powerpoint File Outlined"
+    },
+    {
+      "id":"file-sound-o",
+      "name":"Sound File Outlined"
+    },
+    {
+      "id":"file-text",
+      "name":"File Text"
+    },
+    {
+      "id":"file-text-o",
+      "name":"File Text Outlined"
+    },
+    {
+      "id":"file-video-o",
+      "name":"Video File Outlined"
+    },
+    {
+      "id":"file-word-o",
+      "name":"Word File Outlined"
+    },
+    {
+      "id":"file-zip-o",
+      "name":"ZIP File Outlined"
+    },
+    {
+      "id":"files-o",
+      "name":"Files Outlined"
+    },
+    {
+      "id":"film",
+      "name":"Film"
+    },
+    {
+      "id":"filter",
+      "name":"Filter"
+    },
+    {
+      "id":"fire",
+      "name":"Fire"
+    },
+    {
+      "id":"fire-extinguisher",
+      "name":"Fire Extinguisher"
+    },
+    {
+      "id":"firefox",
+      "name":"Firefox"
+    },
+    {
+      "id":"first-order",
+      "name":"First Order"
+    },
+    {
+      "id":"flag",
+      "name":"Flag"
+    },
+    {
+      "id":"flag-checkered",
+      "name":"Checkered Flag"
+    },
+    {
+      "id":"flag-o",
+      "name":"Flag Outlined"
+    },
+    {
+      "id":"flash",
+      "name":"Flash"
+    },
+    {
+      "id":"flask",
+      "name":"Flask"
+    },
+    {
+      "id":"flickr",
+      "name":"Flickr"
+    },
+    {
+      "id":"floppy-o",
+      "name":"Floppy Outlined"
+    },
+    {
+      "id":"folder",
+      "name":"Folder"
+    },
+    {
+      "id":"folder-o",
+      "name":"Folder Outlined"
+    },
+    {
+      "id":"folder-open",
+      "name":"Folder Open"
+    },
+    {
+      "id":"folder-open-o",
+      "name":"Folder Open Outlined"
+    },
+    {
+      "id":"font",
+      "name":"Font"
+    },
+    {
+      "id":"font-awesome",
+      "name":"Font Awesome"
+    },
+    {
+      "id":"fonticons",
+      "name":"Fonticons"
+    },
+    {
+      "id":"fort-awesome",
+      "name":"Fort Awesome"
+    },
+    {
+      "id":"forumbee",
+      "name":"Forumbee"
+    },
+    {
+      "id":"forward",
+      "name":"Forward"
+    },
+    {
+      "id":"foursquare",
+      "name":"Foursquare"
+    },
+    {
+      "id":"free-code-camp",
+      "name":"Free Code Camp"
+    },
+    {
+      "id":"frown-o",
+      "name":"Frown Outlined"
+    },
+    {
+      "id":"futbol-o",
+      "name":"Futbol Outlined"
+    },
+    {
+      "id":"gamepad",
+      "name":"Gamepad"
+    },
+    {
+      "id":"gavel",
+      "name":"Gavel"
+    },
+    {
+      "id":"gbp",
+      "name":"GBP"
+    },
+    {
+      "id":"ge",
+      "name":"Empire"
+    },
+    {
+      "id":"gear",
+      "name":"Gear"
+    },
+    {
+      "id":"gears",
+      "name":"Gears"
+    },
+    {
+      "id":"genderless",
+      "name":"Genderless"
+    },
+    {
+      "id":"get-pocket",
+      "name":"Get Pocket"
+    },
+    {
+      "id":"gg",
+      "name":"GG Currency"
+    },
+    {
+      "id":"gg-circle",
+      "name":"GG Currency Circle"
+    },
+    {
+      "id":"gift",
+      "name":"Gift"
+    },
+    {
+      "id":"git",
+      "name":"Git"
+    },
+    {
+      "id":"git-square",
+      "name":"Git Square"
+    },
+    {
+      "id":"github",
+      "name":"GitHub"
+    },
+    {
+      "id":"github-alt",
+      "name":"GitHub Alt"
+    },
+    {
+      "id":"github-square",
+      "name":"GitHub Square"
+    },
+    {
+      "id":"gitlab",
+      "name":"GitLab"
+    },
+    {
+      "id":"gittip",
+      "name":"Gratipay"
+    },
+    {
+      "id":"glass",
+      "name":"Glass"
+    },
+    {
+      "id":"glide",
+      "name":"Glide"
+    },
+    {
+      "id":"glide-g",
+      "name":"Glide G"
+    },
+    {
+      "id":"globe",
+      "name":"Globe"
+    },
+    {
+      "id":"google",
+      "name":"Google Logo"
+    },
+    {
+      "id":"google-plus",
+      "name":"Google Plus"
+    },
+    {
+      "id":"google-plus-circle",
+      "name":"Google Plus Circle"
+    },
+    {
+      "id":"google-plus-square",
+      "name":"Google Plus Square"
+    },
+    {
+      "id":"google-wallet",
+      "name":"Google Wallet"
+    },
+    {
+      "id":"graduation-cap",
+      "name":"Graduation Cap"
+    },
+    {
+      "id":"gratipay",
+      "name":"Gratipay (Gittip)"
+    },
+    {
+      "id":"grav",
+      "name":"Grav"
+    },
+    {
+      "id":"group",
+      "name":"Group"
+    },
+    {
+      "id":"h-square",
+      "name":"H Square"
+    },
+    {
+      "id":"hacker-news",
+      "name":"Hacker News"
+    },
+    {
+      "id":"hand-grab-o",
+      "name":"Hand Grab"
+    },
+    {
+      "id":"hand-lizard-o",
+      "name":"Lizard (Hand)"
+    },
+    {
+      "id":"hand-o-down",
+      "name":"Hand Outlined Down"
+    },
+    {
+      "id":"hand-o-left",
+      "name":"Hand Outlined Left"
+    },
+    {
+      "id":"hand-o-right",
+      "name":"Hand Outlined Right"
+    },
+    {
+      "id":"hand-o-up",
+      "name":"Hand Outlined Up"
+    },
+    {
+      "id":"hand-paper-o",
+      "name":"Paper (Hand)"
+    },
+    {
+      "id":"hand-peace-o",
+      "name":"Hand Peace"
+    },
+    {
+      "id":"hand-pointer-o",
+      "name":"Hand Pointer"
+    },
+    {
+      "id":"hand-rock-o",
+      "name":"Rock (Hand)"
+    },
+    {
+      "id":"hand-scissors-o",
+      "name":"Scissors (Hand)"
+    },
+    {
+      "id":"hand-spock-o",
+      "name":"Spock (Hand)"
+    },
+    {
+      "id":"hand-stop-o",
+      "name":"Hand Stop"
+    },
+    {
+      "id":"handshake-o",
+      "name":"Handshake"
+    },
+    {
+      "id":"hard-of-hearing",
+      "name":"Hard of Hearing"
+    },
+    {
+      "id":"hashtag",
+      "name":"Hashtag"
+    },
+    {
+      "id":"hdd-o",
+      "name":"HDD"
+    },
+    {
+      "id":"header",
+      "name":"Header"
+    },
+    {
+      "id":"headphones",
+      "name":"Headphones"
+    },
+    {
+      "id":"heart",
+      "name":"Heart"
+    },
+    {
+      "id":"heart-o",
+      "name":"Heart Outlined"
+    },
+    {
+      "id":"heartbeat",
+      "name":"Heartbeat"
+    },
+    {
+      "id":"history",
+      "name":"History"
+    },
+    {
+      "id":"home",
+      "name":"Home"
+    },
+    {
+      "id":"hospital-o",
+      "name":"Hospital Outlined"
+    },
+    {
+      "id":"hotel",
+      "name":"Hotel"
+    },
+    {
+      "id":"hourglass",
+      "name":"Hourglass"
+    },
+    {
+      "id":"hourglass-1",
+      "name":"Hourglass Start"
+    },
+    {
+      "id":"hourglass-2",
+      "name":"Hourglass Half"
+    },
+    {
+      "id":"hourglass-3",
+      "name":"Hourglass End"
+    },
+    {
+      "id":"hourglass-o",
+      "name":"Hourglass Outlined"
+    },
+    {
+      "id":"houzz",
+      "name":"Houzz"
+    },
+    {
+      "id":"html5",
+      "name":"HTML 5 Logo"
+    },
+    {
+      "id":"i-cursor",
+      "name":"I Beam Cursor"
+    },
+    {
+      "id":"id-badge",
+      "name":"ID Badge"
+    },
+    {
+      "id":"id-card",
+      "name":"ID Card"
+    },
+    {
+      "id":"id-card-o",
+      "name":"ID Card Outlined"
+    },
+    {
+      "id":"ils",
+      "name":"Shekel (ILS)"
+    },
+    {
+      "id":"image",
+      "name":"Image"
+    },
+    {
+      "id":"imdb",
+      "name":"IMDB"
+    },
+    {
+      "id":"inbox",
+      "name":"Inbox"
+    },
+    {
+      "id":"indent",
+      "name":"Indent"
+    },
+    {
+      "id":"industry",
+      "name":"Industry"
+    },
+    {
+      "id":"info",
+      "name":"Info"
+    },
+    {
+      "id":"info-circle",
+      "name":"Info Circle"
+    },
+    {
+      "id":"inr",
+      "name":"Indian Rupee (INR)"
+    },
+    {
+      "id":"instagram",
+      "name":"Instagram"
+    },
+    {
+      "id":"institution",
+      "name":"Institution"
+    },
+    {
+      "id":"internet-explorer",
+      "name":"Internet Explorer"
+    },
+    {
+      "id":"intersex",
+      "name":"Transgender"
+    },
+    {
+      "id":"ioxhost",
+      "name":"IoxHost"
+    },
+    {
+      "id":"italic",
+      "name":"Italic"
+    },
+    {
+      "id":"joomla",
+      "name":"Joomla Logo"
+    },
+    {
+      "id":"jpy",
+      "name":"Japanese Yen (JPY)"
+    },
+    {
+      "id":"jsfiddle",
+      "name":"JSFiddle"
+    },
+    {
+      "id":"key",
+      "name":"Key"
+    },
+    {
+      "id":"keyboard-o",
+      "name":"Keyboard Outlined"
+    },
+    {
+      "id":"krw",
+      "name":"Korean Won (KRW)"
+    },
+    {
+      "id":"language",
+      "name":"Language"
+    },
+    {
+      "id":"laptop",
+      "name":"Laptop"
+    },
+    {
+      "id":"lastfm",
+      "name":"last.fm"
+    },
+    {
+      "id":"lastfm-square",
+      "name":"last.fm Square"
+    },
+    {
+      "id":"leaf",
+      "name":"Leaf"
+    },
+    {
+      "id":"leanpub",
+      "name":"Leanpub"
+    },
+    {
+      "id":"legal",
+      "name":"Legal"
+    },
+    {
+      "id":"lemon-o",
+      "name":"Lemon Outlined"
+    },
+    {
+      "id":"level-down",
+      "name":"Level Down"
+    },
+    {
+      "id":"level-up",
+      "name":"Level Up"
+    },
+    {
+      "id":"life-bouy",
+      "name":"Life Bouy"
+    },
+    {
+      "id":"life-buoy",
+      "name":"Life Buoy"
+    },
+    {
+      "id":"life-ring",
+      "name":"Life Ring"
+    },
+    {
+      "id":"life-saver",
+      "name":"Life Saver"
+    },
+    {
+      "id":"lightbulb-o",
+      "name":"Lightbulb Outlined"
+    },
+    {
+      "id":"line-chart",
+      "name":"Line Chart"
+    },
+    {
+      "id":"link",
+      "name":"Link"
+    },
+    {
+      "id":"linkedin",
+      "name":"LinkedIn"
+    },
+    {
+      "id":"linkedin-square",
+      "name":"LinkedIn Square"
+    },
+    {
+      "id":"linode",
+      "name":"Linode"
+    },
+    {
+      "id":"linux",
+      "name":"Linux"
+    },
+    {
+      "id":"list",
+      "name":"List"
+    },
+    {
+      "id":"list-alt",
+      "name":"List alt"
+    },
+    {
+      "id":"list-ol",
+      "name":"Ordered List"
+    },
+    {
+      "id":"list-ul",
+      "name":"Unordered List"
+    },
+    {
+      "id":"location-arrow",
+      "name":"Location Arrow"
+    },
+    {
+      "id":"lock",
+      "name":"Lock"
+    },
+    {
+      "id":"long-arrow-down",
+      "name":"Long Arrow Down"
+    },
+    {
+      "id":"long-arrow-left",
+      "name":"Long Arrow Left"
+    },
+    {
+      "id":"long-arrow-right",
+      "name":"Long Arrow Right"
+    },
+    {
+      "id":"long-arrow-up",
+      "name":"Long Arrow Up"
+    },
+    {
+      "id":"low-vision",
+      "name":"Low Vision"
+    },
+    {
+      "id":"magic",
+      "name":"Magic"
+    },
+    {
+      "id":"magnet",
+      "name":"Magnet"
+    },
+    {
+      "id":"mail-forward",
+      "name":"Mail Forward"
+    },
+    {
+      "id":"mail-reply",
+      "name":"Mail Reply"
+    },
+    {
+      "id":"mail-reply-all",
+      "name":"Mail Reply to All"
+    },
+    {
+      "id":"male",
+      "name":"Male"
+    },
+    {
+      "id":"map",
+      "name":"Map"
+    },
+    {
+      "id":"map-marker",
+      "name":"Map Marker"
+    },
+    {
+      "id":"map-o",
+      "name":"Map Outline"
+    },
+    {
+      "id":"map-pin",
+      "name":"Map Pin"
+    },
+    {
+      "id":"map-signs",
+      "name":"Map Signs"
+    },
+    {
+      "id":"mars",
+      "name":"Mars"
+    },
+    {
+      "id":"mars-double",
+      "name":"Mars Double"
+    },
+    {
+      "id":"mars-stroke",
+      "name":"Mars Stroke"
+    },
+    {
+      "id":"mars-stroke-h",
+      "name":"Mars Stroke Horizontal"
+    },
+    {
+      "id":"mars-stroke-v",
+      "name":"Mars Stroke Vertical"
+    },
+    {
+      "id":"maxcdn",
+      "name":"MaxCDN"
+    },
+    {
+      "id":"meanpath",
+      "name":"Meanpath"
+    },
+    {
+      "id":"medium",
+      "name":"Medium"
+    },
+    {
+      "id":"medkit",
+      "name":"MedKit"
+    },
+    {
+      "id":"meetup",
+      "name":"Meetup"
+    },
+    {
+      "id":"meh-o",
+      "name":"Meh Outlined"
+    },
+    {
+      "id":"mercury",
+      "name":"Mercury"
+    },
+    {
+      "id":"microchip",
+      "name":"Microchip"
+    },
+    {
+      "id":"microphone",
+      "name":"Microphone"
+    },
+    {
+      "id":"microphone-slash",
+      "name":"Microphone Slash"
+    },
+    {
+      "id":"minus",
+      "name":"Minus"
+    },
+    {
+      "id":"minus-circle",
+      "name":"Minus Circle"
+    },
+    {
+      "id":"minus-square",
+      "name":"Minus Square"
+    },
+    {
+      "id":"minus-square-o",
+      "name":"Minus Square Outlined"
+    },
+    {
+      "id":"mixcloud",
+      "name":"Mixcloud"
+    },
+    {
+      "id":"mobile",
+      "name":"Mobile Phone"
+    },
+    {
+      "id":"mobile-phone",
+      "name":"Mobile Phone"
+    },
+    {
+      "id":"modx",
+      "name":"MODX"
+    },
+    {
+      "id":"money",
+      "name":"Money"
+    },
+    {
+      "id":"moon-o",
+      "name":"Moon Outlined"
+    },
+    {
+      "id":"mortar-board",
+      "name":"Mortar Board"
+    },
+    {
+      "id":"motorcycle",
+      "name":"Motorcycle"
+    },
+    {
+      "id":"mouse-pointer",
+      "name":"Mouse Pointer"
+    },
+    {
+      "id":"music",
+      "name":"Music"
+    },
+    {
+      "id":"navicon",
+      "name":"Nav Icon"
+    },
+    {
+      "id":"neuter",
+      "name":"Neuter"
+    },
+    {
+      "id":"newspaper-o",
+      "name":"Newspaper Outlined"
+    },
+    {
+      "id":"object-group",
+      "name":"Object Group"
+    },
+    {
+      "id":"object-ungroup",
+      "name":"Object Ungroup"
+    },
+    {
+      "id":"odnoklassniki",
+      "name":"Odnoklassniki"
+    },
+    {
+      "id":"odnoklassniki-square",
+      "name":"Odnoklassniki Square"
+    },
+    {
+      "id":"opencart",
+      "name":"OpenCart"
+    },
+    {
+      "id":"openid",
+      "name":"OpenID"
+    },
+    {
+      "id":"opera",
+      "name":"Opera"
+    },
+    {
+      "id":"optin-monster",
+      "name":"Optin Monster"
+    },
+    {
+      "id":"outdent",
+      "name":"Outdent"
+    },
+    {
+      "id":"pagelines",
+      "name":"Pagelines"
+    },
+    {
+      "id":"paint-brush",
+      "name":"Paint Brush"
+    },
+    {
+      "id":"paper-plane",
+      "name":"Paper Plane"
+    },
+    {
+      "id":"paper-plane-o",
+      "name":"Paper Plane Outlined"
+    },
+    {
+      "id":"paperclip",
+      "name":"Paperclip"
+    },
+    {
+      "id":"paragraph",
+      "name":"Paragraph"
+    },
+    {
+      "id":"paste",
+      "name":"Paste"
+    },
+    {
+      "id":"pause",
+      "name":"Pause"
+    },
+    {
+      "id":"pause-circle",
+      "name":"Pause Circle"
+    },
+    {
+      "id":"pause-circle-o",
+      "name":"Pause Circle Outlined"
+    },
+    {
+      "id":"paw",
+      "name":"Paw"
+    },
+    {
+      "id":"paypal",
+      "name":"Paypal"
+    },
+    {
+      "id":"pencil",
+      "name":"Pencil"
+    },
+    {
+      "id":"pencil-square",
+      "name":"Pencil Square"
+    },
+    {
+      "id":"pencil-square-o",
+      "name":"Pencil Square Outlined"
+    },
+    {
+      "id":"percent",
+      "name":"Percent"
+    },
+    {
+      "id":"phone",
+      "name":"Phone"
+    },
+    {
+      "id":"phone-square",
+      "name":"Phone Square"
+    },
+    {
+      "id":"photo",
+      "name":"Photo / Picture"
+    },
+    {
+      "id":"pie-chart",
+      "name":"Pie Chart"
+    },
+    {
+      "id":"pied-piper",
+      "name":"Pied Piper Logo"
+    },
+    {
+      "id":"pied-piper-alt",
+      "name":"Pied Piper Alternate Logo"
+    },
+    {
+      "id":"pied-piper-pp",
+      "name":"Pied Piper PP Logo (Old)"
+    },
+    {
+      "id":"pinterest",
+      "name":"Pinterest"
+    },
+    {
+      "id":"pinterest-p",
+      "name":"Pinterest P"
+    },
+    {
+      "id":"pinterest-square",
+      "name":"Pinterest Square"
+    },
+    {
+      "id":"plane",
+      "name":"Plane"
+    },
+    {
+      "id":"play",
+      "name":"Play"
+    },
+    {
+      "id":"play-circle",
+      "name":"Play Circle"
+    },
+    {
+      "id":"play-circle-o",
+      "name":"Play Circle Outlined"
+    },
+    {
+      "id":"plug",
+      "name":"Plug"
+    },
+    {
+      "id":"plus",
+      "name":"Plus"
+    },
+    {
+      "id":"plus-circle",
+      "name":"Plus Circle"
+    },
+    {
+      "id":"plus-square",
+      "name":"Plus Square"
+    },
+    {
+      "id":"plus-square-o",
+      "name":"Plus Square Outlined"
+    },
+    {
+      "id":"podcast",
+      "name":"Podcast"
+    },
+    {
+      "id":"power-off",
+      "name":"Power Off"
+    },
+    {
+      "id":"print",
+      "name":"Print"
+    },
+    {
+      "id":"product-hunt",
+      "name":"Product Hunt"
+    },
+    {
+      "id":"puzzle-piece",
+      "name":"Puzzle Piece"
+    },
+    {
+      "id":"qq",
+      "name":"QQ"
+    },
+    {
+      "id":"qrcode",
+      "name":"QR Code"
+    },
+    {
+      "id":"question",
+      "name":"Question"
+    },
+    {
+      "id":"question-circle",
+      "name":"Question Circle"
+    },
+    {
+      "id":"question-circle-o",
+      "name":"Question Circle Outlined"
+    },
+    {
+      "id":"quora",
+      "name":"Quora"
+    },
+    {
+      "id":"quote-left",
+      "name":"Quote Left"
+    },
+    {
+      "id":"quote-right",
+      "name":"Quote Right"
+    },
+    {
+      "id":"ra",
+      "name":"Rebel Alliance (Star Wars)"
+    },
+    {
+      "id":"random",
+      "name":"Random"
+    },
+    {
+      "id":"ravelry",
+      "name":"Ravelry"
+    },
+    {
+      "id":"recycle",
+      "name":"Recycle"
+    },
+    {
+      "id":"reddit",
+      "name":"Reddit Logo"
+    },
+    {
+      "id":"reddit-alien",
+      "name":"Reddit Alien"
+    },
+    {
+      "id":"reddit-square",
+      "name":"Reddit Square"
+    },
+    {
+      "id":"refresh",
+      "name":"Refresh"
+    },
+    {
+      "id":"registered",
+      "name":"Registered Trademark"
+    },
+    {
+      "id":"remove",
+      "name":"Remove"
+    },
+    {
+      "id":"renren",
+      "name":"Renren"
+    },
+    {
+      "id":"reorder",
+      "name":"Reorder"
+    },
+    {
+      "id":"repeat",
+      "name":"Repeat"
+    },
+    {
+      "id":"reply",
+      "name":"Reply"
+    },
+    {
+      "id":"reply-all",
+      "name":"Reply All"
+    },
+    {
+      "id":"retweet",
+      "name":"Retweet"
+    },
+    {
+      "id":"rmb",
+      "name":"Chinese Yuan Renminbi"
+    },
+    {
+      "id":"road",
+      "name":"Road"
+    },
+    {
+      "id":"rocket",
+      "name":"Rocket"
+    },
+    {
+      "id":"rotate-left",
+      "name":"Rotate Left"
+    },
+    {
+      "id":"rotate-right",
+      "name":"Rotate Right"
+    },
+    {
+      "id":"rss",
+      "name":"RSS Feed"
+    },
+    {
+      "id":"rss-square",
+      "name":"RSS Square"
+    },
+    {
+      "id":"rub",
+      "name":"Russian Ruble (RUB)"
+    },
+    {
+      "id":"safari",
+      "name":"Safari"
+    },
+    {
+      "id":"save",
+      "name":"Save"
+    },
+    {
+      "id":"scissors",
+      "name":"Scissors"
+    },
+    {
+      "id":"scribd",
+      "name":"Scribd"
+    },
+    {
+      "id":"search",
+      "name":"Search"
+    },
+    {
+      "id":"search-minus",
+      "name":"Search Minus"
+    },
+    {
+      "id":"search-plus",
+      "name":"Search Plus"
+    },
+    {
+      "id":"sellsy",
+      "name":"Sellsy"
+    },
+    {
+      "id":"send",
+      "name":"Send"
+    },
+    {
+      "id":"send-o",
+      "name":"Send Outlined"
+    },
+    {
+      "id":"server",
+      "name":"Server"
+    },
+    {
+      "id":"share",
+      "name":"Share"
+    },
+    {
+      "id":"share-alt",
+      "name":"Share Alt"
+    },
+    {
+      "id":"share-alt-square",
+      "name":"Share Alt Square"
+    },
+    {
+      "id":"share-square",
+      "name":"Share Square"
+    },
+    {
+      "id":"share-square-o",
+      "name":"Share Square Outlined"
+    },
+    {
+      "id":"shekel",
+      "name":"Israeli Shekel"
+    },
+    {
+      "id":"shield",
+      "name":"Shield"
+    },
+    {
+      "id":"ship",
+      "name":"Ship"
+    },
+    {
+      "id":"shirtsinbulk",
+      "name":"Shirts in Bulk"
+    },
+    {
+      "id":"shopping-bag",
+      "name":"Shopping Bag"
+    },
+    {
+      "id":"shopping-basket",
+      "name":"Shopping Basket"
+    },
+    {
+      "id":"shopping-cart",
+      "name":"shopping-cart"
+    },
+    {
+      "id":"shower",
+      "name":"Shower"
+    },
+    {
+      "id":"sign-in",
+      "name":"Sign In"
+    },
+    {
+      "id":"sign-language",
+      "name":"Sign Language"
+    },
+    {
+      "id":"sign-out",
+      "name":"Sign Out"
+    },
+    {
+      "id":"signal",
+      "name":"Signal"
+    },
+    {
+      "id":"simplybuilt",
+      "name":"SimplyBuilt"
+    },
+    {
+      "id":"sitemap",
+      "name":"Sitemap"
+    },
+    {
+      "id":"skyatlas",
+      "name":"SkyAtlas"
+    },
+    {
+      "id":"skype",
+      "name":"Skype"
+    },
+    {
+      "id":"slack",
+      "name":"Slack Logo"
+    },
+    {
+      "id":"sliders",
+      "name":"Sliders"
+    },
+    {
+      "id":"slideshare",
+      "name":"Slideshare"
+    },
+    {
+      "id":"smile-o",
+      "name":"Smile Outlined"
+    },
+    {
+      "id":"snapchat",
+      "name":"Snapchat"
+    },
+    {
+      "id":"snapchat-ghost",
+      "name":"Snapchat Ghost"
+    },
+    {
+      "id":"snapchat-square",
+      "name":"Snapchat Square"
+    },
+    {
+      "id":"snowflake-o",
+      "name":"Snowflake"
+    },
+    {
+      "id":"soccer-ball-o",
+      "name":"Soccer Ball"
+    },
+    {
+      "id":"sort",
+      "name":"Sort"
+    },
+    {
+      "id":"sort-alpha-asc",
+      "name":"Sort Alpha Ascending"
+    },
+    {
+      "id":"sort-alpha-desc",
+      "name":"Sort Alpha Descending"
+    },
+    {
+      "id":"sort-amount-asc",
+      "name":"Sort Amount Ascending"
+    },
+    {
+      "id":"sort-amount-desc",
+      "name":"Sort Amount Descending"
+    },
+    {
+      "id":"sort-asc",
+      "name":"Sort Ascending"
+    },
+    {
+      "id":"sort-desc",
+      "name":"Sort Descending"
+    },
+    {
+      "id":"sort-down",
+      "name":"Sort Down"
+    },
+	{
+		"id":"sort-up",
+		"name":"Sort Up"
+	},
+    {
+      "id":"sort-numeric-asc",
+      "name":"Sort Numeric Ascending"
+    },
+    {
+      "id":"sort-numeric-desc",
+      "name":"Sort Numeric Descending"
+    },
+    {
+      "id":"soundcloud",
+      "name":"SoundCloud"
+    },
+    {
+      "id":"space-shuttle",
+      "name":"Space Shuttle"
+    },
+    {
+      "id":"spinner",
+      "name":"Spinner"
+    },
+    {
+      "id":"spoon",
+      "name":"Spoon"
+    },
+    {
+      "id":"spotify",
+      "name":"Spotify"
+    },
+    {
+      "id":"square",
+      "name":"Square"
+    },
+    {
+      "id":"square-o",
+      "name":"Square Outlined"
+    },
+    {
+      "id":"stack-exchange",
+      "name":"Stack Exchange"
+    },
+    {
+      "id":"stack-overflow",
+      "name":"Stack Overflow"
+    },
+    {
+      "id":"star",
+      "name":"Star"
+    },
+    {
+      "id":"star-half",
+      "name":"Star Half"
+    },
+    {
+      "id":"star-half-o",
+      "name":"Star Half Outlined"
+    },
+    {
+      "id":"star-o",
+      "name":"Star Outlined"
+    },
+    {
+      "id":"steam",
+      "name":"Steam"
+    },
+    {
+      "id":"steam-square",
+      "name":"Steam Square"
+    },
+    {
+      "id":"step-backward",
+      "name":"Step Backward"
+    },
+    {
+      "id":"step-forward",
+      "name":"Step Forward"
+    },
+    {
+      "id":"stethoscope",
+      "name":"Stethoscope"
+    },
+    {
+      "id":"sticky-note",
+      "name":"Sticky Note"
+    },
+    {
+      "id":"sticky-note-o",
+      "name":"Sticky Note Outlined"
+    },
+    {
+      "id":"stop",
+      "name":"Stop"
+    },
+    {
+      "id":"stop-circle",
+      "name":"Stop Circle"
+    },
+    {
+      "id":"stop-circle-o",
+      "name":"Stop Circle Outlined"
+    },
+    {
+      "id":"street-view",
+      "name":"Street View"
+    },
+    {
+      "id":"strikethrough",
+      "name":"Strikethrough"
+    },
+    {
+      "id":"stumbleupon",
+      "name":"StumbleUpon Logo"
+    },
+    {
+      "id":"stumbleupon-circle",
+      "name":"StumbleUpon Circle"
+    },
+    {
+      "id":"subscript",
+      "name":"Subscript"
+    },
+    {
+      "id":"subway",
+      "name":"Subway"
+    },
+    {
+      "id":"suitcase",
+      "name":"Suitcase"
+    },
+    {
+      "id":"sun-o",
+      "name":"Sun Outlined"
+    },
+    {
+      "id":"superpowers",
+      "name":"Superpowers"
+    },
+    {
+      "id":"superscript",
+      "name":"Superscript"
+    },
+    {
+      "id":"support",
+      "name":"Support"
+    },
+    {
+      "id":"table",
+      "name":"Table"
+    },
+    {
+      "id":"tablet",
+      "name":"Tablet"
+    },
+    {
+      "id":"tachometer",
+      "name":"Tachometer"
+    },
+    {
+      "id":"tag",
+      "name":"Tag"
+    },
+    {
+      "id":"tags",
+      "name":"Tags"
+    },
+    {
+      "id":"tasks",
+      "name":"Tasks"
+    },
+    {
+      "id":"taxi",
+      "name":"Taxi"
+    },
+    {
+      "id":"telegram",
+      "name":"Telegram"
+    },
+    {
+      "id":"television",
+      "name":"Television"
+    },
+    {
+      "id":"tencent-weibo",
+      "name":"Tencent Weibo"
+    },
+    {
+      "id":"terminal",
+      "name":"Terminal"
+    },
+    {
+      "id":"text-height",
+      "name":"Text Height"
+    },
+    {
+      "id":"text-width",
+      "name":"Text Width"
+    },
+    {
+      "id":"th",
+      "name":"Thumbnails"
+    },
+    {
+      "id":"th-large",
+      "name":"Large Thumbnails"
+    },
+    {
+      "id":"th-list",
+      "name":"Thumb List"
+    },
+    {
+      "id":"themeisle",
+      "name":"ThemeIsle"
+    },
+    {
+      "id":"thermometer-0",
+      "name":"Thermometer Empty"
+    },
+    {
+      "id":"thermometer-1",
+      "name":"Thermometer Quarter"
+    },
+    {
+      "id":"thermometer-2",
+      "name":"Thermometer Half"
+    },
+    {
+      "id":"thermometer-3",
+      "name":"Thermometer Three Quarters"
+    },
+    {
+      "id":"thermometer-4",
+      "name":"Thermometer Full"
+    },
+    {
+      "id":"thumb-tack",
+      "name":"Thumb Tack"
+    },
+    {
+      "id":"thumbs-down",
+      "name":"Thumbs Down"
+    },
+    {
+      "id":"thumbs-o-down",
+      "name":"Thumbs Down Outlined"
+    },
+    {
+      "id":"thumbs-o-up",
+      "name":"Thumbs Up Outlined"
+    },
+    {
+      "id":"thumbs-up",
+      "name":"Thumbs Up"
+    },
+    {
+      "id":"ticket",
+      "name":"Ticket"
+    },
+    {
+      "id":"times",
+      "name":"Times"
+    },
+    {
+      "id":"times-circle",
+      "name":"Times Circle"
+    },
+    {
+      "id":"times-circle-o",
+      "name":"Times Circle Outlined"
+    },
+    {
+      "id":"times-rectangle",
+      "name":"times-rectangle"
+    },
+    {
+      "id":"times-rectangle-o",
+      "name":"times-rectangle-o"
+    },
+    {
+      "id":"tint",
+      "name":"Tint"
+    },
+    {
+      "id":"toggle-down",
+      "name":"Toggle Down"
+    },
+    {
+      "id":"toggle-left",
+      "name":"Toggle Left"
+    },
+    {
+      "id":"toggle-right",
+      "name":"Toggle Right"
+    },
+    {
+      "id":"toggle-up",
+      "name":"Toggle Up"
+    },
+	{
+		"id":"toggle-off",
+		"name":"Toggle Off"
+	},
+	{
+		"id":"toggle-on",
+		"name":"Toggle On"
+	},
+    {
+      "id":"trademark",
+      "name":"Trademark"
+    },
+    {
+      "id":"train",
+      "name":"Train"
+    },
+    {
+      "id":"transgender",
+      "name":"Transgender"
+    },
+    {
+      "id":"transgender-alt",
+      "name":"Transgender alt"
+    },
+    {
+      "id":"trash",
+      "name":"Trash"
+    },
+    {
+      "id":"trash-o",
+      "name":"Trash Outlined"
+    },
+    {
+      "id":"tree",
+      "name":"Tree"
+    },
+    {
+      "id":"trello",
+      "name":"Trello"
+    },
+    {
+      "id":"tripadvisor",
+      "name":"TripAdvisor"
+    },
+    {
+      "id":"trophy",
+      "name":"Trophy"
+    },
+    {
+      "id":"truck",
+      "name":"Truck"
+    },
+    {
+      "id":"try",
+      "name":"Turkish Lira (TRY)"
+    },
+    {
+      "id":"tty",
+      "name":"TTY"
+    },
+    {
+      "id":"tumblr",
+      "name":"Tumblr"
+    },
+    {
+      "id":"tumblr-square",
+      "name":"Tumblr Square"
+    },
+    {
+      "id":"turkish-lira",
+      "name":"Turkish Lira"
+    },
+    {
+      "id":"tv",
+      "name":"Television"
+    },
+    {
+      "id":"twitch",
+      "name":"Twitch"
+    },
+    {
+      "id":"twitter",
+      "name":"Twitter"
+    },
+    {
+      "id":"twitter-square",
+      "name":"Twitter Square"
+    },
+    {
+      "id":"umbrella",
+      "name":"Umbrella"
+    },
+    {
+      "id":"underline",
+      "name":"Underline"
+    },
+    {
+      "id":"undo",
+      "name":"Undo"
+    },
+    {
+      "id":"universal-access",
+      "name":"Universal Access"
+    },
+    {
+      "id":"university",
+      "name":"University"
+    },
+    {
+      "id":"unlink",
+      "name":"Unlink"
+    },
+    {
+      "id":"unlock",
+      "name":"Unlock"
+    },
+    {
+      "id":"unlock-alt",
+      "name":"Unlock Alt"
+    },
+    {
+      "id":"unsorted",
+      "name":"Unsorted"
+    },
+    {
+      "id":"upload",
+      "name":"Upload"
+    },
+    {
+      "id":"usb",
+      "name":"USB"
+    },
+    {
+      "id":"usd",
+      "name":"US Dollar"
+    },
+    {
+      "id":"user",
+      "name":"User"
+    },
+    {
+      "id":"user-circle",
+      "name":"User Circle"
+    },
+    {
+      "id":"user-circle-o",
+      "name":"User Circle Outlined"
+    },
+    {
+      "id":"user-md",
+      "name":"Medical User"
+    },
+    {
+      "id":"user-o",
+      "name":"User Outlined"
+    },
+    {
+      "id":"user-plus",
+      "name":"Add User"
+    },
+    {
+      "id":"user-secret",
+      "name":"Secret User"
+    },
+    {
+      "id":"user-times",
+      "name":"Remove User"
+    },
+    {
+      "id":"users",
+      "name":"Users"
+    },
+    {
+      "id":"vcard",
+      "name":"vCard"
+    },
+    {
+      "id":"vcard-o",
+      "name":"vCard Outlined"
+    },
+    {
+      "id":"venus",
+      "name":"Venus"
+    },
+    {
+      "id":"venus-double",
+      "name":"Venus Double"
+    },
+    {
+      "id":"venus-mars",
+      "name":"Venus Mars"
+    },
+    {
+      "id":"viacoin",
+      "name":"Viacoin"
+    },
+    {
+      "id":"viadeo",
+      "name":"Viadeo"
+    },
+    {
+      "id":"viadeo-square",
+      "name":"Viadeo Square"
+    },
+    {
+      "id":"video-camera",
+      "name":"Video Camera"
+    },
+    {
+      "id":"vimeo",
+      "name":"Vimeo"
+    },
+    {
+      "id":"vimeo-square",
+      "name":"Vimeo Square"
+    },
+    {
+      "id":"vine",
+      "name":"Vine"
+    },
+    {
+      "id":"vk",
+      "name":"VK"
+    },
+    {
+      "id":"volume-control-phone",
+      "name":"Volume Control Phone"
+    },
+    {
+      "id":"volume-down",
+      "name":"Volume Down"
+    },
+    {
+      "id":"volume-off",
+      "name":"Volume Off"
+    },
+    {
+      "id":"volume-up",
+      "name":"Volume Up"
+    },
+    {
+      "id":"warning",
+      "name":"Warning"
+    },
+    {
+      "id":"wechat",
+      "name":"WeChat"
+    },
+    {
+      "id":"weibo",
+      "name":"Weibo"
+    },
+    {
+      "id":"weixin",
+      "name":"Weixin (WeChat)"
+    },
+    {
+      "id":"whatsapp",
+      "name":"WhatsApp"
+    },
+    {
+      "id":"wheelchair",
+      "name":"Wheelchair"
+    },
+    {
+      "id":"wheelchair-alt",
+      "name":"Wheelchair alt"
+    },
+    {
+      "id":"wifi",
+      "name":"WiFi"
+    },
+    {
+      "id":"wikipedia-w",
+      "name":"Wikipedia W"
+    },
+    {
+      "id":"window-close",
+      "name":"Window Close"
+    },
+    {
+      "id":"window-close-o",
+      "name":"Window Close Outlined"
+    },
+    {
+      "id":"window-maximize",
+      "name":"Window Maximize"
+    },
+    {
+      "id":"window-minimize",
+      "name":"Window Minimize"
+    },
+    {
+      "id":"window-restore",
+      "name":"Window Restore"
+    },
+    {
+      "id":"windows",
+      "name":"Windows"
+    },
+    {
+      "id":"won",
+      "name":"Korean Won"
+    },
+    {
+      "id":"wordpress",
+      "name":"WordPress Logo"
+    },
+    {
+      "id":"wpbeginner",
+      "name":"WPBeginner"
+    },
+    {
+      "id":"wpexplorer",
+      "name":"WPExplorer"
+    },
+    {
+      "id":"wpforms",
+      "name":"WPForms"
+    },
+    {
+      "id":"wrench",
+      "name":"Wrench"
+    },
+    {
+      "id":"xing",
+      "name":"Xing"
+    },
+    {
+      "id":"xing-square",
+      "name":"Xing Square"
+    },
+    {
+      "id":"y-combinator",
+      "name":"Y Combinator"
+    },
+    {
+      "id":"y-combinator-square",
+      "name":"Y Combinator square"
+    },
+    {
+      "id":"yahoo",
+      "name":"Yahoo Logo"
+    },
+    {
+      "id":"yelp",
+      "name":"Yelp"
+    },
+    {
+      "id":"yen",
+      "name":"Japanese Yen"
+    },
+    {
+      "id":"yoast",
+      "name":"Yoast"
+    },
+    {
+      "id":"youtube",
+      "name":"YouTube"
+    },
+    {
+      "id":"youtube-play",
+      "name":"YouTube Play"
+    },
+    {
+      "id":"youtube-square",
+      "name":"YouTube Square"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+// Boolean DT less
+.tpl-datatype-container {
+
+	label[class*=checked-] {
+		width: 1em;
+		height: 1em;
+		font-size: 2em;
+		position: relative;
+		display: inline-block;
+
+		&::before {
+			font-family: FontAwesome;
+			content: "\f096";
+			color: #444;
+			position: absolute;
+			top: -0.1em;
+			left: 0;
+		}
+
+		&.checked-1 {
+			&::before {
+				content: "\f046";
+			}
+		}
+	}
+
+}

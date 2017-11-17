@@ -1,0 +1,42 @@
+// Some styles for the combined Data Type
+
+.tpl-dt-combined {
+	&::after {
+		display: block;
+		content: '';
+		clear: both;
+	}
+
+	.tpl-field {
+		margin-bottom: 20px;
+		margin-top: 2px;
+
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		&:last-child {
+			margin-bottom: auto;
+		}
+	}
+
+	.tpl-button-container {
+		margin-bottom: 20px;
+	}
+
+	.tpl-dt-combined:not(.tpl-repeat) {
+		border: 2px solid #ddd;
+		padding: 20px;
+	}
+}
+
+.tpl-combined-wrapper {
+	float: left;
+	width: 100%;
+}
+
+.tpl-subitem-repeat-wrapper {
+	margin-bottom: 20px;
+}
