@@ -1098,7 +1098,7 @@ function tpl_repeater_bank() {
 	foreach ( $tpl_options_array as $option ) {
 
 		if ( tpl_has_section_post_type ( $option->section, $post_type ) ) {
-			$option->form_field( true );
+			$option->form_field( array( "for_bank" => true ) );
 		}
 
 	}
@@ -1138,8 +1138,11 @@ function tpl_admin_vars_to_js() {
 
 	global $tpl_options_array;
 	$to_js = array();
-	$screen = get_current_screen();
-	$post_type = str_replace( array( 'appearance_page_', 'settings_page_', 'tpl_' ), '', $screen->id );
+
+	if ( is_admin() ) {
+		$screen = get_current_screen();
+		$post_type = str_replace( array( 'appearance_page_', 'settings_page_', 'tpl_' ), '', $screen->id );
+	}
 
 	foreach ( $tpl_options_array as $option ) {
 

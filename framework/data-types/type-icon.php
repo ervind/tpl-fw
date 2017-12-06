@@ -6,7 +6,6 @@
 class TPL_Icon extends TPL_Combined {
 
 
-	protected	$less			= false;
 	public		$js_func		= "get_value";		// Which function should create the JS variable
 
 
@@ -91,7 +90,7 @@ class TPL_Icon extends TPL_Combined {
 
 
 	// Adding the necessary classes to the admin field
-	public function form_field_before ( $before_args ) {
+	public function form_field_before ( $before_args = array() ) {
 
 		$before_args["extra_class"] = 'tpl-dt-combined';
 

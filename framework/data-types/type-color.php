@@ -28,7 +28,7 @@ class TPL_Color extends TPL_Data_Type {
 
 
 	// Writes the form field in wp-admin
-	public function form_field_content ( $for_bank = false ) {
+	public function form_field_content ( $args ) {
 
 		echo '<div class="tpl-datatype-container">';
 
@@ -39,13 +39,34 @@ class TPL_Color extends TPL_Data_Type {
 			$value = $this->get_option();
 		}
 
-		if ( $for_bank == true ) {
+		if ( $args["for_bank"] == true ) {
 			$value = $this->default;
 		}
 
 		echo '<input name="' . esc_attr( $this->form_ref() ) . '" id="' . esc_attr( $this->form_ref() ) . '" type="text" value="' . esc_attr( $value ) . '" class="tpl-color-field tpl-preview-0" data-default-color="' . esc_attr( $this->default ) . '">';
 
 		echo '</div>';
+
+
+		// If called from the front end, needs to enqueue some extra files
+		if ( !is_admin() ) {
+
+			wp_enqueue_style( 'wp-color-picker' );
+			wp_enqueue_script( 'iris', admin_url( 'js/iris.min.js' ), array( 'jquery-ui-draggable', 'jquery-ui-slider', 'jquery-touch-punch' ),	false, 1 );
+			wp_enqueue_script( 'wp-color-picker', admin_url( 'js/color-picker.min.js' ), array( 'iris' ), false, 1 );
+
+			$colorpicker_l10n = array(
+				'clear'			=> __( 'Clear', 'tpl' ),
+				'defaultString'	=> __( 'Default', 'tpl' ),
+				'pick'			=> __( 'Select Color', 'tpl' ),
+				'current'		=> __( 'Current Color', 'tpl' ),
+			);
+			wp_localize_script( 'wp-color-picker', 'wpColorPickerL10n', $colorpicker_l10n );
+
+			wp_enqueue_script( 'tpl-admin-scripts', tpl_base_uri() . '/framework/script/admin-scripts.js', array( 'jquery' ), false, 1 );
+			wp_localize_script( 'tpl-admin-scripts', 'TPL_Admin', array_merge( apply_filters( 'tpl_admin_js_strings', array() ), tpl_admin_vars_to_js() ) );
+
+		}
 
 	}
 

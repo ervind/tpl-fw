@@ -5,7 +5,6 @@
 
 class TPL_Image extends TPL_Data_Type {
 
-	protected	$less_string	= true;				// Should the LESS variable forced to be a string or keep as a natural value
 	public		$size			= "medium";			// The default size of the image if not set with the option registration - an image size registered in WP
 	public		$js_func		= "get_image_url";	// Which function should create the JS variable
 
@@ -44,9 +43,9 @@ class TPL_Image extends TPL_Data_Type {
 
 
 	// Writes the form field in wp-admin
-	public function form_field_content ( $for_bank = false ) {
+	public function form_field_content ( $args ) {
 
-		if ( $for_bank == true ) {
+		if ( $args["for_bank"] == true ) {
 			$id = '';
 		}
 		else {
@@ -85,6 +84,19 @@ class TPL_Image extends TPL_Data_Type {
 				<input class="button" type="button" name="' . esc_attr( $this->name ) . '_button" value="'. __( 'Upload', 'tpl' ) .'">';
 
 		echo '</div>';
+
+
+		// If called from the front end, needs to enqueue some extra files
+		if ( !is_admin() ) {
+
+			wp_enqueue_media();
+
+			wp_enqueue_script( 'tpl-admin-scripts', tpl_base_uri() . '/framework/script/admin-scripts.js', array(), false, 1 );
+			wp_localize_script( 'tpl-admin-scripts', 'TPL_Admin', array_merge( apply_filters( 'tpl_admin_js_strings', array() ), tpl_admin_vars_to_js() ) );
+
+			wp_enqueue_style( 'tpl-common-style', tpl_base_uri() . '/framework/style/common.css', array(), false );
+
+		}
 
 	}
 
@@ -180,31 +192,6 @@ class TPL_Image extends TPL_Data_Type {
 		}
 
 		return $result;
-
-	}
-
-
-	// LESS variable helper function
-	public function format_less_var( $name, $value ) {
-
-		$less_variable = '@' . $name . ': ';
-
-		// Should it be included in LESS as a string variable? If yes, put it inside quote marks
-		if ( $this->less_string == true ) {
-			$less_variable .= '"';
-		}
-
-		$image_url_obj = wp_get_attachment_image_src ( $value, $this->size );
-		$less_variable .= $image_url_obj[0];
-
-		// closing the string if needed
-		if ( $this->less_string == true ) {
-			$less_variable .= '"';
-		}
-
-		$less_variable .= ';';
-
-		return $less_variable;
 
 	}
 

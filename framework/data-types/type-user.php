@@ -6,7 +6,6 @@
 class TPL_User extends TPL_Select {
 
 
-	protected	$less				= false;
 	public		$key				= true;				// Should return the key (true) or the label (false)?
 
 
@@ -30,7 +29,7 @@ class TPL_User extends TPL_Select {
 			foreach ( $users as $user ) {
 				$id = $user->ID;
 				$userdata = get_userdata( $id );
-				$args["values"][$id] = $userdata->first_name . ' ' . strtoupper( $userdata->last_name );
+				$args["values"][$id] = $userdata->first_name . ' ' . mb_strtoupper( $userdata->last_name );
 			}
 		}
 

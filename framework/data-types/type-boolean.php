@@ -8,9 +8,9 @@ class TPL_Boolean extends TPL_Data_Type {
 
 
 	// Writes the form field in wp-admin
-	public function form_field_content ( $for_bank = false ) {
+	public function form_field_content ( $args ) {
 
-		if ( $for_bank == true ) {
+		if ( $args["for_bank"] == true ) {
 			$value = $this->default;
 		}
 		else {
@@ -37,11 +37,11 @@ class TPL_Boolean extends TPL_Data_Type {
 
 
 	// Displayed after the form field
-	public function form_field_after () {
+	public function form_field_after ( $args ) {
 
 		$path_i = $this->get_level() * 2 + 1;
 
-		if ( $this->default === true || $this->default === false ) {
+		if ( ( $this->default === true || $this->default === false ) && $args["show_default"] == true ) {
 			echo ' <div class="tpl-default-container">
 				<i class="tpl-default-value">(';
 
@@ -77,27 +77,6 @@ class TPL_Boolean extends TPL_Data_Type {
 	public function format_option ( $value, $args = array() ) {
 
 		return intval( $value );
-
-	}
-
-
-
-	// LESS variable helper function
-	public function format_less_var( $name, $value ) {
-
-		$less_variable = '@' . $name . ': ';
-
-		// Should it be included in LESS as a string variable? If yes, put it inside quote marks
-		if ( $this->get_option() == true ) {
-			$less_variable .= 'true';
-		}
-		else {
-			$less_variable .= 'false';
-		}
-
-		$less_variable .= ';';
-
-		return $less_variable;
 
 	}
 

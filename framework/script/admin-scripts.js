@@ -151,7 +151,7 @@ TABLE OF CONTENTS
 	}
 
 	// Color picker script
-    $('#wpbody .tpl-color-field').each(function(){
+    $('body .tpl-color-field').each(function(){
 		$(this).wpColorPicker( color_picker_settings );
 	});
 
@@ -168,7 +168,7 @@ TABLE OF CONTENTS
 
 	// Select scripts
 	function tpl_select2_init(){
-		$('#wpbody .tpl-dt-select').each(function(){
+		$('body .tpl-dt-select').each(function(){
 			if ( $(this).has('.select2').length < 1 ) {
 
 				$(this).not('.tpl-dt-font_awesome').find('select').select2( select2_settings );
@@ -184,7 +184,12 @@ TABLE OF CONTENTS
 
 	// Font Awesome select field template
 	function tpl_fa_icon_template(data) {
-		return '<i class="fa fa-lg fa-fw fa-' + data.id + '"></i> ' + data.text;
+		if ( data.id != '' ) {
+			return '<i class="fa fa-lg fa-fw fa-' + data.id + '"></i> ' + data.text;
+		}
+		else {
+			return data.text;
+		}
 	}
 
 
@@ -200,11 +205,11 @@ TABLE OF CONTENTS
 
 	// Settings for the TinyMCE editor
 	function tpl_tinymce_init() {
-		$( '#wpbody .tpl-field.tpl-dt-tinymce' ).not( $('#wpbody .tpl-field.tpl-dt-tinymce.tpl-admin-hide') ).each(function(){
+		$( 'body .tpl-field.tpl-dt-tinymce' ).not( $('body .tpl-field.tpl-dt-tinymce.tpl-admin-hide') ).each(function(){
 			var id = $(this).find('textarea').attr('id');
 			tinyMCE.execCommand( 'mceAddEditor', false, id );
 		});
-		$( '#wpbody .tpl-field.tpl-dt-tinymce.tpl-admin-hide').each(function(){
+		$( 'body .tpl-field.tpl-dt-tinymce.tpl-admin-hide').each(function(){
 			var id = $(this).find('textarea').attr('id');
 			tinyMCE.execCommand( 'mceRemoveEditor', false, id );
 		});
@@ -222,7 +227,7 @@ TABLE OF CONTENTS
 
 	// Date picker for the Date type
 	if ($.datepicker !== undefined) {
-		$('#wpbody .tpl-field.tpl-dt-date input.tpl-date-field').datepicker({
+		$('body .tpl-field.tpl-dt-date input.tpl-date-field').datepicker({
 			dateFormat: 'yy-mm-dd',
 			firstDay: TPL_Admin.date_starts_with
 		});
@@ -239,7 +244,7 @@ TABLE OF CONTENTS
 	*/
 
 	// Setting the value for the boolean DT
-	$('#wpbody').on('click', '.tpl-field.tpl-dt-boolean label', function(){
+	$('body').on('click', '.tpl-field.tpl-dt-boolean label', function(){
 		var old_value = parseInt( $('input', this).val() );
 		if ( old_value == 1 ) {
 			var new_value = 0;
@@ -313,7 +318,7 @@ TABLE OF CONTENTS
 
 		// Launch color picker
 		if ( $('.tpl-dt-color').length > 0 ) {
-			$('#wpbody .tpl-color-field').wpColorPicker( color_picker_settings );
+			$('body .tpl-color-field').wpColorPicker( color_picker_settings );
 		}
 
 		// Launch Select2 on select fields
@@ -321,7 +326,7 @@ TABLE OF CONTENTS
 
 		// Launch date picker
 		if ($.datepicker !== undefined) {
-			$('#wpbody .tpl-field.tpl-dt-date input.tpl-date-field').datepicker({
+			$('body .tpl-field.tpl-dt-date input.tpl-date-field').datepicker({
 				dateFormat: 'yy-mm-dd',
 				firstDay: TPL_Admin.date_starts_with
 			});
@@ -689,27 +694,29 @@ TABLE OF CONTENTS
 */
 
 	// Tabs in Plugin Settings
-	$('#tpl-settings-tabs').tabs();
+	if (typeof $.ui.tabs !== 'undefined') {
 
-	// Set the active tab if present in sessionStorage
-	if (typeof Storage !== "undefined") {
-		var tabName = $('#tpl-settings-tabs').attr('data-store');
-		var tabValue = sessionStorage.getItem(tabName);
-		if (typeof(tabValue) !== "undefined") {
-			$('#tpl-settings-tabs').tabs('option', 'active', tabValue);
-		}
-	}
+		$('#tpl-settings-tabs').tabs();
 
-	// Save the active tab to sessionStorage for future use
-	$('#tpl-settings-tabs .nav-tab').click(function(){
+		if (typeof Storage !== "undefined" && $('#tpl-settings-tabs').length != 0) {
 
-		if (typeof Storage !== "undefined") {
+			// Set the active tab if present in sessionStorage
 			var tabName = $('#tpl-settings-tabs').attr('data-store');
-			var tabValue = $('#tpl-settings-tabs').tabs('option', 'active');
-		    sessionStorage.setItem(tabName, tabValue);
+			var tabValue = sessionStorage.getItem(tabName);
+
+			if (typeof tabValue !== "undefined") {
+				$('#tpl-settings-tabs').tabs('option', 'active', tabValue);
+			}
+
+			// Save the active tab to sessionStorage for future use
+			$('#tpl-settings-tabs .nav-tab').click(function(){
+				var tabName = $('#tpl-settings-tabs').attr('data-store');
+				var tabValue = $('#tpl-settings-tabs').tabs('option', 'active');
+				sessionStorage.setItem(tabName, tabValue);
+			});
 		}
 
-	});
+	}
 
 
 
@@ -763,7 +770,7 @@ TABLE OF CONTENTS
 	function tpl_condition_updater() {
 		var url = window.location.href;
 
-		$('#wpbody .tpl-field, #wpbody .tpl-subitem-repeat-wrapper, #wpbody .tpl-meta-option').each(function(){
+		$('body .tpl-field, body .tpl-subitem-repeat-wrapper, body .tpl-meta-option').each(function(){
 
 			// Primary Options page (e.g. Plugin Settings)
 			if ( url.indexOf('themes.php') > -1 || url.indexOf('options-general.php') > -1 ) {

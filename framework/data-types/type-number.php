@@ -11,7 +11,7 @@ class TPL_Number extends TPL_Data_Type {
 
 
 	// Writes the form field in wp-admin
-	public function form_field_content ( $for_bank = false ) {
+	public function form_field_content ( $args ) {
 
 		if ( $this->get_option() === NULL ) {
 			$value = $this->default;
@@ -20,7 +20,7 @@ class TPL_Number extends TPL_Data_Type {
 			$value = $this->get_option();
 		}
 
-		if ( $for_bank == true ) {
+		if ( $args["for_bank"] == true ) {
 			$value = $this->default;
 		}
 
@@ -57,11 +57,11 @@ class TPL_Number extends TPL_Data_Type {
 
 
 	// Displayed after the form field
-	public function form_field_after () {
+	public function form_field_after ( $args ) {
 
 		$path_i = $this->get_level() * 2 + 1;
 
-		if ( $this->default !== NULL ) {
+		if ( $this->default !== NULL && $args["show_default"] == true ) {
 			echo ' <div class="tpl-default-container">
 				<i class="tpl-default-value">(';
 

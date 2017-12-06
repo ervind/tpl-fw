@@ -6,9 +6,6 @@
 class TPL_Font extends TPL_Select {
 
 
-	protected	$less_string		= true;		// This should be true here to make everything work with multi-word font names
-
-
 	public function __construct ( $args ) {
 
 		global $tpl_font_family_sets;
@@ -23,6 +20,11 @@ class TPL_Font extends TPL_Select {
 			if ( $set == 'Google fonts' && !array_key_exists( 'Google fonts', $tpl_font_family_sets ) ) {
 
 				$this->register_google_fonts();
+
+				if ( !isset( $args["description"] ) ) {
+					$args["description"] = '';
+				}
+
 				$args["description"] .= '. ' . sprintf( __( 'You can find demos for the Google fonts here: %s', 'tpl' ), 'https://fonts.google.com/' );
 
 			}
@@ -39,7 +41,7 @@ class TPL_Font extends TPL_Select {
 
 
 	// Adding the necessary classes to the admin field
-	public function form_field_before ( $before_args ) {
+	public function form_field_before ( $before_args = array() ) {
 
 		$before_args["extra_class"] = 'tpl-dt-select';
 
@@ -73,7 +75,7 @@ class TPL_Font extends TPL_Select {
 		WP_Filesystem();
         global $wp_filesystem;
 
-		$gfonts_file = get_template_directory() . '/framework/lib/google-fonts/google-fonts.json';
+		$gfonts_file = tpl_base_dir() . '/framework/lib/google-fonts/google-fonts.json';
 		$gfonts = json_decode( $wp_filesystem->get_contents( $gfonts_file ), true );
 
 		foreach ( $gfonts["items"] as $font ) {
@@ -96,57 +98,6 @@ class TPL_Font extends TPL_Select {
 			) );
 
 		}
-
-	}
-
-
-	// LESS variable helper function
-	public function format_less_var ( $name, $value ) {
-
-		global $tpl_font_family_sets;
-
-		$less_variable = '@' . $name . ': ';
-
-		// Should it be included in LESS as a string variable? If yes, put it inside quote marks
-		if ( $this->less_string == true ) {
-			$less_variable .= '"';
-		}
-
-		$less_variable .= esc_html( $this->format_option( $value ) );
-
-		// closing the string if needed
-		if ( $this->less_string == true ) {
-			$less_variable .= '"';
-		}
-
-		foreach ( $tpl_font_family_sets as $set ) {
-			foreach ( $set as $font ) {
-
-				if ( $font["name"] == $this->get_value() && isset( $font["fallback"] ) ) {
-
-					foreach ( $font["fallback"] as $fallback ) {
-
-						$less_variable .= ', ';
-
-						if ( $this->less_string == true ) {
-							$less_variable .= '"';
-						}
-
-						$less_variable .= esc_html( $this->format_option( $fallback ) );
-
-						if ( $this->less_string == true ) {
-							$less_variable .= '"';
-						}
-
-					}
-
-				}
-			}
-		}
-
-		$less_variable .= ';';
-
-		return $less_variable;
 
 	}
 

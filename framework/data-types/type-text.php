@@ -6,8 +6,6 @@
 class TPL_Text extends TPL_Data_Type {
 
 	protected	$size			= 0;		// 0 = Infinite string length; Other number = max length of the string
-	protected	$less_string	= true;		// Should the LESS variable forced to be a string or keep as a natural value
-	public		$less			= false;	// LESS won't work HTML elements inside text, so better to turn it off here
 
 
 

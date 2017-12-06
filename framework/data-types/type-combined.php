@@ -53,7 +53,7 @@ class TPL_Combined extends TPL_Data_Type {
 
 
 	// Writes the form field in wp-admin
-	public function form_field_content ( $for_bank = false ) {
+	public function form_field_content ( $args ) {
 
 		$path_i = $this->get_level() * 2 + 1;
 		$path_s = $this->get_level() * 2 + 2;
@@ -97,7 +97,7 @@ class TPL_Combined extends TPL_Data_Type {
 				// Fixed number instances needs some extra handling
 				if ( isset( $part->repeat["number"] ) ) {
 
-					if ( $for_bank == true ) {
+					if ( $args["for_bank"] == true ) {
 						$part->repeat["number"] = 1;
 					}
 
@@ -108,9 +108,9 @@ class TPL_Combined extends TPL_Data_Type {
 				for ( $i = 0; $i < $end; $i++ ) {
 
 					$part->path[$path_s+1] = $i;
-					$part->form_field( $for_bank );
+					$part->form_field( $args );
 
-					if ( $for_bank == true ) {
+					if ( $args["for_bank"] == true ) {
 						break;
 					}
 
@@ -135,7 +135,7 @@ class TPL_Combined extends TPL_Data_Type {
 
 				}
 
-				$part->form_field( $for_bank );
+				$part->form_field( $args );
 
 			}
 
@@ -147,7 +147,7 @@ class TPL_Combined extends TPL_Data_Type {
 
 
 	// Container end of the form field
-	public function form_field_after () {
+	public function form_field_after ( $args ) {
 
 		$path_i = $this->get_level() * 2 + 1;
 
@@ -340,91 +340,6 @@ class TPL_Combined extends TPL_Data_Type {
 				}
 
 			}
-
-		}
-
-	}
-
-
-	// Set less vars for sub-options
-	public function set_less_vars( $args = array() ) {
-
-		if ( $this->less == true ) {
-
-			$less_variable = '';
-
-			$path_n = $this->get_level() * 2;
-			$path_i = $this->get_level() * 2 + 1;
-			$path_s = $this->get_level() * 2 + 2;
-
-			$args["path"][$path_n] = $this->name;
-
-			$values = $this->get_option( $args );
-
-			// Fix for non-repeater arrays
-			if ( $this->repeat === false && !$this->is_subitem ) {
-				$values = array( 0 => $values );
-			}
-
-			// Generate the LESS variables
-			foreach ( $values as $i => $value ) {
-
-				foreach ( $this->parts as $part ) {
-
-					if ( !isset( $value[$part->name] ) ) {
-						$value[$part->name] = $part->default;
-					}
-
-					$name = '';
-					$shortname = '';
-					$shortable = true;
-					$part->path = $this->path;
-					$part->path[$path_i] = $i;
-					$part->path[$path_s] = $part->name;
-
-					foreach ( $part->path as $step => $item ) {
-
-						$name .= $item;
-
-						if ( $step % 2 == 0 ) {
-							$shortname .= $item;
-						}
-
-						if ( $step < count( $part->path ) - 1 ) {
-							$name .= '__';
-							if ( $step % 2 == 0 ) {
-								$shortname .= '__';
-							}
-						}
-
-						if ( $step % 2 == 1 && $item != 0 ) {
-							$shortable = false;
-						}
-
-					}
-
-					$subvalue = $value[$part->name];
-
-					if ( !is_array( $subvalue ) ) {
-
-						$less_variable .= $part->format_less_var( $name, $subvalue );
-						if ( $shortable == true ) {
-							$less_variable .= $part->format_less_var( $shortname, $subvalue );
-						}
-
-					}
-					else {
-
-						$args["path"] = $part->path;
-						$less_variable .= $part->set_less_vars( $args );
-
-					}
-
-				}
-
-			}
-
-			return $less_variable;
 
 		}
 

@@ -5,22 +5,21 @@
 
 class TPL_Static extends TPL_Data_Type {
 
-	protected	$less_string	= true;		// Should the LESS variable forced to be a string or keep as a natural value
-
 
 	// Content of the form field
-	public function form_field_content ( $for_bank = false ) {
+	public function form_field_content ( $args ) {
 
 		$value = $this->get_option();
-		echo tpl_kses( $this->prefix . $value . $this->suffix );
+		echo $this->prefix . $value . $this->suffix;
 
 	}
 
 
 	// Container end of the form field
-	public function form_field_after () {
+	public function form_field_after ( $args ) {
 
-		echo '</div>';
+		echo '</div>
+		</div>';
 
 	}
 

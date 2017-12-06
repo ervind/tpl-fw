@@ -7,8 +7,6 @@ class TPL_Data_Type {
 
 	// Setting up some defaults...
 
-	protected	$less				= true;			// $less: LESS variable is created from the option if true
-	protected	$less_string		= false;		// Should the LESS variable forced to be a string or keep as a natural value
 	protected	$prefix				= "";			// Is put before the value
 	protected	$suffix				= "";			// Is put after the value
 	protected	$placeholder		= "";			// Used in admin if no value is added yet
@@ -70,11 +68,6 @@ class TPL_Data_Type {
 			$this->path[$path_n] = $this->name;
 		}
 
-		// Turning off the LESS engine if it's not a primary section
-		if ( !tpl_is_primary_section( $this->section ) ) {
-			$this->less = false;
-		}
-
 		if ( $this->is_subitem ) {
 			$this->data_name .= '/' . $this->name;
 		}
@@ -123,12 +116,17 @@ class TPL_Data_Type {
 
 
 	// Shows the form field in wp-admin
-	public function form_field ( $for_bank = false ) {
+	public function form_field ( $args = array() ) {
 
 		$path_i = $this->get_level() * 2 + 1;
-		$before_args = array(
-			'for_bank'	=> $for_bank,
-		);
+
+		if ( !isset( $args["for_bank"] ) ) {
+			$args["for_bank"] = false;
+		}
+
+		if ( !isset( $args["show_default"] ) ) {
+			$args["show_default"] = true;
+		}
 
 		if ( !$this->is_subitem ) {
 			$this->path = array( 0 => $this->name );
@@ -143,7 +141,7 @@ class TPL_Data_Type {
 				$values = array( 0 => $values );
 			}
 
-			if ( ( count( $values ) >= 1 && $values[0] != '' ) || $for_bank == true || isset( $this->repeat["number"] ) ) {
+			if ( ( count( $values ) >= 1 && $values[0] != '' ) || $args["for_bank"] == true || isset( $this->repeat["number"] ) ) {
 
 				$end = count( $values );
 
@@ -155,11 +153,11 @@ class TPL_Data_Type {
 
 					// Now the path is set up
 
-					$this->form_field_before( $before_args );
-					$this->form_field_content( $for_bank );
-					$this->form_field_after();
+					$this->form_field_before( $args );
+					$this->form_field_content( $args );
+					$this->form_field_after( $args );
 
-					if ( $for_bank == true ) {
+					if ( $args["for_bank"] == true ) {
 						break;
 					}
 
@@ -177,9 +175,9 @@ class TPL_Data_Type {
 
 			// Now the path is set up
 
-			$this->form_field_before( $before_args );
-			$this->form_field_content( $for_bank );
-			$this->form_field_after();
+			$this->form_field_before( $args );
+			$this->form_field_content( $args );
+			$this->form_field_after( $args );
 
 		}
 
@@ -187,10 +185,10 @@ class TPL_Data_Type {
 
 
 	// Container start of the form field
-	public function form_field_before ( $before_args ) {
+	public function form_field_before ( $args = array() ) {
 
-		if ( !isset( $before_args["extra_class"] ) ) {
-			$before_args["extra_class"] = '';
+		if ( !isset( $args["extra_class"] ) ) {
+			$args["extra_class"] = '';
 		}
 
 		$path_i = $this->get_level() * 2 + 1;
@@ -203,17 +201,17 @@ class TPL_Data_Type {
 		}
 
 		if ( $this->repeat !== false ) {
-			$before_args["extra_class"] .= ' tpl-repeat';
+			$args["extra_class"] .= ' tpl-repeat';
 		}
 
 		// Extra admin classes if needed
 		if ( $this->admin_class != '' ) {
-			$before_args["extra_class"] .= ' ' . $this->admin_class;
+			$args["extra_class"] .= ' ' . $this->admin_class;
 		}
 
 		// If child item of a combined field
 		if ( $this->is_subitem ) {
-			$before_args["extra_class"] .= ' tpl-subitem';
+			$args["extra_class"] .= ' tpl-subitem';
 		}
 
 		// Which condition is it connected to if there's any
@@ -222,7 +220,7 @@ class TPL_Data_Type {
 			$data_connected = ' data-connected="' . esc_attr( $this->condition_connected ) . '"';
 		}
 
-		$class = preg_replace( '/\s+/', ' ', 'tpl-field tpl-dt-'. $this->type . ' ' . $before_args["extra_class"]  );
+		$class = preg_replace( '/\s+/', ' ', 'tpl-field tpl-dt-'. $this->type . ' ' . $args["extra_class"]  );
 
 		echo '<div class="' . esc_attr( $class ) . '" data-instance="' . esc_attr( $data_instance ) . '" data-name="' . esc_attr( $this->data_name ) . '" data-level="' . esc_attr( $this->get_level() ) . '"' . $data_connected . '>';
 
@@ -230,7 +228,7 @@ class TPL_Data_Type {
 		if ( $this->repeat !== false ) {
 
 			// If it goes for the repeater bank, keep it open (newly added instances are displayed open by default)
-			if ( $before_args["for_bank"] ) {
+			if ( $args["for_bank"] ) {
 				$header_state_class = '';
 				$toggle_class = ' tpl-toggle-close';
 				$toggle_title = __( 'Minimize', 'tpl' );
@@ -255,7 +253,7 @@ class TPL_Data_Type {
 		}
 
 		echo '<div class="tpl-field-inner';
-		if ( $this->repeat && !$before_args["for_bank"] ) {
+		if ( $this->repeat && !$args["for_bank"] ) {
 			echo ' tpl-admin-hide';
 		}
 		echo '">';
@@ -264,26 +262,27 @@ class TPL_Data_Type {
 
 
 	// Content of the form field
-	public function form_field_content ( $for_bank = false ) {
+	public function form_field_content ( $args ) {
 
 		$value = $this->get_option();
-		if ( $value == '' || $for_bank == true ) {
+		if ( $value == '' || $args["for_bank"] == true ) {
 			$value = $this->default;
 		}
-		echo tpl_kses( $value );
+		echo $value;
 
 	}
 
+
 	// Displayed after the form field
-	public function form_field_after () {
+	public function form_field_after ( $args ) {
 
 		$path_i = $this->get_level() * 2 + 1;
 
-		if ( $this->default != '' ) {
+		if ( $this->default != '' && $args["show_default"] == true ) {
 			echo '<div class="tpl-default-container">
 				<i class="tpl-default-value">(';
 
-			echo __( 'default:', 'tpl' ) . ' ' . tpl_kses( $this->format_option( $this->default ) );
+			echo __( 'default:', 'tpl' ) . ' ' . $this->format_option( $this->default );
 
 			echo ')</i>
 			</div>';
@@ -546,104 +545,6 @@ class TPL_Data_Type {
     }
 
 
-	// LESS variable helper function
-	public function format_less_var( $name, $value ) {
-
-		$less_variable = '@' . $name . ': ';
-
-		// Should it be included in LESS as a string variable? If yes, put it inside quote marks
-		if ( $this->less_string == true ) {
-			$less_variable .= '"';
-		}
-
-		$less_variable .= esc_html( $this->format_option( $value ) );
-
-		// closing the string if needed
-		if ( $this->less_string == true ) {
-			$less_variable .= '"';
-		}
-
-		$less_variable .= ';';
-
-		return $less_variable;
-
-	}
-
-
-	// Set less var
-	public function set_less_vars( $args = array() ) {
-
-		if ( $this->less == true ) {
-
-			$less_variable = '';
-
-			$path_n = $this->get_level() * 2;
-			$path_i = $this->get_level() * 2 + 1;
-
-			$args["path"][$path_n] = $this->name;
-
-			$values = $this->get_option( $args );
-
-			$this->path = $args["path"];
-
-			$name = '';
-			$shortname = '';
-			$shortable = true;
-
-			foreach ( $this->path as $step => $item ) {
-
-				$name .= $item;
-
-				if ( $step % 2 == 0 ) {
-					$shortname .= $item;
-				}
-
-				if ( $step < count( $this->path ) - 1 ) {
-					$name .= '__';
-					if ( $step % 2 == 0 ) {
-						$shortname .= '__';
-					}
-				}
-
-				if ( $step % 2 == 1 && $item != 0 ) {
-					$shortable = false;
-				}
-
-			}
-
-			if ( ( is_array( $values ) || ( $this->repeat !== false ) ) && $this->get_option() ) {
-
-				foreach ( $values as $i => $value ) {
-
-					$this->path[$path_i] = $i;
-
-					if ( $this->path[$path_i] > 0 ) {
-						$shortable = false;
-					}
-
-					if ( $shortable == true ) {
-						$less_variable .= $this->format_less_var( $shortname, $value );
-					}
-
-					$sname = $name . '__' . $i;
-					$less_variable .= $this->format_less_var( $sname, $value );
-
-				}
-
-			}
-			else {
-
-				$less_variable .= $this->format_less_var( $name, $values );
-
-			}
-
-			return $less_variable;
-
-		}
-
-	}
-
-
 	// Return the conditions (if any) for this option
 	public function get_conditions() {
 
@@ -658,7 +559,6 @@ class TPL_Data_Type {
 		}
 
 	}
-
 
 
 	// Strings to be added to the admin JS files

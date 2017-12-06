@@ -6,14 +6,12 @@
 class TPL_Textarea extends TPL_Data_Type {
 
 	protected	$size			= 8;		// Number of rows in wp-admin
-	protected	$less_string	= true;		// In case an inherited class can use LESS, it is in string format by default
-	protected	$less			= false;	// LESS won't work with multi-line texts, so turning it OFF here
 
 
 	// Writes the form field in wp-admin
-	public function form_field_content ( $for_bank = false ) {
+	public function form_field_content ( $args ) {
 
-		if ( $for_bank == true ) {
+		if ( $args["for_bank"] == true ) {
 			$value = $this->default;
 		}
 		else {
@@ -40,11 +38,11 @@ class TPL_Textarea extends TPL_Data_Type {
 
 
 	// Container end of the form field
-	public function form_field_after () {
+	public function form_field_after ( $args ) {
 
 		$path_i = $this->get_level() * 2 + 1;
 
-		if ( !empty( $this->default ) ) {
+		if ( !empty( $this->default ) && $args["show_default"] == true ) {
 			echo ' <div class="tpl-default-container">
 				<i class="tpl-default-value">(';
 

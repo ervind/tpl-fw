@@ -31,7 +31,7 @@ class TPL_Select extends TPL_Data_Type {
 
 
 	// Writes the form field in wp-admin
-	public function form_field_content ( $for_bank = false ) {
+	public function form_field_content ( $args ) {
 
 		echo '<div class="tpl-datatype-container">';
 
@@ -42,7 +42,7 @@ class TPL_Select extends TPL_Data_Type {
 		// The saved or default value:
 		$id = $this->get_option();
 
-		if ( ( $id == '' || $for_bank == true ) && ( isset( $this->default ) ) ) {
+		if ( ( $id == '' || $args["for_bank"] == true ) && ( isset( $this->default ) ) ) {
 			$id = $this->default;
 		}
 
@@ -96,15 +96,27 @@ class TPL_Select extends TPL_Data_Type {
 
 		echo '</div>';
 
+		// If called from the front end, needs to enqueue some extra files
+		if ( !is_admin() ) {
+
+			if ( !wp_script_is( 'select2' ) ) {
+				wp_enqueue_script( 'tpl-select2', tpl_base_uri() . '/framework/lib/select2/js/select2.min.js', array( 'jquery' ) );
+			}
+			wp_enqueue_style( 'tpl-select2-style', tpl_base_uri() . '/framework/lib/select2/css/select2.min.css', array() );
+
+			wp_enqueue_style( 'tpl-common-style', tpl_base_uri() . '/framework/style/common.css', array(), false );
+
+		}
+
 	}
 
 
 	// Container end of the form field
-	public function form_field_after () {
+	public function form_field_after ( $args ) {
 
 		$path_i = $this->get_level() * 2 + 1;
 
-		if ( !empty( $this->default ) ) {
+		if ( !empty( $this->default ) && $args["show_default"] == true ) {
 			echo '<div class="tpl-default-container">
 				<i class="tpl-default-value">(';
 

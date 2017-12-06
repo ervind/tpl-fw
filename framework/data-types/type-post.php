@@ -6,7 +6,6 @@
 class TPL_Post extends TPL_Select {
 
 
-	protected	$less				= false;
 	public		$key				= true;				// Should return the key (true) or the label (false)?
 
 

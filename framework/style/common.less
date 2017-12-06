@@ -1,0 +1,151 @@
+/* Common (both front and backend) stylesheet for the TPL Settings */
+
+
+
+.tpl-field::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+// TPL Repeater fields
+.tpl-repeat {
+	margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+	border: 2px solid #ddd;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	& > .tpl-field-inner {
+		padding: 20px;
+		background-color: #f8f8f8;
+
+		&::after {
+			clear: both;
+			display: block;
+			content: '';
+		}
+	}
+}
+
+.tpl-repeat-header {
+	height: 40px;
+	display: flex;
+	border-bottom: 2px solid #ddd;
+	background-color: #fff;
+	overflow: hidden;
+
+	&.tpl-repeat-header-closed {
+		border-bottom: 0;
+	}
+
+	& * {
+		line-height: 40px;
+	}
+
+	.tpl-admin-icon {
+		min-width: 44px;
+		color: #bbb;
+		background: #ddd;
+		height: 100%;
+	}
+
+	.tpl-header-title-preview {
+		* {
+			vertical-align: middle;
+		}
+
+		i {
+			margin-bottom: 4px;
+			margin-right: 6px;
+		}
+	}
+}
+
+.tpl-header-title {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.tpl-header-title-instance {
+	color: #999;
+	margin-right: 10px;
+}
+
+.tpl-arranger::before {
+	content: "\f047";
+}
+
+.tpl-remover::before {
+	content: "\f068";
+}
+
+.tpl-toggle-close::before {
+	content: "\f077";
+}
+
+.tpl-toggle-open::before {
+	content: "\f078";
+}
+
+.tpl-admin-icon {
+	font-size: 1.6em;
+	display: inline-block;
+	color: #bbb;
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+}
+
+.tpl-button-container {
+	text-align: right;
+	margin-top: 5px;
+	clear: both;
+
+	button {
+		padding: 6px 24px;
+		border: 1px solid #999;
+		border-radius: 2px;
+		background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(220,220,220,1) 100%);
+
+		&:active {
+			background: linear-gradient(to bottom, rgba(200,200,200,1) 0%, rgba(220,220,220,1) 100%);
+		}
+	}
+
+	input::-webkit-calendar-picker-indicator{
+	    display: none;
+	}
+
+	input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+}
+
+.tpl-meta-option-label .fa {
+	vertical-align: middle;
+}
+
+.tpl-nodecor {
+	text-decoration: none;
+}
+
+
+
+
+
+// Adding Data Type Less files
+@import "../data-types/less/type-boolean.less";
+@import "../data-types/less/type-color.less";
+@import "../data-types/less/type-combined.less";
+@import "../data-types/less/type-date.less";
+@import "../data-types/less/type-image.less";
+@import "../data-types/less/type-select.less";
+@import "../data-types/less/type-textarea.less";
+@import "../data-types/less/type-tinymce.less";
