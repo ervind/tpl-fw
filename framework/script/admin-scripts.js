@@ -169,7 +169,7 @@ TABLE OF CONTENTS
 	// Select scripts
 	function tpl_select2_init(){
 		$('body .tpl-dt-select').each(function(){
-			if ( $(this).has('.select2').length < 1 && !$(this).hasClass('no-select2') ) {
+			if ( $(this).has('.select2').length < 1 && !$(this).hasClass('no-select2') && !$(this).parents('#tpl_repeater_bank').length ) {
 
 				if ( $(this).is('.tpl-dt-font_awesome') ) {
 					$(this).find('select').select2( fa_icon_settings );

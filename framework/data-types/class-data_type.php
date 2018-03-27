@@ -350,6 +350,7 @@ class TPL_Data_Type {
 
 		global $tpl_sections;
 
+
 		if ( isset( $args["path"] ) ) {
 			$this->path = $args["path"];
 		}
@@ -357,6 +358,7 @@ class TPL_Data_Type {
 		if ( !isset( $this->path[0] ) ) {
 			$this->path[0] = $this->name;
 		}
+
 
 		// If the option is connected to a post meta, let it be the return value
 		if ( !tpl_is_primary_section( $this->section ) ) {

@@ -10,9 +10,9 @@ class TPL_Text extends TPL_Data_Type {
 
 
 	// Writes the form field in wp-admin
-	public function form_field_content ( $for_bank = false ) {
+	public function form_field_content ( $args ) {
 
-		if ( $for_bank == true ) {
+		if ( $args["for_bank"] == true ) {
 			$value = $this->default;
 		}
 		else {

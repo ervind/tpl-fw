@@ -31,7 +31,7 @@ class TPL_Date extends TPL_Data_Type {
 
 
 	// Writes the form field in wp-admin
-	public function form_field_content ( $for_bank = false ) {
+	public function form_field_content ( $args ) {
 
 		echo '<div class="tpl-datatype-container">';
 
@@ -46,7 +46,7 @@ class TPL_Date extends TPL_Data_Type {
 			$value = $this->get_option();
 		}
 
-		if ( $for_bank == true ) {
+		if ( $args["for_bank"] == true ) {
 			$value = $this->default;
 		}
 
