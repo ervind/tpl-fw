@@ -529,6 +529,14 @@ class TPL_Data_Type {
 	}
 
 
+	// Gets the default value
+	public function get_default () {
+
+		return $this->default;
+
+	}
+
+
 	// Return which level the option is on in the subitem hierarchy ( 0 = base level )
 	protected function get_level () {
 
