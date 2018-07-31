@@ -8,7 +8,7 @@ For more information and documentation, visit [https://a-idea.studio/tpl-framewo
 
 
 // Version number of the framework
-define( 'TPL_VERSION', '1.3' );
+define( 'TPL_VERSION', '1.3.1' );
 
 
 
