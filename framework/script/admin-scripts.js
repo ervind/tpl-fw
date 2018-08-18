@@ -186,10 +186,11 @@ TABLE OF CONTENTS
 	// Font Awesome select field template
 	function tpl_fa_icon_template(data) {
 		if ( data.id != '' ) {
-			return '<i class="fa fa-lg fa-fw fa-' + data.id + '"></i> ' + data.text;
+			console.log(data);
+			return data.text;
 		}
 		else {
-			return data.text;
+			return data.text.name;
 		}
 	}
 

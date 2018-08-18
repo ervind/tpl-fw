@@ -35,12 +35,19 @@ class TPL_Icon extends TPL_Combined {
 			"type"			=> 'select',
 			"default"		=> '',
 			"values"		=> array(
-				""				=> __( 'Normal', 'tpl' ),
-				"lg"			=> __( 'Larger', 'tpl' ),
-				"2x"			=> __( 'Double', 'tpl' ),
-				"3x"			=> __( 'Triple', 'tpl' ),
-				"4x"			=> __( '4x', 'tpl' ),
-				"5x"			=> __( '5x', 'tpl' ),
+				"xs"			=> __( 'Extra Small', 'a-staff' ),
+				"sm"			=> __( 'Small', 'a-staff' ),
+				"1x"			=> __( 'Normal', 'a-staff' ),
+				"lg"			=> __( 'Larger', 'a-staff' ),
+				"2x"			=> __( 'Double', 'a-staff' ),
+				"3x"			=> __( 'Triple', 'a-staff' ),
+				"4x"			=> __( '4x', 'a-staff' ),
+				"5x"			=> __( '5x', 'a-staff' ),
+				"6x"			=> __( '6x', 'a-staff' ),
+				"7x"			=> __( '7x', 'a-staff' ),
+				"8x"			=> __( '8x', 'a-staff' ),
+				"9x"			=> __( '9x', 'a-staff' ),
+				"10x"			=> __( '10x', 'a-staff' ),
 			),
 			"key"			=> true,
 		);
@@ -225,7 +232,7 @@ class TPL_Icon extends TPL_Combined {
 	public function admin_js_strings( $strings ) {
 
 		$strings = array_merge( $strings, array(
-			'tpl-dt-icon_preview-template'	=> '<i class="fa fa-fw fa-lg fa-[code/tpl-preview-1]" style="color: [color/tpl-preview-0]"></i> [title/tpl-preview-1]',
+			'tpl-dt-icon_preview-template'	=> '<i class="[code/tpl-preview-3] fa-fw fa-lg fa-[code/tpl-preview-1]" style="color: [color/tpl-preview-0]"></i> [title/tpl-preview-1]',
 		) );
 
 		return $strings;

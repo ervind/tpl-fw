@@ -12,24 +12,32 @@ class TPL_Font_Awesome extends TPL_Select {
 	// Sets up the object attributes while registering options
 	public function __construct( $args ) {
 
-		global $tpl_fa_json;
+		global $tpl_fa_json, $tpl_fa_icons, $tpl_fa_icons_s2;
 
-		if ( !isset( $tpl_fa_json ) ) {
+		if ( !isset( $tpl_fa_json ) || !isset( $tpl_fa_icons ) || !isset( $tpl_fa_icons_s2 ) ) {
 
 			require_once ABSPATH . "wp-admin/includes/file.php";
 			WP_Filesystem();
 			global $wp_filesystem;
 
-			$fa_json_file = tpl_base_dir() . '/framework/lib/font-awesome/icons.json';
-			$tpl_fa_json = json_decode( $wp_filesystem->get_contents( $fa_json_file ), true );
+			$fa_json_file		= tpl_base_dir() . '/framework/lib/font-awesome/icons.json';
+			$tpl_fa_json		= json_decode( $wp_filesystem->get_contents( $fa_json_file ), true );
+			$$tpl_fa_icons		= array();
+			$$tpl_fa_icons_s2	= array();
+
+			foreach ( $tpl_fa_json["icons"] as $icon ) {
+				$tpl_fa_icons[$icon["id"]] = array(
+					"id"	=> $icon["id"],
+					"type"	=> $icon["type"],
+					"name"	=> $icon["name"],
+				);
+
+				$tpl_fa_icons_s2[$icon["id"]] = '<i class="' . $icon["type"] . ' fa-lg fa-fw fa-' . $icon["id"] . '"></i> ' . $icon["name"];
+			}
 
 		}
 
-		foreach ( $tpl_fa_json["icons"] as $icon ) {
-			$fa_icons[$icon["id"]] = $icon["name"];
-		}
-
-		$args["values"] = array_merge( array( '' => __( 'Select an Icon', 'tpl' ) ), $fa_icons );
+		$args["values"] = array_merge( array( '' => __( 'Select an Icon', 'tpl' ) ), $tpl_fa_icons_s2 );
 
 		if ( !isset( $args["admin_class"] ) ) {
 			$args["admin_class"] = '';
@@ -41,8 +49,22 @@ class TPL_Font_Awesome extends TPL_Select {
 	}
 
 
+	// Writes the form field in wp-admin
+	public function form_field_content ( $args ) {
+		global $tpl_fa_icons;
+
+		parent::form_field_content( $args );
+
+		if ( is_admin() ) {
+			echo '<input type="hidden" class="tpl-preview-3" data-preview-value="' . $tpl_fa_icons[$this->get_option()]["type"] . '">';
+		}
+
+	}
+
+
 	// Formats the option into value
 	public function format_option ( $id, $args = array() ) {
+		global $tpl_fa_icons;
 
 		$result = '';
 
@@ -60,7 +82,7 @@ class TPL_Font_Awesome extends TPL_Select {
 			$result .= '>';
 		}
 
-		$result .= '<i class="fa fa-' . esc_attr( $id );
+		$result .= '<i class="fa ' . $tpl_fa_icons[$id]["type"] . ' fa-' . esc_attr( $id );
 
 		if ( isset( $args["size"] ) && $args["size"] != '' ) {
 			$result .= ' fa-' . esc_attr( $args["size"] );

@@ -89,7 +89,7 @@ function tpl_base_uri() {
 // If $global == true then it displays it as an admin notification. Else next to the option in the options flow
 // $class can have 3 values: error, updated, notice-warning (https://codex.wordpress.org/Plugin_API/Action_Reference/admin_notices)
 // $entity: you can change the default "TPL error/warning" text from the beginning of the message
-function tpl_error ( $msg, $global = false, $class = "error", $entity = "TPL" ) {
+function tpl_error ( $msg, $global = true, $class = "error", $entity = "TPL" ) {
 
 	// Display the message next to the option
 	if ( $global == false ) {
@@ -109,7 +109,7 @@ function tpl_error ( $msg, $global = false, $class = "error", $entity = "TPL" ) 
 			if ( $class == 'notice-warning' ) {
 				$msg = '<strong>' . sprintf( __( '%s warning', 'tpl' ), $entity ) . '</strong>: ' . $msg;
 			}
-			echo '<div class="notice is-dismissible settings-error tpl-global-error '. esc_attr( $class ) .'"><p>'. tpl_kses( $msg ) .'</p></div>';
+			echo '<div class="notice is-dismissible settings-error tpl-global-error notice-'. esc_attr( $class ) .'"><p>'. tpl_kses( $msg ) .'</p></div>';
 
 		});
 
@@ -662,7 +662,7 @@ function tpl_settings_page_callback ( $args ) {
 		tpl_error (
 			sprintf( __( 'No data type was set up for option: %s', 'tpl' ),
 				esc_html( $name )
-			) );
+			), false );
 	}
 
 	elseif ( !tpl_type_registered ( $type ) ) {
@@ -670,7 +670,7 @@ function tpl_settings_page_callback ( $args ) {
 			sprintf( __( 'Invalid data type (%1$s) was set for option: %2$s', 'tpl' ),
 				esc_html( $type ),
 				esc_html( $name )
-			) );
+			), false );
 	}
 
 	else {
@@ -988,7 +988,7 @@ function tpl_inner_custom_box ( $post, $metabox ) {
 			tpl_error(
 				sprintf( __( 'No data type was set up for option: %s', 'tpl' ),
 				esc_html( $option->name )
-			) );
+			), false );
 		}
 
 		elseif ( !tpl_type_registered ( $option->type ) ) {
@@ -996,7 +996,7 @@ function tpl_inner_custom_box ( $post, $metabox ) {
 				sprintf( __( 'Invalid data type (%1$s) was set for option: %2$s', 'tpl' ),
 					esc_html( $option->type ),
 					esc_html( $option->name )
-				) );
+				), false );
 		}
 
 		else {
@@ -1126,8 +1126,24 @@ function tpl_admin_scripts() {
 	wp_localize_script( 'tpl-admin-scripts', 'TPL_Admin', array_merge( apply_filters( 'tpl_admin_js_strings', array() ), tpl_admin_vars_to_js() ) );
 
 	// Styles
-	wp_enqueue_style( 'font-awesome', tpl_base_uri() . '/framework/lib/font-awesome/fonts/font-awesome.min.css', array(), TPL_VERSION );
+	tpl_load_font_awesome();
 	wp_enqueue_style( 'tpl-admin-style', tpl_base_uri() . '/framework/style/admin.css', array( 'font-awesome' ), TPL_VERSION );
+
+}
+
+
+
+// Load Font Awesome fonts and styles
+function tpl_load_font_awesome() {
+
+	wp_enqueue_style( 'font-awesome', tpl_base_uri() . '/framework/lib/font-awesome/fonts/font-awesome.min.css', array(), TPL_VERSION );
+
+	$fa_fonts_css = '
+		@font-face{font-family:"Font Awesome 5 Free"; font-style:normal; font-weight:900; src:url(' . tpl_base_uri() . '/framework/lib/font-awesome/fonts/fa-solid-900.woff) format("woff")} .fa,.fas{font-family:"Font Awesome 5 Free"; font-weight:900}
+		@font-face{font-family:"Font Awesome 5 Free"; font-style:normal; font-weight:400; src:url(' . tpl_base_uri() . '/framework/lib/font-awesome/fonts/fa-regular-400.woff) format("woff")} .far{font-family:"Font Awesome 5 Free"; font-weight:400}
+		@font-face{font-family:"Font Awesome 5 Brands"; font-style:normal; font-weight:normal; src:url(' . tpl_base_uri() . '/framework/lib/font-awesome/fonts/fa-brands-400.woff) format("woff")} .fab{font-family:"Font Awesome 5 Brands"}
+	';
+    wp_add_inline_style( 'font-awesome', $fa_fonts_css );
 
 }
 

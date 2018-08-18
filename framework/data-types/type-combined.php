@@ -79,7 +79,7 @@ class TPL_Combined extends TPL_Data_Type {
 
 					echo '<label for="'. esc_attr( $part->form_ref() ) .'"' . $data_connected . '>' . esc_html( $part->title ) . ' </label>';
 					if ( isset( $part->description ) && $part->description != '' ) {
-						echo '<i class="fa fa-lg fa-question-circle tpl-admin-question tpl-admin-icon"' . $data_connected . ' title="' . esc_attr( $part->description ) . '"></i>';
+						echo '<i class="fa fa-sm fa-question-circle tpl-admin-question tpl-admin-icon"' . $data_connected . ' title="' . esc_attr( $part->description ) . '"></i>';
 					}
 
 				}
@@ -130,7 +130,7 @@ class TPL_Combined extends TPL_Data_Type {
 
 					echo '<label for="'. esc_attr( $part->form_ref() ) .'"' . $data_connected . '>' . esc_html( $part->title ) . ' </label>';
 					if ( isset( $part->description ) && $part->description != '' ) {
-						echo '<i class="fa fa-lg fa-question-circle tpl-admin-question tpl-admin-icon"' . $data_connected . ' title="' . esc_attr( $part->description ) . '"></i>';
+						echo '<i class="fa fa-sm fa-question-circle tpl-admin-question tpl-admin-icon"' . $data_connected . ' title="' . esc_attr( $part->description ) . '"></i>';
 					}
 
 				}
