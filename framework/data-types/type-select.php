@@ -172,4 +172,23 @@ class TPL_Select extends TPL_Data_Type {
 	}
 
 
+	// Gets the options in Gutenberg SelectControl format
+	public function gutenberg_values() {
+
+		$gutenberg_values = array();
+
+		foreach ( $this->values as $key => $value ) {
+
+			$gutenberg_values[] = array(
+				"value"	=> $key,
+				"label"	=> $value,
+			);
+
+		}
+
+		return $gutenberg_values;
+
+	}
+
+
 }

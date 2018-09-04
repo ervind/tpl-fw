@@ -7,12 +7,10 @@ class TPL_Data_Type {
 
 	// Setting up some defaults...
 
-	protected	$prefix				= "";			// Is put before the value
-	protected	$suffix				= "";			// Is put after the value
-	protected	$placeholder		= "";			// Used in admin if no value is added yet
-	protected	$is_subitem			= false;		// Is set to TRUE if it's a subitem of another option
-	protected	$default			= '';			// Default value init
-	protected	$path				= array();		// Used to find instances and subitems of an option
+	public		$prefix				= "";			// Is put before the value
+	public		$suffix				= "";			// Is put after the value
+	public		$placeholder		= "";			// Used in admin if no value is added yet
+	public		$default			= '';			// Default value init
 	public		$data_name			= '';			// Used by forms in the admin
 	public		$js					= false;		// By default, JS is turned off
 	public		$js_func			= "get_value";	// Which function should create the JS variable
@@ -20,6 +18,8 @@ class TPL_Data_Type {
 	public		$admin_class		= '';			// Extra class added to the admin field
 	public		$description		= '';			// Initialize the option's description
 	public		$condition_connected = '';			// Some initialization for conditions
+	protected	$is_subitem			= false;		// Is set to TRUE if it's a subitem of another option
+	protected	$path				= array();		// Used to find instances and subitems of an option
 
 
 	// Sets up the object attributes while registering options

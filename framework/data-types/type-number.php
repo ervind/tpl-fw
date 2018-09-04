@@ -5,9 +5,9 @@
 
 class TPL_Number extends TPL_Data_Type {
 
-	protected	$step		= NULL;		// Distance between 2 consecutive values (whole number)
-	protected	$min		= NULL;		// Minimum value
-	protected	$max		= NULL;		// Maximum value
+	public		$step		= NULL;		// Distance between 2 consecutive values (whole number)
+	public		$min		= NULL;		// Minimum value
+	public		$max		= NULL;		// Maximum value
 
 
 	// Writes the form field in wp-admin

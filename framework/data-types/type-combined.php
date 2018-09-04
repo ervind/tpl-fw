@@ -6,7 +6,7 @@
 class TPL_Combined extends TPL_Data_Type {
 
 
-	protected	$default		= array( 0 => '' );		// Needed for initializing the combined option
+	public		$default		= array( 0 => '' );		// Needed for initializing the combined option
 	public		$parts			= array();				// Initialize the parts objects
 	public		$js_func		= "set_js_vars";		// Which function should create the JS variable
 
