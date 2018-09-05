@@ -186,7 +186,6 @@ TABLE OF CONTENTS
 	// Font Awesome select field template
 	function tpl_fa_icon_template(data) {
 		if ( data.id != '' ) {
-			console.log(data);
 			return data.text;
 		}
 		else {
@@ -775,7 +774,7 @@ TABLE OF CONTENTS
 		$('body .tpl-field, body .tpl-subitem-repeat-wrapper, body .tpl-meta-option').each(function(){
 
 			// Primary Options page (e.g. Plugin Settings)
-			if ( url.indexOf('themes.php') > -1 || url.indexOf('options-general.php') > -1 ) {
+			if ( url.indexOf('themes.php') > -1 || url.indexOf('options-general.php') > -1 || url.indexOf('admin.php') > -1 ) {
 				var section = tpl_get_url_param('page', url);
 				var container = 'tr';
 			}
@@ -819,7 +818,6 @@ TABLE OF CONTENTS
 						var cname_array = [];
 						var c_array = [];
 						var dname_array = [];
-
 
 						// If the condition is an option
 						if ( condition_type == 'option' ) {

@@ -1156,8 +1156,8 @@ function tpl_admin_vars_to_js() {
 	$to_js = array();
 
 	if ( is_admin() ) {
-		$screen = get_current_screen();
-		$post_type = str_replace( array( 'appearance_page_', 'settings_page_', 'tpl_' ), '', $screen->id );
+		$screen		= get_current_screen();
+		$post_type	= str_replace( array( 'appearance_page_', 'settings_page_', 'tpl_', 'toplevel_page_' ), '', $screen->id );
 	}
 
 	foreach ( $tpl_options_array as $option ) {
