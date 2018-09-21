@@ -32,7 +32,7 @@ class TPL_Font_Awesome extends TPL_Select {
 					"name"	=> $icon["name"],
 				);
 
-				$tpl_fa_icons_s2[$icon["id"]] = '<i class="' . $icon["type"] . ' fa-lg fa-fw fa-' . $icon["id"] . '"></i> ' . $icon["name"];
+				$tpl_fa_icons_s2[$icon["id"]] = '<i class="' . $icon["type"] . ' fa-lg fa-fw fa-' . $icon["id"] . '" data-type="' . $icon["type"] . '"></i> ' . $icon["name"];
 			}
 
 		}
@@ -56,7 +56,13 @@ class TPL_Font_Awesome extends TPL_Select {
 		parent::form_field_content( $args );
 
 		if ( is_admin() ) {
-			echo '<input type="hidden" class="tpl-preview-3" data-preview-value="' . $tpl_fa_icons[$this->get_option()]["type"] . '">';
+			$icon_type = '';
+
+			if ( isset( $tpl_fa_icons[$this->get_option()]["type"] ) ) {
+				$icon_type = $tpl_fa_icons[$this->get_option()]["type"];
+			}
+
+			echo '<input type="hidden" class="tpl-preview-3" value="' . $icon_type . '">';
 		}
 
 	}

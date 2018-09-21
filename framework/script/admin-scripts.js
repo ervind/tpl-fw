@@ -193,6 +193,14 @@ TABLE OF CONTENTS
 		}
 	}
 
+	// Handle the Font Awesome preview with the FA5 update
+	$('.tpl-dt-font_awesome select').change(function(){
+		var data = $(this).select2('data');
+		var found = data[0].text.match(/ data-type="([^"]*)"/);
+		$(this).closest('.tpl-field').find('.tpl-preview-3').val(found[1]);
+		$(this).closest('.tpl-field').find('.tpl-preview-3').attr(found[1]);
+	});
+
 
 
 
@@ -274,7 +282,7 @@ TABLE OF CONTENTS
 		var url = window.location.href;
 
 		// Primary Options page (e.g. Plugin Settings)
-		if ( url.indexOf('themes.php') > -1 || url.indexOf('options-general.php') > -1 ) {
+		if ( url.indexOf('themes.php') > -1 || url.indexOf('options-general.php') > -1 || url.indexOf('admin.php') > -1 ) {
 			if ( elem.parent().prev().hasClass('tpl-subitem-repeat-wrapper') ) {
 				var container = elem.parent().prev('.tpl-subitem-repeat-wrapper');
 			}

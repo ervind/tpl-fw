@@ -1091,7 +1091,7 @@ function tpl_repeater_bank() {
 	global $tpl_options_array;
 
 	$screen = get_current_screen();
-	$post_type = str_replace( array( 'appearance_page_', 'settings_page_', 'tpl_' ), '', $screen->id );
+	$post_type = str_replace( array( 'appearance_page_', 'settings_page_', 'tpl_', 'toplevel_page_' ), '', $screen->id );
 
 	echo '<div id="tpl_repeater_bank" class="tpl-admin-hide">';
 
