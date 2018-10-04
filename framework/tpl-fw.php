@@ -1127,7 +1127,7 @@ function tpl_admin_scripts() {
 
 	// Styles
 	tpl_load_font_awesome();
-	wp_enqueue_style( 'tpl-admin-style', tpl_base_uri() . '/framework/style/admin.css', array( 'font-awesome' ), TPL_VERSION );
+	wp_enqueue_style( 'tpl-admin-style', tpl_base_uri() . '/framework/style/admin.min.css', array( 'font-awesome' ), TPL_VERSION );
 
 }
 

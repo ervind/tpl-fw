@@ -63,7 +63,7 @@ class TPL_Color extends TPL_Data_Type {
 			);
 			wp_localize_script( 'wp-color-picker', 'wpColorPickerL10n', $colorpicker_l10n );
 
-			wp_enqueue_script( 'tpl-admin-scripts', tpl_base_uri() . '/framework/script/admin-scripts.js', array( 'jquery' ), false, 1 );
+			wp_enqueue_script( 'tpl-admin-scripts', tpl_base_uri() . '/framework/script/admin-scripts.min.js', array( 'jquery' ), false, 1 );
 			wp_localize_script( 'tpl-admin-scripts', 'TPL_Admin', array_merge( apply_filters( 'tpl_admin_js_strings', array() ), tpl_admin_vars_to_js() ) );
 
 		}

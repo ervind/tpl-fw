@@ -63,7 +63,7 @@ class TPL_Date extends TPL_Data_Type {
 
 			add_filter( 'tpl_admin_js_strings', array( $this, 'admin_js_strings' ) );
 		    wp_enqueue_script( 'jquery-ui-datepicker', array( 'jquery', 'jquery-ui-core' ) );
-			wp_enqueue_style( 'tpl-common-style', tpl_base_uri() . '/framework/style/common.css', array(), false );
+			wp_enqueue_style( 'tpl-common-style', tpl_base_uri() . '/framework/style/common.min.css', array(), false );
 
 		}
 

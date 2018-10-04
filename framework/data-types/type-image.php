@@ -91,10 +91,10 @@ class TPL_Image extends TPL_Data_Type {
 
 			wp_enqueue_media();
 
-			wp_enqueue_script( 'tpl-admin-scripts', tpl_base_uri() . '/framework/script/admin-scripts.js', array(), false, 1 );
+			wp_enqueue_script( 'tpl-admin-scripts', tpl_base_uri() . '/framework/script/admin-scripts.min.js', array(), false, 1 );
 			wp_localize_script( 'tpl-admin-scripts', 'TPL_Admin', array_merge( apply_filters( 'tpl_admin_js_strings', array() ), tpl_admin_vars_to_js() ) );
 
-			wp_enqueue_style( 'tpl-common-style', tpl_base_uri() . '/framework/style/common.css', array(), false );
+			wp_enqueue_style( 'tpl-common-style', tpl_base_uri() . '/framework/style/common.min.css', array(), false );
 
 		}
 
