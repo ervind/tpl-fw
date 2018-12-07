@@ -285,14 +285,14 @@ tr:last-child .tpl-optiondesc {
   cursor: pointer;
 }
 .tpl-datatype-container label[class*=checked-]::before {
-  font-family: FontAwesome;
-  content: "\f096";
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c8";
   color: #444;
   position: absolute;
   left: 0;
 }
 .tpl-datatype-container label[class*=checked-].checked-1::before {
-  content: "\f046";
+  content: "\f14a";
 }
 .tpl_settings_page_wrap .tpl-dt-boolean .tpl-default-value {
   margin-top: 0.2em;
@@ -362,7 +362,8 @@ tr:last-child .tpl-optiondesc {
 }
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   display: inline-block;
   font-size: 1.33333333em;
   line-height: 0.75em;
@@ -384,14 +385,14 @@ tr:last-child .tpl-optiondesc {
 }
 .ui-datepicker .ui-datepicker-prev::after {
   left: 5px;
-  content: "\f137";
+  content: "\f104";
 }
 .ui-datepicker .ui-datepicker-next {
   float: right;
 }
 .ui-datepicker .ui-datepicker-next::after {
   right: 5px;
-  content: "\f138";
+  content: "\f105";
 }
 .ui-datepicker .ui-datepicker-title {
   text-align: center;
