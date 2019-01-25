@@ -18,6 +18,8 @@ class TPL_Textarea extends TPL_Data_Type {
 			$value = esc_textarea( $this->get_option() );
 		}
 
+		do_action( 'tpl_before_textarea' );
+
 		echo '<div class="tpl-textarea-wrapper tpl-datatype-container">';
 
 		if ( $this->prefix ) {

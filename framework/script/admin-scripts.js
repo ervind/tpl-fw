@@ -225,6 +225,23 @@ TABLE OF CONTENTS
 	}
 
 
+	$('body').on('click', '.tpl-editor-switch-buttons-wrap button', function(e){
+		e.preventDefault();
+		var id = $(this).closest('.tpl-field.tpl-dt-tinymce').find('textarea').attr('id');
+
+		if ( $(this).hasClass('tpl-editor-visual-button') ) {
+			tinyMCE.execCommand( 'mceAddEditor', false, id );
+			var id = $(this).closest('.tpl-field.tpl-dt-tinymce').find('textarea').css('visibility','hidden');
+		}
+
+		if ( $(this).hasClass('tpl-editor-text-button') ) {
+			tinyMCE.execCommand( 'mceRemoveEditor', false, id );
+			var id = $(this).closest('.tpl-field.tpl-dt-tinymce').find('textarea').css('visibility','visible');
+		}
+
+	});
+
+
 
 
 	/*

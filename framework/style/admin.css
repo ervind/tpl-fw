@@ -504,6 +504,9 @@ textarea {
 .tpl-dt-tinymce .mce-container iframe {
   min-height: 150px;
 }
+.tpl-dt-tinymce .tpl-editor-switch-buttons-wrap {
+  text-align: right;
+}
 .postbox-container .tpl-dt-tinymce {
   border: 1px solid #ddd;
   max-width: 800px;

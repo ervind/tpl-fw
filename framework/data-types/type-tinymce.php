@@ -26,6 +26,8 @@ class TPL_TinyMCE extends TPL_Textarea {
 		// Forcing the visual mode for WP Editor where the TinyMCE DT is used (needed for initializing correctly)
 		add_filter( 'wp_default_editor', create_function('', 'return "tinymce";') );
 
+		add_action( 'tpl_before_textarea', array( $this, 'editor_switch_buttons' ) );
+
 	}
 
 
@@ -34,7 +36,7 @@ class TPL_TinyMCE extends TPL_Textarea {
 
 		foreach ( $buttons as $i => $button ) {
 
-			if ( $button == 'fullscreen' || $button == 'wp_more' ) {
+			if ( $button == 'fullscreen' || $button == 'wp_more' || $button == 'layerslider_button' ) {
 				unset( $buttons[$i] );
 			}
 
@@ -54,6 +56,19 @@ class TPL_TinyMCE extends TPL_Textarea {
 			'media_buttons'	=> true,
 		) );
 
+	}
+
+
+	// Adds the editor switch buttons before the TinyMCE textarea
+	public function editor_switch_buttons() {
+		?>
+
+		<div class="tpl-editor-switch-buttons-wrap">
+			<button class="tpl-editor-visual-button"><?php _e( 'Visual', 'tpl' ); ?></button>
+			<button class="tpl-editor-text-button"><?php _e( 'Text', 'tpl' ); ?></button>
+		</div>
+
+		<?php
 	}
 
 
