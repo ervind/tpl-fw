@@ -8,7 +8,7 @@ For more information and documentation, visit [https://a-idea.studio/tpl-framewo
 
 
 // Version number of the framework
-define( 'TPL_VERSION', '1.3.2' );
+define( 'TPL_VERSION', '1.3.3' );
 
 
 
@@ -484,72 +484,76 @@ function tpl_admin_init () {
 	$loaded_sections = array();
 
 	// Add the option fields
-	foreach ( $tpl_options_array as $option ) {
+	if ( isset( $tpl_options_array ) && !empty( $tpl_options_array ) ) {
 
-		// Making it foolproof - if the developer forgot to register the section, we're registering it for him, but sending a warning, too...
-		if ( !tpl_section_registered ( $option->section ) ) {
+		foreach ( $tpl_options_array as $option ) {
 
-			tpl_register_section ( array(
-				"name"			=> $option->section,
-				"title"			=> $option->section,
-				"description"	=> "",
-				"tab"			=> $option->section
-			) );
+			// Making it foolproof - if the developer forgot to register the section, we're registering it for him, but sending a warning, too...
+			if ( !tpl_section_registered ( $option->section ) ) {
 
-			tpl_error (
-				sprintf( __( 'Section "%s" hasn\'t been registered properly. Please register it first with the tpl_register_section() function.', 'tpl' ),
-				esc_html( $option->section )
-			), true, 'notice-warning' );
+				tpl_register_section ( array(
+					"name"			=> $option->section,
+					"title"			=> $option->section,
+					"description"	=> "",
+					"tab"			=> $option->section
+				) );
 
-		}
+				tpl_error (
+					sprintf( __( 'Section "%s" hasn\'t been registered properly. Please register it first with the tpl_register_section() function.', 'tpl' ),
+					esc_html( $option->section )
+				), true, 'notice-warning' );
 
-		// Setting up which page it has to appear on
-		if ( tpl_is_primary_section( $option->section ) ) {
-
-			if ( empty( $tpl_sections[$option->section]['post_type'] ) ) {
-				$page = 'tpl_theme_options';
 			}
-			else {
-				foreach ( $tpl_settings_pages as $key => $settings_page ) {
-					if ( $settings_page["post_type"] == $tpl_sections[$option->section]["post_type"] ) {
-						$page = $key;
-						break;
+
+			// Setting up which page it has to appear on
+			if ( tpl_is_primary_section( $option->section ) ) {
+
+				if ( empty( $tpl_sections[$option->section]['post_type'] ) ) {
+					$page = 'tpl_theme_options';
+				}
+				else {
+					foreach ( $tpl_settings_pages as $key => $settings_page ) {
+						if ( $settings_page["post_type"] == $tpl_sections[$option->section]["post_type"] ) {
+							$page = $key;
+							break;
+						}
 					}
 				}
+
+				if ( !in_array ( $option->section, $loaded_sections ) ) {
+					add_settings_section(
+						$option->section,
+						tpl_section_name ( $option->section ),
+						'tpl_section_info',
+						$page
+					);
+				}
+
 			}
 
+			// Dynamically create sections if not registered yet.
 			if ( !in_array ( $option->section, $loaded_sections ) ) {
-				add_settings_section(
-					$option->section,
-					tpl_section_name ( $option->section ),
-					'tpl_section_info',
-					$page
-				);
+
+				$loaded_sections[] = $option->section;
+
 			}
 
-		}
+			if ( !isset ( $option->type ) ) {
+				$option->type = "";
+			}
 
-		// Dynamically create sections if not registered yet.
-		if ( !in_array ( $option->section, $loaded_sections ) ) {
+			if ( tpl_is_primary_section( $option->section ) ) {
 
-			$loaded_sections[] = $option->section;
+				add_settings_field (
+					$option->name,
+					$option->title,
+					'tpl_settings_page_callback',
+					$page,
+					$option->section,
+					(array) $option
+				);
 
-		}
-
-		if ( !isset ( $option->type ) ) {
-			$option->type = "";
-		}
-
-		if ( tpl_is_primary_section( $option->section ) ) {
-
-			add_settings_field (
-				$option->name,
-				$option->title,
-				'tpl_settings_page_callback',
-				$page,
-				$option->section,
-				(array) $option
-			);
+			}
 
 		}
 
@@ -557,37 +561,41 @@ function tpl_admin_init () {
 
 
 	// Load remaining registered sections
-	foreach ( $tpl_sections as $section ) {
+	if ( isset( $tpl_sections ) && !empty( $tpl_sections ) ) {
 
-		if ( tpl_is_primary_section( $section["name"] ) ) {
+		foreach ( $tpl_sections as $section ) {
 
-			if ( empty( $tpl_sections[$section['name']]['post_type'] ) ) {
-				$page = 'tpl_theme_options';
-			}
-			else {
-				foreach ( $tpl_settings_pages as $key => $settings_page ) {
-					if ( $settings_page["post_type"] == $tpl_sections[$section['name']]['post_type'] ) {
-						$page = $key;
-						break;
+			if ( tpl_is_primary_section( $section["name"] ) ) {
+
+				if ( empty( $tpl_sections[$section['name']]['post_type'] ) ) {
+					$page = 'tpl_theme_options';
+				}
+				else {
+					foreach ( $tpl_settings_pages as $key => $settings_page ) {
+						if ( $settings_page["post_type"] == $tpl_sections[$section['name']]['post_type'] ) {
+							$page = $key;
+							break;
+						}
 					}
 				}
+
+				if ( !in_array( $section["name"], $loaded_sections ) ) {
+
+					add_settings_section(
+						$section["name"],
+						tpl_section_name ( $section["name"] ),
+						'tpl_section_info',
+						$page
+					);
+
+				}
+
 			}
 
 			if ( !in_array( $section["name"], $loaded_sections ) ) {
-
-				add_settings_section(
-					$section["name"],
-					tpl_section_name ( $section["name"] ),
-					'tpl_section_info',
-					$page
-				);
-
+				$loaded_sections[] = $section["name"];
 			}
 
-		}
-
-		if ( !in_array( $section["name"], $loaded_sections ) ) {
-			$loaded_sections[] = $section["name"];
 		}
 
 	}
@@ -1160,27 +1168,31 @@ function tpl_admin_vars_to_js() {
 		$post_type	= str_replace( array( 'appearance_page_', 'settings_page_', 'tpl_', 'toplevel_page_' ), '', $screen->id );
 	}
 
-	foreach ( $tpl_options_array as $option ) {
+	if ( isset( $tpl_options_array ) && !empty( $tpl_options_array ) ) {
 
-		if ( tpl_has_section_post_type ( $option->section, "framework_options" ) ) {
+		foreach ( $tpl_options_array as $option ) {
 
-			if ( isset ( $option->js ) && ( $option->js == true ) ) {
+			if ( tpl_has_section_post_type ( $option->section, "framework_options" ) ) {
 
-				$func_name = $option->js_func;
-				$to_js[$option->name] = $option->$func_name();
+				if ( isset ( $option->js ) && ( $option->js == true ) ) {
+
+					$func_name = $option->js_func;
+					$to_js[$option->name] = $option->$func_name();
+
+				}
 
 			}
 
-		}
+			// Add the conditional options as they will be used in admin
+			if ( $option->get_conditions() !== false ) {
 
-		// Add the conditional options as they will be used in admin
-		if ( $option->get_conditions() !== false ) {
+				if ( tpl_has_section_post_type ( $option->section, $post_type ) ) {
 
-			if ( tpl_has_section_post_type ( $option->section, $post_type ) ) {
+					foreach ( $option->get_conditions() as $key => $value ) {
 
-				foreach ( $option->get_conditions() as $key => $value ) {
+						$to_js["Conditions"][$key] = $value;
 
-					$to_js["Conditions"][$key] = $value;
+					}
 
 				}
 

@@ -62,6 +62,8 @@ class TPL_Textarea extends TPL_Data_Type {
 
 		echo '</div>';
 
+		do_action( 'tpl_after_textarea' );
+
 	}
 
 

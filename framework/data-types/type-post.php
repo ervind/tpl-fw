@@ -28,7 +28,7 @@ class TPL_Post extends TPL_Select {
 			while ( $posts->have_posts() ) {
 				$posts->the_post();
 				$id = get_the_ID();
-				$args["values"][$id] = get_the_title();
+				$args["values"][$id] = '(' . get_the_ID() . ') ' . wp_strip_all_tags( get_the_title() );
 			}
 			wp_reset_postdata();
 		}
