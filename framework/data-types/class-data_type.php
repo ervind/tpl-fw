@@ -309,7 +309,7 @@ class TPL_Data_Type {
 				if ( !tpl_section_registered( $this->section ) ) {
 					return $key;
 				}
-				if ( $settings_page["post_type"] == $tpl_sections[$this->section]['post_type'] ) {
+				if ( isset( $settings_page["post_type"] ) && $settings_page["post_type"] == $tpl_sections[$this->section]['post_type'] ) {
 					return $key;
 				}
 			}
@@ -327,7 +327,7 @@ class TPL_Data_Type {
 
 		if ( tpl_is_primary_section( $this->section ) ) {
 			foreach ( $tpl_settings_pages as $key => $settings_page ) {
-				if ( $settings_page["post_type"] == $tpl_sections[$this->section]['post_type'] ) {
+				if ( isset( $settings_page["post_type"] ) && $settings_page["post_type"] == $tpl_sections[$this->section]['post_type'] ) {
 					if ( $settings_page["menu_func"] == 'add_theme_page' ) {
 						return 'appearance_page';
 					}

@@ -47,6 +47,10 @@
 .tpl-meta-option .tpl-field .tpl-button-container {
   width: 100%;
 }
+.tpl-meta-option-outer:last-child .tpl-optiondesc {
+  border: 0;
+  margin-bottom: 0;
+}
 .ui-tabs {
   position: relative;
   padding: .2em;

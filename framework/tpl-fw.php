@@ -454,17 +454,31 @@ function tpl_admin_init () {
 			$menu_func = $settings_page["menu_func"];
 		}
 		else {
-			$menu_func = 'add_theme_page';
+			$menu_func = 'add_options_page';
 		}
 
-		if ( $key != 'tpl_framework_options' || ( !defined( 'HIDE_FRAMEWORK_OPTIONS' ) || HIDE_FRAMEWORK_OPTIONS == false ) ) {
+		if ( isset( $settings_page["parent_slug"] ) && $settings_page["parent_slug"] != '' ) {
+
+			$menu_func (
+				$settings_page["parent_slug"],
+				$settings_page["page_title"],
+				$settings_page["menu_title"],
+				$settings_page["capability"],
+				$settings_page["menu_slug"],
+				$settings_page["function"]
+			);
+
+		}
+
+		else {
 
 			$menu_func (
 				$settings_page["page_title"],
 				$settings_page["menu_title"],
 				$settings_page["capability"],
 				$settings_page["menu_slug"],
-				$settings_page["function"]
+				$settings_page["function"],
+				'dashicons-admin-network'
 			);
 
 		}
@@ -513,7 +527,7 @@ function tpl_admin_init () {
 				}
 				else {
 					foreach ( $tpl_settings_pages as $key => $settings_page ) {
-						if ( $settings_page["post_type"] == $tpl_sections[$option->section]["post_type"] ) {
+						if ( isset( $settings_page["post_type"] ) && $settings_page["post_type"] == $tpl_sections[$option->section]["post_type"] ) {
 							$page = $key;
 							break;
 						}
@@ -572,7 +586,7 @@ function tpl_admin_init () {
 				}
 				else {
 					foreach ( $tpl_settings_pages as $key => $settings_page ) {
-						if ( $settings_page["post_type"] == $tpl_sections[$section['name']]['post_type'] ) {
+						if ( isset( $settings_page["post_type"] ) && $settings_page["post_type"] == $tpl_sections[$section['name']]['post_type'] ) {
 							$page = $key;
 							break;
 						}
@@ -835,7 +849,7 @@ function tpl_is_primary_section ( $section ) {
 
 	if ( isset( $tpl_sections[$section]["post_type"] ) && !is_array( $tpl_sections[$section]["post_type"] ) ) {
 		foreach ( $tpl_settings_pages as $key => $settings_page ) {
-			if ( $settings_page["post_type"] == $tpl_sections[$section]["post_type"] ) {
+			if ( isset( $settings_page["post_type"] ) && $settings_page["post_type"] == $tpl_sections[$section]["post_type"] ) {
 				return true;
 			}
 		}
@@ -939,6 +953,10 @@ function tpl_add_custom_box ( $post_type ) {
 
     foreach ( $sections as $section ) {
 
+		if ( !isset( $section["description"] ) ) {
+			$section["description"] = '';
+		}
+
         add_meta_box(
             $section["name"],
             $section["title"],
@@ -987,44 +1005,57 @@ function tpl_inner_custom_box ( $post, $metabox ) {
 		if ( $option->condition_connected != '' ) {
 			$data_connected = ' data-connected="' . esc_attr( $option->condition_connected ) . '"';
 		}
+		?>
 
-		echo '<div class="clearfix tpl-meta-option"' . $data_connected . '>';
+		<div class="clearfix tpl-meta-option-outer">
 
-		echo '<span class="tpl-meta-option-label">' . tpl_kses( $option->title ) . '</span>';
+			<div class="tpl-meta-option"<?php echo $data_connected; ?>>
 
-		if ( !isset( $option->type ) || $option->type == "" ) {
-			tpl_error(
-				sprintf( __( 'No data type was set up for option: %s', 'tpl' ),
-				esc_html( $option->name )
-			), false );
-		}
+				<span class="tpl-meta-option-label"><?php echo tpl_kses( $option->title ); ?></span>
 
-		elseif ( !tpl_type_registered ( $option->type ) ) {
-			tpl_error (
-				sprintf( __( 'Invalid data type (%1$s) was set for option: %2$s', 'tpl' ),
-					esc_html( $option->type ),
-					esc_html( $option->name )
-				), false );
-		}
+				<?php
+				if ( !isset( $option->type ) || $option->type == "" ) {
+					tpl_error(
+						sprintf( __( 'No data type was set up for option: %s', 'tpl' ),
+						esc_html( $option->name )
+					), false );
+				}
 
-		else {
+				elseif ( !tpl_type_registered ( $option->type ) ) {
+					tpl_error (
+						sprintf( __( 'Invalid data type (%1$s) was set for option: %2$s', 'tpl' ),
+							esc_html( $option->type ),
+							esc_html( $option->name )
+						), false );
+				}
 
-			echo '<div class="tpl-meta-option-wrapper">';
-			$option->form_field();
-			echo '</div>';
-			if ( $option->repeat !== false && !isset( $option->repeat["number"] ) ) {
-				echo '<div class="tpl-button-container"><button class="tpl-repeat-add" data-for="' . esc_attr( $option->data_name ) . '">' . esc_html( $option->repeat_button_title ) . '</button></div>';
-			}
+				else { ?>
 
-		}
+					<div class="tpl-meta-option-wrapper">
+						<?php $option->form_field(); ?>
+					</div>
 
-		echo '</div><p class="tpl-optiondesc clearfix">'. tpl_kses( $option->description ) .'</p><div class="clearfix"></div>';
+					<?php if ( $option->repeat !== false && !isset( $option->repeat["number"] ) ) { ?>
+						<div class="tpl-button-container">
+							<button class="tpl-repeat-add" data-for="<?php echo esc_attr( $option->data_name ); ?>">
+								<?php echo esc_html( $option->repeat_button_title ); ?>
+							</button>
+						</div>
+					<?php }
 
-	}
+				}
+				?>
 
-	echo '<div class="clearfix"></div>';
+			</div>
+			<p class="tpl-optiondesc clearfix">
+				<?php echo tpl_kses( $option->description ); ?>
+			</p>
 
-}
+		</div>
+
+	<?php } ?>
+
+<?php }
 
 
 
