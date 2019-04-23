@@ -13,6 +13,9 @@ class TPL_Number extends TPL_Data_Type {
 	// Writes the form field in wp-admin
 	public function form_field_content ( $args ) {
 
+		// var_dump($this);
+		// var_dump($this->get_option());
+
 		if ( $this->get_option() === NULL ) {
 			$value = $this->default;
 		}
@@ -32,13 +35,13 @@ class TPL_Number extends TPL_Data_Type {
 
 		echo '<input type="number" class="tpl-preview-1" id="' . esc_attr( $this->form_ref() ) . '" name="' . esc_attr( $this->form_ref() ) . '" value="' . esc_attr( $value ) . '"';
 
-		if ( $this->min != NULL ) {
+		if ( $this->min !== NULL ) {
 			echo ' min="' . intval( $this->min ) . '"';
 		}
-		if ( $this->max != NULL ) {
+		if ( $this->max !== NULL ) {
 			echo ' max="' . intval( $this->max ) . '"';
 		}
-		if ( $this->step != NULL ) {
+		if ( $this->step !== NULL ) {
 			echo ' step="' . intval( $this->step ) . '"';
 		}
 		if ( $this->placeholder != '' ) {

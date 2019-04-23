@@ -368,7 +368,8 @@ class TPL_Data_Type {
 				$id = $post->ID;
 			}
 
-			$meta_key = '_tpl_' . $this->name;
+			$option_name = apply_filters( 'tpl_option_name_' . $this->name, $this->name );
+			$meta_key = '_tpl_' . $option_name;
 
 			if ( !tpl_has_section_post_type( $this->section, get_post_type( $id ) ) ) {
 				return false;
@@ -378,8 +379,9 @@ class TPL_Data_Type {
 			if ( metadata_exists( 'post', $id, $meta_key ) ) {
 				$options = get_post_meta( $id, $meta_key );
 				$options = array(
-					$this->name	=> $options[0],
+					$option_name	=> array( $options[0] ),
 				);
+
 			}
 
 			// If not, return the default value defined in your options file

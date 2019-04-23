@@ -12,10 +12,11 @@ class TPL_TinyMCE extends TPL_Textarea {
 
 		parent::__construct( $args );
 
-		if ( isset( $_GET["page"] )
+		if ( is_admin()
+			&& isset( $_GET["page"] )
 			&& ( tpl_is_primary_section( $this->section ) )
 			&& $tpl_mce_buttons_filtered !== true
-			&& tpl_has_section_post_type ( $this->section, str_replace( 'tpl_', '', $_GET["page"] ) ) ) {
+		) {
 
 			add_filter( 'mce_buttons', array( $this, 'mce_buttons' ) );
 			add_action( 'tpl_after_primary_sections', array( $this, 'mce_dummy_editor' ) );

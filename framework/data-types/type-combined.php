@@ -25,6 +25,10 @@ class TPL_Combined extends TPL_Data_Type {
 			$type_class				= tpl_get_type_class( $part["type"] );
 			$part["data_name"]		= $this->data_name;
 
+			add_filter( 'tpl_option_name_' . $part["name"], function() {
+				return $this->name;
+			} );
+
 			if ( $this->js == true ) {
 				$part["js"] = true;
 			}
@@ -42,6 +46,8 @@ class TPL_Combined extends TPL_Data_Type {
 			$path_s = $this->get_level() * 2 + 2;
 			$parts_objects[$part["name"]]->path = $this->path;
 			$parts_objects[$part["name"]]->path[$path_i] = 0;
+			$parts_objects[$part["name"]]->path[$path_s] = $part["name"];
+
 			$parts_objects[$part["name"]]->path[$path_s] = $part["name"];
 
 		}
