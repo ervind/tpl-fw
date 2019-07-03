@@ -8,19 +8,19 @@ For more information and documentation, visit [https://a-idea.studio/tpl-framewo
 
 
 // Version number of the framework
-define( 'TPL_VERSION', '1.3.3' );
+define( 'TPL_VERSION', '1.3.4' );
 
 
 
 
 // Firstly, adding the necessary action hooks
 
+// Load data type components
+tpl_load_data_types();
+
+
 // Adding admin script...
 add_action ( 'admin_enqueue_scripts', 'tpl_admin_scripts', 20 );
-
-
-// Load data type components
-add_action ( 'init', 'tpl_load_data_types' );
 
 
 // Initial actions (menus, admin pages)
@@ -165,6 +165,7 @@ function tpl_load_data_types () {
 		"type-page_builder",
 	);
 
+
 	// Now run the load loop for Data Types
 	foreach ( $files as $file ) {
 
@@ -258,11 +259,22 @@ function tpl_remove_empty_p ( $content ) {
 OPTION HANDLING
 */
 
+
+// Registers a setting page
+function tpl_add_settings_page( $name, $settings_page_array ) {
+	global $tpl_settings_pages;
+
+	$tpl_settings_pages[$name] = $settings_page_array;
+
+}
+
+
+
 // Register an option in the framework
 function tpl_register_option ( $narr ) {
 
 	// Use the global $tpl_options_array that builds up the Plugin Settings panel
-	global $tpl_options_array, $tpl_data_types;
+	global $tpl_options_array;
 
 	$narr = apply_filters( 'tpl_before_register_option', $narr );
 
@@ -284,7 +296,7 @@ function tpl_register_option ( $narr ) {
 	// If not registered yet, register it
 	if ( !$already_registered ) {
 
-		if ( !isset( $narr["type"] ) || !in_array( $narr["type"], $tpl_data_types ) ) {
+		if ( !isset( $narr["type"] ) || !tpl_type_registered( $narr["type"] ) ) {
 
 			tpl_error(
 				sprintf(

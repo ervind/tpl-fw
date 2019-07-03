@@ -7,6 +7,10 @@ Documentation will be available soon.
 
 ## Changelog
 
+### v1.3.4 (2019-07-03)
+* Made it possible to run the FW code earlier in the hooks
+
+
 ### v1.3.3 (2019-04-17)
 
 * TinyMCE double button line bugfix

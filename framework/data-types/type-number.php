@@ -13,9 +13,6 @@ class TPL_Number extends TPL_Data_Type {
 	// Writes the form field in wp-admin
 	public function form_field_content ( $args ) {
 
-		// var_dump($this);
-		// var_dump($this->get_option());
-
 		if ( $this->get_option() === NULL ) {
 			$value = $this->default;
 		}
