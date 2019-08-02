@@ -253,9 +253,11 @@ TABLE OF CONTENTS
 
 	// Date picker for the Date type
 	if ($.datepicker !== undefined) {
-		$('body .tpl-field.tpl-dt-date input.tpl-date-field').datepicker({
-			dateFormat: 'yy-mm-dd',
-			firstDay: TPL_Admin.date_starts_with
+		$('body').on( 'focus', '.tpl-field.tpl-dt-date input.tpl-date-field', function(){
+			$(this).datepicker({
+				dateFormat	: 'yy-mm-dd',
+				firstDay	: TPL_Admin.date_starts_with,
+			});
 		});
 	}
 
@@ -349,14 +351,6 @@ TABLE OF CONTENTS
 
 		// Launch Select2 on select fields
 		tpl_select2_init();
-
-		// Launch date picker
-		if ($.datepicker !== undefined) {
-			$('body .tpl-field.tpl-dt-date input.tpl-date-field').datepicker({
-				dateFormat: 'yy-mm-dd',
-				firstDay: TPL_Admin.date_starts_with
-			});
-		}
 
 		tpl_tinymce_init();
 		tpl_set_repeater_headers();
@@ -831,7 +825,6 @@ TABLE OF CONTENTS
 
 				for ( ci = 0; ci < Olength; ci++ ) {
 
-
 					if ( typeof TPL_Admin.Conditions[option_name][ci] !== 'undefined' ) {
 
 						var condition_type = TPL_Admin.Conditions[option_name][ci]["type"];
@@ -891,9 +884,11 @@ TABLE OF CONTENTS
 
 							}
 
-							base_id = '#' + section;
 							if ( url.indexOf('post.php') > -1 || url.indexOf('post-new.php') > -1 ) {
-								base_id += '_' + c_array[0];
+								base_id = '#' + c_array[0];
+							}
+							else {
+								base_id = '#' + section;
 							}
 							for ( var l = 0; l < c_array.length; l++ ) {
 								if ( url.indexOf('post.php') > -1 || url.indexOf('post-new.php') > -1 ) {
@@ -1069,9 +1064,6 @@ TABLE OF CONTENTS
 							$(this).closest(container).next(container).has('.tpl-optiondesc').removeClass('tpl-admin-hide');
 							$(this).closest(container).removeClass('tpl-admin-hide');
 						}
-						else {
-							$(this).closest(container).next('p.tpl-optiondesc').removeClass('tpl-admin-hide');
-						}
 						$(this).find('input, select, textarea').each(function(){
 							$(this).attr('name', $(this).attr('id'));
 						});
@@ -1087,9 +1079,6 @@ TABLE OF CONTENTS
 						if ( container == 'tr' && $(this).attr('data-level') == '0' ) {
 							$(this).closest(container).next(container).has('.tpl-optiondesc').addClass('tpl-admin-hide');
 							$(this).closest(container).addClass('tpl-admin-hide');
-						}
-						else {
-							$(this).closest(container).next('p.tpl-optiondesc').addClass('tpl-admin-hide');
 						}
 						$(this).find('input, select, textarea').removeAttr('name');
 

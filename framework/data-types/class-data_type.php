@@ -18,6 +18,7 @@ class TPL_Data_Type {
 	public		$admin_class		= '';			// Extra class added to the admin field
 	public		$description		= '';			// Initialize the option's description
 	public		$condition_connected = '';			// Some initialization for conditions
+	public		$visibility_level 	= 'all';		// By default we show the option for all post levels
 	protected	$is_subitem			= false;		// Is set to TRUE if it's a subitem of another option
 	protected	$path				= array();		// Used to find instances and subitems of an option
 
@@ -309,7 +310,7 @@ class TPL_Data_Type {
 				if ( !tpl_section_registered( $this->section ) ) {
 					return $key;
 				}
-				if ( isset( $settings_page["post_type"] ) && $settings_page["post_type"] == $tpl_sections[$this->section]['post_type'] ) {
+				if ( isset( $settings_page["post_type"] ) && tpl_has_section_post_type( $tpl_sections[$this->section]['name'], $settings_page["post_type"] ) ) {
 					return $key;
 				}
 			}
@@ -327,7 +328,7 @@ class TPL_Data_Type {
 
 		if ( tpl_is_primary_section( $this->section ) ) {
 			foreach ( $tpl_settings_pages as $key => $settings_page ) {
-				if ( isset( $settings_page["post_type"] ) && $settings_page["post_type"] == $tpl_sections[$this->section]['post_type'] ) {
+				if ( isset( $settings_page["post_type"] ) && tpl_has_section_post_type( $tpl_sections[$this->section]['name'], $settings_page["post_type"] ) ) {
 					if ( $settings_page["menu_func"] == 'add_theme_page' ) {
 						return 'appearance_page';
 					}
@@ -347,7 +348,6 @@ class TPL_Data_Type {
 	// This function is used by data types, please use it if you are writing your own data type!
 	// In your template files use tpl_get_value instead
 	public function get_option ( $args = array(), $id = 0 ) {
-
 		global $tpl_sections;
 
 
@@ -375,13 +375,21 @@ class TPL_Data_Type {
 				return false;
 			}
 
+
 			// If the metadata exists in the database, return it!
 			if ( metadata_exists( 'post', $id, $meta_key ) ) {
-				$options = get_post_meta( $id, $meta_key );
-				$options = array(
-					$option_name	=> array( $options[0] ),
-				);
-
+				if ( $this->repeat || ( $this->is_subitem && $this->parent_repeat ) ) {
+					$options = get_post_meta( $id, $meta_key );
+					$options = array(
+						$option_name	=> $options[0],
+					);
+				}
+				else {
+					$options = get_post_meta( $id, $meta_key );
+					$options = array(
+						$option_name	=> array( $options[0] ),
+					);
+				}
 			}
 
 			// If not, return the default value defined in your options file
@@ -392,7 +400,9 @@ class TPL_Data_Type {
 
 		// ... or a Settings page by default
 		else {
+
 			$options = get_option( $this->get_data_section() );
+
 		}
 
 

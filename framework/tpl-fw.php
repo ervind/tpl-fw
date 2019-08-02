@@ -8,7 +8,7 @@ For more information and documentation, visit [https://a-idea.studio/tpl-framewo
 
 
 // Version number of the framework
-define( 'TPL_VERSION', '1.3.4' );
+define( 'TPL_VERSION', '1.3.5' );
 
 
 
@@ -386,7 +386,7 @@ function tpl_section_registered ( $section ) {
 
 
 // Checks if an option is registered
-function tpl_option_registered ( $name ) {
+function tpl_option_registered( $name ) {
 
 	global $tpl_options_array;
 
@@ -403,7 +403,7 @@ function tpl_option_registered ( $name ) {
 
 // Collects the sections for the $post_type. If no post type is specified, it returns the Theme Options sections.
 // For future reference »» it should drop an error message in future versions
-function tpl_get_sections ( $post_type = "theme_options" ) {
+function tpl_get_sections( $post_type = "theme_options" ) {
 
 	global $tpl_sections;
 
@@ -534,12 +534,13 @@ function tpl_admin_init () {
 			// Setting up which page it has to appear on
 			if ( tpl_is_primary_section( $option->section ) ) {
 
+
 				if ( empty( $tpl_sections[$option->section]['post_type'] ) ) {
 					$page = 'tpl_theme_options';
 				}
 				else {
 					foreach ( $tpl_settings_pages as $key => $settings_page ) {
-						if ( isset( $settings_page["post_type"] ) && $settings_page["post_type"] == $tpl_sections[$option->section]["post_type"] ) {
+						if ( isset( $settings_page["post_type"] ) && tpl_has_section_post_type( $tpl_sections[$option->section]["name"], $settings_page["post_type"] ) ) {
 							$page = $key;
 							break;
 						}
@@ -598,7 +599,7 @@ function tpl_admin_init () {
 				}
 				else {
 					foreach ( $tpl_settings_pages as $key => $settings_page ) {
-						if ( isset( $settings_page["post_type"] ) && $settings_page["post_type"] == $tpl_sections[$section['name']]['post_type'] ) {
+						if ( isset( $settings_page["post_type"] ) && tpl_has_section_post_type( $tpl_sections[$section['name']]["name"], $settings_page["post_type"] ) ) {
 							$page = $key;
 							break;
 						}
@@ -662,7 +663,6 @@ function tpl_section_name ( $section_slug ) {
 
 // Returns true if $section_name is connected to $post_type
 function tpl_has_section_post_type ( $section_name, $post_type ) {
-
 	global $tpl_sections;
 
 	if ( isset( $tpl_sections[$section_name] ) ) {
@@ -686,7 +686,6 @@ function tpl_has_section_post_type ( $section_name, $post_type ) {
 
 // This function puts an option input field on the settings page
 function tpl_settings_page_callback ( $args ) {
-
 	global $tpl_options_array;
 
 	$name = $args["name"];
@@ -856,12 +855,11 @@ function tpl_get_option_object ( $name, $post_id = 0 ) {
 
 // Checks if this is primary (Plugin Settings, etc.) or secondary (e.g. Post Metabox) section
 function tpl_is_primary_section ( $section ) {
-
 	global $tpl_sections, $tpl_settings_pages;
 
-	if ( isset( $tpl_sections[$section]["post_type"] ) && !is_array( $tpl_sections[$section]["post_type"] ) ) {
+	if ( isset( $tpl_sections[$section]["post_type"] ) ) {
 		foreach ( $tpl_settings_pages as $key => $settings_page ) {
-			if ( isset( $settings_page["post_type"] ) && $settings_page["post_type"] == $tpl_sections[$section]["post_type"] ) {
+			if ( isset( $settings_page["post_type"] ) && tpl_has_section_post_type( $tpl_sections[$section]["name"], $settings_page["post_type"] ) ) {
 				return true;
 			}
 		}
@@ -1000,6 +998,16 @@ function tpl_inner_custom_box ( $post, $metabox ) {
 
 	foreach ( $options as $option ) {
 
+		// Skip this one if we are on a Child post and it's a parent-only option
+		if ( !empty( get_post_ancestors( $post ) ) && $option->visibility_level == 'parent' ) {
+			continue;
+		}
+
+		// Skip this one if we are on a Parent post and it's a child-only option
+		if ( !empty( get_children( [ "post_parent" => $post->ID ] ) ) && $option->visibility_level == 'child' ) {
+			continue;
+		}
+
 		$meta_key = '_tpl_' . $option->get_data_section();
 
 		if ( get_post_meta ( $post->ID, $meta_key ) == "" ) {
@@ -1059,7 +1067,7 @@ function tpl_inner_custom_box ( $post, $metabox ) {
 				?>
 
 			</div>
-			<p class="tpl-optiondesc clearfix">
+			<p class="tpl-optiondesc clearfix"<?php echo $data_connected; ?>>
 				<?php echo tpl_kses( $option->description ); ?>
 			</p>
 
@@ -1107,11 +1115,11 @@ function tpl_save_postdata( $post_id ) {
 
 	// Update the meta field in the database.
 
-	$sections = tpl_get_sections ( get_post_type ( $post_id ) );
+	$sections = tpl_get_sections( get_post_type( $post_id ) );
 
 	foreach ( $sections as $section ) {
 
-		$options = tpl_options_by_section ( $section["name"] );
+		$options = tpl_options_by_section( $section["name"] );
 
 		foreach ( $options as $option ) {
 
@@ -1171,7 +1179,7 @@ function tpl_admin_scripts() {
 
 	// Scripts
 	wp_enqueue_script( 'jquery-ui-tabs', '', array( 'jquery', 'jquery-ui-core' ) );
-	wp_enqueue_script( 'tpl-admin-scripts', tpl_base_uri() . '/framework/script/admin-scripts.min.js', array( 'jquery', 'jquery-ui-tabs' ), TPL_VERSION );
+	wp_enqueue_script( 'tpl-admin-scripts', tpl_base_uri() . '/framework/script/admin-scripts.js', array( 'jquery', 'jquery-ui-tabs' ), TPL_VERSION );
 
 	// Variables to be used in scripts
 	wp_localize_script( 'tpl-admin-scripts', 'TPL_Admin', array_merge( apply_filters( 'tpl_admin_js_strings', array() ), tpl_admin_vars_to_js() ) );
@@ -1214,17 +1222,6 @@ function tpl_admin_vars_to_js() {
 	if ( isset( $tpl_options_array ) && !empty( $tpl_options_array ) ) {
 
 		foreach ( $tpl_options_array as $option ) {
-
-			if ( tpl_has_section_post_type ( $option->section, "framework_options" ) ) {
-
-				if ( isset ( $option->js ) && ( $option->js == true ) ) {
-
-					$func_name = $option->js_func;
-					$to_js[$option->name] = $option->$func_name();
-
-				}
-
-			}
 
 			// Add the conditional options as they will be used in admin
 			if ( $option->get_conditions() !== false ) {

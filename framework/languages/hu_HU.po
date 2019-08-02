@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Themple Framework\n"
-"POT-Creation-Date: 2016-10-19 11:00+0200\n"
-"PO-Revision-Date: 2016-10-19 11:02+0200\n"
+"POT-Creation-Date: 2019-08-02 10:22+0200\n"
+"PO-Revision-Date: 2019-08-02 10:27+0200\n"
 "Last-Translator: Ervin Domonkos <ervin.domonkos@gmail.com>\n"
 "Language-Team: a-idea studio <info@a-idea.studio>\n"
 "Language: hu_HU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -17,20 +17,20 @@ msgstr ""
 "X-Poedit-SearchPath-0: languages\n"
 "X-Poedit-SearchPath-1: .\n"
 
-#: data-types/class-data_type.php:32
+#: data-types/class-data_type.php:31
 msgid "Add row"
 msgstr "Új sor"
 
-#: data-types/class-data_type.php:42
+#: data-types/class-data_type.php:43
 msgid "The \"name\" attribute is required during registering options"
 msgstr "A \"name\" attribútum megadása kötelező az opciók regisztrálása során"
 
-#: data-types/class-data_type.php:50
+#: data-types/class-data_type.php:51
 #, php-format
 msgid "It's recommended to set a title for \"%s\" option"
 msgstr "Ajánlott címet rendelni a \"%s\" opcióhoz"
 
-#: data-types/class-data_type.php:60
+#: data-types/class-data_type.php:61
 #, php-format
 msgid ""
 "It's recommended to assign %s to a section. Using a dummy section to avoid "
@@ -39,171 +39,228 @@ msgstr ""
 "Ajánlott, hogy a %s opciót rendeld hozzá egy szekcióhoz. Generáltunk egy "
 "dummy szekciót, hogy elkerüljük a hibákat..."
 
-#: data-types/class-data_type.php:217
+#: data-types/class-data_type.php:235 data-types/class-data_type.php:591
+msgid "Minimize"
+msgstr "Összecsuk"
+
+#: data-types/class-data_type.php:240 data-types/class-data_type.php:592
+msgid "Maximize"
+msgstr "Kinyit"
+
+#: data-types/class-data_type.php:244
 msgid "Drag & Drop to reorder"
 msgstr "Fogd és vidd az átrendezéshez"
 
-#: data-types/class-data_type.php:248 data-types/type-select.php:106
-#: data-types/type-textarea.php:46
-msgid "prefix:"
-msgstr "előtag:"
-
-#: data-types/class-data_type.php:252 data-types/type-select.php:110
-#: data-types/type-textarea.php:50
-msgid "suffix:"
-msgstr "utótag:"
-
-#: data-types/class-data_type.php:256 data-types/type-select.php:114
-#: data-types/type-textarea.php:54
-msgid "default:"
-msgstr "alapeset:"
-
-#: data-types/class-data_type.php:269 data-types/type-combined.php:158
-#: data-types/type-select.php:127 data-types/type-textarea.php:67
+#: data-types/class-data_type.php:249
 msgid "Remove row"
 msgstr "Sor törlése"
 
-#: data-types/class-data_type.php:642
+#: data-types/class-data_type.php:286 data-types/type-boolean.php:50
+#: data-types/type-number.php:70 data-types/type-select.php:123
+#: data-types/type-textarea.php:51
+msgid "default:"
+msgstr "alapeset:"
+
+#: data-types/class-data_type.php:590
 msgid "Do you really want to remove this instance?"
 msgstr "Valóban el akarod távolítani ezt a példányt?"
 
-#: data-types/type-icon.php:18
+#: data-types/class-data_type.php:593
+msgid "Show Settings"
+msgstr "Mutasd a beállításokat"
+
+#: data-types/class-data_type.php:594
+msgid "Hide Settings"
+msgstr "Beállítások elrejtése"
+
+#: data-types/type-color.php:59
+msgid "Clear"
+msgstr "Törlés"
+
+#: data-types/type-color.php:60
+msgid "Default"
+msgstr "Alapeset"
+
+#: data-types/type-color.php:61
+msgid "Select Color"
+msgstr "Válassz színt"
+
+#: data-types/type-color.php:62
+msgid "Current Color"
+msgstr "Aktuális szín"
+
+#: data-types/type-font.php:28
+#, php-format
+msgid "You can find demos for the Google fonts here: %s"
+msgstr "Itt tudod megtekinteni a Google betűkészleteket: %s"
+
+#: data-types/type-font_awesome.php:40
+msgid "Select an Icon"
+msgstr "Válassz ikont"
+
+#: data-types/type-icon.php:16
 msgid "Icon"
 msgstr "Ikon"
 
-#: data-types/type-icon.php:19
+#: data-types/type-icon.php:17
 msgid "The Font Awesome code of the icon (uses the fa-xxx name structure)"
 msgstr "Az ikon Font Awesome kódja (fa-xxx formátumban)"
 
-#: data-types/type-icon.php:24
+#: data-types/type-icon.php:25
 msgid "Icon Color"
 msgstr "Ikon színe"
 
-#: data-types/type-icon.php:25
+#: data-types/type-icon.php:26
 msgid "What should be the color of this icon?"
 msgstr "Milyen színű legyen ez az ikon?"
 
-#: data-types/type-icon.php:31
+#: data-types/type-icon.php:33
 msgid "Icon size"
 msgstr "Ikon mérete"
 
-#: data-types/type-icon.php:32
+#: data-types/type-icon.php:34
 msgid "Size of the icon in Font Awesome sizes"
 msgstr "Ikonméret a Font Awesome méretek alapján"
 
-#: data-types/type-icon.php:36
+#: data-types/type-icon.php:38
+msgid "Extra Small"
+msgstr "Extra kicsi"
+
+#: data-types/type-icon.php:39
+msgid "Small"
+msgstr "Kicsi"
+
+#: data-types/type-icon.php:40
 msgid "Normal"
 msgstr "Normál"
 
-#: data-types/type-icon.php:37
+#: data-types/type-icon.php:41
 msgid "Larger"
 msgstr "Nagyobb"
 
-#: data-types/type-icon.php:38
+#: data-types/type-icon.php:42
 msgid "Double"
 msgstr "Dupla"
 
-#: data-types/type-icon.php:39
+#: data-types/type-icon.php:43
 msgid "Triple"
 msgstr "Tripla"
 
-#: data-types/type-icon.php:40
+#: data-types/type-icon.php:44
 msgid "4x"
 msgstr "4x"
 
-#: data-types/type-icon.php:41
+#: data-types/type-icon.php:45
 msgid "5x"
 msgstr "5x"
 
+#: data-types/type-icon.php:46
+msgid "6x"
+msgstr ""
+
 #: data-types/type-icon.php:47
+msgid "7x"
+msgstr ""
+
+#: data-types/type-icon.php:48
+msgid "8x"
+msgstr ""
+
+#: data-types/type-icon.php:49
+msgid "9x"
+msgstr ""
+
+#: data-types/type-icon.php:50
+msgid "10x"
+msgstr ""
+
+#: data-types/type-icon.php:57
 msgid "Icon URL"
 msgstr "Ikon URL-je"
 
-#: data-types/type-icon.php:48
+#: data-types/type-icon.php:58
 msgid "Where should the icon be linked to?"
 msgstr "Hová linkeljük az ikont?"
 
-#: data-types/type-icon.php:53
+#: data-types/type-icon.php:64
 msgid "Link Title"
 msgstr "Link címe"
 
-#: data-types/type-icon.php:54
+#: data-types/type-icon.php:65
 msgid ""
 "This is displayed when hovering the mouse over the icon when it is a link"
 msgstr "Ez lesz megjelenítve, amikor az egérmutatót az ikon fölé mozgatják"
 
-#: data-types/type-icon.php:67
+#: data-types/type-icon.php:79
 msgid "Open in new tab?"
 msgstr "Új lapon nyíljon?"
 
-#: data-types/type-icon.php:68
+#: data-types/type-icon.php:80
 msgid "If yes, the link will open in a new browser tab"
 msgstr "Ha igen, a link egy új böngészőablakban fog nyílni"
 
-#: data-types/type-icon.php:72
-msgid "No"
-msgstr "Nem"
-
-#: data-types/type-icon.php:73
-msgid "Yes"
-msgstr "Igen"
-
-#: data-types/type-image.php:61
+#: data-types/type-image.php:60
 #, php-format
 msgid "%s image tag"
 msgstr "%s kép címke"
 
-#: data-types/type-image.php:68
+#: data-types/type-image.php:67
 msgid "Placeholder image"
 msgstr "Helyfogó kép"
 
-#: data-types/type-image.php:82
+#: data-types/type-image.php:80
 msgid "Click here to remove image."
 msgstr "Kattints ide a kép eltávolításához."
 
-#: data-types/type-image.php:86
+#: data-types/type-image.php:84
 msgid "Upload"
 msgstr "Feltöltés"
 
-#: data-types/type-image.php:212 data-types/type-image.php:213
+#: data-types/type-image.php:203 data-types/type-image.php:204
 msgid "Choose Image"
 msgstr "Válassz képet"
 
-#: data-types/type-image.php:308
-msgid "Please register a logo first before calling the tpl_logo() function."
-msgstr "Kérlek regisztrálj egy logót mielőtt meghívnád a tpl_logo() függvényt."
+#: data-types/type-tinymce.php:72
+msgid "Visual"
+msgstr "Vizuális"
 
-#: tpl-inc/themple-core.php:112
-msgid "Themple error"
-msgstr "Themple hibaüzenet"
+#: data-types/type-tinymce.php:73
+msgid "Text"
+msgstr "Szöveges"
 
-#: tpl-inc/themple-core.php:115
-msgid "Themple warning"
-msgstr "Themple figyelmeztetés"
+#: tpl-fw.php:107
+#, php-format
+msgid "%s error"
+msgstr "%s hiba"
 
-#: tpl-inc/themple-core.php:138
+#: tpl-fw.php:110
+#, php-format
+msgid "%s warning"
+msgstr "%s figyelmeztetés"
+
+#: tpl-fw.php:133
 msgid "File not exists"
 msgstr "A fájl nem létezik"
 
-#: tpl-inc/themple-core.php:264
+#: tpl-fw.php:284
 msgid "You forgot to set name for an option. Please check your options files."
 msgstr ""
 "Elfelejtettél nevet adni az egyik opciónak. Kérlek ellenőrizd az options "
 "fájljaidat."
 
-#: tpl-inc/themple-core.php:283
+#: tpl-fw.php:303
 #, php-format
 msgid "You forgot to set the type of %s. Using static to avoid errors..."
 msgstr ""
 "Elfelejtetted beállítani a %s opció típusát. Static-ra állítottuk, hogy "
 "elkerüljük a hibákat..."
 
-#: tpl-inc/themple-core.php:298
+#: tpl-fw.php:318
 #, php-format
 msgid "Data type %s doesn't exists"
 msgstr "A %s adattípus nem létezik"
 
-#: tpl-inc/themple-core.php:307
+#: tpl-fw.php:327
 #, php-format
 msgid ""
 "Option with name %1$s was defined more than once in your options files. "
@@ -212,25 +269,44 @@ msgstr ""
 "Az %1$s azonosítójú beállítás egynél többször került definiálásra az options "
 "fájlokban. Az először definiált verzió az aktív (%2$s)"
 
-#: tpl-inc/themple-core.php:490
+#: tpl-fw.php:528
 #, php-format
 msgid ""
-"Section \"%s\" hasn't been registered properly. Please register it in "
-"options/sections.php."
+"Section \"%s\" hasn't been registered properly. Please register it first "
+"with the tpl_register_section() function."
 msgstr ""
-"A \"%s\" szekció nem lett rendesen regisztrálva. Kérlek regisztráld az "
-"options/sections.php fájlban."
+"A \"%s\" szekció nem lett rendesen regisztrálva. Kérlek regisztráld a "
+"tpl_register_section() függvénnyel."
 
-#: tpl-inc/themple-core.php:653 tpl-inc/themple-core.php:979
+#: tpl-fw.php:696 tpl-fw.php:1039
 #, php-format
 msgid "No data type was set up for option: %s"
 msgstr "Hiányzik az adattípus ehhez a beállításhoz: %s"
 
-#: tpl-inc/themple-core.php:660 tpl-inc/themple-core.php:986
+#: tpl-fw.php:703 tpl-fw.php:1046
 #, php-format
 msgid "Invalid data type (%1$s) was set for option: %2$s"
 msgstr ""
 "Nem megfelelő adattípus (%1$s) van hozzárendelve ehhez a beállításhoz: %2$s"
+
+#~ msgid "prefix:"
+#~ msgstr "előtag:"
+
+#~ msgid "suffix:"
+#~ msgstr "utótag:"
+
+#~ msgid "No"
+#~ msgstr "Nem"
+
+#~ msgid "Yes"
+#~ msgstr "Igen"
+
+#~ msgid "Please register a logo first before calling the tpl_logo() function."
+#~ msgstr ""
+#~ "Kérlek regisztrálj egy logót mielőtt meghívnád a tpl_logo() függvényt."
+
+#~ msgid "Themple error"
+#~ msgstr "Themple hibaüzenet"
 
 #~ msgid "Empty space"
 #~ msgstr "Üres hely"
@@ -246,9 +322,6 @@ msgstr ""
 
 #~ msgid "Image"
 #~ msgstr "Kép"
-
-#~ msgid "Select image"
-#~ msgstr "Válassz képet"
 
 #~ msgid "Upload or select previously uploaded image here"
 #~ msgstr "Tölts fel egy új képet vagy válassz ki egy korábban feltöltöttet"
@@ -316,9 +389,6 @@ msgstr ""
 #~ msgstr ""
 #~ "A widget gyűjtemények beállíthatók a Megjelenés > Widgetek menüpont alatt"
 
-#~ msgid "You can find demos for the Google fonts here: %s"
-#~ msgstr "Itt tudod megtekinteni a Google betűkészleteket: %s"
-
 #~ msgid "Select app for this box"
 #~ msgstr "Válaszd ki az alkalmazást ehhez a dobozhoz"
 
@@ -365,9 +435,6 @@ msgstr ""
 
 #~ msgid "3rd party libraries bundled with the Themple Framework"
 #~ msgstr "Külső könyvtárak, amelyek a Themple Framework csomag részei"
-
-#~ msgid "Backend settings"
-#~ msgstr "Rendszer beállítások"
 
 #~ msgid "Settings for the Themple admin panels"
 #~ msgstr "Beállítások a Themple adminisztrációs felületéhez"

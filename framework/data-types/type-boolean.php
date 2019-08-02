@@ -76,13 +76,13 @@ class TPL_Boolean extends TPL_Data_Type {
 	// Gets the pure option value
 	public function get_option ( $args = array(), $id = 0 ) {
 
-		$option = parent::get_option( $args = array(), $id = 0 );
+		$option = parent::get_option( $args, $id );
 
-		if ( $option == 'yes' ) {
+		if ( $option == 'yes' || $option == '1' ) {
 			return true;
 		}
 
-		if ( $option == 'no' ) {
+		if ( $option == 'no' || $option == '0' ) {
 			return false;
 		}
 

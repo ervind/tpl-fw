@@ -73,7 +73,9 @@ class TPL_Date extends TPL_Data_Type {
 	// Formats the option into value: uses the date format saved in WP-Admin
 	public function format_option ( $value, $args = array() ) {
 
-		return date( get_option( 'date_format' ), strtotime( $value ) );
+		$date = new DateTime( $value );
+
+		return $date->format( get_option( 'date_format' ) );
 
 	}
 

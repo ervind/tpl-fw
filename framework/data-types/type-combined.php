@@ -50,6 +50,8 @@ class TPL_Combined extends TPL_Data_Type {
 
 			$parts_objects[$part["name"]]->path[$path_s] = $part["name"];
 
+			$parts_objects[$part["name"]]->parent_repeat = $this->repeat;
+
 		}
 
 		$this->parts = $parts_objects;
