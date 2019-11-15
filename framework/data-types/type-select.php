@@ -19,10 +19,10 @@ class TPL_Select extends TPL_Data_Type {
 
 			add_action( 'admin_enqueue_scripts', function ( $hook_suffix ) {
 				if ( !wp_script_is( 'select2' ) ) {
-					wp_enqueue_script( 'tpl-select2', tpl_base_uri() . '/framework/lib/select2/js/select2.min.js', array( 'jquery' ) );
+					wp_enqueue_script( 'select2', tpl_base_uri() . '/framework/lib/select2/js/select2.min.js', array( 'jquery' ) );
+					wp_enqueue_style( 'select2-style', tpl_base_uri() . '/framework/lib/select2/css/select2.min.css', array() );
 				}
-				wp_enqueue_style( 'tpl-select2-style', tpl_base_uri() . '/framework/lib/select2/css/select2.min.css', array() );
-			} );
+			}, 99 );
 			$tpl_select_added = true;
 
 		}

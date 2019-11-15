@@ -75,7 +75,7 @@ class TPL_Date extends TPL_Data_Type {
 
 		$date = new DateTime( $value );
 
-		return $date->format( get_option( 'date_format' ) );
+		return date_i18n( get_option( 'date_format' ), $date->getTimestamp() );
 
 	}
 

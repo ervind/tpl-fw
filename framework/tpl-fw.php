@@ -8,7 +8,7 @@ For more information and documentation, visit [https://a-idea.studio/tpl-framewo
 
 
 // Version number of the framework
-define( 'TPL_VERSION', '1.3.5' );
+define( 'TPL_VERSION', '1.3.6' );
 
 
 
@@ -923,7 +923,7 @@ function tpl_settings_page ( $settings_page ) {
             <form method="post" action="options.php">';
 
 	// The number of sections to be created for Plugin Settings page
-	$settings_page_sections = tpl_get_sections ( $tpl_settings_pages[$settings_page]["post_type"] );
+	$settings_page_sections = tpl_get_sections( $tpl_settings_pages[$settings_page]["post_type"] );
 
 	// Launch the tabbed layout only if there are more than 1 sections defined
 	if ( count ( $settings_page_sections ) > 1 ) {
@@ -1127,14 +1127,18 @@ function tpl_save_postdata( $post_id ) {
 			$sn = explode( '[', $sn );
 			$sn = $sn[0];
 
-			if ( $option->repeat == false ) {
-				$data = $_POST[$sn][0];
-			}
-			else {
-				$data = $_POST[$sn];
-			}
+			if ( isset( $_POST[$sn] ) ) {
 
-			update_post_meta( $post_id, '_tpl_' . $option->name, $data );
+				if ( $option->repeat == false ) {
+					$data = $_POST[$sn][0];
+				}
+				else {
+					$data = $_POST[$sn];
+				}
+
+				update_post_meta( $post_id, '_tpl_' . $option->name, $data );
+
+			}
 
 		}
 
