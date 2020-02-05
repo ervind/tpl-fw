@@ -7,6 +7,12 @@ Documentation will be available soon.
 
 ## Changelog
 
+### v1.3.6 (2020-02-05)
+* Updated Font Awesome to 5.2
+* Fixed Post data type to list all items if no max value present
+* Added a URL param standardizer to admin scripts
+
+
 ### v1.3.4 (2019-07-03)
 * Made it possible to run the FW code earlier in the hooks
 

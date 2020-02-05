@@ -21,6 +21,9 @@ class TPL_Post extends TPL_Select {
 		if ( isset( $args["max"] ) ) {
 			$query_args["posts_per_page"] = $args["max"];
 		}
+		else {
+			$query_args["posts_per_page"] = -1;
+		}
 
 		$posts = new WP_Query( $query_args );
 

@@ -794,7 +794,7 @@ TABLE OF CONTENTS
 
 			// Primary Options page (e.g. Plugin Settings)
 			if ( url.indexOf('themes.php') > -1 || url.indexOf('options-general.php') > -1 || url.indexOf('admin.php') > -1 ) {
-				var section = tpl_get_url_param('page', url);
+				var section = tpl_get_url_param('page', url).replace('-','_');
 				var container = 'tr';
 			}
 			// Post options branch
