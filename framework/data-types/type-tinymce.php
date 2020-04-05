@@ -29,10 +29,6 @@ class TPL_TinyMCE extends TPL_Textarea {
 			return "tinymce";
 		} );
 
-		if ( !has_action( 'tpl_before_textarea', array( 'TPL_TinyMCE', 'editor_switch_buttons' ) ) ) {
-			add_action( 'tpl_before_textarea', array( 'TPL_TinyMCE', 'editor_switch_buttons' ) );
-		}
-
 	}
 
 
@@ -65,7 +61,7 @@ class TPL_TinyMCE extends TPL_Textarea {
 
 
 	// Adds the editor switch buttons before the TinyMCE textarea
-	public static function editor_switch_buttons() {
+	public function editor_switch_buttons() {
 		?>
 
 		<div class="tpl-editor-switch-buttons-wrap">

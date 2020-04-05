@@ -8,7 +8,7 @@ For more information and documentation, visit [https://a-idea.studio/tpl-framewo
 
 
 // Version number of the framework
-define( 'TPL_VERSION', '1.3.6' );
+define( 'TPL_VERSION', '1.3.7' );
 
 
 
@@ -484,13 +484,17 @@ function tpl_admin_init () {
 
 		else {
 
+			if ( !isset( $settings_page["icon_url"] ) ) {
+				$settings_page["icon_url"] = 'dashicons-admin-network';
+			}
+
 			$menu_func (
 				$settings_page["page_title"],
 				$settings_page["menu_title"],
 				$settings_page["capability"],
 				$settings_page["menu_slug"],
 				$settings_page["function"],
-				'dashicons-admin-network'
+				$settings_page["icon_url"]
 			);
 
 		}

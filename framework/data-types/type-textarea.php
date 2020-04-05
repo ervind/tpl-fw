@@ -18,7 +18,7 @@ class TPL_Textarea extends TPL_Data_Type {
 			$value = esc_textarea( $this->get_option() );
 		}
 
-		do_action( 'tpl_before_textarea' );
+		$this->editor_switch_buttons();
 
 		echo '<div class="tpl-textarea-wrapper tpl-datatype-container">';
 
@@ -95,6 +95,10 @@ class TPL_Textarea extends TPL_Data_Type {
 
 		echo '<p>' . tpl_kses( $this->get_value( $args, $id ) ) . '</p>';
 
+	}
+
+
+	public function editor_switch_buttons() {
 	}
 
 

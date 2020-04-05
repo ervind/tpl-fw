@@ -31,7 +31,7 @@
 .tpl-meta-option .tpl-button-container {
   width: calc(70% + 220px);
 }
-.tpl-meta-option button {
+.tpl-meta-option button.tpl-repeat-add {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -158,6 +158,10 @@ tr:last-child .tpl-optiondesc {
   height: 100%;
   min-height: 40px;
   margin: 0;
+}
+.tpl-default-container {
+  max-width: 800px;
+  overflow: auto;
 }
 .tpl-default-value {
   color: #888;
@@ -512,7 +516,7 @@ textarea {
   text-align: right;
   max-width: 800px;
 }
-.postbox-container .tpl-dt-tinymce {
+.postbox-container .tpl-dt-tinymce .mce-tinymce {
   border: 1px solid #ddd;
   max-width: 800px;
 }
