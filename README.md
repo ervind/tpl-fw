@@ -7,6 +7,15 @@ Documentation will be available soon.
 
 ## Changelog
 
+### v1.3.8 (2020-04-23)
+* Fixed an issue with admin submenu pages
+
+
+### v1.3.7 (2020-04-05)
+* Fixed an issue with Textarea and TinyMCE fields
+* Plugin settings pages can now have unique menu icons
+
+
 ### v1.3.6 (2020-02-05)
 * Updated Font Awesome to 5.2
 * Fixed Post data type to list all items if no max value present

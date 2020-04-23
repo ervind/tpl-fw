@@ -8,7 +8,7 @@ For more information and documentation, visit [https://a-idea.studio/tpl-framewo
 
 
 // Version number of the framework
-define( 'TPL_VERSION', '1.3.7' );
+define( 'TPL_VERSION', '1.3.8' );
 
 
 
@@ -469,18 +469,34 @@ function tpl_admin_init () {
 			$menu_func = 'add_options_page';
 		}
 
-		if ( isset( $settings_page["parent_slug"] ) && $settings_page["parent_slug"] != '' ) {
+		if ( $menu_func != 'add_menu_page' ) {
 
-			$menu_func (
-				$settings_page["parent_slug"],
-				$settings_page["page_title"],
-				$settings_page["menu_title"],
-				$settings_page["capability"],
-				$settings_page["menu_slug"],
-				$settings_page["function"]
-			);
+			if ( $menu_func == 'add_submenu_page' && isset( $settings_page["parent_slug"] ) && $settings_page["parent_slug"] != '' ) {
+
+				$menu_func (
+					$settings_page["parent_slug"],
+					$settings_page["page_title"],
+					$settings_page["menu_title"],
+					$settings_page["capability"],
+					$settings_page["menu_slug"],
+					$settings_page["function"]
+				);
+
+			}
+			else {
+
+				$menu_func (
+					$settings_page["page_title"],
+					$settings_page["menu_title"],
+					$settings_page["capability"],
+					$settings_page["menu_slug"],
+					$settings_page["function"]
+				);
+
+			}
 
 		}
+
 
 		else {
 
@@ -642,6 +658,10 @@ function tpl_section_info ( $arg ) {
 
 	if ( !tpl_section_registered ( $arg["id"] ) ) {
 		return;
+	}
+
+	if ( !isset( $tpl_sections[$arg["id"]]["description"] ) ) {
+		$tpl_sections[$arg["id"]]["description"] = '';
 	}
 
 	echo '<p>' . tpl_kses( $tpl_sections[$arg["id"]]["description"] ) . '</p>';

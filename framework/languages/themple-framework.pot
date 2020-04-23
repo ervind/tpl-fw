@@ -1,0 +1,222 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Themple Framework\n"
+"POT-Creation-Date: 2016-10-19 11:00+0200\n"
+"PO-Revision-Date: 2015-12-28 11:55+0100\n"
+"Last-Translator: Ervin Domonkos <ervin.domonkos@gmail.com>\n"
+"Language-Team: a-idea studio <info@a-idea.studio>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: data-types/class-data_type.php:32
+msgid "Add row"
+msgstr ""
+
+#: data-types/class-data_type.php:42
+msgid "The \"name\" attribute is required during registering options"
+msgstr ""
+
+#: data-types/class-data_type.php:50
+#, php-format
+msgid "It's recommended to set a title for \"%s\" option"
+msgstr ""
+
+#: data-types/class-data_type.php:60
+#, php-format
+msgid ""
+"It's recommended to assign %s to a section. Using a dummy section to avoid "
+"errors..."
+msgstr ""
+
+#: data-types/class-data_type.php:217
+msgid "Drag & Drop to reorder"
+msgstr ""
+
+#: data-types/class-data_type.php:248 data-types/type-select.php:106
+#: data-types/type-textarea.php:46
+msgid "prefix:"
+msgstr ""
+
+#: data-types/class-data_type.php:252 data-types/type-select.php:110
+#: data-types/type-textarea.php:50
+msgid "suffix:"
+msgstr ""
+
+#: data-types/class-data_type.php:256 data-types/type-select.php:114
+#: data-types/type-textarea.php:54
+msgid "default:"
+msgstr ""
+
+#: data-types/class-data_type.php:269 data-types/type-combined.php:158
+#: data-types/type-select.php:127 data-types/type-textarea.php:67
+msgid "Remove row"
+msgstr ""
+
+#: data-types/class-data_type.php:642
+msgid "Do you really want to remove this instance?"
+msgstr ""
+
+#: data-types/type-icon.php:18
+msgid "Icon"
+msgstr ""
+
+#: data-types/type-icon.php:19
+msgid "The Font Awesome code of the icon (uses the fa-xxx name structure)"
+msgstr ""
+
+#: data-types/type-icon.php:24
+msgid "Icon Color"
+msgstr ""
+
+#: data-types/type-icon.php:25
+msgid "What should be the color of this icon?"
+msgstr ""
+
+#: data-types/type-icon.php:31
+msgid "Icon size"
+msgstr ""
+
+#: data-types/type-icon.php:32
+msgid "Size of the icon in Font Awesome sizes"
+msgstr ""
+
+#: data-types/type-icon.php:36
+msgid "Normal"
+msgstr ""
+
+#: data-types/type-icon.php:37
+msgid "Larger"
+msgstr ""
+
+#: data-types/type-icon.php:38
+msgid "Double"
+msgstr ""
+
+#: data-types/type-icon.php:39
+msgid "Triple"
+msgstr ""
+
+#: data-types/type-icon.php:40
+msgid "4x"
+msgstr ""
+
+#: data-types/type-icon.php:41
+msgid "5x"
+msgstr ""
+
+#: data-types/type-icon.php:47
+msgid "Icon URL"
+msgstr ""
+
+#: data-types/type-icon.php:48
+msgid "Where should the icon be linked to?"
+msgstr ""
+
+#: data-types/type-icon.php:53
+msgid "Link Title"
+msgstr ""
+
+#: data-types/type-icon.php:54
+msgid ""
+"This is displayed when hovering the mouse over the icon when it is a link"
+msgstr ""
+
+#: data-types/type-icon.php:67
+msgid "Open in new tab?"
+msgstr ""
+
+#: data-types/type-icon.php:68
+msgid "If yes, the link will open in a new browser tab"
+msgstr ""
+
+#: data-types/type-icon.php:72
+msgid "No"
+msgstr ""
+
+#: data-types/type-icon.php:73
+msgid "Yes"
+msgstr ""
+
+#: data-types/type-image.php:61
+#, php-format
+msgid "%s image tag"
+msgstr ""
+
+#: data-types/type-image.php:68
+msgid "Placeholder image"
+msgstr ""
+
+#: data-types/type-image.php:82
+msgid "Click here to remove image."
+msgstr ""
+
+#: data-types/type-image.php:86
+msgid "Upload"
+msgstr ""
+
+#: data-types/type-image.php:212 data-types/type-image.php:213
+msgid "Choose Image"
+msgstr ""
+
+#: data-types/type-image.php:308
+msgid "Please register a logo first before calling the tpl_logo() function."
+msgstr ""
+
+#: tpl-inc/themple-core.php:112
+msgid "Themple error"
+msgstr ""
+
+#: tpl-inc/themple-core.php:115
+msgid "Themple warning"
+msgstr ""
+
+#: tpl-inc/themple-core.php:138
+msgid "File not exists"
+msgstr ""
+
+#: tpl-inc/themple-core.php:264
+msgid "You forgot to set name for an option. Please check your options files."
+msgstr ""
+
+#: tpl-inc/themple-core.php:283
+#, php-format
+msgid "You forgot to set the type of %s. Using static to avoid errors..."
+msgstr ""
+
+#: tpl-inc/themple-core.php:298
+#, php-format
+msgid "Data type %s doesn't exists"
+msgstr ""
+
+#: tpl-inc/themple-core.php:307
+#, php-format
+msgid ""
+"Option with name %1$s was defined more than once in your options files. "
+"Using the first instance (%2$s)"
+msgstr ""
+
+#: tpl-inc/themple-core.php:490
+#, php-format
+msgid ""
+"Section \"%s\" hasn't been registered properly. Please register it in "
+"options/sections.php."
+msgstr ""
+
+#: tpl-inc/themple-core.php:653 tpl-inc/themple-core.php:979
+#, php-format
+msgid "No data type was set up for option: %s"
+msgstr ""
+
+#: tpl-inc/themple-core.php:660 tpl-inc/themple-core.php:986
+#, php-format
+msgid "Invalid data type (%1$s) was set for option: %2$s"
+msgstr ""
