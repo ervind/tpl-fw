@@ -1,0 +1,38 @@
+// Boolean DT less
+.tpl-dt-boolean, .tpl-repeat-header {
+
+	label[class*=checked-] {
+		width: 1em;
+		height: 1em;
+		font-size: 2em;
+		position: relative;
+		display: inline-block;
+		margin-bottom: 0;
+		cursor: pointer;
+
+		&::before {
+			font-family: "Font Awesome 5 Free";
+			content: "\f0c8";
+			color: #444;
+			position: absolute;
+			left: 0;
+			line-height: 1em;
+		}
+
+		&.checked-1 {
+			&::before {
+				content: "\f14a";
+			}
+		}
+	}
+
+	.tpl-header-title label {
+		font-size: 1.3333em;
+	}
+
+}
+
+
+.tpl_settings_page_wrap .tpl-dt-boolean .tpl-default-value {
+	margin-top: 0.2em;
+}

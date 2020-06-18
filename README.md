@@ -1,11 +1,23 @@
 # tpl-fw
-TPL (The Plugin Launcher) Framework - a plugin starter kit for WordPress
+TPL (Tiny Plugin Loom) Framework - a plugin options framework for WordPress
 
-This is a drop-in code for creating new WordPress plugins easily. The framework gives you a powerful options/settings management system that lets you set up Plugin Settings screen and Post custom fields / postmeta settings.
+This framework gives you a powerful options/settings management system that lets you set up Plugin Settings screen and Post custom fields / postmeta settings.
 
 Documentation will be available soon.
 
 ## Changelog
+
+### v2.0 (2020-06-18)
+* The PHP codebase was rewritten significantly to follow OOP / Clean Code principles
+* Now the framework loads earlier in the sequence - making it possible to use its functions right away after loading it (no need to wait until the init hook any longer)
+* Demo options were created in order to make things easier to test
+* Improved templating - a move towards being more MVC
+* Select2 updated from 4.0.5 to 4.0.13
+* Font Awesome updated from 5.2.0 to 5.13.0. Now all icons and variants can be selected from the dropdown
+* The working mechanisms of tpl_get_option() and tpl_get_value() were changed, so in some cases you might need to alter your code to work properly with 2.0
+* Success message is displayed when options were saved. Finally!
+* Tested metaboxes under Gutenberg: TinyMCE might have some isues, but other fields are working fine.
+
 
 ### v1.3.8 (2020-04-23)
 * Fixed an issue with admin submenu pages

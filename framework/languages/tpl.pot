@@ -1,0 +1,1007 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TPL-FW\n"
+"POT-Creation-Date: 2020-06-17 10:40+0200\n"
+"PO-Revision-Date: 2015-12-28 11:55+0100\n"
+"Last-Translator: Ervin Domonkos <ervin.domonkos@gmail.com>\n"
+"Language-Team: a-idea studio <info@a-idea.studio>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: demo/metabox/conditions.php:7 demo/primary/conditions.php:7
+msgid "Conditional Text Field Enabler"
+msgstr ""
+
+#: demo/metabox/conditions.php:8 demo/primary/conditions.php:8
+msgid ""
+"Enable/disable this option and see how the text field below shows/hides."
+msgstr ""
+
+#: demo/metabox/conditions.php:17 demo/primary/conditions.php:17
+msgid "Test Conditional Text Field"
+msgstr ""
+
+#: demo/metabox/conditions.php:18 demo/primary/conditions.php:18
+msgid ""
+"This field should only be visible when the \"Conditional Text Field Enabler"
+"\" boolean option is set to True."
+msgstr ""
+
+#: demo/metabox/conditions.php:21 demo/metabox/conditions.php:140
+#: demo/metabox/conditions.php:188
+#: demo/metabox/metabox-repeater-options.php:22
+#: demo/metabox/metabox-simple-options.php:21 demo/primary/conditions.php:21
+#: demo/primary/conditions.php:140 demo/primary/repeater-options.php:22
+#: demo/primary/simple-options.php:21
+msgid "Test text default value"
+msgstr ""
+
+#: demo/metabox/conditions.php:36 demo/primary/conditions.php:36
+msgid "Conditional Combined Field Enabler"
+msgstr ""
+
+#: demo/metabox/conditions.php:37 demo/primary/conditions.php:37
+msgid ""
+"Enable/disable this option and see how the combined field below shows/hides."
+msgstr ""
+
+#: demo/metabox/conditions.php:46 demo/metabox/metabox-combined-options.php:6
+#: demo/primary/combined-options.php:6 demo/primary/conditions.php:46
+msgid "Test combined Field"
+msgstr ""
+
+#: demo/metabox/conditions.php:47 demo/primary/conditions.php:47
+msgid ""
+"This field should only be visible when the \"Conditional Combined Field "
+"Enabler\" boolean option is set to True."
+msgstr ""
+
+#: demo/metabox/conditions.php:53 demo/metabox/metabox-combined-options.php:24
+#: demo/metabox/metabox-combined-repeater-options.php:25
+#: demo/primary/combined-options.php:24
+#: demo/primary/combined-repeater-options.php:25
+#: demo/primary/conditions.php:53
+msgid "Image subitem"
+msgstr ""
+
+#: demo/metabox/conditions.php:58 demo/metabox/metabox-combined-options.php:13
+#: demo/metabox/metabox-combined-repeater-options.php:14
+#: demo/primary/combined-options.php:13
+#: demo/primary/combined-repeater-options.php:14
+#: demo/primary/conditions.php:58
+msgid "Text subitem"
+msgstr ""
+
+#: demo/metabox/conditions.php:78 demo/primary/conditions.php:78
+msgid "Number subitem"
+msgstr ""
+
+#: demo/metabox/conditions.php:83 demo/metabox/metabox-combined-options.php:29
+#: demo/metabox/metabox-combined-repeater-options.php:30
+#: demo/primary/combined-options.php:29
+#: demo/primary/combined-repeater-options.php:30
+#: demo/primary/conditions.php:83
+msgid "Date subitem"
+msgstr ""
+
+#: demo/metabox/conditions.php:85 demo/primary/conditions.php:85
+msgid ""
+"If you pass here a future date, a new conditional field should pop up below."
+msgstr ""
+
+#: demo/metabox/conditions.php:89 demo/metabox/metabox-combined-options.php:34
+#: demo/metabox/metabox-combined-repeater-options.php:35
+#: demo/primary/combined-options.php:34
+#: demo/primary/combined-repeater-options.php:35
+#: demo/primary/conditions.php:89
+msgid "Tinymce subitem"
+msgstr ""
+
+#: demo/metabox/conditions.php:102
+#: demo/metabox/metabox-combined-options.php:39
+#: demo/metabox/metabox-combined-repeater-options.php:40
+#: demo/primary/combined-options.php:39
+#: demo/primary/combined-repeater-options.php:40
+#: demo/primary/conditions.php:102
+msgid "Color subitem"
+msgstr ""
+
+#: demo/metabox/conditions.php:107
+#: demo/metabox/metabox-combined-options.php:44
+#: demo/metabox/metabox-combined-repeater-options.php:45
+#: demo/primary/combined-options.php:44
+#: demo/primary/combined-repeater-options.php:45
+#: demo/primary/conditions.php:107
+msgid "Font Awesome subitem"
+msgstr ""
+
+#: demo/metabox/conditions.php:125 demo/primary/conditions.php:125
+msgid "Disable the repeater field below"
+msgstr ""
+
+#: demo/metabox/conditions.php:126 demo/primary/conditions.php:126
+msgid "If true, the repeater field below disappears"
+msgstr ""
+
+#: demo/metabox/conditions.php:135 demo/primary/conditions.php:135
+msgid "Test Conditional Repeater Field"
+msgstr ""
+
+#: demo/metabox/conditions.php:136 demo/primary/conditions.php:136
+msgid ""
+"This field should only be visible when the \"Disable the repeater field "
+"below\" boolean option is set to False."
+msgstr ""
+
+#: demo/metabox/conditions.php:155 demo/primary/conditions.php:155
+msgid "Conditional Repeater Icon Field Enabler"
+msgstr ""
+
+#: demo/metabox/conditions.php:156 demo/primary/conditions.php:156
+msgid ""
+"Enable/disable this option and see how the repeater icon field below shows/"
+"hides."
+msgstr ""
+
+#: demo/metabox/conditions.php:165 demo/primary/conditions.php:165
+msgid "Test Conditional Icon Field"
+msgstr ""
+
+#: demo/metabox/conditions.php:166 demo/primary/conditions.php:166
+msgid ""
+"This field should only be visible when the \"Conditional Repeater Icon "
+"Field Enabler\" boolean option is set to True."
+msgstr ""
+
+#: demo/metabox/conditions.php:184
+msgid "Conditional Text Field by Category"
+msgstr ""
+
+#: demo/metabox/conditions.php:185
+msgid ""
+"This field should only be visible when you edit a Post and the category is "
+"Uncategorized."
+msgstr ""
+
+#: demo/metabox/metabox-combined-options.php:7
+#: demo/primary/combined-options.php:7
+msgid "Description for Test combined Field"
+msgstr ""
+
+#: demo/metabox/metabox-combined-options.php:18
+#: demo/metabox/metabox-combined-repeater-options.php:19
+#: demo/primary/combined-options.php:18
+#: demo/primary/combined-repeater-options.php:19
+msgid "Boolean subitem"
+msgstr ""
+
+#: demo/metabox/metabox-combined-options.php:49
+#: demo/metabox/metabox-combined-repeater-options.php:50
+#: demo/primary/combined-options.php:49
+#: demo/primary/combined-repeater-options.php:50
+msgid "Page subitem"
+msgstr ""
+
+#: demo/metabox/metabox-combined-options.php:55
+#: demo/metabox/metabox-combined-repeater-options.php:56
+#: demo/primary/combined-options.php:55
+#: demo/primary/combined-repeater-options.php:56
+msgid "User subitem"
+msgstr ""
+
+#: demo/metabox/metabox-combined-options.php:65
+#: demo/primary/combined-options.php:65
+msgid "Test icon Field"
+msgstr ""
+
+#: demo/metabox/metabox-combined-options.php:66
+#: demo/primary/combined-options.php:66
+msgid "Description for Test icon Field"
+msgstr ""
+
+#: demo/metabox/metabox-combined-repeater-options.php:6
+#: demo/primary/combined-repeater-options.php:6
+msgid "Test combined Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-combined-repeater-options.php:7
+#: demo/primary/combined-repeater-options.php:7
+msgid "Description for Test combined Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-combined-repeater-options.php:66
+#: demo/primary/combined-repeater-options.php:66
+msgid "Test icon Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-combined-repeater-options.php:67
+#: demo/primary/combined-repeater-options.php:67
+msgid "Description for Test icon Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:6
+#: demo/primary/repeater-options.php:6
+msgid "Test Static Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:7
+#: demo/primary/repeater-options.php:7
+msgid "Description for Test Static Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:10
+#: demo/metabox/metabox-simple-options.php:10
+#: demo/primary/repeater-options.php:10 demo/primary/simple-options.php:10
+msgid "Test static default value"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:18
+#: demo/primary/repeater-options.php:18
+msgid "Test text Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:19
+#: demo/primary/repeater-options.php:19
+msgid "Description for Test text Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:30
+#: demo/primary/repeater-options.php:31
+msgid "Test textarea Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:31
+#: demo/primary/repeater-options.php:32
+msgid "Description for Test textarea Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:34
+#: demo/metabox/metabox-simple-options.php:32
+#: demo/primary/repeater-options.php:35 demo/primary/simple-options.php:33
+msgid "Test textarea default value"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:42
+#: demo/primary/repeater-options.php:43
+msgid "Test tinymce Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:43
+#: demo/primary/repeater-options.php:44
+msgid "Description for Test tinymce Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:46
+#: demo/metabox/metabox-simple-options.php:43
+#: demo/primary/repeater-options.php:47 demo/primary/simple-options.php:44
+msgid "Test tinymce default value"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:48
+#: demo/primary/repeater-options.php:49
+msgid "Add TinyMCE row"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:55
+#: demo/primary/repeater-options.php:56
+msgid "Test number Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:56
+#: demo/primary/repeater-options.php:57
+msgid "Description for Test number Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:70
+#: demo/primary/repeater-options.php:71
+msgid "Test select Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:71
+#: demo/primary/repeater-options.php:72
+msgid "Description for Test select Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:75
+#: demo/metabox/metabox-simple-options.php:69
+#: demo/primary/repeater-options.php:76 demo/primary/simple-options.php:71
+msgid "First Option"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:76
+#: demo/metabox/metabox-simple-options.php:70
+#: demo/primary/repeater-options.php:77 demo/primary/simple-options.php:72
+msgid "Second Option"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:77
+#: demo/metabox/metabox-simple-options.php:71
+#: demo/primary/repeater-options.php:78 demo/primary/simple-options.php:73
+msgid "Third Option"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:87
+#: demo/primary/repeater-options.php:88
+msgid "Test user Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:88
+#: demo/primary/repeater-options.php:89
+msgid "Description for Test user Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:91
+#: demo/metabox/metabox-simple-options.php:88
+#: demo/primary/repeater-options.php:92 demo/primary/simple-options.php:90
+msgid "Choose a User"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:99
+#: demo/primary/repeater-options.php:100
+msgid "Test post Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:100
+#: demo/primary/repeater-options.php:101
+msgid "Description for Test post Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:103
+#: demo/metabox/metabox-simple-options.php:99
+#: demo/primary/repeater-options.php:104 demo/primary/simple-options.php:101
+msgid "Choose a Post"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:105
+#: demo/primary/repeater-options.php:106
+msgid "Add Post"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:112
+#: demo/primary/repeater-options.php:113
+msgid "Test Font Awesome Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:113
+#: demo/primary/repeater-options.php:114
+msgid "Description for Test Font Awesome Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:116
+#: demo/metabox/metabox-simple-options.php:111
+#: demo/primary/repeater-options.php:117 demo/primary/simple-options.php:113
+msgid "Choose a font icon"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:125
+#: demo/primary/repeater-options.php:126
+msgid "Test boolean Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:126
+#: demo/primary/repeater-options.php:127
+msgid "Description for Test boolean Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:136
+#: demo/primary/repeater-options.php:137
+msgid "Test color Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:137
+#: demo/primary/repeater-options.php:138
+msgid "Description for Test color Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:148
+#: demo/primary/repeater-options.php:149
+msgid "Test image Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:149
+#: demo/primary/repeater-options.php:150
+msgid "Description for Test image Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:159
+#: demo/primary/repeater-options.php:160
+msgid "Test date Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-repeater-options.php:160
+#: demo/primary/repeater-options.php:161
+msgid "Description for Test date Repeater Field"
+msgstr ""
+
+#: demo/metabox/metabox-sections.php:6
+msgid "Metabox Simple Demo Fields"
+msgstr ""
+
+#: demo/metabox/metabox-sections.php:7 demo/primary/sections.php:8
+msgid "Testing simple (non-repeater) fields"
+msgstr ""
+
+#: demo/metabox/metabox-sections.php:15
+msgid "Metabox Repeater Demo Fields"
+msgstr ""
+
+#: demo/metabox/metabox-sections.php:16 demo/primary/sections.php:18
+msgid "Testing repeater fields"
+msgstr ""
+
+#: demo/metabox/metabox-sections.php:24
+msgid "Metabox Combined Demo Fields"
+msgstr ""
+
+#: demo/metabox/metabox-sections.php:25 demo/primary/sections.php:28
+msgid "Testing combined fields"
+msgstr ""
+
+#: demo/metabox/metabox-sections.php:33
+msgid "Metabox Combined Repeater Demo Fields"
+msgstr ""
+
+#: demo/metabox/metabox-sections.php:34 demo/primary/sections.php:38
+msgid "Testing combined repeater fields"
+msgstr ""
+
+#: demo/metabox/metabox-sections.php:42 demo/primary/sections.php:47
+msgid "Conditional Demo Fields"
+msgstr ""
+
+#: demo/metabox/metabox-sections.php:43 demo/primary/sections.php:48
+msgid "Conditional fields' visibilities are dependent on other fields."
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:6 demo/primary/simple-options.php:6
+msgid "Test Static Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:7 demo/primary/simple-options.php:7
+msgid "Description for Test Static Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:17
+#: demo/primary/simple-options.php:17
+msgid "Test text Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:18
+#: demo/primary/simple-options.php:18
+msgid "Description for Test text Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:28
+#: demo/primary/simple-options.php:29
+msgid "Test textarea Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:29
+#: demo/primary/simple-options.php:30
+msgid "Description for Test textarea Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:39
+msgid "Test tinymce Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:40
+#: demo/primary/simple-options.php:41
+msgid "Description for Test tinymce Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:50
+#: demo/primary/simple-options.php:51
+msgid "Test number Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:51
+#: demo/primary/simple-options.php:52
+msgid "Description for Test number Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:64
+#: demo/primary/simple-options.php:66
+msgid "Test select Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:65
+#: demo/primary/simple-options.php:67
+msgid "Description for Test select Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:73
+#: demo/primary/simple-options.php:75
+msgid "Fourth Option"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:74
+#: demo/primary/simple-options.php:76
+msgid "Fifth Option"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:77
+#: demo/primary/simple-options.php:79
+msgid "Choose Something"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:84
+#: demo/primary/simple-options.php:86
+msgid "Test user Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:85
+#: demo/primary/simple-options.php:87
+msgid "Description for Test user Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:95
+#: demo/primary/simple-options.php:97
+msgid "Test post Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:96
+#: demo/primary/simple-options.php:98
+msgid "Description for Test post Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:107
+#: demo/primary/simple-options.php:109
+msgid "Test Font Awesome Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:108
+#: demo/primary/simple-options.php:110
+msgid "Description for Test Font Awesome Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:119
+#: demo/primary/simple-options.php:121
+msgid "Test boolean Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:120
+#: demo/primary/simple-options.php:122
+msgid "Description for Test boolean Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:130
+#: demo/primary/simple-options.php:132
+msgid "Test color Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:131
+#: demo/primary/simple-options.php:133
+msgid "Description for Test color Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:140
+#: demo/primary/simple-options.php:142
+msgid "Test image Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:141
+#: demo/primary/simple-options.php:143
+msgid "Description for Test image Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:150
+#: demo/primary/simple-options.php:152
+msgid "Test date Field"
+msgstr ""
+
+#: demo/metabox/metabox-simple-options.php:151
+#: demo/primary/simple-options.php:153
+msgid "Description for Test date Field"
+msgstr ""
+
+#: demo/primary/options-error.php:5
+msgid "No option name error"
+msgstr ""
+
+#: demo/primary/options-error.php:14
+msgid "Option name already in use"
+msgstr ""
+
+#: demo/primary/options-error.php:23
+msgid "No section error"
+msgstr ""
+
+#: demo/primary/options-error.php:31
+msgid "Invalid section error"
+msgstr ""
+
+#: demo/primary/options-error.php:40
+msgid "No option type error"
+msgstr ""
+
+#: demo/primary/options-error.php:48
+msgid "Invalid option type error"
+msgstr ""
+
+#: demo/primary/sections-error.php:5
+msgid "No name"
+msgstr ""
+
+#: demo/primary/sections-error.php:6
+msgid "Section without a name"
+msgstr ""
+
+#: demo/primary/sections-error.php:14
+msgid "Without a tab name"
+msgstr ""
+
+#: demo/primary/sections-error.php:15
+msgid "Using the section title as a fallback."
+msgstr ""
+
+#: demo/primary/sections.php:6
+msgid "Simple"
+msgstr ""
+
+#: demo/primary/sections.php:7
+msgid "Simple Demo Fields"
+msgstr ""
+
+#: demo/primary/sections.php:16
+msgid "Repeater"
+msgstr ""
+
+#: demo/primary/sections.php:17
+msgid "Repeater Demo Fields"
+msgstr ""
+
+#: demo/primary/sections.php:26 inc/classes/tpl-framework.php:56
+msgid "Combined"
+msgstr ""
+
+#: demo/primary/sections.php:27
+msgid "Combined Demo Fields"
+msgstr ""
+
+#: demo/primary/sections.php:36
+msgid "Combined Repeater"
+msgstr ""
+
+#: demo/primary/sections.php:37
+msgid "Combined Repeater Demo Fields"
+msgstr ""
+
+#: demo/primary/sections.php:46
+msgid "Conditional"
+msgstr ""
+
+#: demo/primary/settings-pages.php:6
+msgid "TPL Dummy Settings Page"
+msgstr ""
+
+#: demo/primary/settings-pages.php:7
+msgid "TPL Demos"
+msgstr ""
+
+#: demo/primary/simple-options.php:22
+msgid "DEMO-PREFIX: "
+msgstr ""
+
+#: demo/primary/simple-options.php:40
+msgid "Test TinyMCE Field"
+msgstr ""
+
+#: inc/classes/tpl-error.php:97
+msgid "error"
+msgstr ""
+
+#: inc/classes/tpl-error.php:98
+msgid "warning"
+msgstr ""
+
+#: inc/classes/tpl-error.php:99
+msgid "OK"
+msgstr ""
+
+#: inc/classes/tpl-error.php:100
+msgid "notification"
+msgstr ""
+
+#: inc/classes/tpl-error.php:152
+#, php-format
+msgctxt "Global error message intro text"
+msgid "%1$s %2$s: "
+msgstr ""
+
+#: inc/classes/tpl-framework.php:43
+msgid "Static"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:44 inc/data-types/type-tinymce.php:64
+msgid "Text"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:45
+msgid "Text Area"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:46
+msgid "TinyMCE"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:47
+msgid "Color"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:48
+msgid "Image"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:49
+msgid "Number"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:50
+msgid "Boolean"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:51
+msgid "Select"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:52
+msgid "Font Awesome"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:53
+msgid "Post"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:54
+msgid "User"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:55
+msgid "Date"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:57 inc/data-types/type-icon.php:13
+msgid "Icon"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:256
+#, php-format
+msgid ""
+"Sections can't be registered without a section name. Section details: <br> "
+"%s"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:261
+#, php-format
+msgid "Sections must have a title. No title was defined for section \"%s\"."
+msgstr ""
+
+#: inc/classes/tpl-framework.php:334
+#, php-format
+msgid "Duplicate option name \"%1$s\". Options must have unique names."
+msgstr ""
+
+#: inc/classes/tpl-framework.php:351
+#, php-format
+msgid ""
+"Options can't be registered without an option name. Option details: <br> %s"
+msgstr ""
+
+#: inc/classes/tpl-framework.php:356
+#, php-format
+msgid ""
+"No section name was specified for option \"%s\". Option isn't registered."
+msgstr ""
+
+#: inc/classes/tpl-framework.php:361
+#, php-format
+msgid ""
+"Invalid section name was specified for option \"%1$s\". Please make sure "
+"that you have a section registered with the \"%2$s\" section name."
+msgstr ""
+
+#: inc/classes/tpl-framework.php:366
+#, php-format
+msgid ""
+"No option type was specified for option \"%s\". Option isn't registered."
+msgstr ""
+
+#: inc/classes/tpl-framework.php:371
+#, php-format
+msgid ""
+"Invalid data type (%2$s) was specified for option \"%1$s\". Please make "
+"sure that you use one of the data types listed in the <a href=\"%3$s\" "
+"target=\"_blank\">documentation</a>."
+msgstr ""
+
+#: inc/classes/tpl-option.php:100
+msgid "Add row"
+msgstr ""
+
+#: inc/classes/tpl-option.php:242
+msgid "Do you really want to remove this instance?"
+msgstr ""
+
+#: inc/classes/tpl-option.php:243 inc/templates/option/repeat-header.php:8
+msgid "Minimize"
+msgstr ""
+
+#: inc/classes/tpl-option.php:244 inc/templates/option/repeat-header.php:8
+msgid "Maximize"
+msgstr ""
+
+#: inc/classes/tpl-option.php:245
+msgid "Show Settings"
+msgstr ""
+
+#: inc/classes/tpl-option.php:246
+msgid "Hide Settings"
+msgstr ""
+
+#: inc/classes/tpl-option.php:542 inc/data-types/type-boolean.php:49
+#, php-format
+msgid "(default: %s)"
+msgstr ""
+
+#: inc/classes/tpl-settings-page.php:24
+msgid "Settings updated successfully"
+msgstr ""
+
+#: inc/data-types/type-boolean.php:57
+msgid "True"
+msgstr ""
+
+#: inc/data-types/type-boolean.php:60
+msgid "False"
+msgstr ""
+
+#: inc/data-types/type-font_awesome.php:74
+#, php-format
+msgid "(default: %1$s %2$s)"
+msgstr ""
+
+#: inc/data-types/type-icon.php:14
+msgid "The Font Awesome code of the icon (uses the fa-xxx name structure)"
+msgstr ""
+
+#: inc/data-types/type-icon.php:21
+msgid "Icon Color"
+msgstr ""
+
+#: inc/data-types/type-icon.php:22
+msgid "What should be the color of this icon?"
+msgstr ""
+
+#: inc/data-types/type-icon.php:28
+msgid "Icon size"
+msgstr ""
+
+#: inc/data-types/type-icon.php:29
+msgid "Size of the icon in Font Awesome sizes"
+msgstr ""
+
+#: inc/data-types/type-icon.php:33
+msgid "Extra Small"
+msgstr ""
+
+#: inc/data-types/type-icon.php:34
+msgid "Small"
+msgstr ""
+
+#: inc/data-types/type-icon.php:35
+msgid "Normal"
+msgstr ""
+
+#: inc/data-types/type-icon.php:36
+msgid "Larger"
+msgstr ""
+
+#: inc/data-types/type-icon.php:37
+msgid "Double"
+msgstr ""
+
+#: inc/data-types/type-icon.php:38
+msgid "Triple"
+msgstr ""
+
+#: inc/data-types/type-icon.php:39
+msgid "4x"
+msgstr ""
+
+#: inc/data-types/type-icon.php:40
+msgid "5x"
+msgstr ""
+
+#: inc/data-types/type-icon.php:41
+msgid "6x"
+msgstr ""
+
+#: inc/data-types/type-icon.php:42
+msgid "7x"
+msgstr ""
+
+#: inc/data-types/type-icon.php:43
+msgid "8x"
+msgstr ""
+
+#: inc/data-types/type-icon.php:44
+msgid "9x"
+msgstr ""
+
+#: inc/data-types/type-icon.php:45
+msgid "10x"
+msgstr ""
+
+#: inc/data-types/type-icon.php:50
+msgid "Icon URL"
+msgstr ""
+
+#: inc/data-types/type-icon.php:51
+msgid "Where should the icon be linked to?"
+msgstr ""
+
+#: inc/data-types/type-icon.php:56
+msgid "Link Title"
+msgstr ""
+
+#: inc/data-types/type-icon.php:57
+msgid ""
+"This is displayed when hovering the mouse over the icon when it is a link"
+msgstr ""
+
+#: inc/data-types/type-icon.php:70
+msgid "Open in new tab?"
+msgstr ""
+
+#: inc/data-types/type-icon.php:71
+msgid "If yes, the link will open in a new browser tab"
+msgstr ""
+
+#: inc/data-types/type-image.php:144 inc/data-types/type-image.php:145
+msgid "Choose Image"
+msgstr ""
+
+#: inc/data-types/type-tinymce.php:63
+msgid "Visual"
+msgstr ""
+
+#: inc/helper-functions.php:70
+msgid ""
+"The tpl_error() function has been deprecated in favor of using the "
+"TPL_Error class (and its show_message() method)."
+msgstr ""
+
+#: inc/templates/option/data-types/image-field-content.php:6
+#, php-format
+msgid "%s image tag"
+msgstr ""
+
+#: inc/templates/option/data-types/image-field-content.php:12
+msgid "Placeholder image"
+msgstr ""
+
+#: inc/templates/option/data-types/image-field-content.php:17
+msgid "Click here to remove image."
+msgstr ""
+
+#: inc/templates/option/data-types/image-field-content.php:27
+msgid "Upload"
+msgstr ""
+
+#: inc/templates/option/repeat-header.php:2
+msgid "Drag & Drop to reorder"
+msgstr ""
+
+#: inc/templates/option/repeat-header.php:10
+msgid "Remove row"
+msgstr ""

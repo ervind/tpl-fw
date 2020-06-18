@@ -1,0 +1,1589 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TPL-FW\n"
+"POT-Creation-Date: 2020-06-17 10:43+0200\n"
+"PO-Revision-Date: 2020-06-18 06:16+0200\n"
+"Last-Translator: Ervin Domonkos <ervin.domonkos@gmail.com>\n"
+"Language-Team: a-idea studio <info@a-idea.studio>\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: demo/metabox/conditions.php:7 demo/primary/conditions.php:7
+msgid "Conditional Text Field Enabler"
+msgstr "Feltételes szöveg mező engedélyező"
+
+#: demo/metabox/conditions.php:8 demo/primary/conditions.php:8
+msgid ""
+"Enable/disable this option and see how the text field below shows/hides."
+msgstr ""
+"Engedélyezd / tiltsd le ezt a beállítást és nézd meg, hogy az alábbi szöveg "
+"mező hogyan jelenik meg / tűnik el."
+
+#: demo/metabox/conditions.php:17 demo/primary/conditions.php:17
+msgid "Test Conditional Text Field"
+msgstr "Feltételes szöveg mező tesztelése"
+
+#: demo/metabox/conditions.php:18 demo/primary/conditions.php:18
+msgid ""
+"This field should only be visible when the \"Conditional Text Field Enabler"
+"\" boolean option is set to True."
+msgstr ""
+"Ez a mező csak akkor látható, ha a \"Feltételes szöveg mező engedélyező\" "
+"értéke Igaz."
+
+#: demo/metabox/conditions.php:21 demo/metabox/conditions.php:140
+#: demo/metabox/conditions.php:188 demo/metabox/metabox-repeater-options.php:22
+#: demo/metabox/metabox-simple-options.php:21 demo/primary/conditions.php:21
+#: demo/primary/conditions.php:140 demo/primary/repeater-options.php:22
+#: demo/primary/simple-options.php:21
+msgid "Test text default value"
+msgstr "Teszt szöveg alapértelemezett értéke"
+
+#: demo/metabox/conditions.php:36 demo/primary/conditions.php:36
+msgid "Conditional Combined Field Enabler"
+msgstr "Feltételes kombinált mező engedélyező"
+
+#: demo/metabox/conditions.php:37 demo/primary/conditions.php:37
+msgid ""
+"Enable/disable this option and see how the combined field below shows/hides."
+msgstr ""
+"Engedélyezd / tiltsd le ezt a beállítást és nézd meg, hogy az alábbi "
+"kombinált mező hogyan jelenik meg / tűnik el."
+
+#: demo/metabox/conditions.php:46 demo/metabox/metabox-combined-options.php:6
+#: demo/primary/combined-options.php:6 demo/primary/conditions.php:46
+msgid "Test combined Field"
+msgstr "Kombinált mező tesztelése"
+
+#: demo/metabox/conditions.php:47 demo/primary/conditions.php:47
+msgid ""
+"This field should only be visible when the \"Conditional Combined Field "
+"Enabler\" boolean option is set to True."
+msgstr ""
+"Ez a mező csak akkor látható, ha a \"Feltételes kombinált mező engedélyező\" "
+"értéke Igaz."
+
+#: demo/metabox/conditions.php:53 demo/metabox/metabox-combined-options.php:24
+#: demo/metabox/metabox-combined-repeater-options.php:25
+#: demo/primary/combined-options.php:24
+#: demo/primary/combined-repeater-options.php:25 demo/primary/conditions.php:53
+msgid "Image subitem"
+msgstr "Kép alelem"
+
+#: demo/metabox/conditions.php:58 demo/metabox/metabox-combined-options.php:13
+#: demo/metabox/metabox-combined-repeater-options.php:14
+#: demo/primary/combined-options.php:13
+#: demo/primary/combined-repeater-options.php:14 demo/primary/conditions.php:58
+msgid "Text subitem"
+msgstr "Szöveg alelem"
+
+#: demo/metabox/conditions.php:78 demo/primary/conditions.php:78
+msgid "Number subitem"
+msgstr "Szám alelem"
+
+#: demo/metabox/conditions.php:83 demo/metabox/metabox-combined-options.php:29
+#: demo/metabox/metabox-combined-repeater-options.php:30
+#: demo/primary/combined-options.php:29
+#: demo/primary/combined-repeater-options.php:30 demo/primary/conditions.php:83
+msgid "Date subitem"
+msgstr "Dátum alelem"
+
+#: demo/metabox/conditions.php:85 demo/primary/conditions.php:85
+msgid ""
+"If you pass here a future date, a new conditional field should pop up below."
+msgstr ""
+"Ha jövőbeli dátumot adsz itt meg, egy új feltételes mező jelenik meg lentebb."
+
+#: demo/metabox/conditions.php:89 demo/metabox/metabox-combined-options.php:34
+#: demo/metabox/metabox-combined-repeater-options.php:35
+#: demo/primary/combined-options.php:34
+#: demo/primary/combined-repeater-options.php:35 demo/primary/conditions.php:89
+msgid "Tinymce subitem"
+msgstr "TinyMCE alelem"
+
+#: demo/metabox/conditions.php:102 demo/metabox/metabox-combined-options.php:39
+#: demo/metabox/metabox-combined-repeater-options.php:40
+#: demo/primary/combined-options.php:39
+#: demo/primary/combined-repeater-options.php:40
+#: demo/primary/conditions.php:102
+msgid "Color subitem"
+msgstr "Szín alelem"
+
+#: demo/metabox/conditions.php:107 demo/metabox/metabox-combined-options.php:44
+#: demo/metabox/metabox-combined-repeater-options.php:45
+#: demo/primary/combined-options.php:44
+#: demo/primary/combined-repeater-options.php:45
+#: demo/primary/conditions.php:107
+msgid "Font Awesome subitem"
+msgstr "Font Awesome alelem"
+
+#: demo/metabox/conditions.php:125 demo/primary/conditions.php:125
+msgid "Disable the repeater field below"
+msgstr "Az alábbi ismétlődő mező letiltása"
+
+#: demo/metabox/conditions.php:126 demo/primary/conditions.php:126
+msgid "If true, the repeater field below disappears"
+msgstr "Ha igaz, az alábbi ismétlődő mező eltűnik"
+
+#: demo/metabox/conditions.php:135 demo/primary/conditions.php:135
+msgid "Test Conditional Repeater Field"
+msgstr "Feltételes ismétlődő mező tesztelése"
+
+#: demo/metabox/conditions.php:136 demo/primary/conditions.php:136
+msgid ""
+"This field should only be visible when the \"Disable the repeater field below"
+"\" boolean option is set to False."
+msgstr ""
+"Ez a mező csak akkor látható, ha \"Az alábbi ismétlődő mező letiltása\" "
+"értéke Hamis."
+
+#: demo/metabox/conditions.php:155 demo/primary/conditions.php:155
+msgid "Conditional Repeater Icon Field Enabler"
+msgstr "Feltételes ismétlődő ikon mező engedélyező"
+
+#: demo/metabox/conditions.php:156 demo/primary/conditions.php:156
+msgid ""
+"Enable/disable this option and see how the repeater icon field below shows/"
+"hides."
+msgstr ""
+"Engedélyezd / tiltsd le ezt a beállítást és nézd meg, hogy az alábbi "
+"ismétlődő ikon mező hogyan jelenik meg / tűnik el."
+
+#: demo/metabox/conditions.php:165 demo/primary/conditions.php:165
+msgid "Test Conditional Icon Field"
+msgstr "Feltételes ikon mező tesztelése"
+
+#: demo/metabox/conditions.php:166 demo/primary/conditions.php:166
+msgid ""
+"This field should only be visible when the \"Conditional Repeater Icon Field "
+"Enabler\" boolean option is set to True."
+msgstr ""
+"Ez a mező csak akkor látható, ha a \"Feltételes ismétlődő ikon mező "
+"engedélyező\" értéke Igaz."
+
+#: demo/metabox/conditions.php:184
+msgid "Conditional Text Field by Category"
+msgstr "Feltételes szöveg mező kategória alapján"
+
+#: demo/metabox/conditions.php:185
+msgid ""
+"This field should only be visible when you edit a Post and the category is "
+"Uncategorized."
+msgstr ""
+"Ez a mező csak akkor látható, ha szerkesztesz egy bejegyzést, amelynek a "
+"kategóriája Kategorizálatlan."
+
+#: demo/metabox/metabox-combined-options.php:7
+#: demo/primary/combined-options.php:7
+msgid "Description for Test combined Field"
+msgstr "A teszt kombinált mező leírása"
+
+#: demo/metabox/metabox-combined-options.php:18
+#: demo/metabox/metabox-combined-repeater-options.php:19
+#: demo/primary/combined-options.php:18
+#: demo/primary/combined-repeater-options.php:19
+msgid "Boolean subitem"
+msgstr "Logikai alelem"
+
+#: demo/metabox/metabox-combined-options.php:49
+#: demo/metabox/metabox-combined-repeater-options.php:50
+#: demo/primary/combined-options.php:49
+#: demo/primary/combined-repeater-options.php:50
+msgid "Page subitem"
+msgstr "Oldal alelem"
+
+#: demo/metabox/metabox-combined-options.php:55
+#: demo/metabox/metabox-combined-repeater-options.php:56
+#: demo/primary/combined-options.php:55
+#: demo/primary/combined-repeater-options.php:56
+msgid "User subitem"
+msgstr "Felhasználói alelem"
+
+#: demo/metabox/metabox-combined-options.php:65
+#: demo/primary/combined-options.php:65
+msgid "Test icon Field"
+msgstr "Ikon mező tesztelése"
+
+#: demo/metabox/metabox-combined-options.php:66
+#: demo/primary/combined-options.php:66
+msgid "Description for Test icon Field"
+msgstr "A teszt ikon mező leírása"
+
+#: demo/metabox/metabox-combined-repeater-options.php:6
+#: demo/primary/combined-repeater-options.php:6
+msgid "Test combined Repeater Field"
+msgstr "Kombinált ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-combined-repeater-options.php:7
+#: demo/primary/combined-repeater-options.php:7
+msgid "Description for Test combined Repeater Field"
+msgstr "A teszt kombinált ismétlődő mező leírása"
+
+#: demo/metabox/metabox-combined-repeater-options.php:66
+#: demo/primary/combined-repeater-options.php:66
+msgid "Test icon Repeater Field"
+msgstr "Ikon ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-combined-repeater-options.php:67
+#: demo/primary/combined-repeater-options.php:67
+msgid "Description for Test icon Repeater Field"
+msgstr "A teszt ikon mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:6
+#: demo/primary/repeater-options.php:6
+msgid "Test Static Repeater Field"
+msgstr "Statikus ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:7
+#: demo/primary/repeater-options.php:7
+msgid "Description for Test Static Repeater Field"
+msgstr "A teszt statikus ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:10
+#: demo/metabox/metabox-simple-options.php:10
+#: demo/primary/repeater-options.php:10 demo/primary/simple-options.php:10
+msgid "Test static default value"
+msgstr "Teszt statikus mező alapértelmezett értéke"
+
+#: demo/metabox/metabox-repeater-options.php:18
+#: demo/primary/repeater-options.php:18
+msgid "Test text Repeater Field"
+msgstr "Szöveg ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:19
+#: demo/primary/repeater-options.php:19
+msgid "Description for Test text Repeater Field"
+msgstr "A teszt szöveg ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:30
+#: demo/primary/repeater-options.php:31
+msgid "Test textarea Repeater Field"
+msgstr "Szövegblokk ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:31
+#: demo/primary/repeater-options.php:32
+msgid "Description for Test textarea Repeater Field"
+msgstr "A teszt szövegblokk ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:34
+#: demo/metabox/metabox-simple-options.php:32
+#: demo/primary/repeater-options.php:35 demo/primary/simple-options.php:33
+msgid "Test textarea default value"
+msgstr "Teszt szövegblokk alapértelmezett értéke"
+
+#: demo/metabox/metabox-repeater-options.php:42
+#: demo/primary/repeater-options.php:43
+msgid "Test tinymce Repeater Field"
+msgstr "TinyMCE ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:43
+#: demo/primary/repeater-options.php:44
+msgid "Description for Test tinymce Repeater Field"
+msgstr "A teszt TinyMCE ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:46
+#: demo/metabox/metabox-simple-options.php:43
+#: demo/primary/repeater-options.php:47 demo/primary/simple-options.php:44
+msgid "Test tinymce default value"
+msgstr "Teszt TinyMCE alapértelmezett értéke"
+
+#: demo/metabox/metabox-repeater-options.php:48
+#: demo/primary/repeater-options.php:49
+msgid "Add TinyMCE row"
+msgstr "TinyMCE-sor hozzáadása"
+
+#: demo/metabox/metabox-repeater-options.php:55
+#: demo/primary/repeater-options.php:56
+msgid "Test number Repeater Field"
+msgstr "Szám ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:56
+#: demo/primary/repeater-options.php:57
+msgid "Description for Test number Repeater Field"
+msgstr "A teszt szám ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:70
+#: demo/primary/repeater-options.php:71
+msgid "Test select Repeater Field"
+msgstr "Legördülő ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:71
+#: demo/primary/repeater-options.php:72
+msgid "Description for Test select Repeater Field"
+msgstr "A teszt legördülő ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:75
+#: demo/metabox/metabox-simple-options.php:69
+#: demo/primary/repeater-options.php:76 demo/primary/simple-options.php:71
+msgid "First Option"
+msgstr "Első opció"
+
+#: demo/metabox/metabox-repeater-options.php:76
+#: demo/metabox/metabox-simple-options.php:70
+#: demo/primary/repeater-options.php:77 demo/primary/simple-options.php:72
+msgid "Second Option"
+msgstr "Második opció"
+
+#: demo/metabox/metabox-repeater-options.php:77
+#: demo/metabox/metabox-simple-options.php:71
+#: demo/primary/repeater-options.php:78 demo/primary/simple-options.php:73
+msgid "Third Option"
+msgstr "Harmadik opció"
+
+#: demo/metabox/metabox-repeater-options.php:87
+#: demo/primary/repeater-options.php:88
+msgid "Test user Repeater Field"
+msgstr "Felhasználó ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:88
+#: demo/primary/repeater-options.php:89
+msgid "Description for Test user Repeater Field"
+msgstr "A teszt felhasználó ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:91
+#: demo/metabox/metabox-simple-options.php:88
+#: demo/primary/repeater-options.php:92 demo/primary/simple-options.php:90
+msgid "Choose a User"
+msgstr "Válassz felhasználót"
+
+#: demo/metabox/metabox-repeater-options.php:99
+#: demo/primary/repeater-options.php:100
+msgid "Test post Repeater Field"
+msgstr "Bejegyzés ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:100
+#: demo/primary/repeater-options.php:101
+msgid "Description for Test post Repeater Field"
+msgstr "A teszt bejegyzés ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:103
+#: demo/metabox/metabox-simple-options.php:99
+#: demo/primary/repeater-options.php:104 demo/primary/simple-options.php:101
+msgid "Choose a Post"
+msgstr "Válassz bejegyzést"
+
+#: demo/metabox/metabox-repeater-options.php:105
+#: demo/primary/repeater-options.php:106
+msgid "Add Post"
+msgstr "Bejegyzés hozzáadása"
+
+#: demo/metabox/metabox-repeater-options.php:112
+#: demo/primary/repeater-options.php:113
+msgid "Test Font Awesome Repeater Field"
+msgstr "Font Awesome ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:113
+#: demo/primary/repeater-options.php:114
+msgid "Description for Test Font Awesome Repeater Field"
+msgstr "A teszt Font Awesome ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:116
+#: demo/metabox/metabox-simple-options.php:111
+#: demo/primary/repeater-options.php:117 demo/primary/simple-options.php:113
+msgid "Choose a font icon"
+msgstr "Válassz font ikont"
+
+#: demo/metabox/metabox-repeater-options.php:125
+#: demo/primary/repeater-options.php:126
+msgid "Test boolean Repeater Field"
+msgstr "Logikai ismétlő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:126
+#: demo/primary/repeater-options.php:127
+msgid "Description for Test boolean Repeater Field"
+msgstr "A teszt logikai ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:136
+#: demo/primary/repeater-options.php:137
+msgid "Test color Repeater Field"
+msgstr "Ismétlődő szín mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:137
+#: demo/primary/repeater-options.php:138
+msgid "Description for Test color Repeater Field"
+msgstr "A teszt szín mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:148
+#: demo/primary/repeater-options.php:149
+msgid "Test image Repeater Field"
+msgstr "Kép ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:149
+#: demo/primary/repeater-options.php:150
+msgid "Description for Test image Repeater Field"
+msgstr "A teszt kép ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:159
+#: demo/primary/repeater-options.php:160
+msgid "Test date Repeater Field"
+msgstr "Ismétlődő dátum mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:160
+#: demo/primary/repeater-options.php:161
+msgid "Description for Test date Repeater Field"
+msgstr "A teszt dátum ismétlődő mező leírása"
+
+#: demo/metabox/metabox-sections.php:6
+msgid "Metabox Simple Demo Fields"
+msgstr "Metabox egyszerű demó mezők"
+
+#: demo/metabox/metabox-sections.php:7 demo/primary/sections.php:8
+msgid "Testing simple (non-repeater) fields"
+msgstr "Egyszerű (nem ismétlő) mezők tesztelése"
+
+#: demo/metabox/metabox-sections.php:15
+msgid "Metabox Repeater Demo Fields"
+msgstr "Metabox ismétlődő demó mezők"
+
+#: demo/metabox/metabox-sections.php:16 demo/primary/sections.php:18
+msgid "Testing repeater fields"
+msgstr "Ismétlődő mezők tesztelése"
+
+#: demo/metabox/metabox-sections.php:24
+msgid "Metabox Combined Demo Fields"
+msgstr "Metabox kombinált demó mezők"
+
+#: demo/metabox/metabox-sections.php:25 demo/primary/sections.php:28
+msgid "Testing combined fields"
+msgstr "Kombinált mezők tesztelése"
+
+#: demo/metabox/metabox-sections.php:33
+msgid "Metabox Combined Repeater Demo Fields"
+msgstr "Metabox kombinált ismétlődő demó mezők"
+
+#: demo/metabox/metabox-sections.php:34 demo/primary/sections.php:38
+msgid "Testing combined repeater fields"
+msgstr "Kombinált ismétlődő mezők tesztelése"
+
+#: demo/metabox/metabox-sections.php:42 demo/primary/sections.php:47
+msgid "Conditional Demo Fields"
+msgstr "Feltételes demó mezők"
+
+#: demo/metabox/metabox-sections.php:43 demo/primary/sections.php:48
+msgid "Conditional fields' visibilities are dependent on other fields."
+msgstr "A feltételes mezők láthatósága más mezőktől függ."
+
+#: demo/metabox/metabox-simple-options.php:6 demo/primary/simple-options.php:6
+msgid "Test Static Field"
+msgstr "Statikus mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:7 demo/primary/simple-options.php:7
+msgid "Description for Test Static Field"
+msgstr "A teszt statikus mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:17
+#: demo/primary/simple-options.php:17
+msgid "Test text Field"
+msgstr "Szöveg mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:18
+#: demo/primary/simple-options.php:18
+msgid "Description for Test text Field"
+msgstr "A teszt szöveg mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:28
+#: demo/primary/simple-options.php:29
+msgid "Test textarea Field"
+msgstr "Szövegblokk mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:29
+#: demo/primary/simple-options.php:30
+msgid "Description for Test textarea Field"
+msgstr "A teszt szövegblokk mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:39
+msgid "Test tinymce Field"
+msgstr "TinyMCE mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:40
+#: demo/primary/simple-options.php:41
+msgid "Description for Test tinymce Field"
+msgstr "A teszt TinyMCE mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:50
+#: demo/primary/simple-options.php:51
+msgid "Test number Field"
+msgstr "Szám mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:51
+#: demo/primary/simple-options.php:52
+msgid "Description for Test number Field"
+msgstr "A teszt szám mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:64
+#: demo/primary/simple-options.php:66
+msgid "Test select Field"
+msgstr "Legördülő mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:65
+#: demo/primary/simple-options.php:67
+msgid "Description for Test select Field"
+msgstr "A teszt legördülő mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:73
+#: demo/primary/simple-options.php:75
+msgid "Fourth Option"
+msgstr "Negyedik opció"
+
+#: demo/metabox/metabox-simple-options.php:74
+#: demo/primary/simple-options.php:76
+msgid "Fifth Option"
+msgstr "Ötödik opció"
+
+#: demo/metabox/metabox-simple-options.php:77
+#: demo/primary/simple-options.php:79
+msgid "Choose Something"
+msgstr "Válassz valamit"
+
+#: demo/metabox/metabox-simple-options.php:84
+#: demo/primary/simple-options.php:86
+msgid "Test user Field"
+msgstr "Felhasználó mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:85
+#: demo/primary/simple-options.php:87
+msgid "Description for Test user Field"
+msgstr "A teszt felhasználó mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:95
+#: demo/primary/simple-options.php:97
+msgid "Test post Field"
+msgstr "Bejegyzés mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:96
+#: demo/primary/simple-options.php:98
+msgid "Description for Test post Field"
+msgstr "A teszt bejegyzés mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:107
+#: demo/primary/simple-options.php:109
+msgid "Test Font Awesome Field"
+msgstr "Font Awesome mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:108
+#: demo/primary/simple-options.php:110
+msgid "Description for Test Font Awesome Field"
+msgstr "A teszt Font Awesome mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:119
+#: demo/primary/simple-options.php:121
+msgid "Test boolean Field"
+msgstr "Logikai mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:120
+#: demo/primary/simple-options.php:122
+msgid "Description for Test boolean Field"
+msgstr "A teszt logikai mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:130
+#: demo/primary/simple-options.php:132
+msgid "Test color Field"
+msgstr "Szín mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:131
+#: demo/primary/simple-options.php:133
+msgid "Description for Test color Field"
+msgstr "A teszt szín mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:140
+#: demo/primary/simple-options.php:142
+msgid "Test image Field"
+msgstr "Kép mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:141
+#: demo/primary/simple-options.php:143
+msgid "Description for Test image Field"
+msgstr "A teszt kép mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:150
+#: demo/primary/simple-options.php:152
+msgid "Test date Field"
+msgstr "Dátum mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:151
+#: demo/primary/simple-options.php:153
+msgid "Description for Test date Field"
+msgstr "A teszt dátum mező leírása"
+
+#: demo/primary/options-error.php:5
+msgid "No option name error"
+msgstr "Nincs beállításnév hiba"
+
+#: demo/primary/options-error.php:14
+msgid "Option name already in use"
+msgstr "A beállításnév már használatban van"
+
+#: demo/primary/options-error.php:23
+msgid "No section error"
+msgstr "Nincs szakasz hiba"
+
+#: demo/primary/options-error.php:31
+msgid "Invalid section error"
+msgstr "Érvénytelen szakasz hiba"
+
+#: demo/primary/options-error.php:40
+msgid "No option type error"
+msgstr "Nincs beállítástípus hiba"
+
+#: demo/primary/options-error.php:48
+msgid "Invalid option type error"
+msgstr "Érvénytelen beállítástípus hiba"
+
+#: demo/primary/sections-error.php:5
+msgid "No name"
+msgstr "Nincs név"
+
+#: demo/primary/sections-error.php:6
+msgid "Section without a name"
+msgstr "Név nélküli szakasz"
+
+#: demo/primary/sections-error.php:14
+msgid "Without a tab name"
+msgstr "Fülnév nélkül"
+
+#: demo/primary/sections-error.php:15
+msgid "Using the section title as a fallback."
+msgstr "A szakasz címének használata vészmegoldásként."
+
+#: demo/primary/sections.php:6
+msgid "Simple"
+msgstr "Egyszerű"
+
+#: demo/primary/sections.php:7
+msgid "Simple Demo Fields"
+msgstr "Egyszerű demó mezők"
+
+#: demo/primary/sections.php:16
+msgid "Repeater"
+msgstr "Ismétlődő"
+
+#: demo/primary/sections.php:17
+msgid "Repeater Demo Fields"
+msgstr "Ismétlődő demó mezők"
+
+#: demo/primary/sections.php:26 inc/classes/tpl-framework.php:56
+msgid "Combined"
+msgstr "Kombinált"
+
+#: demo/primary/sections.php:27
+msgid "Combined Demo Fields"
+msgstr "Kombinált demó mezők"
+
+#: demo/primary/sections.php:36
+msgid "Combined Repeater"
+msgstr "Kombinált ismétlődő"
+
+#: demo/primary/sections.php:37
+msgid "Combined Repeater Demo Fields"
+msgstr "Kombinált ismétlő demó mezők"
+
+#: demo/primary/sections.php:46
+msgid "Conditional"
+msgstr "Feltételes"
+
+#: demo/primary/settings-pages.php:6
+msgid "TPL Dummy Settings Page"
+msgstr "TPL demó beállítások lap"
+
+#: demo/primary/settings-pages.php:7
+msgid "TPL Demos"
+msgstr "TPL demók"
+
+#: demo/primary/simple-options.php:22
+msgid "DEMO-PREFIX: "
+msgstr "DEMO-ELŐTAG: "
+
+#: demo/primary/simple-options.php:40
+msgid "Test TinyMCE Field"
+msgstr "TinyMCE mező tesztelése"
+
+#: inc/classes/tpl-error.php:97
+msgid "error"
+msgstr "hiba"
+
+#: inc/classes/tpl-error.php:98
+msgid "warning"
+msgstr "figyelmeztetés"
+
+#: inc/classes/tpl-error.php:99
+msgid "OK"
+msgstr "OK"
+
+#: inc/classes/tpl-error.php:100
+msgid "notification"
+msgstr "értesítés"
+
+#: inc/classes/tpl-error.php:152
+#, php-format
+msgctxt "Global error message intro text"
+msgid "%1$s %2$s: "
+msgstr "%1$s %2$s: "
+
+#: inc/classes/tpl-framework.php:43
+msgid "Static"
+msgstr "Statikus"
+
+#: inc/classes/tpl-framework.php:44 inc/data-types/type-tinymce.php:64
+msgid "Text"
+msgstr "Szöveges"
+
+#: inc/classes/tpl-framework.php:45
+msgid "Text Area"
+msgstr "Szövegblokk"
+
+#: inc/classes/tpl-framework.php:46
+msgid "TinyMCE"
+msgstr "TinyMCE"
+
+#: inc/classes/tpl-framework.php:47
+msgid "Color"
+msgstr "Szín"
+
+#: inc/classes/tpl-framework.php:48
+msgid "Image"
+msgstr "Kép"
+
+#: inc/classes/tpl-framework.php:49
+msgid "Number"
+msgstr "Szám"
+
+#: inc/classes/tpl-framework.php:50
+msgid "Boolean"
+msgstr "Logikai"
+
+#: inc/classes/tpl-framework.php:51
+msgid "Select"
+msgstr "Legördülő"
+
+#: inc/classes/tpl-framework.php:52
+msgid "Font Awesome"
+msgstr "Font Awesome"
+
+#: inc/classes/tpl-framework.php:53
+msgid "Post"
+msgstr "Bejegyzés"
+
+#: inc/classes/tpl-framework.php:54
+msgid "User"
+msgstr "Felhasználó"
+
+#: inc/classes/tpl-framework.php:55
+msgid "Date"
+msgstr "Dátum"
+
+#: inc/classes/tpl-framework.php:57 inc/data-types/type-icon.php:13
+msgid "Icon"
+msgstr "Ikon"
+
+#: inc/classes/tpl-framework.php:256
+#, php-format
+msgid ""
+"Sections can't be registered without a section name. Section details: <br> %s"
+msgstr ""
+"A szakaszok nem regisztrálhatók szakasznév nélkül. A szakasz részletei:<br>%s"
+
+#: inc/classes/tpl-framework.php:261
+#, php-format
+msgid "Sections must have a title. No title was defined for section \"%s\"."
+msgstr ""
+"A szakaszoknak rendelkezniük kell címmel. A(z) \"%s\" szakaszhoz nincs "
+"megadva cím."
+
+#: inc/classes/tpl-framework.php:334
+#, php-format
+msgid "Duplicate option name \"%1$s\". Options must have unique names."
+msgstr ""
+"Ismétlődő beállításnév: \"%1$s\". A beállításoknak egyedi névvel kell "
+"rendelkezniük."
+
+#: inc/classes/tpl-framework.php:351
+#, php-format
+msgid ""
+"Options can't be registered without an option name. Option details: <br> %s"
+msgstr ""
+"A beállítások nem regisztrálhatók beállításnév nélkül. A beállítás részletei:"
+"<br>%s"
+
+#: inc/classes/tpl-framework.php:356
+#, php-format
+msgid ""
+"No section name was specified for option \"%s\". Option isn't registered."
+msgstr ""
+"A(z) \"%s\" beállításhoz nem adtál meg szakasznevet. A beállítás nincs "
+"regisztrálva."
+
+#: inc/classes/tpl-framework.php:361
+#, php-format
+msgid ""
+"Invalid section name was specified for option \"%1$s\". Please make sure "
+"that you have a section registered with the \"%2$s\" section name."
+msgstr ""
+"Érvénytelen szakasznév lett megadva a(z) \"%1$s\" beállításhoz. Kérlek "
+"ellenőrizd, hogy van regisztrálva szakasz a(z) \"%2$s\" szakasznévvel."
+
+#: inc/classes/tpl-framework.php:366
+#, php-format
+msgid ""
+"No option type was specified for option \"%s\". Option isn't registered."
+msgstr ""
+"A(z) \"%s\" beállításhoz nem adtál meg beállítástípust. A beállítás nincs "
+"regisztrálva."
+
+#: inc/classes/tpl-framework.php:371
+#, php-format
+msgid ""
+"Invalid data type (%2$s) was specified for option \"%1$s\". Please make sure "
+"that you use one of the data types listed in the <a href=\"%3$s\" target="
+"\"_blank\">documentation</a>."
+msgstr ""
+"Érvénytelen adattípus (%2$s) lett megadva a(z) \"%1$s\" beállításhoz. Kérlek "
+"ellenőrizd, hogy a <a href=\"%3$s\" target=\"_blank\">dokumentációban</"
+"a>felsorolt adattípusok valamelyikét használod."
+
+#: inc/classes/tpl-option.php:100
+msgid "Add row"
+msgstr "Új sor"
+
+#: inc/classes/tpl-option.php:242
+msgid "Do you really want to remove this instance?"
+msgstr "Valóban el akarod távolítani ezt a példányt?"
+
+#: inc/classes/tpl-option.php:243 inc/templates/option/repeat-header.php:8
+msgid "Minimize"
+msgstr "Összecsuk"
+
+#: inc/classes/tpl-option.php:244 inc/templates/option/repeat-header.php:8
+msgid "Maximize"
+msgstr "Kinyit"
+
+#: inc/classes/tpl-option.php:245
+msgid "Show Settings"
+msgstr "Mutasd a beállításokat"
+
+#: inc/classes/tpl-option.php:246
+msgid "Hide Settings"
+msgstr "Beállítások elrejtése"
+
+#: inc/classes/tpl-option.php:542 inc/data-types/type-boolean.php:49
+#, php-format
+msgid "(default: %s)"
+msgstr "(alapeset: %s)"
+
+#: inc/classes/tpl-settings-page.php:24
+msgid "Settings updated successfully"
+msgstr "A beállítások frissítése sikeresen megtörtént"
+
+#: inc/data-types/type-boolean.php:57
+msgid "True"
+msgstr "Igaz"
+
+#: inc/data-types/type-boolean.php:60
+msgid "False"
+msgstr "Hamis"
+
+#: inc/data-types/type-font_awesome.php:74
+#, php-format
+msgid "(default: %1$s %2$s)"
+msgstr "(alapeset: %1$s %2$s)"
+
+#: inc/data-types/type-icon.php:14
+msgid "The Font Awesome code of the icon (uses the fa-xxx name structure)"
+msgstr "Az ikon Font Awesome kódja (fa-xxx formátumban)"
+
+#: inc/data-types/type-icon.php:21
+msgid "Icon Color"
+msgstr "Ikon színe"
+
+#: inc/data-types/type-icon.php:22
+msgid "What should be the color of this icon?"
+msgstr "Milyen színű legyen ez az ikon?"
+
+#: inc/data-types/type-icon.php:28
+msgid "Icon size"
+msgstr "Ikon mérete"
+
+#: inc/data-types/type-icon.php:29
+msgid "Size of the icon in Font Awesome sizes"
+msgstr "Ikonméret a Font Awesome méretek alapján"
+
+#: inc/data-types/type-icon.php:33
+msgid "Extra Small"
+msgstr "Extra kicsi"
+
+#: inc/data-types/type-icon.php:34
+msgid "Small"
+msgstr "Kicsi"
+
+#: inc/data-types/type-icon.php:35
+msgid "Normal"
+msgstr "Normál"
+
+#: inc/data-types/type-icon.php:36
+msgid "Larger"
+msgstr "Nagyobb"
+
+#: inc/data-types/type-icon.php:37
+msgid "Double"
+msgstr "Dupla"
+
+#: inc/data-types/type-icon.php:38
+msgid "Triple"
+msgstr "Tripla"
+
+#: inc/data-types/type-icon.php:39
+msgid "4x"
+msgstr "4x"
+
+#: inc/data-types/type-icon.php:40
+msgid "5x"
+msgstr "5x"
+
+#: inc/data-types/type-icon.php:41
+msgid "6x"
+msgstr "6x"
+
+#: inc/data-types/type-icon.php:42
+msgid "7x"
+msgstr "7x"
+
+#: inc/data-types/type-icon.php:43
+msgid "8x"
+msgstr "8x"
+
+#: inc/data-types/type-icon.php:44
+msgid "9x"
+msgstr "9x"
+
+#: inc/data-types/type-icon.php:45
+msgid "10x"
+msgstr "10x"
+
+#: inc/data-types/type-icon.php:50
+msgid "Icon URL"
+msgstr "Ikon URL-je"
+
+#: inc/data-types/type-icon.php:51
+msgid "Where should the icon be linked to?"
+msgstr "Hová linkeljük az ikont?"
+
+#: inc/data-types/type-icon.php:56
+msgid "Link Title"
+msgstr "Link címe"
+
+#: inc/data-types/type-icon.php:57
+msgid ""
+"This is displayed when hovering the mouse over the icon when it is a link"
+msgstr "Ez lesz megjelenítve, amikor az egérmutatót az ikon fölé mozgatják"
+
+#: inc/data-types/type-icon.php:70
+msgid "Open in new tab?"
+msgstr "Új lapon nyíljon?"
+
+#: inc/data-types/type-icon.php:71
+msgid "If yes, the link will open in a new browser tab"
+msgstr "Ha igen, a link egy új böngészőablakban fog nyílni"
+
+#: inc/data-types/type-image.php:144 inc/data-types/type-image.php:145
+msgid "Choose Image"
+msgstr "Válassz képet"
+
+#: inc/data-types/type-tinymce.php:63
+msgid "Visual"
+msgstr "Vizuális"
+
+#: inc/helper-functions.php:70
+msgid ""
+"The tpl_error() function has been deprecated in favor of using the TPL_Error "
+"class (and its show_message() method)."
+msgstr ""
+"A tpl_error() függvény elavult. Használd a TPL_Error osztályt (és annak "
+"show_message() metúdusát) helyette."
+
+#: inc/templates/option/data-types/image-field-content.php:6
+#, php-format
+msgid "%s image tag"
+msgstr "%s kép címke"
+
+#: inc/templates/option/data-types/image-field-content.php:12
+msgid "Placeholder image"
+msgstr "Helyfogó kép"
+
+#: inc/templates/option/data-types/image-field-content.php:17
+msgid "Click here to remove image."
+msgstr "Kattints ide a kép eltávolításához."
+
+#: inc/templates/option/data-types/image-field-content.php:27
+msgid "Upload"
+msgstr "Feltöltés"
+
+#: inc/templates/option/repeat-header.php:2
+msgid "Drag & Drop to reorder"
+msgstr "Fogd és vidd az átrendezéshez"
+
+#: inc/templates/option/repeat-header.php:10
+msgid "Remove row"
+msgstr "Sor törlése"
+
+#~ msgid "The \"name\" attribute is required during registering options"
+#~ msgstr ""
+#~ "A \"name\" attribútum megadása kötelező az opciók regisztrálása során"
+
+#~ msgid "It's recommended to set a title for \"%s\" option"
+#~ msgstr "Ajánlott címet rendelni a \"%s\" opcióhoz"
+
+#~ msgid ""
+#~ "It's recommended to assign %s to a section. Using a dummy section to "
+#~ "avoid errors..."
+#~ msgstr ""
+#~ "Ajánlott, hogy a %s opciót rendeld hozzá egy szekcióhoz. Generáltunk egy "
+#~ "dummy szekciót, hogy elkerüljük a hibákat..."
+
+#~ msgid "Clear"
+#~ msgstr "Törlés"
+
+#~ msgid "Default"
+#~ msgstr "Alapeset"
+
+#~ msgid "Current Color"
+#~ msgstr "Aktuális szín"
+
+#~ msgid "You can find demos for the Google fonts here: %s"
+#~ msgstr "Itt tudod megtekinteni a Google betűkészleteket: %s"
+
+#~ msgid "Select an Icon"
+#~ msgstr "Válassz ikont"
+
+#~ msgid "File not exists: %s"
+#~ msgstr "A %s fájl nem létezik."
+
+#~ msgid ""
+#~ "You forgot to set name for an option. Please check your options files."
+#~ msgstr ""
+#~ "Elfelejtettél nevet adni az egyik opciónak. Kérlek ellenőrizd az options "
+#~ "fájljaidat."
+
+#~ msgid "You forgot to set the type of %s. Using static to avoid errors..."
+#~ msgstr ""
+#~ "Elfelejtetted beállítani a %s opció típusát. Static-ra állítottuk, hogy "
+#~ "elkerüljük a hibákat..."
+
+#~ msgid "Data type %s doesn't exists"
+#~ msgstr "A %s adattípus nem létezik"
+
+#~ msgid ""
+#~ "Option with name %1$s was defined more than once in your options files. "
+#~ "Using the first instance (%2$s)"
+#~ msgstr ""
+#~ "Az %1$s azonosítójú beállítás egynél többször került definiálásra az "
+#~ "options fájlokban. Az először definiált verzió az aktív (%2$s)"
+
+#~ msgid ""
+#~ "Section \"%s\" hasn't been registered properly. Please register it first "
+#~ "with the tpl_register_section() function."
+#~ msgstr ""
+#~ "A \"%s\" szekció nem lett rendesen regisztrálva. Kérlek regisztráld a "
+#~ "tpl_register_section() függvénnyel."
+
+#~ msgid "No data type was set up for option: %s"
+#~ msgstr "Hiányzik az adattípus ehhez a beállításhoz: %s"
+
+#~ msgid "Invalid data type (%1$s) was set for option: %2$s"
+#~ msgstr ""
+#~ "Nem megfelelő adattípus (%1$s) van hozzárendelve ehhez a beállításhoz: "
+#~ "%2$s"
+
+#~ msgid "prefix:"
+#~ msgstr "előtag:"
+
+#~ msgid "suffix:"
+#~ msgstr "utótag:"
+
+#~ msgid "No"
+#~ msgstr "Nem"
+
+#~ msgid "Yes"
+#~ msgstr "Igen"
+
+#~ msgid "Please register a logo first before calling the tpl_logo() function."
+#~ msgstr ""
+#~ "Kérlek regisztrálj egy logót mielőtt meghívnád a tpl_logo() függvényt."
+
+#~ msgid "Themple error"
+#~ msgstr "Themple hibaüzenet"
+
+#~ msgid "Empty space"
+#~ msgstr "Üres hely"
+
+#~ msgid "Free text"
+#~ msgstr "Tetszőleges szöveg"
+
+#~ msgid "Free text input"
+#~ msgstr "Tetszőleges szöveg bevitele"
+
+#~ msgid "You can enter any kind of text and HTML into this box."
+#~ msgstr "Ide írhatsz bármilyen szöveges vagy HTML tartalmat."
+
+#~ msgid "Upload or select previously uploaded image here"
+#~ msgstr "Tölts fel egy új képet vagy válassz ki egy korábban feltöltöttet"
+
+#~ msgid "Custom shortcode"
+#~ msgstr "Tetszőleges shortcode"
+
+#~ msgid "Shortcode name"
+#~ msgstr "Shortcode neve"
+
+#~ msgid "The shortcode name / identifier"
+#~ msgstr "A shortcode neve / azonosítója"
+
+#~ msgid "Shortcode type"
+#~ msgstr "Shortcode típusa"
+
+#~ msgid "Self-closing or Enclosing?"
+#~ msgstr "Önzáró vagy körülölelő?"
+
+#~ msgid "Self-closing"
+#~ msgstr "Önzáró"
+
+#~ msgid "Enclosing"
+#~ msgstr "Körülölelő"
+
+#~ msgid "Shortcode content"
+#~ msgstr "Shortcode tartalma"
+
+#~ msgid ""
+#~ "Content between the starting and the ending tag of the enclosing shortcode"
+#~ msgstr "A körülölelő shortcode nyitó- és záróeleme közötti tartalom"
+
+#~ msgid "Shortcode parameters"
+#~ msgstr "A shortcode paraméterei"
+
+#~ msgid "You can add here as many shortcode parameters as you'd like to"
+#~ msgstr "Tetszőleges számú shortcode paramétert hozzáadhatsz itt"
+
+#~ msgid "Add parameter"
+#~ msgstr "Paraméter hozzáadása"
+
+#~ msgid "Name"
+#~ msgstr "Név"
+
+#~ msgid "The shortcode parameter's name"
+#~ msgstr "A shortcode paraméter neve"
+
+#~ msgid "Value"
+#~ msgstr "Érték"
+
+#~ msgid "The shortcode parameter's value"
+#~ msgstr "A shortcode paraméter értéke"
+
+#~ msgid "The content"
+#~ msgstr "Tartalom"
+
+#~ msgid "Widget area"
+#~ msgstr "Widget gyűjtemény"
+
+#~ msgid "Select a widget area"
+#~ msgstr "Válassz egy widget gyűjteményt"
+
+#~ msgid ""
+#~ "You can use here a widget area already set up in Appearance > Widgets"
+#~ msgstr ""
+#~ "A widget gyűjtemények beállíthatók a Megjelenés > Widgetek menüpont alatt"
+
+#~ msgid "Select app for this box"
+#~ msgstr "Válaszd ki az alkalmazást ehhez a dobozhoz"
+
+#~ msgid "Select an app type from the dropdown. It will be used in this box."
+#~ msgstr ""
+#~ "Válassz alkalmazástípust a legördülő menüből. Ez kerül használatra ebben "
+#~ "a dobozban."
+
+#~ msgid "Columnset"
+#~ msgstr "Oszlop-elrendezés"
+
+#~ msgid "The columns layout of the row"
+#~ msgstr "Az oszlopok megjelenése ebben a sorban"
+
+#~ msgid "1/1 - Full width"
+#~ msgstr "1/1 - Teljes szélesség"
+
+#~ msgid "Contents of the columns"
+#~ msgstr "Az oszlopok tartalma"
+
+#~ msgid "Set up your apps"
+#~ msgstr "Állítsd be az alkalmazásaidat"
+
+#~ msgid "Add section"
+#~ msgstr "Szekció hozzáadása"
+
+#~ msgid ""
+#~ "The columnset you have just selected contains fewer columns than the "
+#~ "previous setting. It means that the last ##N## column(s) will be removed "
+#~ "with all their contents. Do you want to proceed?"
+#~ msgstr ""
+#~ "Az oszlop-elrendezés amit épp kiválasztottál kevesebb oszlopot tartalmaz, "
+#~ "mint az előző beállítás. Ez azt jelenti, hogy az utolsó ##N## oszlop el "
+#~ "lesz távolítva annak minden tartalmával. Folytassuk?"
+
+#~ msgid "General"
+#~ msgstr "Általános"
+
+#~ msgid "General information about the Framework and the Theme"
+#~ msgstr "Általános információ a keretrendszerről és a sablonról"
+
+#~ msgid "Libraries"
+#~ msgstr "Könyvtárak"
+
+#~ msgid "3rd party libraries bundled with the Themple Framework"
+#~ msgstr "Külső könyvtárak, amelyek a Themple Framework csomag részei"
+
+#~ msgid "Settings for the Themple admin panels"
+#~ msgstr "Beállítások a Themple adminisztrációs felületéhez"
+
+#~ msgid "Backend"
+#~ msgstr "Rendszer"
+
+#~ msgid "Theme version"
+#~ msgstr "Sablon verzió"
+
+#~ msgid "Framework version"
+#~ msgstr "Keretrendszer verzió"
+
+#~ msgid "WordPress version"
+#~ msgstr "WordPress verzió"
+
+#~ msgid "Less Compiler"
+#~ msgstr "LESS fordító"
+
+#~ msgid ""
+#~ "<b>ON:</b> Less files are compiled upon each page reload, even if there "
+#~ "was no change (slowest, suitable for development environments)<br>\n"
+#~ "\t\t<b>OFF:</b> Less files are NOT compiled in any circumstances "
+#~ "(fastest, use it if you're not going to change styles or Theme Options "
+#~ "for a long time, suitable for live sites with cached assets)<br>\n"
+#~ "\t\t<b>Dynamic:</b> Less files are updated when there is a change in the "
+#~ "Theme Options or inside the Less files (middle speed, use it in test "
+#~ "environments or when you're changing options frequently on live sites.)"
+#~ msgstr ""
+#~ "<b>BE:</b> A LESS fájlok minden egyes oldalbetöltésnél újrafordítódnak, "
+#~ "még akkor is ha nem történt semmi változás (ez a leglassabb, ideális a "
+#~ "fejlesztői környezetekhez)<br>\n"
+#~ "\t\t<b>KI:</b> A LESS fájlok semmilyen körülmények között nem kerülnek "
+#~ "újrafordításra (ez a leggyorsabb, akkor használd ha sokáig nem akarsz "
+#~ "hozzányúlni a stílusokhoz Sablonbeállításokhoz, ideális az élő "
+#~ "oldalakhoz)<br>\n"
+#~ "\t\t<b>Dinamikus:</b> A LESS fájlok akkor fordítódnak újra, ha van "
+#~ "változás a Sablonbeállításokban, vagy magukban a LESS fájlokban (közepes "
+#~ "sebesség, általában teszt környezetben ideális, illetve olyan oldalakon, "
+#~ "ahol gyakran változnak a beállítások)"
+
+#~ msgid "ON"
+#~ msgstr "BE"
+
+#~ msgid "OFF"
+#~ msgstr "KI"
+
+#~ msgid "Dynamic"
+#~ msgstr "Dinamikus"
+
+#~ msgid ""
+#~ "<b>ON:</b> Output CSS files are minified during the compilation process."
+#~ "<br>\n"
+#~ "\t\t<b>OFF:</b> Output CSS files are not minified, only compiled."
+#~ msgstr ""
+#~ "<b>BE:</b> A kimeneti CSS fájlok minifikálva lesznek a fordítási folyamat "
+#~ "közben.<br>\n"
+#~ "\t\t<b>KI:</b> A kimeneti CSS fájlok nem lesznek minifikálva, csupán "
+#~ "lefordítva."
+
+#~ msgid ""
+#~ "<b>Yes:</b> The Font Awesome library will be compiled into your front end "
+#~ "CSS.<br>\n"
+#~ "\t\t<b>No:</b> The Font Awesome library won't be compiled into your front "
+#~ "end CSS. Recommended if you're not using these font icons (in this case "
+#~ "the site will load faster)."
+#~ msgstr ""
+#~ "<b>Igen:</b> A Font Awesome könyvtár bele lesz fordítva a front end CSS-"
+#~ "be.<br>\n"
+#~ "\t\t<b>Nem:</b> A Font Awesome library könyvtár nem lesz belefordítva a "
+#~ "front end CSS-be. Ajánlott, ha nem használod ezeket a font ikonokat (ez "
+#~ "esetben gyorsíthat az oldal betöltődésén)."
+
+#~ msgid "TGM Plugin Activation"
+#~ msgstr "TGM Bővítmény Aktiváló"
+
+#~ msgid ""
+#~ "<b>Yes:</b> The TGM Plugin Activation library is enabled.<br>\n"
+#~ "\t\t<b>No:</b> The TGM Plugin Activation library is disabled."
+#~ msgstr ""
+#~ "<b>Igen:</b> A TGM bővítmény-telepítő könyvtár engedélyezve van.<br>\n"
+#~ "\t\t<b>Nem:</b> A TGM bővítmény-telepítő könyvtár nincs engedélyezve."
+
+#~ msgid ""
+#~ "If yes, you'll be prompted every time you want to remove a row from a "
+#~ "repeater field in Theme Options"
+#~ msgstr ""
+#~ "Ha igen, meg leszel kérdezve minden egyes alkalommal, ha törölni akarsz "
+#~ "egy sort egy ismétlődő mezőből."
+
+#~ msgid "Remove confirmation for Page Builder columnsets"
+#~ msgstr "Rákérdezés Page Builder oszlop-elrendezések esetén"
+
+#~ msgid ""
+#~ "If yes, you'll be prompted every time you want to switch to a columnset "
+#~ "with fewer columns in Page Builder"
+#~ msgstr ""
+#~ "Ha igen, meg leszel kérdezve minden alkalommal, ha kevesebb oszlopos "
+#~ "elrendezésre szeretnél váltani a Page Builderben"
+
+#~ msgid "Install Required Plugins"
+#~ msgstr "Szükséges bővítmények telepítése"
+
+#~ msgid "Install Plugins"
+#~ msgstr "bővítmények telepítése"
+
+#~ msgid "Installing Plugin: %s"
+#~ msgstr "Bővítmény telepítése: %s"
+
+#~ msgid "Something went wrong with the plugin API."
+#~ msgstr "Valami nem volt rendben a bővítmény API-val."
+
+#~ msgid "Return to Required Plugins Installer"
+#~ msgstr "Vissza a bővítmény-telepítőhöz"
+
+#~ msgid "Return to the dashboard"
+#~ msgstr "Vissza a kezelőpulthoz"
+
+#~ msgid "The following plugin was activated successfully:"
+#~ msgid_plural "The following plugins were activated successfully:"
+#~ msgstr[0] "A következő bővítmény sikeresen aktiválva lett:"
+#~ msgstr[1] "A következő bővítmények sikeresen aktiválva lettek:"
+
+#~ msgid "No action taken. Plugin %1$s was already active."
+#~ msgstr "Nem történt semmi, a %1$s bővítmény már eleve aktív volt."
+
+#~ msgid ""
+#~ "Plugin not activated. A higher version of %s is needed for this theme. "
+#~ "Please update the plugin."
+#~ msgstr ""
+#~ "A bővítmény nincs aktiválva. Egy magasabb verzióra van szükség a %s-ből a "
+#~ "sablonhoz. Kérlek frissítsd a bővítményt."
+
+#~ msgid "All plugins installed and activated successfully. %1$s"
+#~ msgstr "Minden bővítmény sikeresen telepítve és aktiválva. %1$s"
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "Figyelmeztetés eltűntetése"
+
+#~ msgid "Please contact the administrator of this site for help."
+#~ msgstr "Kérlek lépj kapcsolatba az oldal adminisztrátorával segítségért."
+
+#~ msgctxt "%s = version number"
+#~ msgid "TGMPA v%s"
+#~ msgstr "TGMPA v%s"
+
+#~ msgid "Required"
+#~ msgstr "Szükséges"
+
+#~ msgid "Recommended"
+#~ msgstr "Ajánlott"
+
+#~ msgid "WordPress Repository"
+#~ msgstr "WordPress gyűjtemény"
+
+#~ msgid "External Source"
+#~ msgstr "Külső forrás"
+
+#~ msgid "Pre-Packaged"
+#~ msgstr "Előre csomagolt"
+
+#~ msgid "Not Installed"
+#~ msgstr "Nincs telepítve"
+
+#~ msgid "Installed But Not Activated"
+#~ msgstr "Telepítve, de nincs aktiválva"
+
+#~ msgid "Active"
+#~ msgstr "Aktív"
+
+#~ msgid "Required Update not Available"
+#~ msgstr "A szükséges frissítés nem elérhető"
+
+#~ msgid "Requires Update"
+#~ msgstr "Szükséges frissíteni"
+
+#~ msgid "Update recommended"
+#~ msgstr "Ajánlott frissíteni"
+
+#~ msgid "To Install <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Install <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Telepítendő: <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Telepítendő: <span class=\"count\">(%s)</span>"
+
+#~ msgid "Update Available <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Frissíthető: <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Frissíthető: <span class=\"count\">(%s)</span>"
+
+#~ msgid "To Activate <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Aktiválható: <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Aktiválható: <span class=\"count\">(%s)</span>"
+
+#~ msgctxt "as in: \"version nr unknown\""
+#~ msgid "unknown"
+#~ msgstr "ismeretlen"
+
+#~ msgid "Installed version:"
+#~ msgstr "Telepített verzió:"
+
+#~ msgid "Minimum required version:"
+#~ msgstr "Minimálisan szükséges verzió:"
+
+#~ msgid "Available version:"
+#~ msgstr "Elérhető verzió:"
+
+#~ msgid ""
+#~ "No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+#~ "Dashboard</a>"
+#~ msgstr ""
+#~ "Nincs telepíteni-, frissíteni- vagy aktiválni való bővítmény. <a href="
+#~ "\"%1$s\">Vissza a kezelőpulthoz</a>"
+
+#~ msgid "Plugin"
+#~ msgstr "Bővítmény"
+
+#~ msgid "Source"
+#~ msgstr "Forrás"
+
+#~ msgid "Type"
+#~ msgstr "Típus"
+
+#~ msgid "Version"
+#~ msgstr "Verzió"
+
+#~ msgctxt "%2$s = plugin name in screen reader markup"
+#~ msgid "Install %2$s"
+#~ msgstr "%2$s telepítése"
+
+#~ msgctxt "%2$s = plugin name in screen reader markup"
+#~ msgid "Update %2$s"
+#~ msgstr "%2$s frissítése"
+
+#~ msgctxt "%2$s = plugin name in screen reader markup"
+#~ msgid "Activate %2$s"
+#~ msgstr "%2$s aktiválása"
+
+#~ msgid "Install"
+#~ msgstr "Telepít"
+
+#~ msgid "Update"
+#~ msgstr "Frissít"
+
+#~ msgid "Activate"
+#~ msgstr "Aktivál"
+
+#~ msgid "No plugins were selected to be installed. No action taken."
+#~ msgstr ""
+#~ "Nem volt kijelölve egy bővítmény sem telepítésre, így nem történt semmi."
+
+#~ msgid "No plugins were selected to be updated. No action taken."
+#~ msgstr ""
+#~ "Nem volt kijelölve egy bővítmény sem frissítésre, így nem történt semmi."
+
+#~ msgid "No plugins are available to be installed at this time."
+#~ msgstr "Jelenleg nem található telepíthető bővítmény."
+
+#~ msgid "No plugins are available to be updated at this time."
+#~ msgstr "Jelenleg nem található frissíthető bővítmény."
+
+#~ msgid "Plugin activation failed."
+#~ msgstr "A bővítmény aktiválása nem sikerült."
+
+#~ msgid "Updating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "A %1$s (%2$d/%3$d) bővítmény frissítése"
+
+#~ msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+#~ msgstr ""
+#~ "A következő hiba történt a %1$s telepítése közben: <strong>%2$s</strong>."
+
+#~ msgid "The installation of %1$s failed."
+#~ msgstr "A %1$s telepítése nem sikerült."
+
+#~ msgid ""
+#~ "The installation and activation process is starting. This process may "
+#~ "take a while on some hosts, so please be patient."
+#~ msgstr ""
+#~ "A telepítés és aktiválás kezdődik. Bizonyos szervereken ez eltarthat egy "
+#~ "darabig."
+
+#~ msgid "%1$s installed and activated successfully."
+#~ msgstr "%1$s sikeresen telepítve és aktiválva."
+
+#~ msgid "All installations and activations have been completed."
+#~ msgstr "Minden telepítés és aktiválás befejeződött."
+
+#~ msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Telepítem és aktiválom a %1$s (%2$d/%3$d) bővítményt."
+
+#~ msgid ""
+#~ "The installation process is starting. This process may take a while on "
+#~ "some hosts, so please be patient."
+#~ msgstr ""
+#~ "A telepítés kezdődik. Bizonyos szervereken ez eltarthat egy darabig."
+
+#~ msgid "All installations have been completed."
+#~ msgstr "Minden telepítés befejeződött."
+
+#~ msgid "Installing Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Bővítmény telepítése: %1$s (%2$d/%3$d)"
+
+#~ msgid "Could not write front end CSS file - check your file permissions!"
+#~ msgstr ""
+#~ "Nem tudtam írni a front CSS fájlt - ellenőrizd a fájl hozzáféréseket!"
+
+#~ msgid "Could not write admin CSS file - check your file permissions!"
+#~ msgstr ""
+#~ "Nem tudtam írni az admin CSS fájlt - ellenőrizd a fájl hozzáféréseket!"
+
+#~ msgid "Could not write editor CSS file - check your file permissions!"
+#~ msgstr ""
+#~ "Nem tudtam írni a szerkesztő CSS fájlját - ellenőrizd a fájl "
+#~ "hozzáféréseket!"
+
+#~ msgid ""
+#~ "You forgot to set name for an option. Please check your options files. "
+#~ "LESS compiler is turned OFF until you resolve this issue."
+#~ msgstr ""
+#~ "Elfelejtettél nevet adni az egyik opciónak. Kérlek ellenőrizd az options "
+#~ "fájljaidat. Addig is kikapcsolva tartjuk a LESS fordítót a biztonság "
+#~ "kedvéért."
+
+#~ msgid "Settings saved."
+#~ msgstr "Beállítások mentve."
+
+#~ msgid ""
+#~ "<b>ON:</b> Output CSS files are minified during the compilation process."
+#~ "<br>\n"
+#~ "\t\t<b>OFF:</b> Output CSS files are not minified, only copiled."
+#~ msgstr ""
+#~ "<b>BE:</b> A kimeneti CSS fájlok minifikálva lesznek a fordítási folyamat "
+#~ "közben.<br>\n"
+#~ "\t\t<b>KI:</b> A kimeneti CSS fájlok nem lesznek minifikálva, csupán "
+#~ "lefordítva."
+
+#~ msgid "Invalid parameter: %s"
+#~ msgstr "Nem megfelelő paraméter: %s"
+
+#~ msgid "General Framework Options"
+#~ msgstr "Általános keretrendszer beállítások"
+
+#~ msgid "Themple Framework Options"
+#~ msgstr "A Themple Keretrendszer beállításai"
