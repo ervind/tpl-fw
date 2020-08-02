@@ -74,6 +74,14 @@ class TPL_Select extends TPL_Option {
 	}
 
 
+	function list_selectable_values() {
+
+		$option = $this;
+		include TPL_ROOT_DIR . 'inc/templates/option/data-types/select-field-values.php';
+
+	}
+
+
 	function get_form_field_value() {
 
 		if ( $this->is_bank_mode() ) {
@@ -91,6 +99,17 @@ class TPL_Select extends TPL_Option {
 		}
 
 		return $this->get_single_option_by_path();
+
+	}
+
+
+	function form_default_value() {
+
+		if ( $this->get_default() === '' ) {
+			return '';
+		}
+
+		return sprintf( __( '(default: %s)', 'tpl' ), $this->format_option( $this->get_default() ) );
 
 	}
 

@@ -7,6 +7,7 @@ class TPL_Option {
 
 	public		$prefix			= '';
 	public		$suffix			= '';
+	public		$title			= '';
 	public		$default		= '';
 	public		$admin_class	= '';
 	public		$for_bank		= false;
@@ -239,11 +240,9 @@ class TPL_Option {
 	function admin_js_strings( $strings ) {
 
 		$strings = array_merge( $strings, [
-			'remover_confirm_text'	=> __( 'Do you really want to remove this instance?', 'tpl' ),
-			'Repeat_Minimize'		=> __( 'Minimize', 'tpl' ),
-			'Repeat_Maximize'		=> __( 'Maximize', 'tpl' ),
-			'Show_Settings'			=> __( 'Show Settings', 'tpl' ),
-			'Hide_Settings'			=> __( 'Hide Settings', 'tpl' ),
+			"remover_confirm_text"	=> __( 'Do you really want to remove this instance?', 'tpl' ),
+			"repeat_minimize"		=> __( 'Minimize', 'tpl' ),
+			"repeat_maximize"		=> __( 'Maximize', 'tpl' ),
 		] );
 
 		return $strings;
@@ -759,7 +758,7 @@ class TPL_Option {
 
 		$settings_page = $this->get_settings_page();
 		$values = get_option( $settings_page->get_name() );
-		return $values;
+		return apply_filters( 'tpl_' . $settings_page->get_name() . '_db_values', $values );
 
 	}
 

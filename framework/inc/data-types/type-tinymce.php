@@ -17,7 +17,7 @@ class TPL_TinyMCE extends TPL_Textarea {
 		) {
 
 			add_filter( 'mce_buttons', [ $this, 'mce_buttons' ] );
-			add_action( 'tpl_after_primary_sections', [ $this, 'mce_dummy_editor' ] );
+			add_action( 'tpl_after_primary_sections', [ 'TPL_TinyMCE', 'mce_dummy_editor' ] );
 			$tpl_mce_buttons_filtered = true;
 
 		}
@@ -45,7 +45,7 @@ class TPL_TinyMCE extends TPL_Textarea {
 	}
 
 
-	function mce_dummy_editor() {
+	static function mce_dummy_editor() {
 
 		wp_editor( '', 'dummy_editor', [
 			'editor_css' 	=> '<style> #wp-dummy_editor-wrap { display: none; } </style>',

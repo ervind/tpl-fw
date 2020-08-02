@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TPL-FW\n"
-"POT-Creation-Date: 2020-06-17 10:43+0200\n"
-"PO-Revision-Date: 2020-06-18 06:16+0200\n"
+"POT-Creation-Date: 2020-07-27 05:48+0200\n"
+"PO-Revision-Date: 2020-07-27 05:50+0200\n"
 "Last-Translator: Ervin Domonkos <ervin.domonkos@gmail.com>\n"
 "Language-Team: a-idea studio <info@a-idea.studio>\n"
 "Language: hu_HU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -291,7 +291,7 @@ msgstr "A teszt TinyMCE ismétlődő mező leírása"
 
 #: demo/metabox/metabox-repeater-options.php:46
 #: demo/metabox/metabox-simple-options.php:43
-#: demo/primary/repeater-options.php:47 demo/primary/simple-options.php:44
+#: demo/primary/repeater-options.php:47 demo/primary/simple-options.php:45
 msgid "Test tinymce default value"
 msgstr "Teszt TinyMCE alapértelmezett értéke"
 
@@ -322,19 +322,19 @@ msgstr "A teszt legördülő ismétlődő mező leírása"
 
 #: demo/metabox/metabox-repeater-options.php:75
 #: demo/metabox/metabox-simple-options.php:69
-#: demo/primary/repeater-options.php:76 demo/primary/simple-options.php:71
+#: demo/primary/repeater-options.php:76 demo/primary/simple-options.php:73
 msgid "First Option"
 msgstr "Első opció"
 
 #: demo/metabox/metabox-repeater-options.php:76
 #: demo/metabox/metabox-simple-options.php:70
-#: demo/primary/repeater-options.php:77 demo/primary/simple-options.php:72
+#: demo/primary/repeater-options.php:77 demo/primary/simple-options.php:74
 msgid "Second Option"
 msgstr "Második opció"
 
 #: demo/metabox/metabox-repeater-options.php:77
 #: demo/metabox/metabox-simple-options.php:71
-#: demo/primary/repeater-options.php:78 demo/primary/simple-options.php:73
+#: demo/primary/repeater-options.php:78 demo/primary/simple-options.php:75
 msgid "Third Option"
 msgstr "Harmadik opció"
 
@@ -350,7 +350,7 @@ msgstr "A teszt felhasználó ismétlődő mező leírása"
 
 #: demo/metabox/metabox-repeater-options.php:91
 #: demo/metabox/metabox-simple-options.php:88
-#: demo/primary/repeater-options.php:92 demo/primary/simple-options.php:90
+#: demo/primary/repeater-options.php:92 demo/primary/simple-options.php:94
 msgid "Choose a User"
 msgstr "Válassz felhasználót"
 
@@ -366,7 +366,7 @@ msgstr "A teszt bejegyzés ismétlődő mező leírása"
 
 #: demo/metabox/metabox-repeater-options.php:103
 #: demo/metabox/metabox-simple-options.php:99
-#: demo/primary/repeater-options.php:104 demo/primary/simple-options.php:101
+#: demo/primary/repeater-options.php:104 demo/primary/simple-options.php:105
 msgid "Choose a Post"
 msgstr "Válassz bejegyzést"
 
@@ -387,7 +387,7 @@ msgstr "A teszt Font Awesome ismétlődő mező leírása"
 
 #: demo/metabox/metabox-repeater-options.php:116
 #: demo/metabox/metabox-simple-options.php:111
-#: demo/primary/repeater-options.php:117 demo/primary/simple-options.php:113
+#: demo/primary/repeater-options.php:117 demo/primary/simple-options.php:117
 msgid "Choose a font icon"
 msgstr "Válassz font ikont"
 
@@ -504,112 +504,112 @@ msgid "Test tinymce Field"
 msgstr "TinyMCE mező tesztelése"
 
 #: demo/metabox/metabox-simple-options.php:40
-#: demo/primary/simple-options.php:41
+#: demo/primary/simple-options.php:42
 msgid "Description for Test tinymce Field"
 msgstr "A teszt TinyMCE mező leírása"
 
 #: demo/metabox/metabox-simple-options.php:50
-#: demo/primary/simple-options.php:51
+#: demo/primary/simple-options.php:53
 msgid "Test number Field"
 msgstr "Szám mező tesztelése"
 
 #: demo/metabox/metabox-simple-options.php:51
-#: demo/primary/simple-options.php:52
+#: demo/primary/simple-options.php:54
 msgid "Description for Test number Field"
 msgstr "A teszt szám mező leírása"
 
 #: demo/metabox/metabox-simple-options.php:64
-#: demo/primary/simple-options.php:66
+#: demo/primary/simple-options.php:68
 msgid "Test select Field"
 msgstr "Legördülő mező tesztelése"
 
 #: demo/metabox/metabox-simple-options.php:65
-#: demo/primary/simple-options.php:67
+#: demo/primary/simple-options.php:69
 msgid "Description for Test select Field"
 msgstr "A teszt legördülő mező leírása"
 
 #: demo/metabox/metabox-simple-options.php:73
-#: demo/primary/simple-options.php:75
+#: demo/primary/simple-options.php:77
 msgid "Fourth Option"
 msgstr "Negyedik opció"
 
 #: demo/metabox/metabox-simple-options.php:74
-#: demo/primary/simple-options.php:76
+#: demo/primary/simple-options.php:78
 msgid "Fifth Option"
 msgstr "Ötödik opció"
 
 #: demo/metabox/metabox-simple-options.php:77
-#: demo/primary/simple-options.php:79
+#: demo/primary/simple-options.php:81
 msgid "Choose Something"
 msgstr "Válassz valamit"
 
 #: demo/metabox/metabox-simple-options.php:84
-#: demo/primary/simple-options.php:86
+#: demo/primary/simple-options.php:90
 msgid "Test user Field"
 msgstr "Felhasználó mező tesztelése"
 
 #: demo/metabox/metabox-simple-options.php:85
-#: demo/primary/simple-options.php:87
+#: demo/primary/simple-options.php:91
 msgid "Description for Test user Field"
 msgstr "A teszt felhasználó mező leírása"
 
 #: demo/metabox/metabox-simple-options.php:95
-#: demo/primary/simple-options.php:97
+#: demo/primary/simple-options.php:101
 msgid "Test post Field"
 msgstr "Bejegyzés mező tesztelése"
 
 #: demo/metabox/metabox-simple-options.php:96
-#: demo/primary/simple-options.php:98
+#: demo/primary/simple-options.php:102
 msgid "Description for Test post Field"
 msgstr "A teszt bejegyzés mező leírása"
 
 #: demo/metabox/metabox-simple-options.php:107
-#: demo/primary/simple-options.php:109
+#: demo/primary/simple-options.php:113
 msgid "Test Font Awesome Field"
 msgstr "Font Awesome mező tesztelése"
 
 #: demo/metabox/metabox-simple-options.php:108
-#: demo/primary/simple-options.php:110
+#: demo/primary/simple-options.php:114
 msgid "Description for Test Font Awesome Field"
 msgstr "A teszt Font Awesome mező leírása"
 
 #: demo/metabox/metabox-simple-options.php:119
-#: demo/primary/simple-options.php:121
+#: demo/primary/simple-options.php:125
 msgid "Test boolean Field"
 msgstr "Logikai mező tesztelése"
 
 #: demo/metabox/metabox-simple-options.php:120
-#: demo/primary/simple-options.php:122
+#: demo/primary/simple-options.php:126
 msgid "Description for Test boolean Field"
 msgstr "A teszt logikai mező leírása"
 
 #: demo/metabox/metabox-simple-options.php:130
-#: demo/primary/simple-options.php:132
+#: demo/primary/simple-options.php:136
 msgid "Test color Field"
 msgstr "Szín mező tesztelése"
 
 #: demo/metabox/metabox-simple-options.php:131
-#: demo/primary/simple-options.php:133
+#: demo/primary/simple-options.php:137
 msgid "Description for Test color Field"
 msgstr "A teszt szín mező leírása"
 
 #: demo/metabox/metabox-simple-options.php:140
-#: demo/primary/simple-options.php:142
+#: demo/primary/simple-options.php:146
 msgid "Test image Field"
 msgstr "Kép mező tesztelése"
 
 #: demo/metabox/metabox-simple-options.php:141
-#: demo/primary/simple-options.php:143
+#: demo/primary/simple-options.php:147
 msgid "Description for Test image Field"
 msgstr "A teszt kép mező leírása"
 
 #: demo/metabox/metabox-simple-options.php:150
-#: demo/primary/simple-options.php:152
+#: demo/primary/simple-options.php:156
 msgid "Test date Field"
 msgstr "Dátum mező tesztelése"
 
 #: demo/metabox/metabox-simple-options.php:151
-#: demo/primary/simple-options.php:153
+#: demo/primary/simple-options.php:157
 msgid "Description for Test date Field"
 msgstr "A teszt dátum mező leírása"
 
@@ -669,7 +669,7 @@ msgstr "Ismétlődő"
 msgid "Repeater Demo Fields"
 msgstr "Ismétlődő demó mezők"
 
-#: demo/primary/sections.php:26 inc/classes/tpl-framework.php:56
+#: demo/primary/sections.php:26 inc/classes/tpl-framework.php:57
 msgid "Combined"
 msgstr "Kombinált"
 
@@ -697,11 +697,11 @@ msgstr "TPL demó beállítások lap"
 msgid "TPL Demos"
 msgstr "TPL demók"
 
-#: demo/primary/simple-options.php:22
+#: demo/primary/simple-options.php:22 demo/primary/simple-options.php:82
 msgid "DEMO-PREFIX: "
 msgstr "DEMO-ELŐTAG: "
 
-#: demo/primary/simple-options.php:40
+#: demo/primary/simple-options.php:41
 msgid "Test TinyMCE Field"
 msgstr "TinyMCE mező tesztelése"
 
@@ -736,75 +736,79 @@ msgid "Text"
 msgstr "Szöveges"
 
 #: inc/classes/tpl-framework.php:45
+msgid "Hidden"
+msgstr "Rejtett"
+
+#: inc/classes/tpl-framework.php:46
 msgid "Text Area"
 msgstr "Szövegblokk"
 
-#: inc/classes/tpl-framework.php:46
+#: inc/classes/tpl-framework.php:47
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: inc/classes/tpl-framework.php:47
+#: inc/classes/tpl-framework.php:48
 msgid "Color"
 msgstr "Szín"
 
-#: inc/classes/tpl-framework.php:48
+#: inc/classes/tpl-framework.php:49
 msgid "Image"
 msgstr "Kép"
 
-#: inc/classes/tpl-framework.php:49
+#: inc/classes/tpl-framework.php:50
 msgid "Number"
 msgstr "Szám"
 
-#: inc/classes/tpl-framework.php:50
+#: inc/classes/tpl-framework.php:51
 msgid "Boolean"
 msgstr "Logikai"
 
-#: inc/classes/tpl-framework.php:51
+#: inc/classes/tpl-framework.php:52
 msgid "Select"
 msgstr "Legördülő"
 
-#: inc/classes/tpl-framework.php:52
+#: inc/classes/tpl-framework.php:53
 msgid "Font Awesome"
 msgstr "Font Awesome"
 
-#: inc/classes/tpl-framework.php:53
+#: inc/classes/tpl-framework.php:54
 msgid "Post"
 msgstr "Bejegyzés"
 
-#: inc/classes/tpl-framework.php:54
+#: inc/classes/tpl-framework.php:55
 msgid "User"
 msgstr "Felhasználó"
 
-#: inc/classes/tpl-framework.php:55
+#: inc/classes/tpl-framework.php:56
 msgid "Date"
 msgstr "Dátum"
 
-#: inc/classes/tpl-framework.php:57 inc/data-types/type-icon.php:13
+#: inc/classes/tpl-framework.php:58 inc/data-types/type-icon.php:13
 msgid "Icon"
 msgstr "Ikon"
 
-#: inc/classes/tpl-framework.php:256
+#: inc/classes/tpl-framework.php:252
 #, php-format
 msgid ""
 "Sections can't be registered without a section name. Section details: <br> %s"
 msgstr ""
 "A szakaszok nem regisztrálhatók szakasznév nélkül. A szakasz részletei:<br>%s"
 
-#: inc/classes/tpl-framework.php:261
+#: inc/classes/tpl-framework.php:257
 #, php-format
 msgid "Sections must have a title. No title was defined for section \"%s\"."
 msgstr ""
 "A szakaszoknak rendelkezniük kell címmel. A(z) \"%s\" szakaszhoz nincs "
 "megadva cím."
 
-#: inc/classes/tpl-framework.php:334
+#: inc/classes/tpl-framework.php:330
 #, php-format
 msgid "Duplicate option name \"%1$s\". Options must have unique names."
 msgstr ""
 "Ismétlődő beállításnév: \"%1$s\". A beállításoknak egyedi névvel kell "
 "rendelkezniük."
 
-#: inc/classes/tpl-framework.php:351
+#: inc/classes/tpl-framework.php:347
 #, php-format
 msgid ""
 "Options can't be registered without an option name. Option details: <br> %s"
@@ -812,7 +816,7 @@ msgstr ""
 "A beállítások nem regisztrálhatók beállításnév nélkül. A beállítás részletei:"
 "<br>%s"
 
-#: inc/classes/tpl-framework.php:356
+#: inc/classes/tpl-framework.php:352
 #, php-format
 msgid ""
 "No section name was specified for option \"%s\". Option isn't registered."
@@ -820,7 +824,7 @@ msgstr ""
 "A(z) \"%s\" beállításhoz nem adtál meg szakasznevet. A beállítás nincs "
 "regisztrálva."
 
-#: inc/classes/tpl-framework.php:361
+#: inc/classes/tpl-framework.php:357
 #, php-format
 msgid ""
 "Invalid section name was specified for option \"%1$s\". Please make sure "
@@ -829,7 +833,7 @@ msgstr ""
 "Érvénytelen szakasznév lett megadva a(z) \"%1$s\" beállításhoz. Kérlek "
 "ellenőrizd, hogy van regisztrálva szakasz a(z) \"%2$s\" szakasznévvel."
 
-#: inc/classes/tpl-framework.php:366
+#: inc/classes/tpl-framework.php:362
 #, php-format
 msgid ""
 "No option type was specified for option \"%s\". Option isn't registered."
@@ -837,7 +841,7 @@ msgstr ""
 "A(z) \"%s\" beállításhoz nem adtál meg beállítástípust. A beállítás nincs "
 "regisztrálva."
 
-#: inc/classes/tpl-framework.php:371
+#: inc/classes/tpl-framework.php:367
 #, php-format
 msgid ""
 "Invalid data type (%2$s) was specified for option \"%1$s\". Please make sure "
@@ -848,31 +852,24 @@ msgstr ""
 "ellenőrizd, hogy a <a href=\"%3$s\" target=\"_blank\">dokumentációban</"
 "a>felsorolt adattípusok valamelyikét használod."
 
-#: inc/classes/tpl-option.php:100
+#: inc/classes/tpl-option.php:101
 msgid "Add row"
 msgstr "Új sor"
 
-#: inc/classes/tpl-option.php:242
+#: inc/classes/tpl-option.php:243
 msgid "Do you really want to remove this instance?"
 msgstr "Valóban el akarod távolítani ezt a példányt?"
 
-#: inc/classes/tpl-option.php:243 inc/templates/option/repeat-header.php:8
+#: inc/classes/tpl-option.php:244 inc/templates/option/repeat-header.php:8
 msgid "Minimize"
 msgstr "Összecsuk"
 
-#: inc/classes/tpl-option.php:244 inc/templates/option/repeat-header.php:8
+#: inc/classes/tpl-option.php:245 inc/templates/option/repeat-header.php:8
 msgid "Maximize"
 msgstr "Kinyit"
 
-#: inc/classes/tpl-option.php:245
-msgid "Show Settings"
-msgstr "Mutasd a beállításokat"
-
-#: inc/classes/tpl-option.php:246
-msgid "Hide Settings"
-msgstr "Beállítások elrejtése"
-
-#: inc/classes/tpl-option.php:542 inc/data-types/type-boolean.php:49
+#: inc/classes/tpl-option.php:541 inc/data-types/type-boolean.php:49
+#: inc/data-types/type-select.php:112
 #, php-format
 msgid "(default: %s)"
 msgstr "(alapeset: %s)"
@@ -889,7 +886,7 @@ msgstr "Igaz"
 msgid "False"
 msgstr "Hamis"
 
-#: inc/data-types/type-font_awesome.php:74
+#: inc/data-types/type-font_awesome.php:88
 #, php-format
 msgid "(default: %1$s %2$s)"
 msgstr "(alapeset: %1$s %2$s)"
@@ -1024,6 +1021,21 @@ msgstr "Kattints ide a kép eltávolításához."
 msgid "Upload"
 msgstr "Feltöltés"
 
+#: inc/templates/option/data-types/post-field-content.php:14
+#, php-format
+msgid "Edit this %s"
+msgstr "%s szerkesztése"
+
+#: inc/templates/option/data-types/post-field-content.php:21
+#, php-format
+msgid "Browse the list of all %s"
+msgstr "Az összes %s listájának böngészése"
+
+#: inc/templates/option/data-types/post-field-content.php:29
+#, php-format
+msgid "Add new %s from template and connect"
+msgstr "Új %s hozzáadása sablonból és összekapcsolás"
+
 #: inc/templates/option/repeat-header.php:2
 msgid "Drag & Drop to reorder"
 msgstr "Fogd és vidd az átrendezéshez"
@@ -1031,6 +1043,12 @@ msgstr "Fogd és vidd az átrendezéshez"
 #: inc/templates/option/repeat-header.php:10
 msgid "Remove row"
 msgstr "Sor törlése"
+
+#~ msgid "Show Settings"
+#~ msgstr "Mutasd a beállításokat"
+
+#~ msgid "Hide Settings"
+#~ msgstr "Beállítások elrejtése"
 
 #~ msgid "The \"name\" attribute is required during registering options"
 #~ msgstr ""

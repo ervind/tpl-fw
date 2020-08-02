@@ -42,6 +42,7 @@ class TPL_Framework {
 		$data_types = [
 			"static"	=> __( 'Static', 'tpl' ),
 			"text"		=> __( 'Text', 'tpl' ),
+			"hidden"	=> __( 'Hidden', 'tpl' ),
 			"textarea"	=> __( 'Text Area', 'tpl' ),
 			"tinymce"	=> __( 'TinyMCE', 'tpl' ),
 			"color"		=> __( 'Color', 'tpl' ),
@@ -112,9 +113,9 @@ class TPL_Framework {
 			$settings_page->create_admin_menu_item();
 			$settings_page->setup_sections();
 
-			if ( get_option( $settings_page->get_name() ) == false && !empty( $settings_page->get_options() ) ) {
-				add_option( $settings_page->get_name() );
-			}
+			// if ( get_option( $settings_page->get_name() ) === false && !empty( $settings_page->get_options() ) ) {
+			// 	add_option( $settings_page->get_name() );
+			// }
 
 			register_setting(
 				$settings_page->get_name(),
@@ -144,25 +145,21 @@ class TPL_Framework {
 
 	function admin_vars_to_js() {
 
-		$to_js = [];
+		$to_js = [
+			"ajaxurl"		=> admin_url( 'admin-ajax.php' ),
+			"ajax_nonce"	=> wp_create_nonce( 'tpl-ajax-nonce' ),
+		];
+
 		$options = $this->get_options();
 
 		if ( $options && is_admin() ) {
-
 			foreach ( $options as $option ) {
-
 				if ( $option->get_conditions() ) {
-
 					foreach ( $option->get_conditions() as $key => $value ) {
-
 						$to_js["Conditions"][$key] = $value;
-
 					}
-
 				}
-
 			}
-
 		}
 
 		return $to_js;

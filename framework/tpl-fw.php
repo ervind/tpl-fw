@@ -6,10 +6,12 @@ For more information and documentation, visit [https://github.com/ervind/tpl-fw]
 */
 
 
+global $tpl_fw;
 
-if ( !isset( $tpl_fw ) ) {
 
-	defined( 'TPL_VERSION' ) || define( 'TPL_VERSION', '2.0' );
+if ( !isset( $tpl_fw ) || $tpl_fw == null ) {
+
+	defined( 'TPL_VERSION' ) || define( 'TPL_VERSION', '2.1' );
 	defined( 'TPL_ROOT_DIR' ) || define( 'TPL_ROOT_DIR', __DIR__ . '/' );
 	defined( 'TPL_ROOT_URL' ) || define( 'TPL_ROOT_URL', plugin_dir_url( __FILE__ ) );
 
@@ -32,6 +34,6 @@ if ( !isset( $tpl_fw ) ) {
 	 * In this case you'll see a new item in your WP-Admin menu, called "TPL Demos", where you can find an instance of all data types.
 	 * You can use it as the basis of your project's settings by copying the contents of the /demo folder in another folder inside your project (but outside /framework), and customizing it.
 	 */
-	require_once TPL_ROOT_DIR . 'demo/tpl-demos.php';
+	// require_once TPL_ROOT_DIR . 'demo/tpl-demos.php';
 
 }

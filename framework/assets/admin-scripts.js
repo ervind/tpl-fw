@@ -189,7 +189,8 @@ TABLE OF CONTENTS
 	}
 	tpl_select2_init();
 
-	// Font Awesome select field template
+
+	// 2.3.1 Font Awesome select field template
 	function tpl_fa_icon_template(data) {
 		return data.text;
 	}
@@ -199,6 +200,47 @@ TABLE OF CONTENTS
 		var data = $(this).select2('data');
 		var found = data[0].text.match(/ data-type="([^"]*)"/);
 		$(this).closest('.tpl-field').find('[data-preview=3]').html(found[1]);
+	});
+
+
+	// 2.3.2 Post Data Type edit link switcher
+	$('body').on('change', '.tpl-dt-post select', function(){
+		if ( $(this).val() == '' ) {
+			$(this).closest('.tpl-datatype-container').find('.tpl-edit-icon').addClass('tpl-admin-hide');
+			$(this).closest('.tpl-datatype-container').find('.tpl-new-icon').removeClass('tpl-admin-hide');
+		}
+		else {
+			var edit_url_template = $(this).closest('.tpl-datatype-container').attr('data-edit-url-template');
+			var edit_url = edit_url_template.replace( '%d', $(this).val() );
+			$(this).closest('.tpl-datatype-container').find('.tpl-new-icon').addClass('tpl-admin-hide');
+			$(this).closest('.tpl-datatype-container').find('.tpl-edit-icon').attr('href', edit_url).removeClass('tpl-admin-hide');
+		}
+	});
+
+	$('body').on('click', '.tpl-dt-post .tpl-template-add-icon', function(e){
+		e.preventDefault();
+
+		var option_name = $(this).closest('.tpl-field').attr('data-name');
+		var this_select2 = $(this).closest('.tpl-field').find('select');
+
+		$.ajax({
+			type		: 'post',
+			dataType	: 'json',
+			url			: TPL_Admin.ajaxurl,
+			data		: { action : 'tpl_create_post', option_name : option_name, _wpnonce : TPL_Admin.ajax_nonce },
+			success		: function(response) {
+				if ( response.success == true ) {
+					var data = {
+					    id: response.post_id,
+					    text: response.select_label
+					};
+					var new_option = new Option(data.text, data.id, false, false);
+					this_select2.append(new_option).trigger('change');
+					this_select2.val(data.id).trigger('change');
+				}
+			}
+		});
+
 	});
 
 
@@ -295,30 +337,9 @@ TABLE OF CONTENTS
 
 */
 
-	// Post metaboxes and settings pages use different containers, that's why we need this function
-	function tpl_repeat_get_container( elem ){
-
-		var is_primary = tpl_is_section_primary();
-
-		if ( is_primary > -1 ) {
-
-			if ( is_primary == 1 ) {
-				var container = elem.closest('.tpl-repeater');
-			}
-			else if ( is_primary == 0 ) {
-				var container = elem.closest('.tpl-meta-option-wrapper');
-			}
-
-			return container;
-
-		}
-
-	}
-
-
 	function tpl_setup_repeat_container() {
 
-		if ( tpl_is_section_primary() ) {
+		if ( tpl_fw.is_section_primary() ) {
 			$('.tpl-repeat-button-container').each(function(){
 				if ( !$(this).closest('td').hasClass('tpl-repeater') ) {
 					$(this).closest('td').addClass('tpl-repeater');
@@ -334,30 +355,10 @@ TABLE OF CONTENTS
 	}
 
 
-	function tpl_is_section_primary() {
-
-		var url = window.location.href;
-
-		// Primary Options page (e.g. Plugin Settings)
-		if ( url.indexOf('themes.php') > -1 || url.indexOf('options-general.php') > -1 || url.indexOf('admin.php') > -1 ) {
-			return 1;
-		}
-		// Post options branch
-		else if ( url.indexOf('post.php') > -1 || url.indexOf('post-new.php') > -1 ) {
-			return 0;
-		}
-
-		// Return -1 if none of above
-		return -1;
-
-	}
-
-
-
 	// Add rows to repeater
 	$('body').on('click', 'button.tpl-repeat-add', function(e){
 		e.preventDefault();
-		var container = tpl_repeat_get_container( $(this) );
+		var container = tpl_fw.repeat_get_container( $(this) );
 		tpl_add_row( container, $(this).attr('data-for') );
 	});
 
@@ -488,7 +489,7 @@ TABLE OF CONTENTS
 			}
 
 			$('input, select, textarea', this).each(function(){
-				if ( tpl_is_section_primary() ) {
+				if ( tpl_fw.is_section_primary() ) {
 					var base_name = $(this).closest('.tpl_settings_page_wrap').attr('data-name');
 				}
 				else {
@@ -532,14 +533,14 @@ TABLE OF CONTENTS
 	$('body').on('click', '.tpl-toggle-close', function(){
 		$(this).closest('.tpl-repeat').children('.tpl-field-inner').addClass('tpl-admin-hide');
 		$(this).closest('.tpl-repeat-header').addClass('tpl-repeat-header-closed');
-		$(this).attr('title', TPL_Admin.Repeat_Maximize);
+		$(this).attr('title', TPL_Admin.repeat_maximize);
 		$(this).removeClass('tpl-toggle-close');
 		$(this).addClass('tpl-toggle-open');
 	});
 	$('body').on('click', '.tpl-toggle-open', function(){
 		$(this).closest('.tpl-repeat').children('.tpl-field-inner').removeClass('tpl-admin-hide');
 		$(this).closest('.tpl-repeat-header').removeClass('tpl-repeat-header-closed');
-		$(this).attr('title', TPL_Admin.Repeat_Minimize);
+		$(this).attr('title', TPL_Admin.repeat_minimize);
 		$(this).addClass('tpl-toggle-close');
 		$(this).removeClass('tpl-toggle-open');
 		$(this).closest('.tpl-repeat').find('.tpl-color-field').focus();
@@ -765,7 +766,10 @@ TABLE OF CONTENTS
 
 		$('#tpl-settings-tabs').tabs();
 
-		if (typeof Storage !== "undefined" && $('#tpl-settings-tabs').length != 0) {
+		if ( window.location.hash !== "undefined" && window.location.hash != '' ) {
+			$('#tpl-settings-tabs').tabs('option', 'active', window.location.hash);
+		}
+		else if (typeof Storage !== "undefined" && $('#tpl-settings-tabs').length != 0) {
 
 			// Set the active tab if present in sessionStorage
 			var tabName = $('#tpl-settings-tabs').attr('data-store');
@@ -858,7 +862,7 @@ TABLE OF CONTENTS
 				option_name = data_connected;
 			}
 
-			if ( tpl_is_section_primary() && !$(this).hasClass('tpl-subitem') ) {
+			if ( tpl_fw.is_section_primary() && !$(this).hasClass('tpl-subitem') ) {
 				$(this).closest(container).attr('data-connected',data_connected);
 			}
 
@@ -1177,4 +1181,51 @@ TABLE OF CONTENTS
 	});
 
 
+});
+
+
+
+var tpl_fw = {};
+jQuery(function($){
+
+	var tpl_is_section_primary = function() {
+
+		var url = window.location.href;
+
+		// Primary Options page (e.g. Plugin Settings)
+		if ( url.indexOf('themes.php') > -1 || url.indexOf('options-general.php') > -1 || url.indexOf('admin.php') > -1 ) {
+			return 1;
+		}
+		// Post options branch
+		else if ( url.indexOf('post.php') > -1 || url.indexOf('post-new.php') > -1 ) {
+			return 0;
+		}
+
+		// Return -1 if none of above
+		return -1;
+
+	}
+
+	// Post metaboxes and settings pages use different containers, that's why we need this function
+	var tpl_repeat_get_container = function ( elem ){
+
+		var is_primary = tpl_fw.is_section_primary();
+
+		if ( is_primary > -1 ) {
+
+			if ( is_primary == 1 ) {
+				var container = elem.closest('.tpl-repeater');
+			}
+			else if ( is_primary == 0 ) {
+				var container = elem.closest('.tpl-meta-option-wrapper');
+			}
+
+			return container;
+
+		}
+
+	}
+
+	tpl_fw.is_section_primary = tpl_is_section_primary;
+    tpl_fw.repeat_get_container = tpl_repeat_get_container;
 });

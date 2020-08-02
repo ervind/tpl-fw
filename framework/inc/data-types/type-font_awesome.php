@@ -64,18 +64,6 @@ class TPL_Font_Awesome extends TPL_Select {
 	}
 
 
-	function form_default_value() {
-		global $tpl_fa_icons;
-
-		if ( $this->get_default() == '' ) {
-			return '';
-		}
-
-		return sprintf( __( '(default: %1$s %2$s)', 'tpl' ), $this->format_option( $this->get_default() ), $tpl_fa_icons[$this->get_default()]["name"] );
-
-	}
-
-
 	function set_selectable_values( $values ) {
 		global $tpl_fa_icons;
 
@@ -86,6 +74,18 @@ class TPL_Font_Awesome extends TPL_Select {
 		}
 
 		$this->values = $fa_icons_select2;
+
+	}
+
+
+	function form_default_value() {
+		global $tpl_fa_icons;
+
+		if ( $this->get_default() == '' ) {
+			return '';
+		}
+
+		return sprintf( __( '(default: %1$s %2$s)', 'tpl' ), $this->format_option( $this->get_default() ), $tpl_fa_icons[$this->get_default()]["name"] );
 
 	}
 
