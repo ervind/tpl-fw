@@ -7,6 +7,12 @@ Documentation will be available soon.
 
 ## Changelog
 
+### v2.1 (2020-08-02)
+* Post Data Type: added easy way to generate new posts from templates
+* Added Hidden Data Type
+* Combined DT can now have multi-level default values
+
+
 ### v2.0 (2020-06-18)
 * The PHP codebase was rewritten significantly to follow OOP / Clean Code principles
 * Now the framework loads earlier in the sequence - making it possible to use its functions right away after loading it (no need to wait until the init hook any longer)
