@@ -11,7 +11,7 @@ global $tpl_fw;
 
 if ( !isset( $tpl_fw ) || $tpl_fw == null ) {
 
-	defined( 'TPL_VERSION' ) || define( 'TPL_VERSION', '2.1' );
+	defined( 'TPL_VERSION' ) || define( 'TPL_VERSION', '2.1.1' );
 	defined( 'TPL_ROOT_DIR' ) || define( 'TPL_ROOT_DIR', __DIR__ . '/' );
 	defined( 'TPL_ROOT_URL' ) || define( 'TPL_ROOT_URL', plugin_dir_url( __FILE__ ) );
 
