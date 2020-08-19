@@ -54,10 +54,10 @@ class TPL_Boolean extends TPL_Option {
 	function format_option( $value ) {
 
 		if ( $value == true ) {
-			return __( 'True', 'tpl' );
+			return _x( 'True', 'Boolean displayed value', 'tpl' );
 		}
 
-		return __( 'False', 'tpl' );
+		return _x( 'False', 'Boolean displayed value', 'tpl' );
 
 	}
 

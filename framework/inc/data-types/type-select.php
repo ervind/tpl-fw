@@ -5,7 +5,8 @@
 class TPL_Select extends TPL_Option {
 
 
-	public $values = [];
+	public $values	= [];
+	public $refresh	= '';
 
 
 	public function __construct( $args ) {
@@ -34,6 +35,10 @@ class TPL_Select extends TPL_Option {
 
 		if ( isset( $this->args["values"] ) ) {
 			$this->set_selectable_values( $this->args["values"] );
+		}
+
+		if ( isset( $this->args["refresh"] ) ) {
+			$this->refresh = $this->args["refresh"];
 		}
 
 	}
@@ -135,6 +140,20 @@ class TPL_Select extends TPL_Option {
 		}
 
 		return $this->prefix . $selectables[$selected] . $this->suffix;
+
+	}
+
+
+	function has_refresh_action() {
+
+		return $this->refresh ? true : false;
+
+	}
+
+
+	function get_refresh_action() {
+
+		return $this->refresh;
 
 	}
 

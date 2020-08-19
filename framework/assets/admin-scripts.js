@@ -227,7 +227,11 @@ TABLE OF CONTENTS
 			type		: 'post',
 			dataType	: 'json',
 			url			: TPL_Admin.ajaxurl,
-			data		: { action : 'tpl_create_post', option_name : option_name, _wpnonce : TPL_Admin.ajax_nonce },
+			data		: {
+				action		: 'tpl_create_post',
+				option_name	: option_name,
+				_wpnonce	: TPL_Admin.ajax_nonce
+			},
 			success		: function(response) {
 				if ( response.success == true ) {
 					var data = {
@@ -238,6 +242,43 @@ TABLE OF CONTENTS
 					this_select2.append(new_option).trigger('change');
 					this_select2.val(data.id).trigger('change');
 				}
+			}
+		});
+
+	});
+
+
+	// 2.3.3 Select data refresher
+	$('body').on('click', '.tpl-dt-select .tpl-refresh-icon', function(e){
+		e.preventDefault();
+
+		var option_name = $(this).closest('.tpl-field').attr('data-name');
+		var ajax_action = $(this).attr('data-refresh');
+		var this_select = $(this).closest('.tpl-field').find('select');
+		var this_icon = $(this);
+
+		this_icon.addClass('fa-spin');
+
+		$.ajax({
+			type		: 'post',
+			dataType	: 'json',
+			url			: TPL_Admin.ajaxurl,
+			data		: {
+				action		: ajax_action,
+				option_name	: option_name,
+				_wpnonce	: TPL_Admin.ajax_nonce
+			},
+			success		: function(response) {
+				$.each(response, function(index, el){
+					var option = this_select.find('option[value="'+index+'"]');
+					if ( !option.length ) {
+						var new_option = new Option(el, index, false, false);
+						this_select.append(new_option);
+					}
+				});
+			},
+			complete	: function() {
+				this_icon.removeClass('fa-spin');
 			}
 		});
 

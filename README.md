@@ -7,6 +7,10 @@ Documentation will be available soon.
 
 ## Changelog
 
+### v2.1.1 (2020-08-19)
+* Values refresher for Select data type
+
+
 ### v2.1 (2020-08-02)
 * Post Data Type: added easy way to generate new posts from templates
 * Added Hidden Data Type
