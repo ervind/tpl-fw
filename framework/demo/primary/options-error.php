@@ -6,7 +6,7 @@ $tpl_option_args = [
 	"section"		=> 'simple_demos',
 	"type"			=> 'text',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -15,7 +15,7 @@ $tpl_option_args = [
 	"section"		=> 'simple_demos',
 	"type"			=> 'color',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -23,7 +23,7 @@ $tpl_option_args = [
 	"title"			=> __( 'No section error', 'tpl' ),
 	"type"			=> 'text',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -32,7 +32,7 @@ $tpl_option_args = [
 	"section"		=> 'invalid_section',
 	"type"			=> 'text',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -40,7 +40,7 @@ $tpl_option_args = [
 	"title"			=> __( 'No option type error', 'tpl' ),
 	"section"		=> 'simple_demos',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -49,4 +49,4 @@ $tpl_option_args = [
 	"section"		=> 'simple_demos',
 	"type"			=> 'c783fh3fb38yvbd3',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );

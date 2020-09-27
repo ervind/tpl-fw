@@ -3,9 +3,9 @@
 
 
 function tpl_all_demos_shortcode() {
-	global $tpl_fw, $post;
+	global $post;
 
-	$sections = $tpl_fw->get_sections();
+	$sections = TPL_FW()->get_sections();
 
 	ob_start();
 

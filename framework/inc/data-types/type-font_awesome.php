@@ -6,7 +6,7 @@ class TPL_Font_Awesome extends TPL_Select {
 
 
 	function __construct( $args ) {
-		global $tpl_fa_icons, $tpl_fw;
+		global $tpl_fa_icons;
 
 		if ( !isset( $tpl_fa_icons ) ) {
 
@@ -24,7 +24,7 @@ class TPL_Font_Awesome extends TPL_Select {
 		}
 
 		if ( !is_admin() ) {
-			add_action( 'wp_enqueue_scripts', [ $tpl_fw, 'load_font_awesome' ], 20 );
+			add_action( 'wp_enqueue_scripts', [ TPL_FW(), 'load_font_awesome' ], 20 );
 		}
 
 		parent::__construct( $args );

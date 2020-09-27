@@ -10,7 +10,7 @@ $tpl_option_args = [
 	"default"		=> __( 'Test static default value', 'tpl' ),
 	"repeat"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -22,7 +22,7 @@ $tpl_option_args = [
 	"default"		=> __( 'Test text default value', 'tpl' ),
 	"repeat"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -34,7 +34,7 @@ $tpl_option_args = [
 	"default"		=> __( 'Test textarea default value', 'tpl' ),
 	"repeat"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -47,7 +47,7 @@ $tpl_option_args = [
 	"repeat"		=> true,
 	"repeat_button_title" => __( 'Add TinyMCE row', 'tpl' ),
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -62,7 +62,7 @@ $tpl_option_args = [
 	"step"			=> 2,
 	"repeat"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -79,7 +79,7 @@ $tpl_option_args = [
 	"default"		=> 'second',
 	"repeat"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -91,7 +91,7 @@ $tpl_option_args = [
 	"placeholder"	=> __( 'Choose a User', 'tpl' ),
 	"repeat"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -104,7 +104,7 @@ $tpl_option_args = [
 	"repeat"		=> true,
 	"repeat_button_title" => __( 'Add Post', 'tpl' ),
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -117,7 +117,7 @@ $tpl_option_args = [
 	"repeat"		=> true,
 	"default"		=> 'burn',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -128,7 +128,7 @@ $tpl_option_args = [
 	"type"			=> 'boolean',
 	"repeat"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -140,7 +140,7 @@ $tpl_option_args = [
 	"repeat"		=> true,
 	"default"		=> '#880000',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -151,7 +151,7 @@ $tpl_option_args = [
 	"type"			=> 'image',
 	"repeat"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -163,4 +163,4 @@ $tpl_option_args = [
 	"repeat"		=> true,
 	"default"		=> date( 'Y-m-d' ),
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );

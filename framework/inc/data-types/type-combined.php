@@ -18,17 +18,16 @@ class TPL_Combined extends TPL_Option {
 
 
 	function setup_parts() {
-		global $tpl_fw;
 
 		if ( !empty( $this->args["parts"] ) ) {
 
 			foreach ( $this->args["parts"] as $part_args ) {
-				$part_class = $tpl_fw->generate_data_type_class_name_from_slug( $part_args["type"] );
+				$part_class = TPL_FW()->generate_data_type_class_name_from_slug( $part_args["type"] );
 				$part_args["section"] = $this->args["section"];
 				$this->parts[$part_args["name"]] = new $part_class( $part_args );
 
 				if ( is_array( $this->default ) && isset( $this->default[$part_args["name"]] ) ) {
-					$this->parts[$part_args["name"]]->set_default( $this->default[$part_args["name"]] ); 
+					$this->parts[$part_args["name"]]->set_default( $this->default[$part_args["name"]] );
 				}
 
 			}

@@ -15,6 +15,7 @@ TABLE OF CONTENTS
 	2.4 TinyMCE
 	2.5 Date
 	2.6 Boolean
+	2.7 Combined
 3. Scripts for repeater fields
 	3.1 Repeater Previews
 4. Common settings
@@ -367,6 +368,24 @@ TABLE OF CONTENTS
 		$(this).attr('class', 'checked-' + new_value );
 	});
 
+
+
+
+	/*
+
+		2.6 BOOLEAN DATA TYPE
+		---------------------
+
+	*/
+
+	$('body').on('click', '.tpl-admin-question', function(){
+		$('.tpl-admin-subitem-desc', this).toggleClass('tpl-admin-hide');
+	});
+	$('body').click(function(event){
+		if (!$(event.target).hasClass('tpl-admin-question')){
+			$('.tpl-admin-subitem-desc').addClass('tpl-admin-hide');
+		}
+	});
 
 
 

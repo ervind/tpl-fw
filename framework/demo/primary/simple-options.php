@@ -9,7 +9,7 @@ $tpl_option_args = [
 	"type"			=> 'static',
 	"default"		=> __( 'Test static default value', 'tpl' ),
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -21,7 +21,7 @@ $tpl_option_args = [
 	"default"		=> __( 'Test text default value', 'tpl' ),
 	"prefix"		=> __( 'DEMO-PREFIX: ', 'tpl' ),
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -33,7 +33,7 @@ $tpl_option_args = [
 	"default"		=> __( 'Test textarea default value', 'tpl' ),
 	"suffix"		=> 'x',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -45,7 +45,7 @@ $tpl_option_args = [
 	"default"		=> __( 'Test tinymce default value', 'tpl' ),
 	"suffix"		=> 'x',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -60,7 +60,7 @@ $tpl_option_args = [
 	"step"			=> 2,
 	"suffix"		=> 'i',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -82,7 +82,7 @@ $tpl_option_args = [
 	"prefix"		=> __( 'DEMO-PREFIX: ', 'tpl' ),
 	"suffix"		=> 'x',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -93,7 +93,7 @@ $tpl_option_args = [
 	"type"			=> 'user',
 	"placeholder"	=> __( 'Choose a User', 'tpl' ),
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -105,7 +105,7 @@ $tpl_option_args = [
 	"placeholder"	=> __( 'Choose a Post', 'tpl' ),
 	"post_type"		=> 'page',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -117,7 +117,7 @@ $tpl_option_args = [
 	"placeholder"	=> __( 'Choose a font icon', 'tpl' ),
 	"default"		=> 'facebook'
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -128,7 +128,7 @@ $tpl_option_args = [
 	"type"			=> 'boolean',
 	"default"		=> false,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -138,7 +138,7 @@ $tpl_option_args = [
 	"section"		=> 'simple_demos',
 	"type"			=> 'color',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -148,7 +148,7 @@ $tpl_option_args = [
 	"section"		=> 'simple_demos',
 	"type"			=> 'image',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -158,4 +158,4 @@ $tpl_option_args = [
 	"section"		=> 'simple_demos',
 	"type"			=> 'date',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );

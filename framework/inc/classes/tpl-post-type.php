@@ -113,9 +113,8 @@ class TPL_Post_Type {
 
 
 	function get_sections() {
-		global $tpl_fw;
 
-		return $tpl_fw->get_sections_by_post_type( $this->get_post_type() );
+		return TPL_FW()->get_sections_by_post_type( $this->get_post_type() );
 
 	}
 

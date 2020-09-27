@@ -7,7 +7,7 @@ $tpl_section_args = [
 	"description"	=> __( 'Testing simple (non-repeater) fields', 'tpl' ),
 	"post_type"		=> [ 'post', 'chch_product' ],
 ];
-$tpl_fw->register_section( $tpl_section_args );
+TPL_FW()->register_section( $tpl_section_args );
 
 
 $tpl_section_args = [
@@ -16,7 +16,7 @@ $tpl_section_args = [
 	"description"	=> __( 'Testing repeater fields', 'tpl' ),
 	"post_type"		=> [ 'post', 'chch_product' ],
 ];
-$tpl_fw->register_section( $tpl_section_args );
+TPL_FW()->register_section( $tpl_section_args );
 
 
 $tpl_section_args = [
@@ -25,7 +25,7 @@ $tpl_section_args = [
 	"description"	=> __( 'Testing combined fields', 'tpl' ),
 	"post_type"		=> [ 'post', 'chch_product' ],
 ];
-$tpl_fw->register_section( $tpl_section_args );
+TPL_FW()->register_section( $tpl_section_args );
 
 
 $tpl_section_args = [
@@ -34,7 +34,7 @@ $tpl_section_args = [
 	"description"	=> __( 'Testing combined repeater fields', 'tpl' ),
 	"post_type"		=> [ 'post', 'chch_product' ],
 ];
-$tpl_fw->register_section( $tpl_section_args );
+TPL_FW()->register_section( $tpl_section_args );
 
 
 $tpl_section_args = [
@@ -43,4 +43,4 @@ $tpl_section_args = [
 	"description"	=> __( 'Conditional fields\' visibilities are dependent on other fields.', 'tpl' ),
 	"post_type"		=> [ 'post', 'chch_product' ],
 ];
-$tpl_fw->register_section( $tpl_section_args );
+TPL_FW()->register_section( $tpl_section_args );

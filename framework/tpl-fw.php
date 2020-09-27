@@ -6,12 +6,9 @@ For more information and documentation, visit [https://github.com/ervind/tpl-fw]
 */
 
 
-global $tpl_fw;
+if ( !function_exists( 'TPL_FW' ) ) {
 
-
-if ( !isset( $tpl_fw ) || $tpl_fw == null ) {
-
-	defined( 'TPL_VERSION' ) || define( 'TPL_VERSION', '2.1.1' );
+	defined( 'TPL_VERSION' ) || define( 'TPL_VERSION', '2.2' );
 	defined( 'TPL_ROOT_DIR' ) || define( 'TPL_ROOT_DIR', __DIR__ . '/' );
 	defined( 'TPL_ROOT_URL' ) || define( 'TPL_ROOT_URL', plugin_dir_url( __FILE__ ) );
 
@@ -24,7 +21,11 @@ if ( !isset( $tpl_fw ) || $tpl_fw == null ) {
 	require_once TPL_ROOT_DIR . 'inc/classes/tpl-option.php';
 	require_once TPL_ROOT_DIR . 'inc/classes/tpl-framework.php';
 
-	$tpl_fw = new TPL_Framework();
+
+	function TPL_FW() {
+		return TPL_Framework::instance();
+	}
+	TPL_FW();
 
 
 	/*

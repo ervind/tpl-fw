@@ -50,9 +50,8 @@ function tpl_value( $name, $post_id = 0 ) {
 
 // Gets the full option object for more advanced use. Devs can reach the full spectrum of data type functions with this function.
 function tpl_get_option_object( $name, $post_id = 0 ) {
-	global $tpl_fw;
 
-	$option_object = $tpl_fw->get_option( $name );
+	$option_object = TPL_FW()->get_option( $name );
 
 	if ( $post_id ) {
 		$option_object->set_post( $post_id );

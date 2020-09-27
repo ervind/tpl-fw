@@ -156,9 +156,8 @@ class TPL_Option {
 
 
 	function set_section( $section_name ) {
-		global $tpl_fw;
 
-		$this->section = $tpl_fw->get_section( $section_name );
+		$this->section = TPL_FW()->get_section( $section_name );
 
 	}
 
@@ -264,10 +263,9 @@ class TPL_Option {
 
 
 	function get_settings_page() {
-		global $tpl_fw;
 
 		if ( $this->section->is_primary() ) {
-			foreach ( $tpl_fw->get_settings_pages() as $settings_page ) {
+			foreach ( TPL_FW()->get_settings_pages() as $settings_page ) {
 
 				if ( $settings_page->get_post_type() && $this->section->has_post_type( $settings_page->get_post_type() ) ) {
 					return $settings_page;
@@ -650,10 +648,9 @@ class TPL_Option {
 
 
 	function get_parent() {
-		global $tpl_fw;
 
 		if ( $this->is_subitem() ) {
-			return $tpl_fw->get_option( $this->path[0] );
+			return TPL_FW()->get_option( $this->path[0] );
 		}
 
 		return false;

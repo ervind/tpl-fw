@@ -111,8 +111,7 @@ class TPL_Post extends TPL_Select {
 			&& isset( $_REQUEST["option_name"] )
 		) {
 
-			global $tpl_fw;
-			$option = $tpl_fw->get_option( $_REQUEST["option_name"] );
+			$option = TPL_FW()->get_option( $_REQUEST["option_name"] );
 
 			if ( $option->has_template() ) {
 

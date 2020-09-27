@@ -7,6 +7,11 @@ Documentation will be available soon.
 
 ## Changelog
 
+### v2.2 (2020-xx-xx)
+* Instead of the global $tpl_fw variable, we now use the singleton approach with TPL_FW()
+* Better tooltips for combined subitem descriptions
+
+
 ### v2.1.1 (2020-08-19)
 * Values refresher for Select data type
 

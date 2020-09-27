@@ -39,8 +39,46 @@
 
 .tpl-subitem-wrapper {
 	margin-bottom: 20px;
+	position: relative;
 
 	&:last-child {
 		margin-bottom: 0;
 	}
+}
+
+.tpl-admin-icon .tpl-admin-subitem-desc {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 12px;
+	font-weight: normal;
+	font-family: arial, helvetica, sans-serif;
+	line-height: 1.44em;
+	color: #fff;
+	background: #444;
+	padding: 10px;
+	border-radius: 4px;
+	min-width: 100px;
+	width: 100px;
+	z-index: 9;
+
+	&::before {
+		position: absolute;
+		display: block;
+		content: '';
+		top: -8px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 10px 10px 10px;
+		border-color: transparent transparent #444 transparent;
+	}
+
+	a {
+		color: #fff;
+	}
+
 }

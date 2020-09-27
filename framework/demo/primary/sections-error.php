@@ -6,7 +6,7 @@ $tpl_section_args = [
 	"title"			=> __( 'Section without a name', 'tpl' ),
 	"post_type"		=> [ 'tpl-demos', 'tpl_demos' ],
 ];
-$tpl_fw->register_section( $tpl_section_args );
+TPL_FW()->register_section( $tpl_section_args );
 
 
 $tpl_section_args = [
@@ -15,4 +15,4 @@ $tpl_section_args = [
 	"description"	=> __( 'Using the section title as a fallback.', 'tpl' ),
 	"post_type"		=> [ 'tpl-demos', 'tpl_demos' ],
 ];
-$tpl_fw->register_section( $tpl_section_args );
+TPL_FW()->register_section( $tpl_section_args );

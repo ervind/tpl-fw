@@ -57,7 +57,7 @@ $tpl_option_args = [
 		],
 	]
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -67,4 +67,4 @@ $tpl_option_args = [
 	"section"		=> 'combined_demos',
 	"type"			=> 'icon',
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );

@@ -58,7 +58,7 @@ $tpl_option_args = [
 		],
 	]
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -69,4 +69,4 @@ $tpl_option_args = [
 	"type"			=> 'icon',
 	"repeat"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );

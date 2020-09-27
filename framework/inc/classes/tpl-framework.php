@@ -5,10 +5,22 @@
 class TPL_Framework {
 
 
+	private static $instance;
 	public $registered_settings_pages = [];
 	public $registered_post_types = [];
 	public $registered_sections = [];
 	public $registered_options = [];
+
+
+	public static function instance() {
+
+		if ( is_null( self::$instance ) ) {
+			self::$instance = new self();
+		}
+
+		return self::$instance;
+
+	}
 
 
 	function __construct() {

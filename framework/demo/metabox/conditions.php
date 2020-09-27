@@ -10,7 +10,7 @@ $tpl_option_args = [
 	"type"			=> 'boolean',
 	"default"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 $tpl_option_args = [
 	"name"			=> 'demo_post_conditional_text_normal',
@@ -28,7 +28,7 @@ $tpl_option_args = [
 		]
 	],
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -39,7 +39,7 @@ $tpl_option_args = [
 	"type"			=> 'boolean',
 	"default"		=> false,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 $tpl_option_args = [
 	"name"			=> 'demo_post_conditional_combined_normal',
@@ -117,7 +117,7 @@ $tpl_option_args = [
 		]
 	],
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -128,7 +128,7 @@ $tpl_option_args = [
 	"type"			=> 'boolean',
 	"default"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 $tpl_option_args = [
 	"name"			=> 'demo_post_conditional_text_repeater',
@@ -147,7 +147,7 @@ $tpl_option_args = [
 		]
 	],
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -158,7 +158,7 @@ $tpl_option_args = [
 	"type"			=> 'boolean',
 	"default"		=> true,
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 $tpl_option_args = [
 	"name"			=> 'demo_post_conditional_icon_repeater',
@@ -176,7 +176,7 @@ $tpl_option_args = [
 		]
 	],
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );
 
 
 $tpl_option_args = [
@@ -192,13 +192,7 @@ $tpl_option_args = [
 			"name"			=> 'type',
 			"relation"		=> '=',
 			"value"			=> 'post',
-		],
-		// [
-		// 	"type"			=> 'taxonomy',
-		// 	"name"			=> 'category',
-		// 	"relation"		=> '=',
-		// 	"value"			=> 'uncategorized',
-		// ]
+		]
 	],
 ];
-$tpl_fw->register_option( $tpl_option_args );
+TPL_FW()->register_option( $tpl_option_args );

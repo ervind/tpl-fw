@@ -109,7 +109,6 @@ class TPL_Section {
 
 
 	function maybe_register_post_types() {
-		global $tpl_fw;
 
 		if ( $this->is_primary() ) {
 			return;
@@ -119,8 +118,8 @@ class TPL_Section {
 
 		foreach ( $post_types as $post_type ) {
 
-			if ( !isset( $tpl_fw->registered_post_types[$post_type] ) && $this->has_post_type( $post_type ) ) {
-				$tpl_fw->register_post_type( $post_type );
+			if ( !isset( TPL_FW()->registered_post_types[$post_type] ) && $this->has_post_type( $post_type ) ) {
+				TPL_FW()->register_post_type( $post_type );
 			}
 
 		}
@@ -164,11 +163,10 @@ class TPL_Section {
 
 	// A section is primary when is on a WordPress Admin Settings page. Secondary if it's in a post edit metabox
 	function is_primary() {
-		global $tpl_fw;
 
 		if ( !empty( $this->get_post_types() ) ) {
 
-			foreach ( $tpl_fw->registered_settings_pages as $key => $settings_page ) {
+			foreach ( TPL_FW()->registered_settings_pages as $key => $settings_page ) {
 
 				if ( $settings_page->get_post_type() && $this->has_post_type( $settings_page->get_post_type() ) ) {
 					return true;
@@ -219,9 +217,8 @@ class TPL_Section {
 
 
 	function get_options() {
-		global $tpl_fw;
 
-	    return $tpl_fw->get_options_by_section( $this->get_name() );
+	    return TPL_FW()->get_options_by_section( $this->get_name() );
 
 	}
 
