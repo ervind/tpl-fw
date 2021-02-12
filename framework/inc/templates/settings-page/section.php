@@ -10,8 +10,7 @@
 
 	<?php if ( $section->get_options() ) { ?>
 		<table class="form-table">
-			<?php // do_settings_page might need replacing in a next version with $section->render_options()
-			do_settings_fields( $settings_page->get_name(), $section->get_name() ); ?>
+			<?php $section->render_primary_fields( $settings_page ); ?>
 		</table>
 	<?php } ?>
 

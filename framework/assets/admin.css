@@ -12,24 +12,34 @@
   padding: 3px 8px;
 }
 .tpl-meta-option {
-  margin-top: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   width: 100%;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tpl-meta-option::after {
+  display: block;
+  content: '';
+  clear: both;
 }
 .tpl-meta-option .tpl-meta-option-label {
   width: 30%;
-  max-width: 200px;
+  min-width: 30%;
   padding-right: 20px;
   display: block;
-  float: left;
   font-weight: bold;
 }
 .tpl-meta-option .tpl-meta-option-wrapper {
   display: block;
-  float: left;
-  width: 70%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 24px;
 }
 .tpl-meta-option button.tpl-repeat-add {
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 .tpl-meta-option .tpl-combined-wrapper button {
@@ -44,18 +54,18 @@
 .tpl-meta-option .tpl-field .tpl-button-container {
   width: 100%;
 }
-.tpl-meta-option-outer:last-child .tpl-optiondesc {
+.tpl-meta-option-outer:last-child .tpl-meta-option {
   border: 0;
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .ui-tabs {
   position: relative;
-  padding: .2em;
+  padding: 0.2em;
   zoom: 1;
 }
 .ui-tabs .ui-tabs-nav {
   margin: 0;
-  padding: .3em .3em 0;
+  padding: 0.3em 0.3em 0;
   border-bottom: 1px solid #ccc;
 }
 .ui-tabs .ui-tabs-nav li {
@@ -69,14 +79,15 @@
 }
 .ui-tabs .ui-tabs-nav li a {
   float: left;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   text-decoration: none;
   color: #222;
   font-weight: bold;
   font-size: 16px;
   background: #ddd;
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   cursor: pointer;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
@@ -96,17 +107,27 @@
 .ui-tabs .ui-tabs-hide {
   display: none !important;
 }
+.tpl-primary-form-row {
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tpl-primary-form-row:last-child {
+  border-bottom: 0;
+}
+.tpl-primary-form-row .tpl-primary-label {
+  width: 30%;
+  min-width: 30%;
+}
+.tpl-primary-form-row td {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-top: 22px;
+}
 .static {
   font-weight: bold;
-}
-.tpl-optiondesc {
-  padding: 10px 10px 30px !important;
-  border-bottom: 1px solid #ccc;
-  font-style: italic;
-  color: #aaa;
-}
-tr:last-child .tpl-optiondesc {
-  border-bottom: 0;
 }
 .tpl_settings_page_wrap p.submit {
   margin-top: 0;
@@ -144,6 +165,8 @@ tr:last-child .tpl-optiondesc {
 .tpl-datatype-container {
   width: 100%;
   max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .tpl-datatype-container .tpl-datatype-prefix,
@@ -155,7 +178,8 @@ tr:last-child .tpl-optiondesc {
   padding: 0 10px;
   margin: 0;
   white-space: nowrap;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .tpl-datatype-container input:not([type=button]),
 .tpl-datatype-container select,
@@ -219,6 +243,7 @@ tr:last-child .tpl-optiondesc {
   color: #bbb;
   margin-left: 6px;
   font-size: 1.33333333em;
+  vertical-align: bottom;
 }
 /* Common (both front and backend) stylesheet for the TPL Settings */
 .tpl-field::after {
@@ -226,14 +251,23 @@ tr:last-child .tpl-optiondesc {
   content: '';
   clear: both;
 }
+.tpl-option-desc {
+  font-weight: normal;
+  font-style: italic;
+  color: #aaa;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.tpl-option-desc a {
+  display: inline-block;
+}
 .tpl-repeat {
   margin-bottom: 20px;
   position: relative;
   width: 100%;
   border: 2px solid #ddd;
-}
-.tpl-repeat:last-child {
-  margin-bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .tpl-repeat > .tpl-field-inner {
   padding: 20px;
@@ -246,6 +280,8 @@ tr:last-child .tpl-optiondesc {
 }
 .tpl-repeat-header {
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid #ddd;
   background-color: #fff;
@@ -298,9 +334,13 @@ tr:last-child .tpl-optiondesc {
   padding: 6px 24px;
   border: 1px solid #999;
   border-radius: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#dcdcdc));
+  background: -o-linear-gradient(top, #fafafa 0%, #dcdcdc 100%);
   background: linear-gradient(to bottom, #fafafa 0%, #dcdcdc 100%);
 }
 .tpl-button-container button:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c8c8c8), to(#dcdcdc));
+  background: -o-linear-gradient(top, #c8c8c8 0%, #dcdcdc 100%);
   background: linear-gradient(to bottom, #c8c8c8 0%, #dcdcdc 100%);
 }
 .tpl-button-container input::-webkit-calendar-picker-indicator {
@@ -408,7 +448,9 @@ tr:last-child .tpl-optiondesc {
   position: absolute;
   top: 30px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   font-size: 12px;
   font-weight: normal;
   font-family: arial, helvetica, sans-serif;
@@ -417,8 +459,8 @@ tr:last-child .tpl-optiondesc {
   background: #444;
   padding: 10px;
   border-radius: 4px;
-  min-width: 100px;
-  width: 100px;
+  min-width: 120px;
+  width: 120px;
   z-index: 9;
 }
 .tpl-admin-icon .tpl-admin-subitem-desc::before {
@@ -427,7 +469,9 @@ tr:last-child .tpl-optiondesc {
   content: '';
   top: -8px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 0;
   height: 0;
   border-style: solid;
@@ -547,7 +591,8 @@ body .select2-container--default .select2-selection--single .select2-selection__
 }
 #wpbody .select2 .select2-selection {
   border: 1px solid #7e8993;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
   border-radius: 4px;
 }
 #wpbody .select2 .select2-selection[aria-expanded="true"] {
@@ -572,7 +617,8 @@ body .select2-container--default .select2-selection--single .select2-selection__
 }
 .select2-container .select2-dropdown {
   border: 1px solid #7e8993;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
   border-radius: 0;
 }
 .tpl-select-icon {
@@ -583,7 +629,8 @@ body .select2-container--default .select2-selection--single .select2-selection__
 .tpl-select-icon:active,
 .tpl-select-icon:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 textarea {
   width: 100%;
@@ -597,7 +644,8 @@ textarea {
 .tpl-dt-tinymce .mce-tinymce {
   width: 100%;
   border: 1px solid #7e8993;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: 4px;
 }
 #tpl_theme_options_wrap .tpl-dt-tinymce i.mce-i-wp_help:before {
@@ -634,18 +682,23 @@ textarea {
 }
 /* Enter your custom LESS code for different media sizes */
 @media (max-width: 1280px) {
+  .tpl-meta-option {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .tpl-meta-option .tpl-meta-option-wrapper,
   .tpl-meta-option .tpl-button-container {
     width: 100%;
   }
   .tpl-meta-option .tpl-meta-option-label {
     padding-bottom: 6px;
+    width: 100%;
+    max-width: none;
   }
   .tpl-meta-option button {
     margin-top: 12px;
-    margin-bottom: 12px;
-  }
-  .tpl-repeat {
     margin-bottom: 12px;
   }
   .tpl-repeat > .tpl-field-inner {
@@ -655,5 +708,21 @@ textarea {
 @media (max-width: 1040px) {
   .tpl-field:not(.tpl-repeat) > .tpl-field-inner {
     padding-right: 0px;
+  }
+}
+@media (max-width: 800px) {
+  .tpl-primary-form-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 24px;
+  }
+  .tpl-primary-form-row td {
+    padding-top: 10px;
+  }
+  .tpl-primary-form-row .tpl-primary-label {
+    padding-top: 24px;
+    width: 100%;
   }
 }

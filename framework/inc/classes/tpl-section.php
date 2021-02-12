@@ -10,6 +10,7 @@ class TPL_Section {
 	protected $title		= '';
 	protected $description	= '';
 	protected $post_types	= [];
+	protected $priority		= 10;
 
 
 	function __construct( $args ) {
@@ -47,6 +48,10 @@ class TPL_Section {
 
 		if ( isset( $this->args["post_type"] ) ) {
 			$this->set_post_type( $this->args["post_type"] );
+		}
+
+		if ( isset( $this->args["priority"] ) ) {
+			$this->set_priority( $this->args["priority"] );
 		}
 
 	}
@@ -161,6 +166,20 @@ class TPL_Section {
 	}
 
 
+	function get_priority() {
+
+		return $this->priority;
+
+	}
+
+
+	function set_priority( $priority ) {
+
+		$this->priority = $priority;
+
+	}
+
+
 	// A section is primary when is on a WordPress Admin Settings page. Secondary if it's in a post edit metabox
 	function is_primary() {
 
@@ -199,6 +218,54 @@ class TPL_Section {
 			}
 
 		}
+
+	}
+
+
+	function render_primary_fields( $settings_page ) {
+	    global $wp_settings_fields;
+
+		if ( is_a( $settings_page, 'TPL_Settings_Page' ) ) {
+			$settings_page_name = $settings_page->get_name();
+		}
+		else {
+			return;
+		}
+
+	    if ( !isset( $wp_settings_fields[$settings_page_name][$this->get_name()] ) || !$this->is_primary() ) {
+	        return;
+	    }
+
+		$fields = $this->arrange_fields( (array) $wp_settings_fields[$settings_page_name][$this->get_name()] );
+
+	    foreach ( $fields as $field ) {
+
+			$option = TPL_FW()->get_option( $field["id"] );
+
+			$class = 'tpl-primary-form-row';
+	        if ( !empty( $field["args"]["class"] ) ) {
+	            $class .= ' ' . esc_attr( $field["args"]["class"] );
+	        }
+
+			include TPL_ROOT_DIR . 'inc/templates/settings-page/field-container.php';
+
+	    }
+
+	}
+
+
+	function arrange_fields( $fields ) {
+
+		usort( $fields, function( $a, $b ) {
+
+			$a_option = TPL_FW()->get_option( $a["id"] );
+			$b_option = TPL_FW()->get_option( $b["id"] );
+
+			return $a_option->get_priority() <=> $b_option->get_priority();
+
+		} );
+
+		return $fields;
 
 	}
 

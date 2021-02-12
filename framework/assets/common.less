@@ -8,16 +8,25 @@
 	clear: both;
 }
 
+.tpl-option-desc {
+	font-weight: normal;
+	font-style: italic;
+	color: #aaa;
+	margin-top: .5em;
+	margin-bottom: .5em;
+
+	a {
+		display: inline-block;
+	}
+}
+
 // TPL Repeater fields
 .tpl-repeat {
 	margin-bottom: 20px;
     position: relative;
     width: 100%;
 	border: 2px solid #ddd;
-
-	&:last-child {
-		margin-bottom: 0;
-	}
+	box-sizing: border-box;
 
 	& > .tpl-field-inner {
 		padding: 20px;

@@ -125,10 +125,6 @@ class TPL_Framework {
 			$settings_page->create_admin_menu_item();
 			$settings_page->setup_sections();
 
-			// if ( get_option( $settings_page->get_name() ) === false && !empty( $settings_page->get_options() ) ) {
-			// 	add_option( $settings_page->get_name() );
-			// }
-
 			register_setting(
 				$settings_page->get_name(),
 				$settings_page->get_name()

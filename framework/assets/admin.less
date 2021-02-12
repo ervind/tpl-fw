@@ -25,26 +25,33 @@
 
 // Format of metabox elements
 .tpl-meta-option {
-	margin-top: 24px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 	width: 100%;
+	border-bottom: 1px solid #ccc;
+	display: flex;
+
+	&::after {
+		display: block;
+		content: '';
+		clear: both;
+	}
 
 	.tpl-meta-option-label {
 		width: 30%;
-		max-width: 200px;
+		min-width: 30%;
 		padding-right: 20px;
 		display: block;
-		float: left;
 		font-weight: bold;
 	}
 
 	.tpl-meta-option-wrapper {
 		display: block;
-		float: left;
-		width: 70%;
+		flex-grow: 1;
+		padding-right: 24px;
 	}
 
 	button.tpl-repeat-add {
-		margin-top: 20px;
 		margin-bottom: 20px;
 	}
 
@@ -65,11 +72,10 @@
 	}
 }
 
-.tpl-meta-option-outer:last-child .tpl-optiondesc {
+.tpl-meta-option-outer:last-child .tpl-meta-option {
 	border: 0;
-	margin-bottom: 0;
+	padding-bottom: 0;
 }
-
 
 
 // The look of the tabs in Theme Options
@@ -130,24 +136,31 @@
 }
 
 
+.tpl-primary-form-row {
+	border-bottom: 1px solid #ccc;
+	display: flex;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+
+	.tpl-primary-label {
+		width: 30%;
+		min-width: 30%;
+	}
+
+	td {
+		flex-grow: 1;
+		padding-top: 22px;
+	}
+}
+
 
 // Some data type specific formatting
 .static {
 	font-weight: bold;
 }
 
-
-// Style of the option descriptions on Settings pages
-.tpl-optiondesc {
-	padding: 10px 10px 30px !important;
-	border-bottom: 1px solid #ccc;
-	font-style: italic;
-	color: #aaa;
-
-	tr:last-child & {
-		border-bottom: 0;
-	}
-}
 
 .tpl_settings_page_wrap p.submit {
 	margin-top: 0;
@@ -289,6 +302,7 @@
 		color: #bbb;
 		margin-left: 6px;
 		font-size: 1.33333333em;
+		vertical-align: bottom;
 	}
 
 }

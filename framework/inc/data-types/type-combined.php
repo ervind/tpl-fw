@@ -81,6 +81,17 @@ class TPL_Combined extends TPL_Option {
 	}
 
 
+	function settings_page_field() {
+
+		$this->form_field();
+
+		if ( $this->is_repeater() ) {
+			$this->repeater_button();
+		}
+
+	}
+
+
 	function form_field_content() {
 
 		$this->set_parts_post();

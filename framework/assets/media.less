@@ -3,12 +3,16 @@
 @media (max-width: 1280px) {
 
 	.tpl-meta-option {
+		flex-direction: column;
+
 		.tpl-meta-option-wrapper, .tpl-button-container {
 			width: 100%;
 		}
 
 		.tpl-meta-option-label {
 			padding-bottom: 6px;
+			width: 100%;
+			max-width: none;
 		}
 
 		button {
@@ -18,8 +22,6 @@
 	}
 
 	.tpl-repeat {
-		margin-bottom: 12px;
-
 		& > .tpl-field-inner {
 			padding: 12px;
 		}
@@ -52,6 +54,20 @@
 
 
 @media (max-width: 800px) {
+
+	.tpl-primary-form-row {
+		flex-direction: column;
+		padding-bottom: 24px;
+	}
+
+	.tpl-primary-form-row td {
+		padding-top: 10px;
+	}
+
+	.tpl-primary-form-row .tpl-primary-label {
+		padding-top: 24px;
+		width: 100%;
+	}
 
 }
 

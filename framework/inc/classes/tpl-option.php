@@ -9,6 +9,7 @@ class TPL_Option {
 	public		$suffix			= '';
 	public		$title			= '';
 	public		$default		= '';
+	public		$priority		= 10;
 	public		$admin_class	= '';
 	public		$for_bank		= false;
 	protected	$post			= NULL;
@@ -86,6 +87,10 @@ class TPL_Option {
 
 		if ( isset( $this->args["placeholder"] ) ) {
 			$this->set_placeholder( $this->args["placeholder"] );
+		}
+
+		if ( isset( $this->args["priority"] ) ) {
+			$this->set_priority( $this->args["priority"] );
 		}
 
 		if ( isset( $this->args["repeat"] ) ) {
@@ -236,6 +241,24 @@ class TPL_Option {
 	}
 
 
+	function get_priority() {
+
+		if ( isset( $this->priority ) ) {
+			return $this->priority;
+		}
+
+		return 10;
+
+	}
+
+
+	function set_priority( $priority ) {
+
+		$this->priority = $priority;
+
+	}
+
+
 	function admin_js_strings( $strings ) {
 
 		$strings = array_merge( $strings, [
@@ -287,10 +310,6 @@ class TPL_Option {
 			$this->repeater_button();
 		}
 
-		if ( $this->get_description() ) {
-			$this->field_description();
-		}
-
 	}
 
 
@@ -340,14 +359,6 @@ class TPL_Option {
 	function get_repeat_button_title() {
 
 		return $this->repeat_button_title;
-
-	}
-
-
-	function field_description() {
-
-		$option = $this;
-		include TPL_ROOT_DIR . 'inc/templates/option/field-description.php';
 
 	}
 

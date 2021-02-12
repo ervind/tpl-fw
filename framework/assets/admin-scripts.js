@@ -502,14 +502,13 @@ TABLE OF CONTENTS
 	// Update order numbers after repeater item added, removed or rearranged
 	function tpl_repeater_refresh(container){
 
-		var url = window.location.href;
 		var i = [];
 		i[0] = 0;
 		var name = '';
 
 		container.find('.tpl-field').each(function(){
 
-			// Setting up levels + instances for the current field
+			// Setting up instances for the current field
 			var level = parseInt($(this).attr('data-level'));
 			var name_array = $(this).attr('data-name').split('/');
 
@@ -541,6 +540,10 @@ TABLE OF CONTENTS
 			}
 
 			$(this).attr('data-instance', i[level]);
+			var parent = $(this).closest('.tpl-dt-combined');
+			var parent_instance = parent.attr('data-instance');
+			$('.tpl-subitem, .tpl-subitem-wrapper', parent).attr('data-instance', parent_instance );
+
 			$(this).find('.tpl-header-title-instance').html('(#'+i[level]+')');
 			if ( level == 0 ) {
 				for (var j=1; j<i.length; j++) {
@@ -560,7 +563,7 @@ TABLE OF CONTENTS
 					var newname = base_name;
 					for (var j=0; j<name_array.length; j++) {
 						if ( j < name_array.length - 1 || name_array.length == 1 ) {
-							if ( ( url.indexOf('post.php') > -1 || url.indexOf('post-new.php') > -1 ) && j == 0 ) {
+							if ( !tpl_fw.is_section_primary() && j == 0 ) {
 								newname += '[' + i[j] + ']';
 							}
 							else {
@@ -675,17 +678,6 @@ TABLE OF CONTENTS
 		return res;
 	}
 
-
-	$(window).load(function(){
-		tpl_setup_repeat_container();
-		tpl_set_repeater_headers();
-
-		tpl_condition_updater();
-
-		if ( typeof(tinyMCE) != "undefined" ) {
-			tpl_tinymce_init();
-		}
-	});
 
 	// Sets up the headers of the repeater field instances
 	function tpl_set_repeater_headers(){
@@ -904,19 +896,25 @@ TABLE OF CONTENTS
 		$('body .tpl-field, body .tpl-meta-option').each(function(){
 
 			// Primary Options page (e.g. Plugin Settings)
-			if ( url.indexOf('themes.php') > -1 || url.indexOf('options-general.php') > -1 || url.indexOf('admin.php') > -1 ) {
+			if ( tpl_fw.is_section_primary() ) {
 				var section = tpl_get_url_param('page', url).replace('-','_');
 				var container = 'tr';
 			}
 			// Post options branch
-			if ( url.indexOf('post.php') > -1 || url.indexOf('post-new.php') > -1 ) {
+			else {
 				var section = '';
 				var container = '.tpl-meta-option';
 			}
 
 			var option_name = $(this).attr('data-name');
 			var data_connected = $(this).attr('data-connected');
-			var data_instance = $(this).attr('data-instance');
+
+			if ( $(this).hasClass('tpl-subitem') ) {
+				var data_instance = $(this).closest('.tpl-dt-combined').attr('data-instance');
+			}
+			else {
+				var data_instance = $(this).attr('data-instance');
+			}
 
 			if ( $(this).hasClass('tpl-meta-option') ) {
 				option_name = data_connected;
@@ -1000,14 +998,15 @@ TABLE OF CONTENTS
 
 							}
 
-							if ( url.indexOf('post.php') > -1 || url.indexOf('post-new.php') > -1 ) {
+							if ( !tpl_fw.is_section_primary() ) {
 								base_id = '#' + c_array[0];
 							}
 							else {
 								base_id = '#' + section;
 							}
+
 							for ( var l = 0; l < c_array.length; l++ ) {
-								if ( url.indexOf('post.php') > -1 || url.indexOf('post-new.php') > -1 ) {
+								if ( !tpl_fw.is_section_primary() ) {
 									if ( l > 0 ) {
 										base_id += '\\[' + c_array[l] + '\\]';
 									}
@@ -1176,22 +1175,20 @@ TABLE OF CONTENTS
 					instance_selector = '[data-instance="'+ data_instance +'"]';
 				}
 
-				// Showing elements
-				if ( met == true ) {
+				if ( typeof data_connected !== "undefined" ) {
 
-					if ( typeof data_connected !== "undefined" ) {
+					// Showing elements
+					if ( met == true ) {
+
 						$('[data-connected="'+ data_connected +'"]'+instance_selector).removeClass('tpl-admin-hide');
 						$(this).find('input, select, textarea').each(function(){
 							$(this).attr('name', $(this).attr('id'));
 						});
 					}
 
-				}
+					// Hiding elements
+					else {
 
-				// Hiding elements
-				else {
-
-					if ( typeof data_connected !== "undefined" ) {
 						$('[data-connected="'+ data_connected +'"]'+instance_selector).addClass('tpl-admin-hide');
 						$(this).find('input, select, textarea').removeAttr('name');
 
@@ -1199,6 +1196,7 @@ TABLE OF CONTENTS
 							var editor_id = $(this).attr('id');
 							tinymce.execCommand('mceRemoveEditor', false, editor_id);
 						});
+
 					}
 
 				}
@@ -1240,43 +1238,42 @@ TABLE OF CONTENTS
 		}
 	});
 
+	// Initialize the states
+	setTimeout(function(){
+		tpl_setup_repeat_container();
+		tpl_set_repeater_headers();
+		tpl_condition_updater();
+	}, 100);
 
-});
-
-
-
-var tpl_fw = {};
-jQuery(function($){
-
-	var tpl_is_section_primary = function() {
-
-		var url = window.location.href;
-
-		// Primary Options page (e.g. Plugin Settings)
-		if ( url.indexOf('themes.php') > -1 || url.indexOf('options-general.php') > -1 || url.indexOf('admin.php') > -1 ) {
-			return 1;
+	$(window).load(function(){
+		if ( typeof(tinyMCE) != "undefined" ) {
+			tpl_tinymce_init();
 		}
-		// Post options branch
-		else if ( url.indexOf('post.php') > -1 || url.indexOf('post-new.php') > -1 ) {
-			return 0;
-		}
+	});
 
-		// Return -1 if none of above
-		return -1;
 
-	}
+	var tpl_fw = {
 
-	// Post metaboxes and settings pages use different containers, that's why we need this function
-	var tpl_repeat_get_container = function ( elem ){
+		is_section_primary : function() {
 
-		var is_primary = tpl_fw.is_section_primary();
+			var url = window.location.href;
 
-		if ( is_primary > -1 ) {
+			// Primary Options page (e.g. Plugin Settings)
+			if ( url.indexOf('themes.php') > -1 || url.indexOf('options-general.php') > -1 || url.indexOf('admin.php') > -1 ) {
+				return true;
+			}
 
-			if ( is_primary == 1 ) {
+			return false;
+
+		},
+
+		// Post metaboxes and settings pages use different containers, that's why we need this function
+		repeat_get_container : function( elem ){
+
+			if ( tpl_fw.is_section_primary() ) {
 				var container = elem.closest('.tpl-repeater');
 			}
-			else if ( is_primary == 0 ) {
+			else {
 				var container = elem.closest('.tpl-meta-option-wrapper');
 			}
 
@@ -1284,8 +1281,6 @@ jQuery(function($){
 
 		}
 
-	}
+	};
 
-	tpl_fw.is_section_primary = tpl_is_section_primary;
-    tpl_fw.repeat_get_container = tpl_repeat_get_container;
 });

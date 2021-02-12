@@ -9,6 +9,7 @@ class TPL_Error {
 	protected $global	= true;
 	protected $type		= 'error';
 	protected $entity	= 'TPL';
+	protected $with_intro = true;
 	protected $possible_types;
 
 
@@ -43,6 +44,10 @@ class TPL_Error {
 
 		if ( isset( $this->args["entity"] ) ) {
 			$this->set_entity( $this->args["entity"] );
+		}
+
+		if ( isset( $this->args["with_intro"] ) ) {
+			$this->set_intro( $this->args["with_intro"] );
 		}
 
 	}
@@ -147,7 +152,18 @@ class TPL_Error {
 	}
 
 
+	function set_intro( $with_intro ) {
+
+		$this->with_intro = $with_intro;
+
+	}
+
+
 	function get_intro() {
+
+		if ( !$this->with_intro ) {
+			return '';
+		}
 
 		return sprintf( _x( '%1$s %2$s: ', 'Global error message intro text', 'tpl' ), $this->get_entity(), $this->get_type_title() );
 

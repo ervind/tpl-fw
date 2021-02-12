@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TPL-FW\n"
-"POT-Creation-Date: 2020-08-19 08:58+0200\n"
+"POT-Creation-Date: 2021-02-12 07:02+0100\n"
 "PO-Revision-Date: 2015-12-28 11:55+0100\n"
 "Last-Translator: Ervin Domonkos <ervin.domonkos@gmail.com>\n"
 "Language-Team: a-idea studio <info@a-idea.studio>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -660,7 +660,7 @@ msgstr ""
 msgid "Repeater Demo Fields"
 msgstr ""
 
-#: demo/primary/sections.php:26 inc/classes/tpl-framework.php:57
+#: demo/primary/sections.php:26 inc/classes/tpl-framework.php:69
 msgid "Combined"
 msgstr ""
 
@@ -696,131 +696,131 @@ msgstr ""
 msgid "Test TinyMCE Field"
 msgstr ""
 
-#: inc/classes/tpl-error.php:97
+#: inc/classes/tpl-error.php:102
 msgid "error"
 msgstr ""
 
-#: inc/classes/tpl-error.php:98
+#: inc/classes/tpl-error.php:103
 msgid "warning"
 msgstr ""
 
-#: inc/classes/tpl-error.php:99
+#: inc/classes/tpl-error.php:104
 msgid "OK"
 msgstr ""
 
-#: inc/classes/tpl-error.php:100
+#: inc/classes/tpl-error.php:105
 msgid "notification"
 msgstr ""
 
-#: inc/classes/tpl-error.php:152
+#: inc/classes/tpl-error.php:168
 #, php-format
 msgctxt "Global error message intro text"
 msgid "%1$s %2$s: "
 msgstr ""
 
-#: inc/classes/tpl-framework.php:43
+#: inc/classes/tpl-framework.php:55
 msgid "Static"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:44 inc/data-types/type-tinymce.php:64
+#: inc/classes/tpl-framework.php:56 inc/data-types/type-tinymce.php:64
 msgid "Text"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:45
+#: inc/classes/tpl-framework.php:57
 msgid "Hidden"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:46
+#: inc/classes/tpl-framework.php:58
 msgid "Text Area"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:47
+#: inc/classes/tpl-framework.php:59
 msgid "TinyMCE"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:48
+#: inc/classes/tpl-framework.php:60
 msgid "Color"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:49
+#: inc/classes/tpl-framework.php:61
 msgid "Image"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:50
+#: inc/classes/tpl-framework.php:62
 msgid "Number"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:51
+#: inc/classes/tpl-framework.php:63
 msgid "Boolean"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:52
+#: inc/classes/tpl-framework.php:64
 msgid "Select"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:53
+#: inc/classes/tpl-framework.php:65
 msgid "Font Awesome"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:54
+#: inc/classes/tpl-framework.php:66
 msgid "Post"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:55
+#: inc/classes/tpl-framework.php:67
 msgid "User"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:56
+#: inc/classes/tpl-framework.php:68
 msgid "Date"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:58 inc/data-types/type-icon.php:13
+#: inc/classes/tpl-framework.php:70 inc/data-types/type-icon.php:13
 msgid "Icon"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:252
+#: inc/classes/tpl-framework.php:260
 #, php-format
 msgid ""
 "Sections can't be registered without a section name. Section details: <br> "
 "%s"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:257
+#: inc/classes/tpl-framework.php:265
 #, php-format
 msgid "Sections must have a title. No title was defined for section \"%s\"."
 msgstr ""
 
-#: inc/classes/tpl-framework.php:330
+#: inc/classes/tpl-framework.php:338
 #, php-format
 msgid "Duplicate option name \"%1$s\". Options must have unique names."
 msgstr ""
 
-#: inc/classes/tpl-framework.php:347
+#: inc/classes/tpl-framework.php:355
 #, php-format
 msgid ""
 "Options can't be registered without an option name. Option details: <br> %s"
 msgstr ""
 
-#: inc/classes/tpl-framework.php:352
+#: inc/classes/tpl-framework.php:360
 #, php-format
 msgid ""
 "No section name was specified for option \"%s\". Option isn't registered."
 msgstr ""
 
-#: inc/classes/tpl-framework.php:357
+#: inc/classes/tpl-framework.php:365
 #, php-format
 msgid ""
 "Invalid section name was specified for option \"%1$s\". Please make sure "
 "that you have a section registered with the \"%2$s\" section name."
 msgstr ""
 
-#: inc/classes/tpl-framework.php:362
+#: inc/classes/tpl-framework.php:370
 #, php-format
 msgid ""
 "No option type was specified for option \"%s\". Option isn't registered."
 msgstr ""
 
-#: inc/classes/tpl-framework.php:367
+#: inc/classes/tpl-framework.php:375
 #, php-format
 msgid ""
 "Invalid data type (%2$s) was specified for option \"%1$s\". Please make "
@@ -828,23 +828,23 @@ msgid ""
 "target=\"_blank\">documentation</a>."
 msgstr ""
 
-#: inc/classes/tpl-option.php:101
+#: inc/classes/tpl-option.php:106
 msgid "Add row"
 msgstr ""
 
-#: inc/classes/tpl-option.php:243
+#: inc/classes/tpl-option.php:265
 msgid "Do you really want to remove this instance?"
 msgstr ""
 
-#: inc/classes/tpl-option.php:244 inc/templates/option/repeat-header.php:8
+#: inc/classes/tpl-option.php:266 inc/templates/option/repeat-header.php:8
 msgid "Minimize"
 msgstr ""
 
-#: inc/classes/tpl-option.php:245 inc/templates/option/repeat-header.php:8
+#: inc/classes/tpl-option.php:267 inc/templates/option/repeat-header.php:8
 msgid "Maximize"
 msgstr ""
 
-#: inc/classes/tpl-option.php:541 inc/data-types/type-boolean.php:49
+#: inc/classes/tpl-option.php:550 inc/data-types/type-boolean.php:49
 #: inc/data-types/type-select.php:117
 #, php-format
 msgid "(default: %s)"
@@ -974,7 +974,7 @@ msgstr ""
 msgid "Visual"
 msgstr ""
 
-#: inc/helper-functions.php:70
+#: inc/helper-functions.php:69
 msgid ""
 "The tpl_error() function has been deprecated in favor of using the "
 "TPL_Error class (and its show_message() method)."

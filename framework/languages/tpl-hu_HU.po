@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TPL-FW\n"
-"POT-Creation-Date: 2020-08-19 08:58+0200\n"
-"PO-Revision-Date: 2020-08-19 08:59+0200\n"
+"POT-Creation-Date: 2021-02-12 07:03+0100\n"
+"PO-Revision-Date: 2021-02-12 07:03+0100\n"
 "Last-Translator: Ervin Domonkos <ervin.domonkos@gmail.com>\n"
 "Language-Team: a-idea studio <info@a-idea.studio>\n"
 "Language: hu_HU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -669,7 +669,7 @@ msgstr "Ismétlődő"
 msgid "Repeater Demo Fields"
 msgstr "Ismétlődő demó mezők"
 
-#: demo/primary/sections.php:26 inc/classes/tpl-framework.php:57
+#: demo/primary/sections.php:26 inc/classes/tpl-framework.php:69
 msgid "Combined"
 msgstr "Kombinált"
 
@@ -705,110 +705,110 @@ msgstr "DEMO-ELŐTAG: "
 msgid "Test TinyMCE Field"
 msgstr "TinyMCE mező tesztelése"
 
-#: inc/classes/tpl-error.php:97
+#: inc/classes/tpl-error.php:102
 msgid "error"
 msgstr "hiba"
 
-#: inc/classes/tpl-error.php:98
+#: inc/classes/tpl-error.php:103
 msgid "warning"
 msgstr "figyelmeztetés"
 
-#: inc/classes/tpl-error.php:99
+#: inc/classes/tpl-error.php:104
 msgid "OK"
 msgstr "OK"
 
-#: inc/classes/tpl-error.php:100
+#: inc/classes/tpl-error.php:105
 msgid "notification"
 msgstr "értesítés"
 
-#: inc/classes/tpl-error.php:152
+#: inc/classes/tpl-error.php:168
 #, php-format
 msgctxt "Global error message intro text"
 msgid "%1$s %2$s: "
 msgstr "%1$s %2$s: "
 
-#: inc/classes/tpl-framework.php:43
+#: inc/classes/tpl-framework.php:55
 msgid "Static"
 msgstr "Statikus"
 
-#: inc/classes/tpl-framework.php:44 inc/data-types/type-tinymce.php:64
+#: inc/classes/tpl-framework.php:56 inc/data-types/type-tinymce.php:64
 msgid "Text"
 msgstr "Szöveges"
 
-#: inc/classes/tpl-framework.php:45
+#: inc/classes/tpl-framework.php:57
 msgid "Hidden"
 msgstr "Rejtett"
 
-#: inc/classes/tpl-framework.php:46
+#: inc/classes/tpl-framework.php:58
 msgid "Text Area"
 msgstr "Szövegblokk"
 
-#: inc/classes/tpl-framework.php:47
+#: inc/classes/tpl-framework.php:59
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: inc/classes/tpl-framework.php:48
+#: inc/classes/tpl-framework.php:60
 msgid "Color"
 msgstr "Szín"
 
-#: inc/classes/tpl-framework.php:49
+#: inc/classes/tpl-framework.php:61
 msgid "Image"
 msgstr "Kép"
 
-#: inc/classes/tpl-framework.php:50
+#: inc/classes/tpl-framework.php:62
 msgid "Number"
 msgstr "Szám"
 
-#: inc/classes/tpl-framework.php:51
+#: inc/classes/tpl-framework.php:63
 msgid "Boolean"
 msgstr "Logikai"
 
-#: inc/classes/tpl-framework.php:52
+#: inc/classes/tpl-framework.php:64
 msgid "Select"
 msgstr "Legördülő"
 
-#: inc/classes/tpl-framework.php:53
+#: inc/classes/tpl-framework.php:65
 msgid "Font Awesome"
 msgstr "Font Awesome"
 
-#: inc/classes/tpl-framework.php:54
+#: inc/classes/tpl-framework.php:66
 msgid "Post"
 msgstr "Bejegyzés"
 
-#: inc/classes/tpl-framework.php:55
+#: inc/classes/tpl-framework.php:67
 msgid "User"
 msgstr "Felhasználó"
 
-#: inc/classes/tpl-framework.php:56
+#: inc/classes/tpl-framework.php:68
 msgid "Date"
 msgstr "Dátum"
 
-#: inc/classes/tpl-framework.php:58 inc/data-types/type-icon.php:13
+#: inc/classes/tpl-framework.php:70 inc/data-types/type-icon.php:13
 msgid "Icon"
 msgstr "Ikon"
 
-#: inc/classes/tpl-framework.php:252
+#: inc/classes/tpl-framework.php:260
 #, php-format
 msgid ""
 "Sections can't be registered without a section name. Section details: <br> %s"
 msgstr ""
 "A szakaszok nem regisztrálhatók szakasznév nélkül. A szakasz részletei:<br>%s"
 
-#: inc/classes/tpl-framework.php:257
+#: inc/classes/tpl-framework.php:265
 #, php-format
 msgid "Sections must have a title. No title was defined for section \"%s\"."
 msgstr ""
 "A szakaszoknak rendelkezniük kell címmel. A(z) \"%s\" szakaszhoz nincs "
 "megadva cím."
 
-#: inc/classes/tpl-framework.php:330
+#: inc/classes/tpl-framework.php:338
 #, php-format
 msgid "Duplicate option name \"%1$s\". Options must have unique names."
 msgstr ""
 "Ismétlődő beállításnév: \"%1$s\". A beállításoknak egyedi névvel kell "
 "rendelkezniük."
 
-#: inc/classes/tpl-framework.php:347
+#: inc/classes/tpl-framework.php:355
 #, php-format
 msgid ""
 "Options can't be registered without an option name. Option details: <br> %s"
@@ -816,7 +816,7 @@ msgstr ""
 "A beállítások nem regisztrálhatók beállításnév nélkül. A beállítás részletei:"
 "<br>%s"
 
-#: inc/classes/tpl-framework.php:352
+#: inc/classes/tpl-framework.php:360
 #, php-format
 msgid ""
 "No section name was specified for option \"%s\". Option isn't registered."
@@ -824,7 +824,7 @@ msgstr ""
 "A(z) \"%s\" beállításhoz nem adtál meg szakasznevet. A beállítás nincs "
 "regisztrálva."
 
-#: inc/classes/tpl-framework.php:357
+#: inc/classes/tpl-framework.php:365
 #, php-format
 msgid ""
 "Invalid section name was specified for option \"%1$s\". Please make sure "
@@ -833,7 +833,7 @@ msgstr ""
 "Érvénytelen szakasznév lett megadva a(z) \"%1$s\" beállításhoz. Kérlek "
 "ellenőrizd, hogy van regisztrálva szakasz a(z) \"%2$s\" szakasznévvel."
 
-#: inc/classes/tpl-framework.php:362
+#: inc/classes/tpl-framework.php:370
 #, php-format
 msgid ""
 "No option type was specified for option \"%s\". Option isn't registered."
@@ -841,7 +841,7 @@ msgstr ""
 "A(z) \"%s\" beállításhoz nem adtál meg beállítástípust. A beállítás nincs "
 "regisztrálva."
 
-#: inc/classes/tpl-framework.php:367
+#: inc/classes/tpl-framework.php:375
 #, php-format
 msgid ""
 "Invalid data type (%2$s) was specified for option \"%1$s\". Please make sure "
@@ -852,23 +852,23 @@ msgstr ""
 "ellenőrizd, hogy a <a href=\"%3$s\" target=\"_blank\">dokumentációban</"
 "a>felsorolt adattípusok valamelyikét használod."
 
-#: inc/classes/tpl-option.php:101
+#: inc/classes/tpl-option.php:106
 msgid "Add row"
 msgstr "Új sor"
 
-#: inc/classes/tpl-option.php:243
+#: inc/classes/tpl-option.php:265
 msgid "Do you really want to remove this instance?"
 msgstr "Valóban el akarod távolítani ezt a példányt?"
 
-#: inc/classes/tpl-option.php:244 inc/templates/option/repeat-header.php:8
+#: inc/classes/tpl-option.php:266 inc/templates/option/repeat-header.php:8
 msgid "Minimize"
 msgstr "Összecsuk"
 
-#: inc/classes/tpl-option.php:245 inc/templates/option/repeat-header.php:8
+#: inc/classes/tpl-option.php:267 inc/templates/option/repeat-header.php:8
 msgid "Maximize"
 msgstr "Kinyit"
 
-#: inc/classes/tpl-option.php:541 inc/data-types/type-boolean.php:49
+#: inc/classes/tpl-option.php:550 inc/data-types/type-boolean.php:49
 #: inc/data-types/type-select.php:117
 #, php-format
 msgid "(default: %s)"
@@ -998,7 +998,7 @@ msgstr "Válassz képet"
 msgid "Visual"
 msgstr "Vizuális"
 
-#: inc/helper-functions.php:70
+#: inc/helper-functions.php:69
 msgid ""
 "The tpl_error() function has been deprecated in favor of using the TPL_Error "
 "class (and its show_message() method)."

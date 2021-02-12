@@ -266,7 +266,13 @@ class TPL_Settings_Page {
 
 	function get_sections() {
 
-		return TPL_FW()->get_sections_by_post_type( $this->get_post_type() );
+		$sections = TPL_FW()->get_sections_by_post_type( $this->get_post_type() );
+
+		usort( $sections, function ( $a, $b ) {
+			return ( $a->get_priority() <=> $b->get_priority() );
+		} );
+
+		return $sections;
 
 	}
 
