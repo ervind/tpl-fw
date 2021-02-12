@@ -7,9 +7,12 @@ Documentation will be available soon.
 
 ## Changelog
 
-### v2.2 (2020-xx-xx)
+### v2.2 (2020-02-12)
 * Instead of the global $tpl_fw variable, we now use the singleton approach with TPL_FW()
+* Sections and Options now can have priorities (used with ordering inside a settings page)
 * Better tooltips for combined subitem descriptions
+* OPtions UI fine-tuning
+* Now you can hide intro text in TPL Error boxes
 
 
 ### v2.1.1 (2020-08-19)
