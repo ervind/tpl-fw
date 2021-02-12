@@ -11,7 +11,7 @@ Documentation will be available soon.
 * Instead of the global $tpl_fw variable, we now use the singleton approach with TPL_FW()
 * Sections and Options now can have priorities (used with ordering inside a settings page)
 * Better tooltips for combined subitem descriptions
-* OPtions UI fine-tuning
+* Options UI fine-tuning
 * Now you can hide intro text in TPL Error boxes
 
 
