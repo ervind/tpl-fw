@@ -298,6 +298,7 @@ TABLE OF CONTENTS
 
 	// Settings for the TinyMCE editor
 	function tpl_tinymce_init() {
+
 		$( 'body .tpl-field.tpl-dt-tinymce' ).not( $('body .tpl-field.tpl-dt-tinymce.tpl-admin-hide') ).each(function(){
 			var id = $(this).find('textarea').attr('id');
 			tinyMCE.execCommand( 'mceAddEditor', false, id );
@@ -1243,13 +1244,10 @@ TABLE OF CONTENTS
 		tpl_setup_repeat_container();
 		tpl_set_repeater_headers();
 		tpl_condition_updater();
-	}, 100);
-
-	$(window).load(function(){
 		if ( typeof(tinyMCE) != "undefined" ) {
 			tpl_tinymce_init();
 		}
-	});
+	}, 100);
 
 
 	var tpl_fw = {
@@ -1282,5 +1280,7 @@ TABLE OF CONTENTS
 		}
 
 	};
+
+	window.tpl_fw = tpl_fw;
 
 });
