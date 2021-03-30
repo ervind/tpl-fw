@@ -270,6 +270,7 @@ TABLE OF CONTENTS
 				_wpnonce	: TPL_Admin.ajax_nonce
 			},
 			success		: function(response) {
+				this_select.children().remove();
 				$.each(response, function(index, el){
 					var option = this_select.find('option[value="'+index+'"]');
 					if ( !option.length ) {
