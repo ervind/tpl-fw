@@ -5,15 +5,16 @@ This framework gives you a powerful options/settings management system that lets
 
 ## Basic Setup
 
-1. Copy the /framework folder into your WordPress plugin's directory
+1. Copy the `/framework` folder into your WordPress plugin's directory
 2. Load the framework with this code into your plugin:
 ```php
-// Where PLUGIN_ROOT_DIR is the root directory of your plugin. You can add a constant for it or use plugin_dir_path()
+// Where PLUGIN_ROOT_DIR is the root directory of your plugin.
+// You can add a constant for it or use plugin_dir_path()
 require_once PLUGIN_ROOT_DIR . 'framework/tpl-fw.php';
 ```
-3. Now you can add Settings Pages, Sections and Options using the TPL backend functions
+3. Now you can add Settings Pages, Sections and Options using the [TPL backend functions](https://github.com/ervind/tpl-fw/wiki/TPL-FW-Backend-Functions)
 4. Then, after you added some options, you can see and edit them inside WP-Admin
-5. And you can display or use the saved values of the options in your plugin or theme using the TPL frontend functions
+5. And you can display or use the saved values of the options in your plugin or theme using the [TPL frontend functions](https://github.com/ervind/tpl-fw/wiki/TPL-FW-Frontend-Functions)
 
 ## Changelog
 
