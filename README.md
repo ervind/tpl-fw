@@ -12,9 +12,9 @@ This framework gives you a powerful options/settings management system that lets
 // You can add a constant for it or use plugin_dir_path()
 require_once PLUGIN_ROOT_DIR . 'framework/tpl-fw.php';
 ```
-3. Now you can add Settings Pages, Sections and Options using the [TPL backend functions](https://github.com/ervind/tpl-fw/wiki/TPL-FW-Backend-Functions)
+3. Now you can add Settings Pages, Sections and Options using the [TPL backend functions](https://github.com/ervind/tpl-fw/wiki/Backend-Functions)
 4. Then, after you added some options, you can see and edit them inside WP-Admin
-5. And you can display or use the saved values of the options in your plugin or theme using the [TPL frontend functions](https://github.com/ervind/tpl-fw/wiki/TPL-FW-Frontend-Functions)
+5. And you can display or use the saved values of the options in your plugin or theme using the [TPL frontend functions](https://github.com/ervind/tpl-fw/wiki/Frontend-Functions)
 
 ## Changelog
 
