@@ -7,11 +7,11 @@ Documentation will be available soon.
 
 ## Changelog
 
-### v2.2.1 (2020-03-05)
+### v2.2.1 (2021-03-05)
 * JS fixes to make some functions accessible from outside + WYSIWYG editor visual mode loader fix
 
 
-### v2.2 (2020-02-12)
+### v2.2 (2021-02-12)
 * Instead of the global $tpl_fw variable, we now use the singleton approach with TPL_FW()
 * Sections and Options now can have priorities (used with ordering inside a settings page)
 * Better tooltips for combined subitem descriptions
