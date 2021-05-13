@@ -9,7 +9,7 @@ This framework gives you a powerful options/settings management system that lets
 2. Load the framework with this code into your plugin:
 ```php
 // Where PLUGIN_ROOT_DIR is the root directory of your plugin.
-// You can add a constant for it or use plugin_dir_path()
+// You can add a constant for it or use plugin_dir_path() instead
 require_once PLUGIN_ROOT_DIR . 'framework/tpl-fw.php';
 ```
 3. Now you can add Settings Pages, Sections and Options using the [TPL backend functions](https://github.com/ervind/tpl-fw/wiki/Backend-Functions)
