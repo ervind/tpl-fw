@@ -1,7 +1,3 @@
-<?php if ( $option->get_placeholder() != '' ) { ?>
-	<option value=""><?php echo esc_html( $option->get_placeholder() ); ?></option>
-<?php } ?>
-
 <?php foreach ( $option->get_selectable_values() as $key => $value ) {
 
 	if ( is_array( $value ) ) { ?>
@@ -15,7 +11,7 @@
 	<?php }
 
 	else { ?>
-		<option value="<?php echo esc_attr( $key ); ?>"<?php echo ( $key == $option->get_form_field_value() ) ? ' selected' : ''; ?>>
+		<option value="<?php echo esc_attr( $key ); ?>"<?php echo ( (string) $key === $option->get_form_field_value() ) ? ' selected' : ''; ?>>
 			<?php echo esc_html( $value ); ?>
 		</option>
 	<?php }

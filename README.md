@@ -18,6 +18,10 @@ require_once PLUGIN_ROOT_DIR . 'framework/tpl-fw.php';
 
 ## Changelog
 
+### v2.2.2 (2021-05-13)
+* Modification of how Select Type placeholders are added to the option list » less hardcoded mode
+
+
 ### v2.2.1 (2021-03-05)
 * JS fixes to make some functions accessible from outside + WYSIWYG editor visual mode loader fix
 

@@ -34,7 +34,13 @@ class TPL_Select extends TPL_Option {
 		parent::initialize();
 
 		if ( isset( $this->args["values"] ) ) {
+
+			if ( $this->get_placeholder() != '' ) {
+				$this->args["values"] = [ "" => $this->get_placeholder() ] + $this->args["values"];
+			}
+
 			$this->set_selectable_values( $this->args["values"] );
+
 		}
 
 		if ( isset( $this->args["refresh"] ) ) {
