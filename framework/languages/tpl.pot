@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TPL-FW\n"
-"POT-Creation-Date: 2021-02-12 07:02+0100\n"
+"POT-Creation-Date: 2021-06-17 09:13+0200\n"
 "PO-Revision-Date: 2015-12-28 11:55+0100\n"
 "Last-Translator: Ervin Domonkos <ervin.domonkos@gmail.com>\n"
 "Language-Team: a-idea studio <info@a-idea.studio>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -845,7 +845,7 @@ msgid "Maximize"
 msgstr ""
 
 #: inc/classes/tpl-option.php:550 inc/data-types/type-boolean.php:49
-#: inc/data-types/type-select.php:117
+#: inc/data-types/type-select.php:123
 #, php-format
 msgid "(default: %s)"
 msgstr ""
