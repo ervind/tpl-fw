@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TPL-FW\n"
-"POT-Creation-Date: 2021-06-17 09:13+0200\n"
-"PO-Revision-Date: 2021-06-17 09:13+0200\n"
+"POT-Creation-Date: 2021-08-30 06:44+0200\n"
+"PO-Revision-Date: 2021-08-30 06:48+0200\n"
 "Last-Translator: Ervin Domonkos <ervin.domonkos@gmail.com>\n"
 "Language-Team: a-idea studio <info@a-idea.studio>\n"
 "Language: hu_HU\n"
@@ -16,22 +16,22 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: demo/metabox/conditions.php:7 demo/primary/conditions.php:7
+#: demo/metabox/conditions.php:9 demo/primary/conditions.php:9
 msgid "Conditional Text Field Enabler"
 msgstr "Feltételes szöveg mező engedélyező"
 
-#: demo/metabox/conditions.php:8 demo/primary/conditions.php:8
+#: demo/metabox/conditions.php:10 demo/primary/conditions.php:10
 msgid ""
 "Enable/disable this option and see how the text field below shows/hides."
 msgstr ""
 "Engedélyezd / tiltsd le ezt a beállítást és nézd meg, hogy az alábbi szöveg "
 "mező hogyan jelenik meg / tűnik el."
 
-#: demo/metabox/conditions.php:17 demo/primary/conditions.php:17
+#: demo/metabox/conditions.php:19 demo/primary/conditions.php:19
 msgid "Test Conditional Text Field"
 msgstr "Feltételes szöveg mező tesztelése"
 
-#: demo/metabox/conditions.php:18 demo/primary/conditions.php:18
+#: demo/metabox/conditions.php:20 demo/primary/conditions.php:20
 msgid ""
 "This field should only be visible when the \"Conditional Text Field Enabler"
 "\" boolean option is set to True."
@@ -39,31 +39,31 @@ msgstr ""
 "Ez a mező csak akkor látható, ha a \"Feltételes szöveg mező engedélyező\" "
 "értéke Igaz."
 
-#: demo/metabox/conditions.php:21 demo/metabox/conditions.php:140
-#: demo/metabox/conditions.php:188 demo/metabox/metabox-repeater-options.php:22
-#: demo/metabox/metabox-simple-options.php:21 demo/primary/conditions.php:21
-#: demo/primary/conditions.php:140 demo/primary/repeater-options.php:22
-#: demo/primary/simple-options.php:21
+#: demo/metabox/conditions.php:23 demo/metabox/conditions.php:142
+#: demo/metabox/conditions.php:190 demo/metabox/metabox-repeater-options.php:25
+#: demo/metabox/metabox-simple-options.php:24 demo/primary/conditions.php:23
+#: demo/primary/conditions.php:142 demo/primary/repeater-options.php:25
+#: demo/primary/simple-options.php:24
 msgid "Test text default value"
 msgstr "Teszt szöveg alapértelemezett értéke"
 
-#: demo/metabox/conditions.php:36 demo/primary/conditions.php:36
+#: demo/metabox/conditions.php:38 demo/primary/conditions.php:38
 msgid "Conditional Combined Field Enabler"
 msgstr "Feltételes kombinált mező engedélyező"
 
-#: demo/metabox/conditions.php:37 demo/primary/conditions.php:37
+#: demo/metabox/conditions.php:39 demo/primary/conditions.php:39
 msgid ""
 "Enable/disable this option and see how the combined field below shows/hides."
 msgstr ""
 "Engedélyezd / tiltsd le ezt a beállítást és nézd meg, hogy az alábbi "
 "kombinált mező hogyan jelenik meg / tűnik el."
 
-#: demo/metabox/conditions.php:46 demo/metabox/metabox-combined-options.php:6
-#: demo/primary/combined-options.php:6 demo/primary/conditions.php:46
+#: demo/metabox/conditions.php:48 demo/metabox/metabox-combined-options.php:6
+#: demo/primary/combined-options.php:9 demo/primary/conditions.php:48
 msgid "Test combined Field"
 msgstr "Kombinált mező tesztelése"
 
-#: demo/metabox/conditions.php:47 demo/primary/conditions.php:47
+#: demo/metabox/conditions.php:49 demo/primary/conditions.php:49
 msgid ""
 "This field should only be visible when the \"Conditional Combined Field "
 "Enabler\" boolean option is set to True."
@@ -71,73 +71,73 @@ msgstr ""
 "Ez a mező csak akkor látható, ha a \"Feltételes kombinált mező engedélyező\" "
 "értéke Igaz."
 
-#: demo/metabox/conditions.php:53 demo/metabox/metabox-combined-options.php:24
+#: demo/metabox/conditions.php:55 demo/metabox/metabox-combined-options.php:24
 #: demo/metabox/metabox-combined-repeater-options.php:25
-#: demo/primary/combined-options.php:24
-#: demo/primary/combined-repeater-options.php:25 demo/primary/conditions.php:53
+#: demo/primary/combined-options.php:27
+#: demo/primary/combined-repeater-options.php:28 demo/primary/conditions.php:55
 msgid "Image subitem"
 msgstr "Kép alelem"
 
-#: demo/metabox/conditions.php:58 demo/metabox/metabox-combined-options.php:13
+#: demo/metabox/conditions.php:60 demo/metabox/metabox-combined-options.php:13
 #: demo/metabox/metabox-combined-repeater-options.php:14
-#: demo/primary/combined-options.php:13
-#: demo/primary/combined-repeater-options.php:14 demo/primary/conditions.php:58
+#: demo/primary/combined-options.php:16
+#: demo/primary/combined-repeater-options.php:17 demo/primary/conditions.php:60
 msgid "Text subitem"
 msgstr "Szöveg alelem"
 
-#: demo/metabox/conditions.php:78 demo/primary/conditions.php:78
+#: demo/metabox/conditions.php:80 demo/primary/conditions.php:80
 msgid "Number subitem"
 msgstr "Szám alelem"
 
-#: demo/metabox/conditions.php:83 demo/metabox/metabox-combined-options.php:29
+#: demo/metabox/conditions.php:85 demo/metabox/metabox-combined-options.php:29
 #: demo/metabox/metabox-combined-repeater-options.php:30
-#: demo/primary/combined-options.php:29
-#: demo/primary/combined-repeater-options.php:30 demo/primary/conditions.php:83
+#: demo/primary/combined-options.php:32
+#: demo/primary/combined-repeater-options.php:33 demo/primary/conditions.php:85
 msgid "Date subitem"
 msgstr "Dátum alelem"
 
-#: demo/metabox/conditions.php:85 demo/primary/conditions.php:85
+#: demo/metabox/conditions.php:87 demo/primary/conditions.php:87
 msgid ""
 "If you pass here a future date, a new conditional field should pop up below."
 msgstr ""
 "Ha jövőbeli dátumot adsz itt meg, egy új feltételes mező jelenik meg lentebb."
 
-#: demo/metabox/conditions.php:89 demo/metabox/metabox-combined-options.php:34
+#: demo/metabox/conditions.php:91 demo/metabox/metabox-combined-options.php:34
 #: demo/metabox/metabox-combined-repeater-options.php:35
-#: demo/primary/combined-options.php:34
-#: demo/primary/combined-repeater-options.php:35 demo/primary/conditions.php:89
+#: demo/primary/combined-options.php:37
+#: demo/primary/combined-repeater-options.php:38 demo/primary/conditions.php:91
 msgid "Tinymce subitem"
 msgstr "TinyMCE alelem"
 
-#: demo/metabox/conditions.php:102 demo/metabox/metabox-combined-options.php:39
+#: demo/metabox/conditions.php:104 demo/metabox/metabox-combined-options.php:39
 #: demo/metabox/metabox-combined-repeater-options.php:40
-#: demo/primary/combined-options.php:39
-#: demo/primary/combined-repeater-options.php:40
-#: demo/primary/conditions.php:102
+#: demo/primary/combined-options.php:42
+#: demo/primary/combined-repeater-options.php:43
+#: demo/primary/conditions.php:104
 msgid "Color subitem"
 msgstr "Szín alelem"
 
-#: demo/metabox/conditions.php:107 demo/metabox/metabox-combined-options.php:44
+#: demo/metabox/conditions.php:109 demo/metabox/metabox-combined-options.php:44
 #: demo/metabox/metabox-combined-repeater-options.php:45
-#: demo/primary/combined-options.php:44
-#: demo/primary/combined-repeater-options.php:45
-#: demo/primary/conditions.php:107
+#: demo/primary/combined-options.php:47
+#: demo/primary/combined-repeater-options.php:48
+#: demo/primary/conditions.php:109
 msgid "Font Awesome subitem"
 msgstr "Font Awesome alelem"
 
-#: demo/metabox/conditions.php:125 demo/primary/conditions.php:125
+#: demo/metabox/conditions.php:127 demo/primary/conditions.php:127
 msgid "Disable the repeater field below"
 msgstr "Az alábbi ismétlődő mező letiltása"
 
-#: demo/metabox/conditions.php:126 demo/primary/conditions.php:126
+#: demo/metabox/conditions.php:128 demo/primary/conditions.php:128
 msgid "If true, the repeater field below disappears"
 msgstr "Ha igaz, az alábbi ismétlődő mező eltűnik"
 
-#: demo/metabox/conditions.php:135 demo/primary/conditions.php:135
+#: demo/metabox/conditions.php:137 demo/primary/conditions.php:137
 msgid "Test Conditional Repeater Field"
 msgstr "Feltételes ismétlődő mező tesztelése"
 
-#: demo/metabox/conditions.php:136 demo/primary/conditions.php:136
+#: demo/metabox/conditions.php:138 demo/primary/conditions.php:138
 msgid ""
 "This field should only be visible when the \"Disable the repeater field below"
 "\" boolean option is set to False."
@@ -145,11 +145,11 @@ msgstr ""
 "Ez a mező csak akkor látható, ha \"Az alábbi ismétlődő mező letiltása\" "
 "értéke Hamis."
 
-#: demo/metabox/conditions.php:155 demo/primary/conditions.php:155
+#: demo/metabox/conditions.php:157 demo/primary/conditions.php:157
 msgid "Conditional Repeater Icon Field Enabler"
 msgstr "Feltételes ismétlődő ikon mező engedélyező"
 
-#: demo/metabox/conditions.php:156 demo/primary/conditions.php:156
+#: demo/metabox/conditions.php:158 demo/primary/conditions.php:158
 msgid ""
 "Enable/disable this option and see how the repeater icon field below shows/"
 "hides."
@@ -157,11 +157,11 @@ msgstr ""
 "Engedélyezd / tiltsd le ezt a beállítást és nézd meg, hogy az alábbi "
 "ismétlődő ikon mező hogyan jelenik meg / tűnik el."
 
-#: demo/metabox/conditions.php:165 demo/primary/conditions.php:165
+#: demo/metabox/conditions.php:167 demo/primary/conditions.php:167
 msgid "Test Conditional Icon Field"
 msgstr "Feltételes ikon mező tesztelése"
 
-#: demo/metabox/conditions.php:166 demo/primary/conditions.php:166
+#: demo/metabox/conditions.php:168 demo/primary/conditions.php:168
 msgid ""
 "This field should only be visible when the \"Conditional Repeater Icon Field "
 "Enabler\" boolean option is set to True."
@@ -169,11 +169,11 @@ msgstr ""
 "Ez a mező csak akkor látható, ha a \"Feltételes ismétlődő ikon mező "
 "engedélyező\" értéke Igaz."
 
-#: demo/metabox/conditions.php:184
+#: demo/metabox/conditions.php:186
 msgid "Conditional Text Field by Category"
 msgstr "Feltételes szöveg mező kategória alapján"
 
-#: demo/metabox/conditions.php:185
+#: demo/metabox/conditions.php:187
 msgid ""
 "This field should only be visible when you edit a Post and the category is "
 "Uncategorized."
@@ -181,255 +181,341 @@ msgstr ""
 "Ez a mező csak akkor látható, ha szerkesztesz egy bejegyzést, amelynek a "
 "kategóriája Kategorizálatlan."
 
+#: demo/metabox/conditions.php:205 demo/primary/conditions.php:186
+msgid "Test Conditional Checkboxes Field"
+msgstr "Feltételes jelölőnégyzetek mező tesztelése"
+
+#: demo/metabox/conditions.php:206 demo/primary/conditions.php:187
+msgid ""
+"This field should only be visible when the \"Conditional Checkboxes Field "
+"Enabler\" boolean option is set to True."
+msgstr ""
+"Ez a mező csak akkor látható, ha a \"Feltételes jelölőnégyzetek mező "
+"engedélyező\" értéke Igaz."
+
+#: demo/metabox/conditions.php:210 demo/metabox/metabox-combined-options.php:63
+#: demo/metabox/metabox-combined-repeater-options.php:64
+#: demo/metabox/metabox-repeater-options.php:78
+#: demo/metabox/metabox-repeater-options.php:180
+#: demo/metabox/metabox-simple-options.php:72
+#: demo/metabox/metabox-simple-options.php:168
+#: demo/primary/combined-options.php:66
+#: demo/primary/combined-repeater-options.php:67
+#: demo/primary/conditions.php:191 demo/primary/repeater-options.php:79
+#: demo/primary/repeater-options.php:181 demo/primary/simple-options.php:76
+#: demo/primary/simple-options.php:174
+msgid "First Option"
+msgstr "Első opció"
+
+#: demo/metabox/conditions.php:211 demo/metabox/metabox-combined-options.php:64
+#: demo/metabox/metabox-combined-repeater-options.php:65
+#: demo/metabox/metabox-repeater-options.php:79
+#: demo/metabox/metabox-repeater-options.php:181
+#: demo/metabox/metabox-simple-options.php:73
+#: demo/metabox/metabox-simple-options.php:169
+#: demo/primary/combined-options.php:67
+#: demo/primary/combined-repeater-options.php:68
+#: demo/primary/conditions.php:192 demo/primary/repeater-options.php:80
+#: demo/primary/repeater-options.php:182 demo/primary/simple-options.php:77
+#: demo/primary/simple-options.php:175
+msgid "Second Option"
+msgstr "Második opció"
+
+#: demo/metabox/conditions.php:212 demo/metabox/metabox-combined-options.php:65
+#: demo/metabox/metabox-combined-repeater-options.php:66
+#: demo/metabox/metabox-repeater-options.php:80
+#: demo/metabox/metabox-repeater-options.php:182
+#: demo/metabox/metabox-simple-options.php:74
+#: demo/metabox/metabox-simple-options.php:170
+#: demo/primary/combined-options.php:68
+#: demo/primary/combined-repeater-options.php:69
+#: demo/primary/conditions.php:193 demo/primary/repeater-options.php:81
+#: demo/primary/repeater-options.php:183 demo/primary/simple-options.php:78
+#: demo/primary/simple-options.php:176
+msgid "Third Option"
+msgstr "Harmadik opció"
+
+#: demo/metabox/conditions.php:213 demo/metabox/metabox-combined-options.php:66
+#: demo/metabox/metabox-combined-repeater-options.php:67
+#: demo/metabox/metabox-repeater-options.php:183
+#: demo/metabox/metabox-simple-options.php:76
+#: demo/metabox/metabox-simple-options.php:171
+#: demo/primary/combined-options.php:69
+#: demo/primary/combined-repeater-options.php:70
+#: demo/primary/conditions.php:194 demo/primary/repeater-options.php:184
+#: demo/primary/simple-options.php:80 demo/primary/simple-options.php:177
+msgid "Fourth Option"
+msgstr "Negyedik opció"
+
+#: demo/metabox/conditions.php:214 demo/metabox/metabox-combined-options.php:67
+#: demo/metabox/metabox-combined-repeater-options.php:68
+#: demo/metabox/metabox-repeater-options.php:184
+#: demo/metabox/metabox-simple-options.php:77
+#: demo/metabox/metabox-simple-options.php:172
+#: demo/primary/combined-options.php:70
+#: demo/primary/combined-repeater-options.php:71
+#: demo/primary/conditions.php:195 demo/primary/repeater-options.php:185
+#: demo/primary/simple-options.php:81 demo/primary/simple-options.php:178
+msgid "Fifth Option"
+msgstr "Ötödik opció"
+
+#: demo/metabox/conditions.php:225 demo/primary/conditions.php:206
+msgid "Test Conditional Text Field based on Checkboxes value"
+msgstr "Feltételes szöveg mező tesztelése a jelölőnégyzetek értékei alapján"
+
+#: demo/metabox/conditions.php:226 demo/primary/conditions.php:207
+msgid ""
+"This field should only be visible when the second option is enabled above."
+msgstr "Ez a mező csak akkor látható, ha a második opció értéke fentebb Igaz."
+
 #: demo/metabox/metabox-combined-options.php:7
-#: demo/primary/combined-options.php:7
+#: demo/primary/combined-options.php:10
 msgid "Description for Test combined Field"
 msgstr "A teszt kombinált mező leírása"
 
 #: demo/metabox/metabox-combined-options.php:18
 #: demo/metabox/metabox-combined-repeater-options.php:19
-#: demo/primary/combined-options.php:18
-#: demo/primary/combined-repeater-options.php:19
+#: demo/primary/combined-options.php:21
+#: demo/primary/combined-repeater-options.php:22
 msgid "Boolean subitem"
 msgstr "Logikai alelem"
 
 #: demo/metabox/metabox-combined-options.php:49
 #: demo/metabox/metabox-combined-repeater-options.php:50
-#: demo/primary/combined-options.php:49
-#: demo/primary/combined-repeater-options.php:50
+#: demo/primary/combined-options.php:52
+#: demo/primary/combined-repeater-options.php:53
 msgid "Page subitem"
 msgstr "Oldal alelem"
 
 #: demo/metabox/metabox-combined-options.php:55
 #: demo/metabox/metabox-combined-repeater-options.php:56
-#: demo/primary/combined-options.php:55
-#: demo/primary/combined-repeater-options.php:56
+#: demo/primary/combined-options.php:58
+#: demo/primary/combined-repeater-options.php:59
 msgid "User subitem"
 msgstr "Felhasználói alelem"
 
-#: demo/metabox/metabox-combined-options.php:65
-#: demo/primary/combined-options.php:65
+#: demo/metabox/metabox-combined-options.php:60
+#: demo/metabox/metabox-combined-repeater-options.php:61
+#: demo/primary/combined-options.php:63
+#: demo/primary/combined-repeater-options.php:64
+msgid "Checkboxes subitem"
+msgstr "Jelölőnégyzetek alelem"
+
+#: demo/metabox/metabox-combined-options.php:77
+#: demo/primary/combined-options.php:80
 msgid "Test icon Field"
 msgstr "Ikon mező tesztelése"
 
-#: demo/metabox/metabox-combined-options.php:66
-#: demo/primary/combined-options.php:66
+#: demo/metabox/metabox-combined-options.php:78
+#: demo/primary/combined-options.php:81
 msgid "Description for Test icon Field"
 msgstr "A teszt ikon mező leírása"
 
 #: demo/metabox/metabox-combined-repeater-options.php:6
-#: demo/primary/combined-repeater-options.php:6
+#: demo/primary/combined-repeater-options.php:9
 msgid "Test combined Repeater Field"
 msgstr "Kombinált ismétlődő mező tesztelése"
 
 #: demo/metabox/metabox-combined-repeater-options.php:7
-#: demo/primary/combined-repeater-options.php:7
+#: demo/primary/combined-repeater-options.php:10
 msgid "Description for Test combined Repeater Field"
 msgstr "A teszt kombinált ismétlődő mező leírása"
 
-#: demo/metabox/metabox-combined-repeater-options.php:66
-#: demo/primary/combined-repeater-options.php:66
+#: demo/metabox/metabox-combined-repeater-options.php:78
+#: demo/primary/combined-repeater-options.php:81
 msgid "Test icon Repeater Field"
 msgstr "Ikon ismétlődő mező tesztelése"
 
-#: demo/metabox/metabox-combined-repeater-options.php:67
-#: demo/primary/combined-repeater-options.php:67
+#: demo/metabox/metabox-combined-repeater-options.php:79
+#: demo/primary/combined-repeater-options.php:82
 msgid "Description for Test icon Repeater Field"
 msgstr "A teszt ikon mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:6
-#: demo/primary/repeater-options.php:6
+#: demo/metabox/metabox-repeater-options.php:9
+#: demo/primary/repeater-options.php:9
 msgid "Test Static Repeater Field"
 msgstr "Statikus ismétlődő mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:7
-#: demo/primary/repeater-options.php:7
+#: demo/metabox/metabox-repeater-options.php:10
+#: demo/primary/repeater-options.php:10
 msgid "Description for Test Static Repeater Field"
 msgstr "A teszt statikus ismétlődő mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:10
-#: demo/metabox/metabox-simple-options.php:10
-#: demo/primary/repeater-options.php:10 demo/primary/simple-options.php:10
+#: demo/metabox/metabox-repeater-options.php:13
+#: demo/metabox/metabox-simple-options.php:13
+#: demo/primary/repeater-options.php:13 demo/primary/simple-options.php:13
 msgid "Test static default value"
 msgstr "Teszt statikus mező alapértelmezett értéke"
 
-#: demo/metabox/metabox-repeater-options.php:18
-#: demo/primary/repeater-options.php:18
+#: demo/metabox/metabox-repeater-options.php:21
+#: demo/primary/repeater-options.php:21
 msgid "Test text Repeater Field"
 msgstr "Szöveg ismétlődő mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:19
-#: demo/primary/repeater-options.php:19
+#: demo/metabox/metabox-repeater-options.php:22
+#: demo/primary/repeater-options.php:22
 msgid "Description for Test text Repeater Field"
 msgstr "A teszt szöveg ismétlődő mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:30
-#: demo/primary/repeater-options.php:31
+#: demo/metabox/metabox-repeater-options.php:33
+#: demo/primary/repeater-options.php:34
 msgid "Test textarea Repeater Field"
 msgstr "Szövegblokk ismétlődő mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:31
-#: demo/primary/repeater-options.php:32
+#: demo/metabox/metabox-repeater-options.php:34
+#: demo/primary/repeater-options.php:35
 msgid "Description for Test textarea Repeater Field"
 msgstr "A teszt szövegblokk ismétlődő mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:34
-#: demo/metabox/metabox-simple-options.php:32
-#: demo/primary/repeater-options.php:35 demo/primary/simple-options.php:33
+#: demo/metabox/metabox-repeater-options.php:37
+#: demo/metabox/metabox-simple-options.php:35
+#: demo/primary/repeater-options.php:38 demo/primary/simple-options.php:36
 msgid "Test textarea default value"
 msgstr "Teszt szövegblokk alapértelmezett értéke"
 
-#: demo/metabox/metabox-repeater-options.php:42
-#: demo/primary/repeater-options.php:43
+#: demo/metabox/metabox-repeater-options.php:45
+#: demo/primary/repeater-options.php:46
 msgid "Test tinymce Repeater Field"
 msgstr "TinyMCE ismétlődő mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:43
-#: demo/primary/repeater-options.php:44
+#: demo/metabox/metabox-repeater-options.php:46
+#: demo/primary/repeater-options.php:47
 msgid "Description for Test tinymce Repeater Field"
 msgstr "A teszt TinyMCE ismétlődő mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:46
-#: demo/metabox/metabox-simple-options.php:43
-#: demo/primary/repeater-options.php:47 demo/primary/simple-options.php:45
+#: demo/metabox/metabox-repeater-options.php:49
+#: demo/metabox/metabox-simple-options.php:46
+#: demo/primary/repeater-options.php:50 demo/primary/simple-options.php:48
 msgid "Test tinymce default value"
 msgstr "Teszt TinyMCE alapértelmezett értéke"
 
-#: demo/metabox/metabox-repeater-options.php:48
-#: demo/primary/repeater-options.php:49
+#: demo/metabox/metabox-repeater-options.php:51
+#: demo/primary/repeater-options.php:52
 msgid "Add TinyMCE row"
 msgstr "TinyMCE-sor hozzáadása"
 
-#: demo/metabox/metabox-repeater-options.php:55
-#: demo/primary/repeater-options.php:56
+#: demo/metabox/metabox-repeater-options.php:58
+#: demo/primary/repeater-options.php:59
 msgid "Test number Repeater Field"
 msgstr "Szám ismétlődő mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:56
-#: demo/primary/repeater-options.php:57
+#: demo/metabox/metabox-repeater-options.php:59
+#: demo/primary/repeater-options.php:60
 msgid "Description for Test number Repeater Field"
 msgstr "A teszt szám ismétlődő mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:70
-#: demo/primary/repeater-options.php:71
+#: demo/metabox/metabox-repeater-options.php:73
+#: demo/primary/repeater-options.php:74
 msgid "Test select Repeater Field"
 msgstr "Legördülő ismétlődő mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:71
-#: demo/primary/repeater-options.php:72
+#: demo/metabox/metabox-repeater-options.php:74
+#: demo/primary/repeater-options.php:75
 msgid "Description for Test select Repeater Field"
 msgstr "A teszt legördülő ismétlődő mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:75
-#: demo/metabox/metabox-simple-options.php:69
-#: demo/primary/repeater-options.php:76 demo/primary/simple-options.php:73
-msgid "First Option"
-msgstr "Első opció"
-
-#: demo/metabox/metabox-repeater-options.php:76
-#: demo/metabox/metabox-simple-options.php:70
-#: demo/primary/repeater-options.php:77 demo/primary/simple-options.php:74
-msgid "Second Option"
-msgstr "Második opció"
-
-#: demo/metabox/metabox-repeater-options.php:77
-#: demo/metabox/metabox-simple-options.php:71
-#: demo/primary/repeater-options.php:78 demo/primary/simple-options.php:75
-msgid "Third Option"
-msgstr "Harmadik opció"
-
-#: demo/metabox/metabox-repeater-options.php:87
-#: demo/primary/repeater-options.php:88
+#: demo/metabox/metabox-repeater-options.php:90
+#: demo/primary/repeater-options.php:91
 msgid "Test user Repeater Field"
 msgstr "Felhasználó ismétlődő mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:88
-#: demo/primary/repeater-options.php:89
+#: demo/metabox/metabox-repeater-options.php:91
+#: demo/primary/repeater-options.php:92
 msgid "Description for Test user Repeater Field"
 msgstr "A teszt felhasználó ismétlődő mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:91
-#: demo/metabox/metabox-simple-options.php:88
-#: demo/primary/repeater-options.php:92 demo/primary/simple-options.php:94
+#: demo/metabox/metabox-repeater-options.php:94
+#: demo/metabox/metabox-simple-options.php:91
+#: demo/primary/repeater-options.php:95 demo/primary/simple-options.php:97
 msgid "Choose a User"
 msgstr "Válassz felhasználót"
 
-#: demo/metabox/metabox-repeater-options.php:99
-#: demo/primary/repeater-options.php:100
+#: demo/metabox/metabox-repeater-options.php:102
+#: demo/primary/repeater-options.php:103
 msgid "Test post Repeater Field"
 msgstr "Bejegyzés ismétlődő mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:100
-#: demo/primary/repeater-options.php:101
+#: demo/metabox/metabox-repeater-options.php:103
+#: demo/primary/repeater-options.php:104
 msgid "Description for Test post Repeater Field"
 msgstr "A teszt bejegyzés ismétlődő mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:103
-#: demo/metabox/metabox-simple-options.php:99
-#: demo/primary/repeater-options.php:104 demo/primary/simple-options.php:105
+#: demo/metabox/metabox-repeater-options.php:106
+#: demo/metabox/metabox-simple-options.php:102
+#: demo/primary/repeater-options.php:107 demo/primary/simple-options.php:108
 msgid "Choose a Post"
 msgstr "Válassz bejegyzést"
 
-#: demo/metabox/metabox-repeater-options.php:105
-#: demo/primary/repeater-options.php:106
+#: demo/metabox/metabox-repeater-options.php:108
+#: demo/primary/repeater-options.php:109
 msgid "Add Post"
 msgstr "Bejegyzés hozzáadása"
 
-#: demo/metabox/metabox-repeater-options.php:112
-#: demo/primary/repeater-options.php:113
+#: demo/metabox/metabox-repeater-options.php:115
+#: demo/primary/repeater-options.php:116
 msgid "Test Font Awesome Repeater Field"
 msgstr "Font Awesome ismétlődő mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:113
-#: demo/primary/repeater-options.php:114
+#: demo/metabox/metabox-repeater-options.php:116
+#: demo/primary/repeater-options.php:117
 msgid "Description for Test Font Awesome Repeater Field"
 msgstr "A teszt Font Awesome ismétlődő mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:116
-#: demo/metabox/metabox-simple-options.php:111
-#: demo/primary/repeater-options.php:117 demo/primary/simple-options.php:117
+#: demo/metabox/metabox-repeater-options.php:119
+#: demo/metabox/metabox-simple-options.php:114
+#: demo/primary/repeater-options.php:120 demo/primary/simple-options.php:120
 msgid "Choose a font icon"
 msgstr "Válassz font ikont"
 
-#: demo/metabox/metabox-repeater-options.php:125
-#: demo/primary/repeater-options.php:126
+#: demo/metabox/metabox-repeater-options.php:128
+#: demo/primary/repeater-options.php:129
 msgid "Test boolean Repeater Field"
 msgstr "Logikai ismétlő mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:126
-#: demo/primary/repeater-options.php:127
+#: demo/metabox/metabox-repeater-options.php:129
+#: demo/primary/repeater-options.php:130
 msgid "Description for Test boolean Repeater Field"
 msgstr "A teszt logikai ismétlődő mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:136
-#: demo/primary/repeater-options.php:137
+#: demo/metabox/metabox-repeater-options.php:139
+#: demo/primary/repeater-options.php:140
 msgid "Test color Repeater Field"
 msgstr "Ismétlődő szín mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:137
-#: demo/primary/repeater-options.php:138
+#: demo/metabox/metabox-repeater-options.php:140
+#: demo/primary/repeater-options.php:141
 msgid "Description for Test color Repeater Field"
 msgstr "A teszt szín mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:148
-#: demo/primary/repeater-options.php:149
+#: demo/metabox/metabox-repeater-options.php:151
+#: demo/primary/repeater-options.php:152
 msgid "Test image Repeater Field"
 msgstr "Kép ismétlődő mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:149
-#: demo/primary/repeater-options.php:150
+#: demo/metabox/metabox-repeater-options.php:152
+#: demo/primary/repeater-options.php:153
 msgid "Description for Test image Repeater Field"
 msgstr "A teszt kép ismétlődő mező leírása"
 
-#: demo/metabox/metabox-repeater-options.php:159
-#: demo/primary/repeater-options.php:160
+#: demo/metabox/metabox-repeater-options.php:162
+#: demo/primary/repeater-options.php:163
 msgid "Test date Repeater Field"
 msgstr "Ismétlődő dátum mező tesztelése"
 
-#: demo/metabox/metabox-repeater-options.php:160
-#: demo/primary/repeater-options.php:161
+#: demo/metabox/metabox-repeater-options.php:163
+#: demo/primary/repeater-options.php:164
 msgid "Description for Test date Repeater Field"
 msgstr "A teszt dátum ismétlődő mező leírása"
+
+#: demo/metabox/metabox-repeater-options.php:174
+#: demo/primary/repeater-options.php:175
+msgid "Test checkboxes repeater Field"
+msgstr "Jelölőnégyzetek ismétlődő mező tesztelése"
+
+#: demo/metabox/metabox-repeater-options.php:175
+#: demo/primary/repeater-options.php:176
+msgid "Description for Test checkboxes repeater Field"
+msgstr "A jelölőnégyzetek ismétlődő mező leírása"
 
 #: demo/metabox/metabox-sections.php:6
 msgid "Metabox Simple Demo Fields"
@@ -471,147 +557,148 @@ msgstr "Feltételes demó mezők"
 msgid "Conditional fields' visibilities are dependent on other fields."
 msgstr "A feltételes mezők láthatósága más mezőktől függ."
 
-#: demo/metabox/metabox-simple-options.php:6 demo/primary/simple-options.php:6
+#: demo/metabox/metabox-simple-options.php:9 demo/primary/simple-options.php:9
 msgid "Test Static Field"
 msgstr "Statikus mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:7 demo/primary/simple-options.php:7
+#: demo/metabox/metabox-simple-options.php:10
+#: demo/primary/simple-options.php:10
 msgid "Description for Test Static Field"
 msgstr "A teszt statikus mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:17
-#: demo/primary/simple-options.php:17
+#: demo/metabox/metabox-simple-options.php:20
+#: demo/primary/simple-options.php:20
 msgid "Test text Field"
 msgstr "Szöveg mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:18
-#: demo/primary/simple-options.php:18
+#: demo/metabox/metabox-simple-options.php:21
+#: demo/primary/simple-options.php:21
 msgid "Description for Test text Field"
 msgstr "A teszt szöveg mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:28
-#: demo/primary/simple-options.php:29
+#: demo/metabox/metabox-simple-options.php:31
+#: demo/primary/simple-options.php:32
 msgid "Test textarea Field"
 msgstr "Szövegblokk mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:29
-#: demo/primary/simple-options.php:30
+#: demo/metabox/metabox-simple-options.php:32
+#: demo/primary/simple-options.php:33
 msgid "Description for Test textarea Field"
 msgstr "A teszt szövegblokk mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:39
+#: demo/metabox/metabox-simple-options.php:42
 msgid "Test tinymce Field"
 msgstr "TinyMCE mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:40
-#: demo/primary/simple-options.php:42
+#: demo/metabox/metabox-simple-options.php:43
+#: demo/primary/simple-options.php:45
 msgid "Description for Test tinymce Field"
 msgstr "A teszt TinyMCE mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:50
-#: demo/primary/simple-options.php:53
+#: demo/metabox/metabox-simple-options.php:53
+#: demo/primary/simple-options.php:56
 msgid "Test number Field"
 msgstr "Szám mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:51
-#: demo/primary/simple-options.php:54
+#: demo/metabox/metabox-simple-options.php:54
+#: demo/primary/simple-options.php:57
 msgid "Description for Test number Field"
 msgstr "A teszt szám mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:64
-#: demo/primary/simple-options.php:68
+#: demo/metabox/metabox-simple-options.php:67
+#: demo/primary/simple-options.php:71
 msgid "Test select Field"
 msgstr "Legördülő mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:65
-#: demo/primary/simple-options.php:69
+#: demo/metabox/metabox-simple-options.php:68
+#: demo/primary/simple-options.php:72
 msgid "Description for Test select Field"
 msgstr "A teszt legördülő mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:73
-#: demo/primary/simple-options.php:77
-msgid "Fourth Option"
-msgstr "Negyedik opció"
-
-#: demo/metabox/metabox-simple-options.php:74
-#: demo/primary/simple-options.php:78
-msgid "Fifth Option"
-msgstr "Ötödik opció"
-
-#: demo/metabox/metabox-simple-options.php:77
-#: demo/primary/simple-options.php:81
+#: demo/metabox/metabox-simple-options.php:80
+#: demo/primary/simple-options.php:84
 msgid "Choose Something"
 msgstr "Válassz valamit"
 
-#: demo/metabox/metabox-simple-options.php:84
-#: demo/primary/simple-options.php:90
+#: demo/metabox/metabox-simple-options.php:87
+#: demo/primary/simple-options.php:93
 msgid "Test user Field"
 msgstr "Felhasználó mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:85
-#: demo/primary/simple-options.php:91
+#: demo/metabox/metabox-simple-options.php:88
+#: demo/primary/simple-options.php:94
 msgid "Description for Test user Field"
 msgstr "A teszt felhasználó mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:95
-#: demo/primary/simple-options.php:101
+#: demo/metabox/metabox-simple-options.php:98
+#: demo/primary/simple-options.php:104
 msgid "Test post Field"
 msgstr "Bejegyzés mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:96
-#: demo/primary/simple-options.php:102
+#: demo/metabox/metabox-simple-options.php:99
+#: demo/primary/simple-options.php:105
 msgid "Description for Test post Field"
 msgstr "A teszt bejegyzés mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:107
-#: demo/primary/simple-options.php:113
+#: demo/metabox/metabox-simple-options.php:110
+#: demo/primary/simple-options.php:116
 msgid "Test Font Awesome Field"
 msgstr "Font Awesome mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:108
-#: demo/primary/simple-options.php:114
+#: demo/metabox/metabox-simple-options.php:111
+#: demo/primary/simple-options.php:117
 msgid "Description for Test Font Awesome Field"
 msgstr "A teszt Font Awesome mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:119
-#: demo/primary/simple-options.php:125
+#: demo/metabox/metabox-simple-options.php:122
+#: demo/primary/simple-options.php:128
 msgid "Test boolean Field"
 msgstr "Logikai mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:120
-#: demo/primary/simple-options.php:126
+#: demo/metabox/metabox-simple-options.php:123
+#: demo/primary/simple-options.php:129
 msgid "Description for Test boolean Field"
 msgstr "A teszt logikai mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:130
-#: demo/primary/simple-options.php:136
+#: demo/metabox/metabox-simple-options.php:133
+#: demo/primary/simple-options.php:139
 msgid "Test color Field"
 msgstr "Szín mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:131
-#: demo/primary/simple-options.php:137
+#: demo/metabox/metabox-simple-options.php:134
+#: demo/primary/simple-options.php:140
 msgid "Description for Test color Field"
 msgstr "A teszt szín mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:140
-#: demo/primary/simple-options.php:146
+#: demo/metabox/metabox-simple-options.php:143
+#: demo/primary/simple-options.php:149
 msgid "Test image Field"
 msgstr "Kép mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:141
-#: demo/primary/simple-options.php:147
+#: demo/metabox/metabox-simple-options.php:144
+#: demo/primary/simple-options.php:150
 msgid "Description for Test image Field"
 msgstr "A teszt kép mező leírása"
 
-#: demo/metabox/metabox-simple-options.php:150
-#: demo/primary/simple-options.php:156
+#: demo/metabox/metabox-simple-options.php:153
+#: demo/primary/simple-options.php:159
 msgid "Test date Field"
 msgstr "Dátum mező tesztelése"
 
-#: demo/metabox/metabox-simple-options.php:151
-#: demo/primary/simple-options.php:157
+#: demo/metabox/metabox-simple-options.php:154
+#: demo/primary/simple-options.php:160
 msgid "Description for Test date Field"
 msgstr "A teszt dátum mező leírása"
+
+#: demo/metabox/metabox-simple-options.php:163
+#: demo/primary/simple-options.php:169
+msgid "Test checkboxes Field"
+msgstr "Jelölőnégyzetek mező tesztelése"
+
+#: demo/metabox/metabox-simple-options.php:164
+#: demo/primary/simple-options.php:170
+msgid "Description for Test checkboxes Field"
+msgstr "A jelölőnégyzetek mező leírása"
 
 #: demo/primary/options-error.php:5
 msgid "No option name error"
@@ -669,7 +756,7 @@ msgstr "Ismétlődő"
 msgid "Repeater Demo Fields"
 msgstr "Ismétlődő demó mezők"
 
-#: demo/primary/sections.php:26 inc/classes/tpl-framework.php:69
+#: demo/primary/sections.php:26 inc/classes/tpl-framework.php:70
 msgid "Combined"
 msgstr "Kombinált"
 
@@ -697,11 +784,11 @@ msgstr "TPL demó beállítások lap"
 msgid "TPL Demos"
 msgstr "TPL demók"
 
-#: demo/primary/simple-options.php:22 demo/primary/simple-options.php:82
+#: demo/primary/simple-options.php:25 demo/primary/simple-options.php:85
 msgid "DEMO-PREFIX: "
 msgstr "DEMO-ELŐTAG: "
 
-#: demo/primary/simple-options.php:41
+#: demo/primary/simple-options.php:44
 msgid "Test TinyMCE Field"
 msgstr "TinyMCE mező tesztelése"
 
@@ -783,32 +870,36 @@ msgstr "Felhasználó"
 msgid "Date"
 msgstr "Dátum"
 
-#: inc/classes/tpl-framework.php:70 inc/data-types/type-icon.php:13
+#: inc/classes/tpl-framework.php:69
+msgid "Checboxes"
+msgstr "Jelölőnégyzetek"
+
+#: inc/classes/tpl-framework.php:71 inc/data-types/type-icon.php:13
 msgid "Icon"
 msgstr "Ikon"
 
-#: inc/classes/tpl-framework.php:260
+#: inc/classes/tpl-framework.php:261
 #, php-format
 msgid ""
 "Sections can't be registered without a section name. Section details: <br> %s"
 msgstr ""
 "A szakaszok nem regisztrálhatók szakasznév nélkül. A szakasz részletei:<br>%s"
 
-#: inc/classes/tpl-framework.php:265
+#: inc/classes/tpl-framework.php:266
 #, php-format
 msgid "Sections must have a title. No title was defined for section \"%s\"."
 msgstr ""
 "A szakaszoknak rendelkezniük kell címmel. A(z) \"%s\" szakaszhoz nincs "
 "megadva cím."
 
-#: inc/classes/tpl-framework.php:338
+#: inc/classes/tpl-framework.php:339
 #, php-format
 msgid "Duplicate option name \"%1$s\". Options must have unique names."
 msgstr ""
 "Ismétlődő beállításnév: \"%1$s\". A beállításoknak egyedi névvel kell "
 "rendelkezniük."
 
-#: inc/classes/tpl-framework.php:355
+#: inc/classes/tpl-framework.php:356
 #, php-format
 msgid ""
 "Options can't be registered without an option name. Option details: <br> %s"
@@ -816,7 +907,7 @@ msgstr ""
 "A beállítások nem regisztrálhatók beállításnév nélkül. A beállítás részletei:"
 "<br>%s"
 
-#: inc/classes/tpl-framework.php:360
+#: inc/classes/tpl-framework.php:361
 #, php-format
 msgid ""
 "No section name was specified for option \"%s\". Option isn't registered."
@@ -824,7 +915,7 @@ msgstr ""
 "A(z) \"%s\" beállításhoz nem adtál meg szakasznevet. A beállítás nincs "
 "regisztrálva."
 
-#: inc/classes/tpl-framework.php:365
+#: inc/classes/tpl-framework.php:366
 #, php-format
 msgid ""
 "Invalid section name was specified for option \"%1$s\". Please make sure "
@@ -833,7 +924,7 @@ msgstr ""
 "Érvénytelen szakasznév lett megadva a(z) \"%1$s\" beállításhoz. Kérlek "
 "ellenőrizd, hogy van regisztrálva szakasz a(z) \"%2$s\" szakasznévvel."
 
-#: inc/classes/tpl-framework.php:370
+#: inc/classes/tpl-framework.php:371
 #, php-format
 msgid ""
 "No option type was specified for option \"%s\". Option isn't registered."
@@ -841,7 +932,7 @@ msgstr ""
 "A(z) \"%s\" beállításhoz nem adtál meg beállítástípust. A beállítás nincs "
 "regisztrálva."
 
-#: inc/classes/tpl-framework.php:375
+#: inc/classes/tpl-framework.php:376
 #, php-format
 msgid ""
 "Invalid data type (%2$s) was specified for option \"%1$s\". Please make sure "
@@ -852,24 +943,24 @@ msgstr ""
 "ellenőrizd, hogy a <a href=\"%3$s\" target=\"_blank\">dokumentációban</"
 "a>felsorolt adattípusok valamelyikét használod."
 
-#: inc/classes/tpl-option.php:106
+#: inc/classes/tpl-option.php:107
 msgid "Add row"
 msgstr "Új sor"
 
-#: inc/classes/tpl-option.php:265
+#: inc/classes/tpl-option.php:266
 msgid "Do you really want to remove this instance?"
 msgstr "Valóban el akarod távolítani ezt a példányt?"
 
-#: inc/classes/tpl-option.php:266 inc/templates/option/repeat-header.php:8
+#: inc/classes/tpl-option.php:267 inc/templates/option/repeat-header.php:8
 msgid "Minimize"
 msgstr "Összecsuk"
 
-#: inc/classes/tpl-option.php:267 inc/templates/option/repeat-header.php:8
+#: inc/classes/tpl-option.php:268 inc/templates/option/repeat-header.php:8
 msgid "Maximize"
 msgstr "Kinyit"
 
-#: inc/classes/tpl-option.php:550 inc/data-types/type-boolean.php:49
-#: inc/data-types/type-select.php:123
+#: inc/classes/tpl-option.php:558 inc/data-types/type-boolean.php:49
+#: inc/data-types/type-checkboxes.php:84 inc/data-types/type-select.php:123
 #, php-format
 msgid "(default: %s)"
 msgstr "(alapeset: %s)"
