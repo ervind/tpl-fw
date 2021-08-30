@@ -1,12 +1,14 @@
 <?php
 
 
+$section_name = 'conditional_demos';
+
 
 $tpl_option_args = [
 	"name"			=> 'demo_conditional_text_enabler',
 	"title"			=> __( 'Conditional Text Field Enabler', 'tpl' ),
 	"description"	=> __( 'Enable/disable this option and see how the text field below shows/hides.', 'tpl' ),
-	"section"		=> 'conditional_demos',
+	"section"		=> $section_name,
 	"type"			=> 'boolean',
 	"default"		=> true,
 ];
@@ -16,7 +18,7 @@ $tpl_option_args = [
 	"name"			=> 'demo_conditional_text_normal',
 	"title"			=> __( 'Test Conditional Text Field', 'tpl' ),
 	"description"	=> __( 'This field should only be visible when the "Conditional Text Field Enabler" boolean option is set to True.', 'tpl' ),
-	"section"		=> 'conditional_demos',
+	"section"		=> $section_name,
 	"type"			=> 'text',
 	"default"		=> __( 'Test text default value', 'tpl' ),
 	"condition"		=> [
@@ -35,7 +37,7 @@ $tpl_option_args = [
 	"name"			=> 'demo_conditional_combined_enabler',
 	"title"			=> __( 'Conditional Combined Field Enabler', 'tpl' ),
 	"description"	=> __( 'Enable/disable this option and see how the combined field below shows/hides.', 'tpl' ),
-	"section"		=> 'conditional_demos',
+	"section"		=> $section_name,
 	"type"			=> 'boolean',
 	"default"		=> false,
 ];
@@ -45,7 +47,7 @@ $tpl_option_args = [
 	"name"			=> 'demo_conditional_combined_normal',
 	"title"			=> __( 'Test combined Field', 'tpl' ),
 	"description"	=> __( 'This field should only be visible when the "Conditional Combined Field Enabler" boolean option is set to True.', 'tpl' ),
-	"section"		=> 'conditional_demos',
+	"section"		=> $section_name,
 	"type"			=> 'combined',
 	"parts"			=> [
 		[
@@ -124,7 +126,7 @@ $tpl_option_args = [
 	"name"			=> 'demo_conditional_repeater_disable',
 	"title"			=> __( 'Disable the repeater field below', 'tpl' ),
 	"description"	=> __( 'If true, the repeater field below disappears', 'tpl' ),
-	"section"		=> 'conditional_demos',
+	"section"		=> $section_name,
 	"type"			=> 'boolean',
 	"default"		=> true,
 ];
@@ -134,7 +136,7 @@ $tpl_option_args = [
 	"name"			=> 'demo_conditional_text_repeater',
 	"title"			=> __( 'Test Conditional Repeater Field', 'tpl' ),
 	"description"	=> __( 'This field should only be visible when the "Disable the repeater field below" boolean option is set to False.', 'tpl' ),
-	"section"		=> 'conditional_demos',
+	"section"		=> $section_name,
 	"type"			=> 'text',
 	"repeat"		=> true,
 	"default"		=> __( 'Test text default value', 'tpl' ),
@@ -154,7 +156,7 @@ $tpl_option_args = [
 	"name"			=> 'demo_conditional_icon_enabler',
 	"title"			=> __( 'Conditional Repeater Icon Field Enabler', 'tpl' ),
 	"description"	=> __( 'Enable/disable this option and see how the repeater icon field below shows/hides.', 'tpl' ),
-	"section"		=> 'conditional_demos',
+	"section"		=> $section_name,
 	"type"			=> 'boolean',
 	"default"		=> true,
 ];
@@ -164,7 +166,7 @@ $tpl_option_args = [
 	"name"			=> 'demo_conditional_icon_repeater',
 	"title"			=> __( 'Test Conditional Icon Field', 'tpl' ),
 	"description"	=> __( 'This field should only be visible when the "Conditional Repeater Icon Field Enabler" boolean option is set to True.', 'tpl' ),
-	"section"		=> 'conditional_demos',
+	"section"		=> $section_name,
 	"type"			=> 'icon',
 	"repeat"		=> true,
 	"condition"		=> [
@@ -173,6 +175,44 @@ $tpl_option_args = [
 			"name"			=> 'demo_conditional_icon_enabler',
 			"relation"		=> '=',
 			"value"			=> true,
+		]
+	],
+];
+TPL_FW()->register_option( $tpl_option_args );
+
+
+$tpl_option_args = [
+	"name"			=> 'demo_conditional_checkboxes',
+	"title"			=> __( 'Test Conditional Checkboxes Field', 'tpl' ),
+	"description"	=> __( 'This field should only be visible when the "Conditional Checkboxes Field Enabler" boolean option is set to True.', 'tpl' ),
+	"section"		=> $section_name,
+	"type"			=> 'checkboxes',
+	"values"		=> [
+		"first"			=> __( 'First Option', 'tpl' ),
+		"second"		=> __( 'Second Option', 'tpl' ),
+		"third"			=> __( 'Third Option', 'tpl' ),
+		"fourth"		=> __( 'Fourth Option', 'tpl' ),
+		"fifth"			=> __( 'Fifth Option', 'tpl' ),
+	],
+	"default"		=> [
+		"first"			=> 1,
+		"second"		=> 1,
+	],
+];
+TPL_FW()->register_option( $tpl_option_args );
+
+$tpl_option_args = [
+	"name"			=> 'demo_conditional_checkboxes_text',
+	"title"			=> __( 'Test Conditional Text Field based on Checkboxes value', 'tpl' ),
+	"description"	=> __( 'This field should only be visible when the second option is enabled above.', 'tpl' ),
+	"section"		=> $section_name,
+	"type"			=> 'text',
+	"condition"		=> [
+		[
+			"type"			=> 'option',
+			"name"			=> 'demo_conditional_checkboxes',
+			"relation"		=> 'unlike',
+			"value"			=> 'second:1',
 		]
 	],
 ];

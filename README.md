@@ -18,6 +18,10 @@ require_once PLUGIN_ROOT_DIR . 'framework/tpl-fw.php';
 
 ## Changelog
 
+### v2.3 (2021-08-30)
+* New data type: checkboxes
+
+
 ### v2.2.2 (2021-05-13)
 * Modification of how Select Type placeholders are added to the option list » less hardcoded mode
 

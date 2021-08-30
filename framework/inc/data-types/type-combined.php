@@ -151,24 +151,27 @@ class TPL_Combined extends TPL_Option {
 	function value() {
 
 		$values = $this->get_value();
+		$parts = $this->get_parts();
 
 		if ( is_array( $values ) ) { ?>
 			<ul>
 				<?php
 				if ( $this->is_repeater() ) {
-					foreach ( $values as $row ) { ?>
+					foreach ( $values as $instance => $row ) {
+						$this->path[1] = $instance; ?>
 						<li>
 							<ul>
-								<?php foreach ( $row as $value ) { ?>
-									<li><?php echo $value; ?></li>
+								<?php foreach ( $row as $part_name => $value ) {
+									$parts[$part_name]->path[1] = $instance; ?>
+									<li><?php $parts[$part_name]->value(); ?></li>
 								<?php } ?>
 							</ul>
 						</li>
 					<?php }
 				}
 				else {
-					foreach ( $values[0] as $value ) { ?>
-						<li><?php echo $value; ?></li>
+					foreach ( $values[0] as $part_name => $value ) { ?>
+						<li><?php $parts[$part_name]->value(); ?></li>
 					<?php }
 				} ?>
 			</ul>

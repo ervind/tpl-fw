@@ -56,6 +56,18 @@ $tpl_option_args = [
 			"title"		=> __( 'User subitem', 'tpl' ),
 			"type"		=> 'user',
 		],
+		[
+			"name"			=> 'demo_combined_repeater_checkboxes',
+			"title"			=> __( 'Checkboxes subitem', 'tpl' ),
+			"type"			=> 'checkboxes',
+			"values"		=> [
+				"first"			=> __( 'First Option', 'tpl' ),
+				"second"		=> __( 'Second Option', 'tpl' ),
+				"third"			=> __( 'Third Option', 'tpl' ),
+				"fourth"		=> __( 'Fourth Option', 'tpl' ),
+				"fifth"			=> __( 'Fifth Option', 'tpl' ),
+			],
+		],
 	]
 ];
 TPL_FW()->register_option( $tpl_option_args );

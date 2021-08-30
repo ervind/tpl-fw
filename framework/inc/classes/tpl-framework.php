@@ -52,22 +52,23 @@ class TPL_Framework {
 	function get_data_type_names() {
 
 		$data_types = [
-			"static"	=> __( 'Static', 'tpl' ),
-			"text"		=> __( 'Text', 'tpl' ),
-			"hidden"	=> __( 'Hidden', 'tpl' ),
-			"textarea"	=> __( 'Text Area', 'tpl' ),
-			"tinymce"	=> __( 'TinyMCE', 'tpl' ),
-			"color"		=> __( 'Color', 'tpl' ),
-			"image"		=> __( 'Image', 'tpl' ),
-			"number"	=> __( 'Number', 'tpl' ),
-			"boolean"	=> __( 'Boolean', 'tpl' ),
-			"select"	=> __( 'Select', 'tpl' ),
+			"static"		=> __( 'Static', 'tpl' ),
+			"text"			=> __( 'Text', 'tpl' ),
+			"hidden"		=> __( 'Hidden', 'tpl' ),
+			"textarea"		=> __( 'Text Area', 'tpl' ),
+			"tinymce"		=> __( 'TinyMCE', 'tpl' ),
+			"color"			=> __( 'Color', 'tpl' ),
+			"image"			=> __( 'Image', 'tpl' ),
+			"number"		=> __( 'Number', 'tpl' ),
+			"boolean"		=> __( 'Boolean', 'tpl' ),
+			"select"		=> __( 'Select', 'tpl' ),
 			"font_awesome"	=> __( 'Font Awesome', 'tpl' ),
-			"post"		=> __( 'Post', 'tpl' ),
-			"user"		=> __( 'User', 'tpl' ),
-			"date"		=> __( 'Date', 'tpl' ),
-			"combined"	=> __( 'Combined', 'tpl' ),
-			"icon"		=> __( 'Icon', 'tpl' ),
+			"post"			=> __( 'Post', 'tpl' ),
+			"user"			=> __( 'User', 'tpl' ),
+			"date"			=> __( 'Date', 'tpl' ),
+			"checkboxes"	=> __( 'Checboxes', 'tpl' ),
+			"combined"		=> __( 'Combined', 'tpl' ),
+			"icon"			=> __( 'Icon', 'tpl' ),
 		];
 
 		return apply_filters( 'tpl_data_type_names', $data_types );

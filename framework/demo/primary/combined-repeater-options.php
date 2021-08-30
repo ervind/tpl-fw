@@ -1,11 +1,14 @@
 <?php
 
 
+$section_name = 'combined_repeater_demos';
+
+
 $tpl_option_args = [
 	"name"			=> 'demo_combined_repeater',
 	"title"			=> __( 'Test combined Repeater Field', 'tpl' ),
 	"description"	=> __( 'Description for Test combined Repeater Field', 'tpl' ),
-	"section"		=> 'combined_repeater_demos',
+	"section"		=> $section_name,
 	"type"			=> 'combined',
 	"repeat"		=> true,
 	"parts"			=> [
@@ -56,6 +59,18 @@ $tpl_option_args = [
 			"title"		=> __( 'User subitem', 'tpl' ),
 			"type"		=> 'user',
 		],
+		[
+			"name"			=> 'demo_combined_repeater_checkboxes',
+			"title"			=> __( 'Checkboxes subitem', 'tpl' ),
+			"type"			=> 'checkboxes',
+			"values"		=> [
+				"first"			=> __( 'First Option', 'tpl' ),
+				"second"		=> __( 'Second Option', 'tpl' ),
+				"third"			=> __( 'Third Option', 'tpl' ),
+				"fourth"		=> __( 'Fourth Option', 'tpl' ),
+				"fifth"			=> __( 'Fifth Option', 'tpl' ),
+			],
+		],
 	]
 ];
 TPL_FW()->register_option( $tpl_option_args );
@@ -65,7 +80,7 @@ $tpl_option_args = [
 	"name"			=> 'demo_icon_repeater',
 	"title"			=> __( 'Test icon Repeater Field', 'tpl' ),
 	"description"	=> __( 'Description for Test icon Repeater Field', 'tpl' ),
-	"section"		=> 'combined_repeater_demos',
+	"section"		=> $section_name,
 	"type"			=> 'icon',
 	"repeat"		=> true,
 ];

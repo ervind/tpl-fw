@@ -15,7 +15,8 @@ TABLE OF CONTENTS
 	2.4 TinyMCE
 	2.5 Date
 	2.6 Boolean
-	2.7 Combined
+	2.7 Checkboxes
+	2.8 Combined
 3. Scripts for repeater fields
 	3.1 Repeater Previews
 4. Common settings
@@ -375,7 +376,48 @@ TABLE OF CONTENTS
 
 	/*
 
-		2.6 BOOLEAN DATA TYPE
+		2.7 CHECKBOXES DATA TYPE
+		---------------------
+
+	*/
+
+	$('body').on('click', '.tpl-field.tpl-dt-checkboxes label', function(){
+		var data_value = parseInt( $('span', this).attr('data-key') );
+		if ( $(this).hasClass('checked-1') ) {
+			$('span', this).attr( 'data-value', 0 );
+			$(this).attr('class', 'checked-0' );
+		}
+		else {
+			$('span', this).attr( 'data-value', 1 );
+			$(this).attr('class', 'checked-1' );
+		}
+		tpl_refresh_checkboxes_field( $(this).closest('.tpl-datatype-container') );
+	});
+
+
+	function tpl_refresh_checkboxes_field( container ) {
+
+		var values = '';
+
+		container.find('.checkbox').each(function(){
+			var key = $('.checkbox-item',this).attr('data-key');
+			var value = $('.checkbox-item',this).attr('data-value');
+			if ( values != '' ) {
+				values += ',';
+			}
+			values += key + ':' + value;
+		});
+
+		container.find('.checkboxes-store').val( values ).trigger('change');
+
+	}
+
+
+
+
+	/*
+
+		2.8 COMBINED DATA TYPE
 		---------------------
 
 	*/
@@ -718,6 +760,7 @@ TABLE OF CONTENTS
 						var index = $(this).attr('data-preview');
 						preview += tpl_get_preview_value($(this));
 					});
+					preview = preview.replace(/,\s*$/, "");
 				}
 			}
 
@@ -1136,6 +1179,22 @@ TABLE OF CONTENTS
 								break;
 							case '>':
 								if ( base_val > condition_value ) {
+									matches.push( true );
+								}
+								else {
+									matches.push( false );
+								}
+								break;
+							case 'like':
+								if ( base_val.indexOf( condition_value ) !== -1 ) {
+									matches.push( true );
+								}
+								else {
+									matches.push( false );
+								}
+								break;
+							case 'unlike':
+								if ( base_val.indexOf( condition_value ) === -1 ) {
 									matches.push( true );
 								}
 								else {

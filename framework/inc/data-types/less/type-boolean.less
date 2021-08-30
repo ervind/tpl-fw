@@ -1,14 +1,18 @@
 // Boolean DT less
-.tpl-dt-boolean, .tpl-repeat-header {
+.tpl-dt-boolean, .tpl-dt-checkboxes {
+
+	.tpl-datatype-container {
+		flex-direction: column;
+	}
 
 	label[class*=checked-] {
-		width: 1em;
-		height: 1em;
-		font-size: 2em;
 		position: relative;
 		display: inline-block;
 		margin-bottom: 0;
 		cursor: pointer;
+		width: 1em;
+		height: 1em;
+		font-size: 2em;
 
 		&::before {
 			font-family: "Font Awesome 5 Free";
@@ -26,13 +30,15 @@
 		}
 	}
 
-	.tpl-header-title label {
-		font-size: 1.3333em;
+	span {
+		vertical-align: middle;
 	}
-
 }
-
 
 .tpl_settings_page_wrap .tpl-dt-boolean .tpl-default-value {
 	margin-top: 0.2em;
+}
+
+.tpl-dt-checkboxes .checkbox {
+	margin-bottom: 0.2em;
 }

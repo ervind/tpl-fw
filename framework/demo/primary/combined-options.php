@@ -1,11 +1,14 @@
 <?php
 
 
+$section_name = 'combined_demos';
+
+
 $tpl_option_args = [
 	"name"			=> 'demo_combined_normal',
 	"title"			=> __( 'Test combined Field', 'tpl' ),
 	"description"	=> __( 'Description for Test combined Field', 'tpl' ),
-	"section"		=> 'combined_demos',
+	"section"		=> $section_name,
 	"type"			=> 'combined',
 	"parts"			=> [
 		[
@@ -55,6 +58,18 @@ $tpl_option_args = [
 			"title"		=> __( 'User subitem', 'tpl' ),
 			"type"		=> 'user',
 		],
+		[
+			"name"			=> 'demo_combined_checkboxes',
+			"title"			=> __( 'Checkboxes subitem', 'tpl' ),
+			"type"			=> 'checkboxes',
+			"values"		=> [
+				"first"			=> __( 'First Option', 'tpl' ),
+				"second"		=> __( 'Second Option', 'tpl' ),
+				"third"			=> __( 'Third Option', 'tpl' ),
+				"fourth"		=> __( 'Fourth Option', 'tpl' ),
+				"fifth"			=> __( 'Fifth Option', 'tpl' ),
+			],
+		],
 	]
 ];
 TPL_FW()->register_option( $tpl_option_args );
@@ -64,7 +79,7 @@ $tpl_option_args = [
 	"name"			=> 'demo_icon_normal',
 	"title"			=> __( 'Test icon Field', 'tpl' ),
 	"description"	=> __( 'Description for Test icon Field', 'tpl' ),
-	"section"		=> 'combined_demos',
+	"section"		=> $section_name,
 	"type"			=> 'icon',
 ];
 TPL_FW()->register_option( $tpl_option_args );

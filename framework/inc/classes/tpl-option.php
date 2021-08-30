@@ -12,6 +12,7 @@ class TPL_Option {
 	public		$priority		= 10;
 	public		$admin_class	= '';
 	public		$for_bank		= false;
+	public		$visibility_level = '';
 	protected	$post			= NULL;
 
 
@@ -383,6 +384,13 @@ class TPL_Option {
 	}
 
 
+	function get_visibility_level() {
+
+		return $this->visibility_level;
+
+	}
+
+
 	function save_post_meta() {
 
 		$form_reference = explode( '[', $this->form_ref() );
@@ -467,11 +475,11 @@ class TPL_Option {
 
 	function form_field() {
 
-		$db_values = (array) $this->get_option();
+		$values = (array) $this->get_option();
 
-		if ( $db_values ) {
+		if ( $values ) {
 
-			foreach ( $db_values as $instance => $value ) {
+			foreach ( $values as $instance => $value ) {
 
 				if ( !$this->is_subitem() ) {
 					$this->path[1] = $instance;
