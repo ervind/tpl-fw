@@ -18,6 +18,10 @@ require_once PLUGIN_ROOT_DIR . 'framework/tpl-fw.php';
 
 ## Changelog
 
+### v2.3.1 (2023-04-16)
+* Minor fixes, code optimization
+
+
 ### v2.3 (2021-08-30)
 * New data type: checkboxes
 

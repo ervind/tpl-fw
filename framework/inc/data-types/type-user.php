@@ -9,12 +9,12 @@ class TPL_User extends TPL_Select {
 
 		parent::initialize();
 
-		$this->set_selectable_values( [] );
+		add_action( 'init',	[ $this, 'set_selectable_values' ] );
 
 	}
 
 
-	function set_selectable_values( $values ) {
+	function set_selectable_values( $values = [] ) {
 
 		$query_args = [];
 

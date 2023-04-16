@@ -236,11 +236,11 @@ class TPL_Section {
 	        return;
 	    }
 
-		$fields = $this->arrange_fields( (array) $wp_settings_fields[$settings_page_name][$this->get_name()] );
+		$fields = $this->arrange_primary_fields( (array) $wp_settings_fields[$settings_page_name][$this->get_name()] );
 
-	    foreach ( $fields as $field ) {
+		foreach ( $fields as $field ) {
 
-			$option = TPL_FW()->get_option( $field["id"] );
+		    $option = TPL_FW()->get_option( $field["id"] );
 
 			$class = 'tpl-primary-form-row';
 	        if ( !empty( $field["args"]["class"] ) ) {
@@ -254,7 +254,7 @@ class TPL_Section {
 	}
 
 
-	function arrange_fields( $fields ) {
+	function arrange_primary_fields( $fields ) {
 
 		usort( $fields, function( $a, $b ) {
 
@@ -270,15 +270,28 @@ class TPL_Section {
 	}
 
 
-	function setup_metabox_fields( $post ) {
+	function render_metabox_fields( $post ) {
 
 		wp_nonce_field( 'tpl_metabox', 'tpl_metabox_nonce' );
 		echo tpl_kses( $this->get_description() );
 
-		foreach ( $this->get_options() as $option ) {
+		$options = $this->arrange_metabox_options( $this->get_options() );
+
+		foreach ( $options as $option ) {
 			$option->set_post( $post );
 			$option->metabox_row();
 		}
+
+	}
+
+
+	function arrange_metabox_options( $options ) {
+
+		usort( $options, function( $a, $b ) {
+			return $a->get_priority() <=> $b->get_priority();
+		} );
+
+		return $options;
 
 	}
 

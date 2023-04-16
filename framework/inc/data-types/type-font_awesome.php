@@ -36,7 +36,7 @@ class TPL_Font_Awesome extends TPL_Select {
 
 		parent::initialize();
 
-		$this->set_selectable_values( [] );
+		$this->set_selectable_values();
 
 	}
 
@@ -64,7 +64,7 @@ class TPL_Font_Awesome extends TPL_Select {
 	}
 
 
-	function set_selectable_values( $values ) {
+	function set_selectable_values( $values = [] ) {
 		global $tpl_fa_icons;
 
 		$fa_icons_select2 = [];

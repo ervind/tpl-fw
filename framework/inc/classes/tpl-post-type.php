@@ -34,7 +34,7 @@ class TPL_Post_Type {
 			add_meta_box(
 				$section->get_name(),
 				$section->get_title(),
-				[ $section, 'setup_metabox_fields' ],
+				[ $section, 'render_metabox_fields' ],
 				$this->get_post_type()
 			);
 

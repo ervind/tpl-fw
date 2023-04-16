@@ -9,20 +9,20 @@ class TPL_Post extends TPL_Select {
 
 		parent::initialize();
 
-		$this->set_selectable_values( [] );
+		add_action( 'init',	[ $this, 'set_selectable_values' ] );
 		add_action( 'wp_ajax_tpl_create_post', [ $this, 'ajax_create_post' ] );
 
 	}
 
 
-	function set_selectable_values( $values ) {
+	function set_selectable_values( $values = [] ) {
 
-		$query_args = [
-			"orderby"	=> 'ID',
-			"order"		=> 'ASC',
-		];
-
-		$query_args["post_type"] = $this->get_post_type();
+		$query_args = array_merge( [
+			"orderby"		=> 'ID',
+			"order"			=> 'ASC',
+			"post_status"	=> 'publish',
+			"post_type"		=> $this->get_post_type(),
+		], $this->extra_args );
 
 		if ( isset( $this->args["max"] ) ) {
 			$query_args["posts_per_page"] = $this->args["max"];
@@ -31,10 +31,10 @@ class TPL_Post extends TPL_Select {
 			$query_args["posts_per_page"] = -1;
 		}
 
-		$posts = get_posts( $query_args );
+		$query = new WP_Query( $query_args );
 
-		if ( $posts ) {
-			foreach ( $posts as $post ) {
+		if ( $query->posts ) {
+			foreach ( $query->posts as $post ) {
 				$this->values[$post->ID] = '(' . $post->ID . ') ' . wp_strip_all_tags( get_the_title( $post->ID ) );
 			}
 		}
